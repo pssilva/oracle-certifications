@@ -90,48 +90,32 @@ source ~/.bash_profile
 idea .
 ```
 
-Executar o projeto `oci-devops-professional-1z0-1109-24`, use os seguintes comandos:
+Executar o projeto `oci-devops-professional`, use os seguintes comandos:
 
 ```bash
-cd "${HOME}/projetos/oci-devops-professional-1z0-1109-24"
+cd "${HOME}/projetos/oci-devops-professional"
 sdk use java 17.0.11-amzn
 mvn clean install
 source ~/.bash_profile
 idea .
 ```
 
-Executar o projeto `oci-multicloud-architect-associate-1z0-1115-24`, use os seguintes comandos:
+Executar o projeto `oci-multicloud-architect-associate`, use os seguintes comandos:
 
 
 ```bash
-cd "${HOME}/projetos/oci-multicloud-architect-associate-1z0-1115-24"
+cd "${HOME}/projetos/oci-multicloud-architect-associate"
 sdk use java 17.0.11-amzn
 mvn clean install
 source ~/.bash_profile
 idea .
 ```
 
-
-
-Executar o projeto `oci-multicloud-architect-associate-1z0-1115-24`, use os seguintes comandos:
-
-
-```bash
-cd "${HOME}/projetos/oci-multicloud-architect-associate-1z0-1115-24"
-sdk use java 17.0.11-amzn
-mvn clean install
-source ~/.bash_profile
-idea .
-```
-
-oci-foundations-associate-1z0-1085-24
-
-
-Executar o projeto `ocp-java-ee-7-app-developer-1z0-900`, use os seguintes comandos:
+Executar o projeto `ocp-javaee7-app-developer`, use os seguintes comandos:
 
 
 ```bash
-cd "${HOME}/projetos/ocp-java-ee-7-app-developer-1z0-900"
+cd "${HOME}/projetos/ocp-javaee7-app-developer"
 sdk use java 17.0.11-amzn
 mvn clean install
 source ~/.bash_profile
