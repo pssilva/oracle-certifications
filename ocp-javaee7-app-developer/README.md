@@ -140,7 +140,7 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
   - [ ] Aplicativos em Lote (Batch) para a Plataforma Java 1.0
 - [ ] Scritps de Automação
   - [X] ~~instalação das Ferramentas de Desenvolvimento.~~
-  - [ ] Criar automação para as principais funcionalidade (features) disponíveis no Java SE
+  - [ ] Criar automação para as principais funcionalidade (features) disponíveis no Java EE
 - [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
   - [ ] Aplicar técncia para análise explorativa da implementação do [AxonFramework](https://github.com/AxonFramework/AxonFramework) e dos seus respectivos conceitos: [DDD, CQRS, Microservices e Event Sourcing](https://www.axoniq.io/concepts)
   - [ ] Aplicar técncia para análise explorativa da implementação do [Axon Server](https://github.com/AxonIQ/axon-server-se)
