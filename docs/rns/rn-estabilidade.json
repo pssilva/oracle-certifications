@@ -1,0 +1,17 @@
+[
+  {
+    "code": 1,
+    "nome": "Baixa",
+    "descricao": ""
+  },
+  {
+    "code": 2,
+    "nome": "Média",
+    "descricao": ""
+  },
+  {
+    "code": 3,
+    "nome": "Alto",
+    "descricao": ""
+  }
+]
