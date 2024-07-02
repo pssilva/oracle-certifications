@@ -15,7 +15,7 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
  - Oracle Cloud Infrastructure - OCI
     -  [Oracle Cloud Infrastructure 2024 DevOps Professional (Exam Number: 1Z0-1109-24)](https://education.oracle.com/ouexam-pexam_1z0-1109-24/pexam_1Z0-1109-24)
     - [Oracle Cloud Infrastructure 2024 Multicloud Architect Associate (Exam Number: 1Z0-1115-24)](https://education.oracle.com/ouexam-pexam_1z0-1115-24/pexam_1Z0-1115-24)
-
+    - [Oracle Cloud Infrastructure 2024 Foundations Associate (Exam Number: 1Z0-1085-24)](https://education.oracle.com/ouexam-pexam_1z0-1085-24/pexam_1Z0-1085-24)
 
 Tendo em mente que para cada Certificação: 
 
@@ -100,13 +100,31 @@ source ~/.bash_profile
 idea .
 ```
 
+Executar o projeto `oci-multicloud-architect-associate-1z0-1115-24`, use os seguintes comandos:
 
-oci-multicloud-architect-associate-1z0-1115-24
 
-Oracle Cloud Infrastructure 2024 Foundations Associate
-Exam Number: 1Z0-1085-24 - 
+```bash
+cd "${HOME}/projetos/oci-multicloud-architect-associate-1z0-1115-24"
+sdk use java 17.0.11-amzn
+mvn clean install
+source ~/.bash_profile
+idea .
+```
 
-https://education.oracle.com/ouexam-pexam_1z0-1085-24/pexam_1Z0-1085-24
+
+
+Executar o projeto `oci-multicloud-architect-associate-1z0-1115-24`, use os seguintes comandos:
+
+
+```bash
+cd "${HOME}/projetos/oci-multicloud-architect-associate-1z0-1115-24"
+sdk use java 17.0.11-amzn
+mvn clean install
+source ~/.bash_profile
+idea .
+```
+
+oci-foundations-associate-1z0-1085-24
 
 
 Executar o projeto `ocp-java-ee-7-app-developer-1z0-900`, use os seguintes comandos:
@@ -137,13 +155,13 @@ Aqui temos uma lista do que idenficamos com status de pendente:
 Segue abaixo (não se limita) os objetivos do presente projeto:
 
 - [X] ~~Formatando documentação README.md~~
-- [ ] Indexação completa do vídeo longo: []() (mais detalhes veja [aqui](docs/indexacoes/README.md))
-- [ ] Indexação completa do vídeo longo: []() (mais detalhes veja [aqui](docs/indexacoes/README.md))
-- [ ] Indexação completa do vídeo longo: []() (mais detalhes veja [aqui](docs/indexacoes/README.md))
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 071518 – 03.04.02.01.17.06 – 1 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1 – Questões](docs/indexacoes/VIDEO%20LONGO%20071518%20–%2003.04.02.01.17.06%20–%201%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part1%20–%20Questões.pdf) (mais detalhes veja [aqui](docs/indexacoes/README.md))
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 074048 – 03.04.02.01.17.06 – 2 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 2 – Questões](docs/indexacoes/VIDEO%20LONGO%20074048%20–%2003.04.02.01.17.06%20–%202%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%202%20–%20Questões.pdf) (mais detalhes veja [aqui](docs/indexacoes/README.md))
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO – 061942 – 03.04.02.01.17.06 – 3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3 – Questões](docs/indexacoes/VIDEO%20LONGO%20–%20061942%20–%2003.04.02.01.17.06%20–%203%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%203%20–%20Questões.pdf) (mais detalhes veja [aqui](docs/indexacoes/README.md))
 - [ ] Scritps de Automação
   - [X] ~~instalação das Ferramentas de Desenvolvimento.~~
-  - [ ] Criar Casos de Uso Arquitetura CQRS
-  - [ ] Criar Casos de Uso Arquitetura Limpa
+  - [ ] Criar para as principais funcionalidade (features) disponíveis no Java SE
+  - [ ] Criar para as principais as Java EE APIs (temos cerva de 27 APIs) 
 - [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
   - [ ] Aplicar técncia para análise explorativa da implementação do [AxonFramework](https://github.com/AxonFramework/AxonFramework) e dos seus respectivos conceitos: [DDD, CQRS, Microservices e Event Sourcing](https://www.axoniq.io/concepts)
   - [ ] Aplicar técncia para análise explorativa da implementação do [Axon Server](https://github.com/AxonIQ/axon-server-se)
