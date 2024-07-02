@@ -80,10 +80,10 @@ OracleCertificationsScriptsUteis.installAllTools
 
 Para cada certificação um projeto / módulo dedicaro. Depois de instalar as ferramentas necessárias.
 
-Executar o projeto `ocp-javase-17-developer-1z0-829`, use os seguintes comandos:
+Executar o projeto `ocp-javase17-developer`, use os seguintes comandos:
 
 ```bash
-cd "${HOME}/projetos/ocp-javase-17-developer-1z0-829"
+cd "${HOME}/projetos/ocp-javase17-developer"
 sdk use java 17.0.11-amzn
 mvn clean install
 source ~/.bash_profile
