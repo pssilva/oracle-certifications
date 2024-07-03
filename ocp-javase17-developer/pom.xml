@@ -7,6 +7,20 @@
     <groupId>br.com.oracle_certificatons.ocp.javase_17_developer_1z0_829</groupId>
     <artifactId>ocp-javase17-developer</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>tratamento-data-hora</module>
+        <module>controlando-fluxo-programa</module>
+        <module>abordagem-orientada-objetos-java</module>
+        <module>tratamento-excecoes</module>
+        <module>trabalhando-matrizes-colecoes</module>
+        <module>streams-expressoes-lambda</module>
+        <module>execucao-simultanea-codigo</module>
+        <module>api-oi-java</module>
+        <module>bancos-dados-jdbc</module>
+        <module>localizacao</module>
+        <module>candidatos-devem-supor</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
