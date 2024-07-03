@@ -144,8 +144,8 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
 - [ ] Indexação completa do vídeo longo: [VIDEO LONGO – 061942 – 03.04.02.01.17.06 – 3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3 – Questões](docs/indexacoes/VIDEO%20LONGO%20–%20061942%20–%2003.04.02.01.17.06%20–%203%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%203%20–%20Questões.pdf) (mais detalhes veja [aqui](docs/indexacoes/README.md))
 - [ ] Scritps de Automação
   - [X] ~~instalação das Ferramentas de Desenvolvimento.~~
-  - [ ] Criar para as principais funcionalidade (features) disponíveis no Java SE
-  - [ ] Criar para as principais as Java EE APIs (temos cerva de 27 APIs) 
+  - [ ] Criar Casos de Uso para as principais funcionalidade (features) disponíveis no Java SE
+  - [ ] Criar Casos de Uso para as principais as Java EE APIs (temos cerca de 27 APIs) 
 - [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
   - [ ] Aplicar técncia para análise explorativa da implementação do [AxonFramework](https://github.com/AxonFramework/AxonFramework) e dos seus respectivos conceitos: [DDD, CQRS, Microservices e Event Sourcing](https://www.axoniq.io/concepts)
   - [ ] Aplicar técncia para análise explorativa da implementação do [Axon Server](https://github.com/AxonIQ/axon-server-se)
