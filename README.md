@@ -260,3 +260,21 @@ Seque abaixo as referências bibliográficas usadas no presente projeto:
 ### Vídeos / Playlists
 
 ---
+
+<p align="justify"> 
+[<a id="1-How-to-pass-Exam-1Z0-811">#1 HOW TO PASS EXAM 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1</a>]. Direção: Canal do youtube @elearningfreechannel. Produção: Canal do youtube @elearningfreechannel. Realização: Canal do youtube @elearningfreechannel. Roteiro: Canal do youtube @elearningfreechannel. Fotografia: N/A. Intérpretes: N/A. Local: Canal do youtube @elearningfreechannel, 23 de jan. de 2022. Indicação do suporte físico e duração entre parênteses, demais características (streams, som, cor, legenda, tradução, vídeo stream). Disponível em: < <a href="https://youtu.be/Dzz-sb8huWk?si=o1TE15Go3bsz4uH4"> https://youtu.be/Dzz-sb8huWk?si=o1TE15Go3bsz4uH4 </a> >. Acesso em: 29 jun. 2024
+</p>
+
+---
+
+<p align="justify"> 
+[<a id="2-How-to-pass-Exam-1Z0-811">#2 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 2</a>]. Direção: Canal do youtube @elearningfreechannel. Produção: Canal do youtube @elearningfreechannel. Realização: Canal do youtube @elearningfreechannel. Roteiro: Canal do youtube @elearningfreechannel. Fotografia: N/A. Intérpretes: N/A. Local: Canal do youtube @elearningfreechannel, 23 de jan. de 2022. Indicação do suporte físico e duração entre parênteses, demais características (streams, som, cor, legenda, tradução, vídeo stream). Disponível em: < <a href="https://youtu.be/C70IE3C9HiY"> https://youtu.be/C70IE3C9HiY </a> >. Acesso em: 29 jun. 2024
+</p>
+
+---
+
+<p align="justify"> 
+[<a id="3-How-to-pass-Exam-1Z0-811">#3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3</a>]. Direção: Canal do youtube @elearningfreechannel. Produção: Canal do youtube @elearningfreechannel. Realização: Canal do youtube @elearningfreechannel. Roteiro: Canal do youtube @elearningfreechannel. Fotografia: N/A. Intérpretes: N/A. Local: Canal do youtube @elearningfreechannel, 23 de jan. de 2022. Indicação do suporte físico e duração entre parênteses, demais características (streams, som, cor, legenda, tradução, vídeo stream). Disponível em: < <a href="https://youtu.be/Ngl9awIcMXI?t=0"> https://youtu.be/Ngl9awIcMXI?t=0 </a> >. Acesso em: 29 jun. 2024
+</p>
+
+---
