@@ -74,6 +74,14 @@ Aqui temos uma lista do que idenficamos com status de pendente:
 Segue abaixo (não se limita) os objetivos do presente projeto:
 
 - [X] ~~Formatando documentação README.md~~
+- [X] ~~Diagrama de Estado: [Estados da Thread](#ds-estados-thread)~~
+- [ ] Para Todo Conteúdo programático Certificação do presente módulo: 
+  - [X] ~~Do Conteúdo programático identificar os objetivos;~~
+  - [ ] Para cada Objetivo dos Tópicos, explodir em habilidades;
+  - [ ] Para cada habilidade, identificar boas práticas de uso Empírico;
+  - [ ] Identificar a forma de como é cobrado o conhecimento no exame;
+  - [ ] identificar, em projetos open-source, o uso dos conceitos na prática;
+  - [ ] Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 - [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
   - [ ] Aplicar técncia para [Análise Explorativa da Implementação](#da-analise-exploratoria) dos Artefatos: 
     - [ ] `${HOME}.sdkman/candidates/java/17.0.11-amzn/lib/jrt-fs.jar/java.base`
@@ -83,6 +91,7 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
       - [ ] `java.util.concurrent`
         - [ ] `Callable.class`
         - [ ] `Executors.class`
+        - [ ] `Future.class`
 
 --- 
 
@@ -98,6 +107,11 @@ NOTA: Não se trata de ficar ditando regras no trabalho da equipe, mas sim melho
 
 <a href="#FOWLER-Martin" id="da-analise-exploratoria">
 <img src="../../docs/imgs/DA - Análise de Repositório Genárico.drawio.png" alt="Diagrama: Documentação Elaboração do Diagrama de Atividade da Análise Exploratória Genérico" title="Documentação: Processo Genérico: Atividades da Análise Exploratória de um Repositório"/>
+</a>
+
+---
+<a href="#FOWLER-Martin" id="ds-estados-thread">
+<img src="../../docs/imgs/DS - Estados do thread.drawio.png" alt="Diagrama: Estados do thread!" title="Documentação: Diagrama Estados do thread"/>
 </a>
 
 ---

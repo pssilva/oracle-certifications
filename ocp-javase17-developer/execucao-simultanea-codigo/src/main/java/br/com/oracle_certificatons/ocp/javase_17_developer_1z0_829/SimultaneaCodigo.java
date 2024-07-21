@@ -5,6 +5,8 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.opentest4j.IncompleteExecutionException;
+
 /**
    * 
    * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
@@ -72,18 +74,50 @@ public class SimultaneaCodigo {
    * 
    * @author  Paulo Sérgio
    * @see     java.lang.Thread
-   * @see     java.util.concurrent.Callable
+   * @see     java.util.concurrent.Runnable
    * 
    * 
   */
 
-  public Runnable criandoThreadComRunneble(){
+  public Runnable criandoThreadComRunnable(){
     Runnable meuRunnable = () -> System.out.println("Criando Thread de Trabalho usando Runnable!");
     Thread meuThread = new Thread(meuRunnable);
     meuThread.start();
     return meuRunnable;
   }
 
+  /**
+   * 
+   * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
+   * <p align="justify">
+   * Gerenciando a Execução Simultânea (Concurrent) de Código:
+   * 
+   *  <ul> 
+   *    <li>Crie {@code Thread} de trabalho usando  {@code Runnable} e {@code Callable}</li>
+   * </ul>
+   * 
+   * <hr></br></br></br>
+   * <p>
+   * Procuere responder as <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#quest%C3%B5es-relevantes">Questões Relevantes</a>.
+   * 
+   * <p>
+   * E Aqui foque em responder também:
+   * 
+   * <ul>
+   *    <li>Qual é o Cenário ou o caso de uso mais indicado para se usar {@code Callable}?</li>
+   *    <li>Qual é a relação entre as classes: {@code Callable} e {@code Executors}?</li>
+   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Excesções com Execução Simultanea de Código?</li>
+   * </ul>
+   * 
+   * @author  Paulo Sérgio
+   * @see     java.lang.Thread
+   * @see     java.util.concurrent.Callable
+   * @see     java.util.concurrent.Executors
+   * @see     java.util.concurrent.Future
+   * 
+   * 
+   * 
+  */
   public Callable criandoThreadComCallable() throws InterruptedException, ExecutionException {
     
     Callable meuCallable = () -> 1+1;
@@ -101,5 +135,16 @@ public class SimultaneaCodigo {
    return meuCallable;
 
 	}
+/* 
+  public void gerencieCicloVidaThread() throws IncompleteExecutionException {
+
+    throw Exc
+
+  } */
+
+  public Object gerencieCicloVidaThread() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'gerencieCicloVidaThread'");
+  }
 
 }

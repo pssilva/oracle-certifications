@@ -20,7 +20,7 @@ class SimultaneaCodigoTest {
   @Test
   @Description("Crie Thread de trabalho usando Runnable")
   void testCriandoThreadComRunnable() {
-    assertInstanceOf(Runnable.class,simultaneaCodigo.criandoThreadComRunneble());
+    assertInstanceOf(Runnable.class,simultaneaCodigo.criandoThreadComRunnable());
   }
 
   @Test
@@ -28,5 +28,13 @@ class SimultaneaCodigoTest {
   void testCriandoThreadComCallable() throws InterruptedException, ExecutionException {
     assertInstanceOf(Callable.class,simultaneaCodigo.criandoThreadComCallable());
   }
+
+  @Test
+  @Description("Gerencie o ciclo de vida do Thread")
+  void testGerencieCicloVidaThread() {
+    assertInstanceOf(Callable.class,simultaneaCodigo.gerencieCicloVidaThread());
+  }
+
+  
 
 }
