@@ -21,8 +21,6 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
   - identificar, em projetos open-source, o uso dos conceitos na prática;
   - Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 
-
-
 ---
 
 ## 🔩 Débitos Técnicos

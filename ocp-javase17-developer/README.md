@@ -108,11 +108,11 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
   - [ ] Trabalhando com Streams e Expressões Lambda	
   - [ ] Empacotar e Implementar Código Java e Usar o Java Platform Module System	
   - [ ] Gerenciando a Execução Simultânea (Concurrent) de Código
-    - Veja mais detalhes em: [Objetivos - Gerenciando a Execução Simultânea (Concurrent) de Código](execucao-simultanea-codigo/README.md)
-  - [ ] Usando API de E/S Java	
-  - [ ] Acessando Bancos de Dados Usando JDBC	
-  - [ ] Implementando Localização	
-  - [ ] Candidatos Devem Supor o Seguinte	
+    - Veja mais detalhes em: [Objetivos - Gerenciando a Execução Simultânea (Concurrent) de Código](execucao-simultanea-codigo/README.md#objetivos-do-exame-ocp-abordados-neste-capítulo)
+  - [ ] Usando API de E/S Java
+  - [ ] Acessando Bancos de Dados Usando JDBC
+  - [ ] Implementando Localização
+  - [ ] Candidatos Devem Supor o Seguinte
   - [ ] Espera-se Também que os Candidatos
 - [ ] Criar um Caso de Uso para cada [Funcionalidade Java SE](#SELIKOFF-Scott) os seus respectivos Casos de Testes
   - [ ] Java Database Connectivity (JDBC)	
@@ -144,11 +144,8 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
   - [X] ~~instalação das Ferramentas de Desenvolvimento.~~
   - [ ] Criar automação para as principais funcionalidade (features) disponíveis no Java SE
 - [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
-  - [ ] Aplicar técncia para análise explorativa da implementação do [AxonFramework](https://github.com/AxonFramework/AxonFramework) e dos seus respectivos conceitos: [DDD, CQRS, Microservices e Event Sourcing](https://www.axoniq.io/concepts)
-  - [ ] Aplicar técncia para análise explorativa da implementação do [Axon Server](https://github.com/AxonIQ/axon-server-se)
+  - Aplicar técncia para [Análise Explorativa da Implementação dos Artefatos](#da-analise-exploratoria)
 - [ ] [Implementar Testes (TDD)](#GONZALEZ_Javier_cap_11): Técnica Red-Green-Refact
-- [ ] [Teste e Monitoramento de Aplicativos Simultâneos](#GONZALEZ_Javier_cap_11): Ferramenta Java VisualVM
-- [ ] Descrição sucinta da tarefa a ser feita aqui ......
 - [ ] Descrição sucinta [TRABALHO EM PROGRESSO]
 
 ### Atividades - DevOps
