@@ -1,8 +1,27 @@
 # Oracle Certifications: OCP Java SE 17 Developer
 
-## Gerenciando a Execução Simultânea / Concorrentes de Código
+
+--- 
+
+## OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO
+  
+### Gerenciando a Execução Simultânea / Concorrentes de Código
 
 Módulo dedicado para o processamento paralelo com a linguagem Java SE.
+
+  - Gerenciando a Execução Simultânea (Concurrent) de Código
+    * Crie threads de trabalho usando Runnable e Callable, gerencie o ciclo de vida do thread, incluindo automações fornecidas por diferentes serviços Executor e API simultânea
+    * Desenvolva código thread-safe, usando diferentes mecanismos de bloqueio e API simultânea
+    * Processe coleções Java simultaneamente, incluindo o uso de fluxos paralelos.
+  
+Procuro evidência as proficiências nas seguintes habilidades técnicas:
+
+- [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
+- Técnicas em [Análise Código-fonte Legados](#FEATHERS-michael);
+- Técnicas em [Refatoração Código-fonte Legados](#FEATHERS-michael);
+- Implementar Soluções usando algoritmos Reutilizáveis
+
+---
 
 ## Visão do Projeto
 
@@ -23,6 +42,14 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
 
 ---
 
+### Questões Relevantes
+
+Buscaresmos responder elaborando um áudio autoexplicatico com base no conteúdo programático de certificação do [Capítulo 13 ■ Simultaneidade (Concurrency)](#CAP-13-SELIKOFF-Scott):
+  - Como o sistema decide o que executar quando há mais threads disponíveis do que CPUs?
+  - Explique o motivo que devemos usar o método Thread.start() e não usar o Thread.run()?
+
+---
+
 ## 🔩 Débitos Técnicos
 
 Aqui temos uma lista do que idenficamos com status de pendente:
@@ -32,29 +59,17 @@ Aqui temos uma lista do que idenficamos com status de pendente:
 Segue abaixo (não se limita) os objetivos do presente projeto:
 
 - [X] ~~Formatando documentação README.md~~
+- [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
+  - [ ] Aplicar técncia para [Análise Explorativa da Implementação](#da-analise-exploratoria) dos Artefatos: 
+    - [ ] `${HOME}.sdkman/candidates/java/17.0.11-amzn/lib/jrt-fs.jar/java.base`
+      - [ ] `java.lang`
+        - [ ] `Thread.class`
+        - [ ] `Runnable.class`
+      - [ ] `java.util.concurrent`
+        - [ ] `Callable.class`
+        - [ ] `Executors.class`
 
 --- 
-
-## OBJETIVOS DO EXAME OCP ABORDADOS NESTE CAPÍTULO
-  
-  - Gerenciando a Execução Simultânea (Concurrent) de Código
-    * Crie threads de trabalho usando Runnable e Callable, gerencie o ciclo de vida do thread, incluindo automações fornecidas por diferentes serviços Executor e API simultânea
-    * Desenvolva código thread-safe, usando diferentes mecanismos de bloqueio e API simultânea
-    * Processe coleções Java simultaneamente, incluindo o uso de fluxos paralelos.
-  
-Procuro evidência as proficiências nas seguintes habilidades técnicas:
-
-- [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
-- Técnicas em [Análise Código-fonte Legados](#FEATHERS-michael);
-- Técnicas em [Refatoração Código-fonte Legados](#FEATHERS-michael);
-- Implementar Soluções usando algoritmos Reutilizáveis
-
-
-### Questões Relevantes
-
-Buscaresmos responder:
-
-#### Como o sistema decide o que executar quando há mais threads disponíveis do que CPUs?
 
 ### Mentalidade PDCA
 
@@ -94,6 +109,12 @@ Seque abaixo as referências bibliográficas usadas no presente projeto:
 
 <p align="justify"> 
 [<a id="SELIKOFF-Scott">SELIKOFF, Scott; BOYARSKY, Jeanne</a>]. OCP Oracle® Certified Professional Java SE 17 Developer Study Guide Exam 1Z0-829 1 Ed. Cidade da publicação: Editora, ano de publicação. 1056 páginas. 1 Ed. (Nome da série e/ou coleção, 978-1119864585). Disponível em: < <a href="https://a.co/d/08ATqoe7">https://a.co/d/08ATqoe7 </a> >. Acesso em: 03 jul. 2024.
+</p>
+
+---
+
+<p align="justify"> 
+[<a id="CAP-13-SELIKOFF-Scott">SELIKOFF, Scott; BOYARSKY, Jeanne</a>]. <a href="https://a.co/d/08ATqoe7">Capítulo 13 ■ Simultaneidade (Concurrency)</a> In:______ OCP Oracle® Certified Professional Java SE 17 Developer Study Guide Exam 1Z0-829 1 Ed. Cidade da publicação: Editora, ano de publicação. 1056 páginas. 1 Ed. (Nome da série e/ou coleção, 978-1119864585). Disponível em: < <a href="https://a.co/d/08ATqoe7"> https://a.co/d/08ATqoe7 </a> >. Acesso em: 03 jul. 2024.
 </p>
 
 ---

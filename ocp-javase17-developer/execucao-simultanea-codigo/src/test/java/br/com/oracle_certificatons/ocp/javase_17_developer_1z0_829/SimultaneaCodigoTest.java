@@ -9,9 +9,9 @@ class SimultaneaCodigoTest {
   SimultaneaCodigo simultaneaCodigo = new SimultaneaCodigo();
 
   @Test
-  void OneTest() {
-      assert(simultaneaCodigo.getOne() == 1);
-      assertEquals(1, simultaneaCodigo.getOne());
+  @Description("")
+  void testCriandoThread() {
+    assertInstanceOf(Thread.class,simultaneaCodigo.criandoThread());
   }
 
 }
