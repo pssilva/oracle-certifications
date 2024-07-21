@@ -13,7 +13,10 @@ Módulo dedicado para o processamento paralelo com a linguagem Java SE.
     * Crie threads de trabalho usando Runnable e Callable, gerencie o ciclo de vida do thread, incluindo automações fornecidas por diferentes serviços Executor e API simultânea
     * Desenvolva código thread-safe, usando diferentes mecanismos de bloqueio e API simultânea
     * Processe coleções Java simultaneamente, incluindo o uso de fluxos paralelos.
-  
+  --- 
+
+## Proficiências
+
 Procuro evidência as proficiências nas seguintes habilidades técnicas:
 
 - [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
