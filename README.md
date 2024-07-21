@@ -33,6 +33,7 @@ Tendo em mente que para cada Certificação:
 Procuro evidência as proficiências nas seguintes habilidades técnicas:
 
 - [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
+  - Aplicar técncia para [Análise Explorativa da Implementação dos Artefatos](#da-analise-exploratoria)
 - Técnicas em [Análise Código-fonte Legados](#FEATHERS-michael);
 - Técnicas em [Refatoração Código-fonte Legados](#FEATHERS-michael);
 - Implementar Soluções usando algoritmos Reutilizáveis
