@@ -70,7 +70,7 @@ public class SimultaneaCodigo {
    *    <li>Qual é o Cenário ou o caso de uso mais indicado para se usar {@code Runneble}?</li>
    * </ul>
    * 
-   * @author  Arthur van Hoff
+   * @author  Paulo Sérgio
    * @see     java.lang.Thread
    * @see     java.util.concurrent.Callable
    * 
