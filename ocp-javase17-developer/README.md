@@ -108,7 +108,7 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
   - [ ] Trabalhando com Streams e Expressões Lambda	
   - [ ] Empacotar e Implementar Código Java e Usar o Java Platform Module System	
   - [ ] Gerenciando a Execução Simultânea (Concurrent) de Código
-    - Veja mais detalhes em: [Objetivos - Gerenciando a Execução Simultânea (Concurrent) de Código](execucao-simultanea-codigo/README.md#objetivos-do-exame-ocp-abordados-neste-capítulo)
+    - Veja mais detalhes em: [Objetivos - Gerenciando a Execução Simultânea (Concurrent) de Código](execucao-simultanea-codigo/README.md#gerenciando-a-execução-simultânea--concorrentes-de-código)
   - [ ] Usando API de E/S Java
   - [ ] Acessando Bancos de Dados Usando JDBC
   - [ ] Implementando Localização
