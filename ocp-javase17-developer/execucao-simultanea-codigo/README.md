@@ -47,9 +47,21 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
 
 ### Questões Relevantes
 
-Buscaremos responder elaborando um áudio autoexplicatico com base no conteúdo programático de certificação do [Capítulo 13 ■ Simultaneidade (Concurrency)](#CAP-13-SELIKOFF-Scott):
+Com base no conteúdo programático de certificação do [Capítulo 13 ■ Simultaneidade (Concurrency)](#CAP-13-SELIKOFF-Scott), elaborando:
+
+  - Um áudio autoexplicatico;
+  - Escrever em papel 21x a questão e sua respectiva resposta
+  - Identificar as questões de Pegadinha mais usadas no Exame de Certificação
+  - Praticar em um Simulador de Prova no mínimo 21x
+
+ Buscaremos responder:
+
   - Como o sistema decide o que executar quando há mais threads disponíveis do que CPUs?
-  - Explique o motivo que devemos usar o método Thread.start() e não usar o Thread.run()?
+
+  - Explique o motivo que devemos usar o método `Thread.start()` e não usar o `Thread.run()`?
+
+  - Qual é o Cenário ou o Caso de Uso mais indicado para se usar `Runneble`?
+
 
 ---
 

@@ -49,6 +49,34 @@ public class SimultaneaCodigo {
     return meuThread;
   }
 
+  /**
+   * 
+   * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
+   * <p align="justify">
+   * Gerenciando a Execução Simultânea (Concurrent) de Código:
+   * 
+   *  <ul> 
+   *    <li>Crie {@code Thread} de trabalho usando  {@code Runnable} e {@code Callable}</li>
+   * </ul>
+   * 
+   * <hr></br></br></br>
+   * <p>
+   * Procuere responder as <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#quest%C3%B5es-relevantes">Questões Relevantes</a>.
+   * 
+   * <p>
+   * E Aqui foque em responder também:
+   * 
+   * <ul>
+   *    <li>Qual é o Cenário ou o caso de uso mais indicado para se usar {@code Runneble}?</li>
+   * </ul>
+   * 
+   * @author  Arthur van Hoff
+   * @see     java.lang.Thread
+   * @see     java.util.concurrent.Callable
+   * 
+   * 
+  */
+
   public Runnable criandoThreadComRunneble(){
     Runnable meuRunnable = () -> System.out.println("Criando Thread de Trabalho usando Runnable!");
     Thread meuThread = new Thread(meuRunnable);
@@ -59,7 +87,8 @@ public class SimultaneaCodigo {
   public Callable criandoThreadComCallable() throws InterruptedException, ExecutionException {
     
     Callable meuCallable = () -> 1+1;
-		var service = Executors.newSingleThreadExecutor();
+    var service = Executors.newSingleThreadExecutor();
+
     try {
 
       Future<Integer> result = service.submit(meuCallable);
@@ -68,10 +97,9 @@ public class SimultaneaCodigo {
     } finally {
       service.shutdown();
    }
-
-    return meuCallable;
+   
+   return meuCallable;
 
 	}
-
 
 }
