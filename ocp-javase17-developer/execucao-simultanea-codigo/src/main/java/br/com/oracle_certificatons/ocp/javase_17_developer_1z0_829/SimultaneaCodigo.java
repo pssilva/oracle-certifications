@@ -1,6 +1,11 @@
 package br.com.oracle_certificatons.ocp.javase_17_developer_1z0_829;
 
-  /**
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+/**
    * 
    * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
    * <p align="justify">Gerenciando a Execução Simultânea (Concurrent) de Código: </p>
@@ -15,7 +20,7 @@ package br.com.oracle_certificatons.ocp.javase_17_developer_1z0_829;
    *    <li>Incluindo o uso de fluxos paralelos (parallel streams).</li>
    * </ul>
    * 
-   * @see: <a href="https://github.com/pssilva/oracle-certifications/tree/main/ocp-javase17-developer/execucao-simultanea-codigo#objetivos-do-exame-ocp-abordados-neste-cap%C3%ADtulo">OBJETIVOS DO EXAME OCP ABORDADOS NESTE CAPÍTULO</a>
+   * @see: <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#gerenciando-a-execu%C3%A7%C3%A3o-simult%C3%A2nea--concorrentes-de-c%C3%B3digo">OBJETIVOS DO EXAME OCP ABORDADOS NESTE CAPÍTULO</a>
    *    
    *
    * 
@@ -32,24 +37,41 @@ public class SimultaneaCodigo {
    * </ul>
    * 
    * <hr><br /><br />
-   *<h4>Questões Relevantes</h4>
+   * Procuere responder as <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#quest%C3%B5es-relevantes">Questões Relevantes</a>
    * 
-   *<p>Buscaresmos responder:</p>
-   *<ul>
-   *    <li>Como o sistema decide o que executar quando há mais threads disponíveis do que CPUs?</li>
-   *    <li>Explique o motivo que devemos usar o método Thread.start() e não usar o Thread.run()?</li>
-   * </ul>
    * 
   */
   public Thread criandoThread(){
 
-    Thread meuThread = new Thread(() -> System.out.print("Hello"));
+    Thread meuThread = new Thread(() -> System.out.println("Criando um Thread!"));
     meuThread.start();
 
     return meuThread;
   }
 
+  public Runnable criandoThreadComRunneble(){
+    Runnable meuRunnable = () -> System.out.println("Criando Thread de Trabalho usando Runnable!");
+    Thread meuThread = new Thread(meuRunnable);
+    meuThread.start();
+    return meuRunnable;
+  }
 
-  
+  public Callable criandoThreadComCallable() throws InterruptedException, ExecutionException {
+    
+    Callable meuCallable = () -> 1+1;
+		var service = Executors.newSingleThreadExecutor();
+    try {
+
+      Future<Integer> result = service.submit(meuCallable);
+      System.out.println("criandoThreadComCallable = " + result.get()); 
+      
+    } finally {
+      service.shutdown();
+   }
+
+    return meuCallable;
+
+	}
+
 
 }
