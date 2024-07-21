@@ -145,7 +145,11 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
 - [ ] Scritps de Automação
   - [X] ~~instalação das Ferramentas de Desenvolvimento.~~
   - [ ] Criar Casos de Uso para as principais funcionalidade (features) disponíveis no Java SE
+<<<<<<< Updated upstream
   - [ ] Criar Casos de Uso para as principais as Java EE APIs (temos cerva de 27 APIs) 
+=======
+  - [ ] Criar Casos de Uso para as principais as Java EE APIs (temos cerca de 27 APIs)  
+>>>>>>> Stashed changes
 - [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
   - [ ] Aplicar técncia para análise explorativa da implementação do [AxonFramework](https://github.com/AxonFramework/AxonFramework) e dos seus respectivos conceitos: [DDD, CQRS, Microservices e Event Sourcing](https://www.axoniq.io/concepts)
   - [ ] Aplicar técncia para análise explorativa da implementação do [Axon Server](https://github.com/AxonIQ/axon-server-se)
