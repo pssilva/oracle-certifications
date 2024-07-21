@@ -47,7 +47,7 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
 
 ### Questões Relevantes
 
-Buscaresmos responder elaborando um áudio autoexplicatico com base no conteúdo programático de certificação do [Capítulo 13 ■ Simultaneidade (Concurrency)](#CAP-13-SELIKOFF-Scott):
+Buscaremos responder elaborando um áudio autoexplicatico com base no conteúdo programático de certificação do [Capítulo 13 ■ Simultaneidade (Concurrency)](#CAP-13-SELIKOFF-Scott):
   - Como o sistema decide o que executar quando há mais threads disponíveis do que CPUs?
   - Explique o motivo que devemos usar o método Thread.start() e não usar o Thread.run()?
 
