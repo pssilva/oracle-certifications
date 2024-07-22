@@ -231,7 +231,7 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](LICE
 
 ---
 
-## Referencias Usadas
+## Referências Usadas
 
 Seque abaixo as referências bibliográficas usadas no presente projeto:
 

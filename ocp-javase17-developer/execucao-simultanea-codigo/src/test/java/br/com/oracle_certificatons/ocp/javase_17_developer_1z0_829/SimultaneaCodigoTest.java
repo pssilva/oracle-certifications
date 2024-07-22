@@ -35,6 +35,10 @@ class SimultaneaCodigoTest {
     assertInstanceOf(Integer.class,simultaneaCodigo.gerencieCicloVidaThread());
   }
 
-  
+  @Test
+  @Description("Interromper Thread")
+  void testInterronperThread() {
+    assertInstanceOf(Integer.class,simultaneaCodigo.interronperThread());
+  }
 
 }

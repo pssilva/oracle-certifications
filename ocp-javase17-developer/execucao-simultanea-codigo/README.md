@@ -116,7 +116,7 @@ NOTA: Não se trata de ficar ditando regras no trabalho da equipe, mas sim melho
 
 ---
 
-## Referencias Usadas
+## Referências Usadas
 
 Seque abaixo as referências bibliográficas usadas no presente projeto:
 

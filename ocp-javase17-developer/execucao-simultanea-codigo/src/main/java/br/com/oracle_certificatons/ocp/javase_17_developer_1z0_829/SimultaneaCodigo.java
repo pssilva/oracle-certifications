@@ -5,6 +5,8 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -29,7 +31,20 @@ import java.util.concurrent.Future;
   */
 public class SimultaneaCodigo {
 
+  /**
+   * Variável de Contador Compartilhada
+   * 
+   * E Aqui foque em responder também:
+   * <ul>
+   *    <li>Qual é a melhor forma de se usar variável de contador compartilhada?</li>
+   *    <li>Qual é a relação do uso da variável de contador compartilhada com thread-safe?</li>
+   * </ul>
+   * 
+   * 
+  */
   private int counter = 0;
+
+  Logger logger = Logger.getLogger(getClass().getName());
 
   /**
    * 
@@ -77,11 +92,11 @@ public class SimultaneaCodigo {
    * @see     java.lang.Thread
    * @see     java.util.concurrent.Runnable
    * 
-   * 
   */
 
   public Runnable criandoThreadComRunnable(){
-    Runnable meuRunnable = () -> System.out.println("Criando Thread de Trabalho usando Runnable!");
+    Runnable meuRunnable = () -> logger.info("Criando Thread de Trabalho usando Runnable!"); 
+  
     Thread meuThread = new Thread(meuRunnable);
     meuThread.start();
     return meuRunnable;
@@ -108,6 +123,7 @@ public class SimultaneaCodigo {
    *    <li>Qual é o Cenário ou o caso de uso mais indicado para se usar {@code Callable}?</li>
    *    <li>Qual é a relação entre as classes: {@code Callable} e {@code Executors}?</li>
    *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Excesções com Execução Simultanea de Código?</li>
+   *    <li>Qual é a diferença entre criar Thread usando as classes {@code Callable} e {@code Runnable}?</li>
    * </ul>
    * 
    * @author  Paulo Sérgio
@@ -115,8 +131,6 @@ public class SimultaneaCodigo {
    * @see     java.util.concurrent.Callable
    * @see     java.util.concurrent.Executors
    * @see     java.util.concurrent.Future
-   * 
-   * 
    * 
   */
   public Callable criandoThreadComCallable() throws InterruptedException, ExecutionException {
@@ -127,7 +141,7 @@ public class SimultaneaCodigo {
     try {
 
       Future<Integer> result = service.submit(meuCallable);
-      System.out.println("criandoThreadComCallable = " + result.get()); 
+      logger.info("criandoThreadComCallable = " + result.get()); 
       
     } finally {
       service.shutdown();
@@ -157,7 +171,12 @@ public class SimultaneaCodigo {
    * 
    * <ul>
    *    <li>Quais são os Estados de uma {@code Thread}? Veja em: <a href="https://github.com/pssilva/oracle-certifications/tree/main/ocp-javase17-developer/execucao-simultanea-codigo#ds-estados-thread">Diagrama Estados Thread</a></li>
-   *    <li>Como podemos consultar o estado de um {@code Thread}?</li>
+   *    <li>Como podemos consultar o estado de um {@code Thread}? {@code meuThread.getState()}</li>
+   *    <li>Qual é a melhor forma de se usar variável de contador compartilhada?</li>
+   *    <li>Qual é a relação do uso da variável de contador compartilhada com thread-safe?</li>
+   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Excesções com Execução Simultanea de Código?</li>
+   * 
+   * 
    * </ul>
    * 
    * @author  Paulo Sérgio
@@ -166,35 +185,90 @@ public class SimultaneaCodigo {
    * @see     java.util.concurrent.Executors
    * @see     java.util.concurrent.Future
    * 
-   * 
-   * 
   */
   public int gerencieCicloVidaThread() {
     Thread meuThread = new Thread(() -> {
       for(int i = 0; i < 1_000_000; i++) this.counter++;
     });
 
-    System.out.println("Estatus Thread = " + meuThread.getState());
+    //System.out.println("Etado Thread = " + meuThread.getState());
+    logger.info("Etado Thread = " + meuThread.getState());
     meuThread.start();
 
-    System.out.println("Estatus Thread = " + meuThread.getState());
+    //System.out.println("Etado Thread = " + meuThread.getState());
+    logger.info("Etado Thread = " + meuThread.getState());
 
     while(this.counter < 1_000_000) {
-      System.out.println("Ainda não alcançado");
-      System.out.println("Estatus Thread = " + meuThread.getState());
+      logger.info("Ainda não alcançado");
+      logger.info("Etado Thread = " + meuThread.getState());
         try {
           Thread.sleep(1_000); // 1 SECOND
-          System.out.println("Estatus Thread = " + meuThread.getState());
+          logger.info("Etado Thread = " + meuThread.getState());
         } catch (InterruptedException e) {
-          System.out.println("Interrompida!");
+          logger.info("Interrompida!");
         } finally {
           meuThread=null;
        }
     }
-    System.out.println("Reached: " + this.counter);
+
+    logger.log(Level.INFO, "Reached: {0}", this.counter);
 
     return counter;
   } 
 
+  /**
+   * 
+   * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
+   * <p align="justify">
+   * Gerenciando a Execução Simultânea (Concurrent) de Código:
+   * 
+   *  <ul> 
+   *    <li>Gerencie o ciclo de vida do {@code Thread}</li>
+   * </ul>
+   * 
+   * <hr></br></br></br>
+   * <p>
+   * Procuere responder as <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#quest%C3%B5es-relevantes">Questões Relevantes</a>.
+   * 
+   * <p>
+   * E Aqui foque em responder também:
+   * 
+   * <ul>
+   *    <li>Como interromper uma {@code Thread}?</li> 
+   *    <li>Como pegar a instância da Main {@code Thread} (principal)?</li> 
+   *    <li>O quê ocorre ao Chamar {@code Thread.interrupt()} em um thread que já está no estado {@code RUNNABLE}?</li> 
+   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Excesções com Execução Simultanea de Código?</li>
+   * </ul>
+   * 
+   * @author  Paulo Sérgio
+   * @see     java.lang.Thread
+   * 
+  */
+  public int interronperThread() {
+    
+    final var mainThread = Thread.currentThread();
+
+    Thread meuThread = new Thread(() -> {
+      for(int i = 0; i < 1_000_000; i++) this.counter++;
+      mainThread.interrupt();
+    });
+
+    meuThread.start();
+    while(counter < 1_000_000) {
+      logger.info("Ainda não alcançado");
+      try {
+         Thread.sleep(1_000);  // 1 SECOND
+      } catch (InterruptedException e) {
+         logger.info("Interrompido!");
+      }
+   }
+   
+   logger.log(Level.INFO, "Alcançada: {0}", this.counter);
+
+    return this.counter;
+  }
+
 
 }
+
+
