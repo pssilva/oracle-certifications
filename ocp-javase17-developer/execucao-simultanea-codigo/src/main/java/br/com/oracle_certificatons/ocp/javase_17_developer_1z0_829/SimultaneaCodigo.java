@@ -1,11 +1,11 @@
 package br.com.oracle_certificatons.ocp.javase_17_developer_1z0_829;
 
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import org.opentest4j.IncompleteExecutionException;
 
 /**
    * 
@@ -29,6 +29,7 @@ import org.opentest4j.IncompleteExecutionException;
   */
 public class SimultaneaCodigo {
 
+  private int counter = 0;
 
   /**
    * 
@@ -135,16 +136,65 @@ public class SimultaneaCodigo {
    return meuCallable;
 
 	}
-/* 
-  public void gerencieCicloVidaThread() throws IncompleteExecutionException {
 
-    throw Exc
 
-  } */
+  /**
+   * 
+   * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
+   * <p align="justify">
+   * Gerenciando a Execução Simultânea (Concurrent) de Código:
+   * 
+   *  <ul> 
+   *    <li> Gerencie o ciclo de vida do {@code Thread}</li>
+   * </ul>
+   * 
+   * <hr></br></br></br>
+   * <p>
+   * Procuere responder as <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#quest%C3%B5es-relevantes">Questões Relevantes</a>.
+   * 
+   * <p>
+   * E Aqui foque em responder também:
+   * 
+   * <ul>
+   *    <li>Quais são os Estados de uma {@code Thread}? Veja em: <a href="https://github.com/pssilva/oracle-certifications/tree/main/ocp-javase17-developer/execucao-simultanea-codigo#ds-estados-thread">Diagrama Estados Thread</a></li>
+   *    <li>Como podemos consultar o estado de um {@code Thread}?</li>
+   * </ul>
+   * 
+   * @author  Paulo Sérgio
+   * @see     java.lang.Thread
+   * @see     java.util.concurrent.Callable
+   * @see     java.util.concurrent.Executors
+   * @see     java.util.concurrent.Future
+   * 
+   * 
+   * 
+  */
+  public int gerencieCicloVidaThread() {
+    Thread meuThread = new Thread(() -> {
+      for(int i = 0; i < 1_000_000; i++) this.counter++;
+    });
 
-  public Object gerencieCicloVidaThread() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'gerencieCicloVidaThread'");
-  }
+    System.out.println("Estatus Thread = " + meuThread.getState());
+    meuThread.start();
+
+    System.out.println("Estatus Thread = " + meuThread.getState());
+
+    while(this.counter < 1_000_000) {
+      System.out.println("Ainda não alcançado");
+      System.out.println("Estatus Thread = " + meuThread.getState());
+        try {
+          Thread.sleep(1_000); // 1 SECOND
+          System.out.println("Estatus Thread = " + meuThread.getState());
+        } catch (InterruptedException e) {
+          System.out.println("Interrompida!");
+        } finally {
+          meuThread=null;
+       }
+    }
+    System.out.println("Reached: " + this.counter);
+
+    return counter;
+  } 
+
 
 }

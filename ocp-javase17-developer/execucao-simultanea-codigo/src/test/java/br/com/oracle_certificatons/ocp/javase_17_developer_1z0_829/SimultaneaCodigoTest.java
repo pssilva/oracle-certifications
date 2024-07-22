@@ -32,7 +32,7 @@ class SimultaneaCodigoTest {
   @Test
   @Description("Gerencie o ciclo de vida do Thread")
   void testGerencieCicloVidaThread() {
-    assertInstanceOf(Callable.class,simultaneaCodigo.gerencieCicloVidaThread());
+    assertInstanceOf(Integer.class,simultaneaCodigo.gerencieCicloVidaThread());
   }
 
   
