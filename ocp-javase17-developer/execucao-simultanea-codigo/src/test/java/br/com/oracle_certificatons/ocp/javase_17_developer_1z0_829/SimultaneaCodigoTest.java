@@ -4,7 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
 
+import org.apiguardian.api.API;
 import org.junit.jupiter.api.Test;
 
 class SimultaneaCodigoTest {
@@ -39,6 +41,12 @@ class SimultaneaCodigoTest {
   @Description("Interromper Thread")
   void testInterronperThread() {
     assertInstanceOf(Integer.class,simultaneaCodigo.interronperThread());
+  }
+
+  @Test
+  @Description("Criando Threads Com a API de Simultaneidade")
+  void testCriandoThreadAPISimultaneidade(){
+    assertInstanceOf(ExecutorService.class,simultaneaCodigo.criandoThreadAPISimultaneidade());
   }
 
 }

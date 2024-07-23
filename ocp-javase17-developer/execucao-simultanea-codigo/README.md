@@ -116,6 +116,12 @@ NOTA: Não se trata de ficar ditando regras no trabalho da equipe, mas sim melho
 
 ---
 
+<a href="#FOWLER-Martin" id="ds-ciclo-vida-executor-service">
+<img src="../../docs/imgs/DS - Ciclo de vida do ExecutorService.drawio.png" alt="Diagrama: Ciclo de vida do ExecutorService!" title="Documentação: Ciclo de vida do ExecutorService"/>
+</a>
+
+---
+
 ## Referências Usadas
 
 Seque abaixo as referências bibliográficas usadas no presente projeto:

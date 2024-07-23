@@ -3,6 +3,8 @@ package br.com.oracle_certificatons.ocp.javase_17_developer_1z0_829;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.logging.Level;
@@ -19,7 +21,7 @@ import java.util.logging.Logger;
    *    <li>Incluindo automações fornecidas por diferentes serviços Executor e API</li>
    *    <li>Simultânea Desenvolva código thread-safe,</li>
    *    <li>Usando diferentes mecanismos de bloqueio</li>
-   *    <li>Usando API simultânea</li>
+   *    <li>Criando Threads Com a API de Simultaneidade</li>
    *    <li>Processe coleções Java simultaneamente,</li>
    *    <li>Incluindo o uso de fluxos paralelos (parallel streams).</li>
    * </ul>
@@ -262,13 +264,63 @@ public class SimultaneaCodigo {
          logger.info("Interrompido!");
       }
    }
-   
+
    logger.log(Level.INFO, "Alcançada: {0}", this.counter);
 
     return this.counter;
   }
 
+  /**
+   * 
+   * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
+   * <p align="justify">
+   * Gerenciando a Execução Simultânea (Concurrent) de Código:
+   * 
+   *  <ul> 
+   *    <li>Criando Threads Com a API de Simultaneidade</li>
+   * </ul>
+   * 
+   * <hr></br></br></br>
+   * <p>
+   * Procuere responder as <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#quest%C3%B5es-relevantes">Questões Relevantes</a>.
+   * 
+   * <p>
+   * E Aqui foque em responder também:
+   * 
+   * <ul>
+   *    <li>Como interromper uma {@code Thread}?</li> 
+   * </ul>
+   * 
+   * @author  Paulo Sérgio
+   * @see     java.lang.Thread
+   * @see     java.util.concurrent.Executors
+   * @see     java.util.concurrent.ExecutorService
+   * 
+  */
+  public ExecutorService criandoThreadAPISimultaneidade(){
+
+    var service = Executors.newSingleThreadExecutor();
+
+    Runnable mostrarInventario = () -> logger.log(Level.INFO, "Mostrando o inventário do Zoo");
+    Runnable mostrarRegistro = () -> {
+      for (int i = 0; i < 3; i++)
+          logger.log(Level.INFO, "Mostrando Registro: {0}", i);
+    };
+
+    try {
+      logger.log(Level.INFO, "início!");
+      service.execute(mostrarInventario);
+      service.execute(mostrarRegistro);
+      service.execute(mostrarInventario);
+      logger.log(Level.INFO, "Fim!");
+    } finally {
+      service.shutdown();
+    }
+    return service;
+  }
 
 }
 
+
+  
 
