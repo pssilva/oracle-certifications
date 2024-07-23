@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 
 import org.apiguardian.api.API;
 import org.junit.jupiter.api.Test;
@@ -48,5 +49,19 @@ class SimultaneaCodigoTest {
   void testCriandoThreadAPISimultaneidade(){
     assertInstanceOf(ExecutorService.class,simultaneaCodigo.criandoThreadAPISimultaneidade());
   }
+
+  @Test
+  @Description("Desligando Um Executor de Thread")
+  void testDesligandoExecutorService(){
+    assertInstanceOf(Future.class,simultaneaCodigo.desligandoExecutorService(5));
+  }
+
+  @Test
+  @Description("Aguardando Resultados")
+  void aguardandoresultadoFuture(){
+    assertInstanceOf(Future.class,simultaneaCodigo.aguardandoresultadoFuture());
+  }
+
+  
 
 }

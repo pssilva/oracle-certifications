@@ -76,7 +76,6 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
 - [X] ~~Formatando documentação README.md~~
 - [X] ~~Diagrama de Estado: [Estados da Thread](#ds-estados-thread)~~
 - [X] ~~Diagrama de Estado: [Ciclo de Vida java.util.concurrent.ExecutorService](#ds-ciclo-vida-executor-service)~~
-
 - [ ] Para Todo Conteúdo programático Certificação do presente módulo: 
   - [X] ~~Do Conteúdo programático identificar os objetivos;~~
   - [ ] Para cada Objetivo dos Tópicos, explodir em habilidades;
@@ -126,7 +125,7 @@ NOTA: Não se trata de ficar ditando regras no trabalho da equipe, mas sim melho
 
 ## Referências Usadas
 
-Seque abaixo as referências bibliográficas usadas no presente projeto:
+Segue abaixo as referências bibliográficas usadas no presente projeto:
 
 ### Livros
 

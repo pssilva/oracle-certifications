@@ -193,7 +193,7 @@ Tendo em mente que sempre buscamos melhorar o protocolo de trabalho operacinal d
 
 ## 🛠️ Construído com
 
-Seque aqui as ferramentas utilizadas na construção presente projeto:
+Segue aqui as ferramentas utilizadas na construção presente projeto:
 
 ### Ferramentas
 
@@ -243,7 +243,7 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](LICE
 
 ## Referências Usadas
 
-Seque abaixo as referências bibliográficas usadas no presente projeto:
+Segue abaixo as referências bibliográficas usadas no presente projeto:
 
 ### Livros
 

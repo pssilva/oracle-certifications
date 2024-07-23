@@ -3,10 +3,11 @@ package br.com.oracle_certificatons.ocp.javase_17_developer_1z0_829;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -112,6 +113,7 @@ public class SimultaneaCodigo {
    * 
    *  <ul> 
    *    <li>Crie {@code Thread} de trabalho usando  {@code Runnable} e {@code Callable}</li>
+   *    <li>Incluindo automações fornecidas por diferentes serviços Executor e API</li>
    * </ul>
    * 
    * <hr></br></br></br>
@@ -124,7 +126,7 @@ public class SimultaneaCodigo {
    * <ul>
    *    <li>Qual é o Cenário ou o caso de uso mais indicado para se usar {@code Callable}?</li>
    *    <li>Qual é a relação entre as classes: {@code Callable} e {@code Executors}?</li>
-   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Excesções com Execução Simultanea de Código?</li>
+   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Exceções com Execução Simultanea de Código?</li>
    *    <li>Qual é a diferença entre criar Thread usando as classes {@code Callable} e {@code Runnable}?</li>
    * </ul>
    * 
@@ -176,7 +178,7 @@ public class SimultaneaCodigo {
    *    <li>Como podemos consultar o estado de um {@code Thread}? {@code meuThread.getState()}</li>
    *    <li>Qual é a melhor forma de se usar variável de contador compartilhada?</li>
    *    <li>Qual é a relação do uso da variável de contador compartilhada com thread-safe?</li>
-   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Excesções com Execução Simultanea de Código?</li>
+   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Exceções com Execução Simultanea de Código?</li>
    * 
    * 
    * </ul>
@@ -239,7 +241,7 @@ public class SimultaneaCodigo {
    *    <li>Como interromper uma {@code Thread}?</li> 
    *    <li>Como pegar a instância da Main {@code Thread} (principal)?</li> 
    *    <li>O quê ocorre ao Chamar {@code Thread.interrupt()} em um thread que já está no estado {@code RUNNABLE}?</li> 
-   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Excesções com Execução Simultanea de Código?</li>
+   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Exceções com Execução Simultanea de Código?</li>
    * </ul>
    * 
    * @author  Paulo Sérgio
@@ -319,8 +321,121 @@ public class SimultaneaCodigo {
     return service;
   }
 
-}
+  /**
+   * 
+   * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
+   * <p align="justify">
+   * Gerenciando a Execução Simultânea (Concurrent) de Código:
+   * 
+   *  <ul> 
+   *    <li>Desligando Um Executor de {@code Thread}</li>
+   *    <li>Incluindo automações fornecidas por diferentes serviços Executor e API</li>
+   * </ul>
+   * 
+   * <hr></br></br></br>
+   * <p>
+   * Procuere responder as <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#quest%C3%B5es-relevantes">Questões Relevantes</a>.
+   * 
+   * <p>
+   * E Aqui foque em responder também:
+   * 
+   * <ul>
+   *    <li>Como desligar um {@code ExecutorService} de {@code Thread}?</li> 
+   *    <li>Qual é o Ciclo de Vida de um {@code ExecutorService} de {@code Thread}? Veja em <a href="https://github.com/pssilva/oracle-certifications/tree/main/ocp-javase17-developer/execucao-simultanea-codigo#ds-ciclo-vida-executor-service">Ciclo de Vida java.util.concurrent.ExecutorService</a></li> 
+   *    <li>Explique a relação entre os tópidos de certificcação: Tratamento de Exceções com Execução Simultanea de Código?</li>
+   *    <li>Explique o motivo que devemos fechar adequadamente {@code ExecutorService}de {@code Thread}?</li>
+   *    <li>Qual é a melhor forma para criarmos a nossa interface {@code ExecutorService} que estenda interface AutoCloseable? O motivo é ser possível usar usar uma instrução try-with-resources.</li>
+   *    <li>Explique a Submição de tarefas: {@code ExecutorService.execute()} vs. {@code ExecutorService.submit()}?</li>
+   * 
+   * </ul>
+   * 
+   * @author  Paulo Sérgio
+   * @see     java.lang.Thread
+   * @see     java.util.concurrent.Executors
+   * @see     java.util.concurrent.ExecutorService
+   * @see     java.util.concurrent.Future
+   * 
+   * 
+  */
+  public Future<?> desligandoExecutorService(int idxs){
 
+    var service = Executors.newSingleThreadExecutor();
+
+    Runnable mostrarInventario = () -> logger.log(Level.INFO, "Mostrando o inventário do Zoo");
+    Runnable mostrarRegistro = () -> {
+      for (int i = 0; i <= idxs; i++)
+          logger.log(Level.INFO, "Mostrando Registro: {0}", i);
+    };
+    Future<?> futureSubmit=null;
+    try {
+      logger.log(Level.INFO, "início!");
+      futureSubmit = service.submit(mostrarInventario);
+      futureSubmit = service.submit(mostrarRegistro);
+      logger.log(Level.INFO, "Fim!");
+    } finally {
+      service.shutdown();
+    }
+    return futureSubmit;
+  }
+
+
+
+  /**
+   * 
+   * <h3>OBJETIVOS DO EXAME OCP ABORDADOS NESTE MÓDULO</h3>
+   * <p align="justify">
+   * Gerenciando a Execução Simultânea (Concurrent) de Código:
+   * 
+   *  <ul> 
+   *    <li>Desligando Um Executor de {@code Thread}</li>
+   *    <li>Incluindo automações fornecidas por diferentes serviços Executor e API</li>
+   * </ul>
+   * 
+   * <hr></br></br></br>
+   * <p>
+   * Procuere responder as <a href="https://github.com/pssilva/oracle-certifications/blob/main/ocp-javase17-developer/execucao-simultanea-codigo/README.md#quest%C3%B5es-relevantes">Questões Relevantes</a>.
+   * 
+   * <p>
+   * E Aqui foque em responder também:
+   * 
+   * <ul>
+   *    <li>Qual é a melhor forma de aguarda um restultado usando {@code java.util.concurrent.Future}de {@code Thread}?</li>
+   * </ul>
+   * 
+   * @author  Paulo Sérgio
+   * @see     java.lang.Thread
+   * @see     java.util.concurrent.Executors
+   * @see     java.util.concurrent.ExecutorService
+   * @see     java.util.concurrent.Future
+   * 
+   * 
+  */
+  public Future<Task> aguardandoresultadoFuture(){
+
+    var service = Executors.newSingleThreadExecutor();
+    Future<Task> result = null;
+
+    Runnable mostrarInventario = () -> logger.log(Level.INFO, "Mostrando o inventário do Zoo");
+    Runnable mostrarRegistro = () -> {
+      for (int i = 0; i <= 5; i++)
+          logger.log(Level.INFO, "Mostrando Registro: {0}", i);
+    };
+    try {
+      logger.log(Level.INFO, "início!");
+      result = (Future<Task>) service.submit(() ->  {
+          for(int i = 0; i < 1_000_000; i++) counter++;
+        });
+      result.get(10, TimeUnit.SECONDS); // Returns null for Runnable
+      logger.log(Level.INFO, "Fim!");
+
+    } catch (InterruptedException | ExecutionException | TimeoutException e) {
+      logger.log(Level.WARNING, "Não alcançado a tempo", e);
+      Thread.currentThread().interrupt();
+    } finally {
+      service.shutdown();
+    }
+    return result;
+  }
 
   
-
+}
