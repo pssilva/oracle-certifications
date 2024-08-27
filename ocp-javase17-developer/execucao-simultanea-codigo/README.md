@@ -34,14 +34,13 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
     - [Java SE 17 Developer
 (Exam Number: 1Z0-829)](https://education.oracle.com/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-829/pexam_1Z0-829)
  
- Tendo em mente que para a presente Certificação: 
+Tendo em mente que para a presente Certificação, para O Conteúdo programático identificar:
+- Objetivo dos Tópicos, para cada tópico, explodir em Habilidades;
+- Para cada habilidade, identificar boas práticas e seus usos Empírico;
+- Identificar a forma do como é cobrado o conhecimento no exame;
+- identificar, em projetos open-source, o uso dos conceitos na prática;
+- Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 
-  - O Conteúdo programático identificar os objetivos;
-  - Para cada Objetivo dos Tópicos, explodir em habilidades;
-  - Para cada habilidade, identificar boas práticas de uso Empírico;
-  - Identificar a forma de como é cobrado o conhecimento no exame;
-  - identificar, em projetos open-source, o uso dos conceitos na prática;
-  - Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 
 ---
 
