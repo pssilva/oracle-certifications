@@ -1,13 +1,11 @@
 package br.com.oracle_certificatons.ocp.javase_17_developer_1z0_829;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
-import org.apiguardian.api.API;
+import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import org.junit.jupiter.api.Test;
 
 class SimultaneaCodigoTest {
