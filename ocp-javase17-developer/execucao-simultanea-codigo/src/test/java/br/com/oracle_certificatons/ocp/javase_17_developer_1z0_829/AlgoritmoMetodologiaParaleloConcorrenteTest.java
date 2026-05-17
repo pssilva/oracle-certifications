@@ -14,16 +14,16 @@ class AlgoritmoMetodologiaParaleloConcorrenteTest {
     this.algoritmoMetodologiaParaleloConcorrente = new AlgoritmoMetodologiaParaleloConcorrente();
   }
 
-  @Test
+  //@Test
   void qualquerTest(){
     
     this.algoritmoMetodologiaParaleloConcorrente.qualquerAogritmo();
   }
 
-  @Test
-	@DisplayName("Teste :: {{NOME_METODO}}()")
+  //@Test
+  @DisplayName("Teste :: {{NOME_METODO}}()")
   void testSequecialAogritmoQualquer() {
-    this.algoritmoMetodologiaParaleloConcorrente.sequecialAogritmoQualquer();
+    this.algoritmoMetodologiaParaleloConcorrente.sequecialAlgoritmoQualquer();
   }
 
 

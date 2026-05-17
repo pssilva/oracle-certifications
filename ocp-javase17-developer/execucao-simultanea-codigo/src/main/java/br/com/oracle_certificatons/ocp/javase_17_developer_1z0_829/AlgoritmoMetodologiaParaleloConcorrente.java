@@ -4,7 +4,7 @@ package br.com.oracle_certificatons.ocp.javase_17_developer_1z0_829;
 
 public class AlgoritmoMetodologiaParaleloConcorrente {
 
-  public void sequecialAogritmoQualquer(){
+  public void sequecialAlgoritmoQualquer(){
 
     throw new UnsupportedOperationException("Unimplemented method 'qualquerAogritmo'");
 
