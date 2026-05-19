@@ -27,7 +27,18 @@ package br.com.building_blocks;
  * </ul>
  * <p> Para mais detalhes veja em:
  *
- * @see <a href="https://github.com/pssilva/oracle-certifications/tree/main/ocp-javase25-developer" >Oracle Certifications: OCP Java SE 25 Developer</a>
+ * @see <a href="https://github.com/pssilva/oracle-certifications/tree/main/ocp-javase25-developer#t%C3%B3picos-da-certifica%C3%A7%C3%A3o" >Oracle Certifications: OCP Java SE 25 Developer :: Tópicos da Certificação</a>
  */
 public class BuildingBlocksPracticalClass {
+
+    public BuildingBlocksPracticalClass() {
+    }
+
+    public static void main(String[] args){
+
+        Animal animal = new Animal();
+        animal.setName("Panda");
+        System.out.println(animal.getName());
+
+    }
 }
