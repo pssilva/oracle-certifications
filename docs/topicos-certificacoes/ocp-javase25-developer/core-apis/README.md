@@ -17,15 +17,15 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
--[ ] Manipulação de Data, Hora, Texto, Valores Numéricos e Booleanos
-  -[ ] Utilizar tipos primitivos e classes wrapper. 
-  -[ ] Avaliar expressões aritméticas e booleanas, utilizando a API Math
-  -[ ] Aplicando regras de precedência, conversões de tipo e casting
-  -[ ] Manipular texto, incluindo blocos de texto
-    -[ ] Utilizando as classes String e StringBuilder
-  -[ ] Manipular objetos de data, hora, duração, período, instante e fuso horário, incluindo horário de verão
-    -[ ] utilizando a API Date-Time.
+- [ ] Manipulação de Data, Hora, Texto, Valores Numéricos e Booleanos
+  - [ ] Utilizar tipos primitivos e classes wrapper. 
+  - [ ] Avaliar expressões aritméticas e booleanas, utilizando a API Math
+  - [ ] Aplicando regras de precedência, conversões de tipo e casting
+  - [ ] Manipular texto, incluindo blocos de texto
+    - [ ] Utilizando as classes String e StringBuilder
+  - [ ] Manipular objetos de data, hora, duração, período, instante e fuso horário, incluindo horário de verão
+    - [ ] utilizando a API Date-Time.
 
 - [ ] Trabalhar com Arrays e Coleções
-  -[ ] Criar arrays, 
-  -[ ] Coleções List, Set, Map e Deque, e adicionar, remover, atualizar, recuperar e ordenar seus elementos.
+  - [ ] Criar arrays, 
+  - [ ] Coleções List, Set, Map e Deque, e adicionar, remover, atualizar, recuperar e ordenar seus elementos.

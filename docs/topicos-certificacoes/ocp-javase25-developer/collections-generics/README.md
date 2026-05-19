@@ -17,5 +17,5 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
--[ ] Trabalhando com Arrays e Coleções
-  -[ ] Criar arrays, coleções List, Set, Map e Deque, e adicionar, remover, atualizar, recuperar e ordenar seus elementos.
+- [ ] Trabalhando com Arrays e Coleções
+  - [ ] Criar arrays, coleções List, Set, Map e Deque, e adicionar, remover, atualizar, recuperar e ordenar seus elementos.

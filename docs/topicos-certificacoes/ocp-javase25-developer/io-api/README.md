@@ -17,7 +17,7 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
--[ ] Utilizando a API de E/S do Java
-  -[ ] Ler e gravar dados no console e em arquivos usando fluxos de E/S.
-  -[ ] Serializar e desserializar objetos Java.
-  -[ ] Construir, percorrer, criar, ler e gravar objetos Path e suas propriedades usando a API java.nio.file.
+- [ ] Utilizando a API de E/S do Java
+  - [ ] Ler e gravar dados no console e em arquivos usando fluxos de E/S.
+  - [ ] Serializar e desserializar objetos Java.
+  - [ ] Construir, percorrer, criar, ler e gravar objetos Path e suas propriedades usando a API java.nio.file.

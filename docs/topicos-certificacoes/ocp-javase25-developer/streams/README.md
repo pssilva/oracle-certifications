@@ -17,8 +17,8 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
--[ ] Trabalhando com Streams e Expressões Lambda
-  -[ ] Use Streams de objetos e tipos primitivos do Java
-    -[ ] incluindo expressões lambda que implementam interfaces funcionais, para criar, filtrar 
-    -[ ] transformar, processar e ordenar dados
-  -[ ] Realize decomposição, concatenação, redução, agrupamento e particionamento em fluxos sequenciais e paralelos.
+- [ ] Trabalhando com Streams e Expressões Lambda
+  - [ ] Use Streams de objetos e tipos primitivos do Java
+    - [ ] incluindo expressões lambda que implementam interfaces funcionais, para criar, filtrar 
+    - [ ] transformar, processar e ordenar dados
+  - [ ] Realize decomposição, concatenação, redução, agrupamento e particionamento em fluxos sequenciais e paralelos.

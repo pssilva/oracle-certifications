@@ -17,11 +17,11 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
--[ ] Empacotamento e Implantação de Código Java
-  -[ ] Definir módulos e expor o conteúdo dos módulos, 
-    -[ ] Inclusive por meio de reflexão,
-    -[ ] Declarar dependências de módulos
-    -[ ] Definir serviços, provedores e consumidores.
-  -[ ] Compilar código Java, criar JARs modulares e não modulares
-    -[ ] Imagens de tempo de execução
-    -[ ] implementar a migração para módulos usando módulos anônimos e automáticos.
+- [ ] Empacotamento e Implantação de Código Java
+  - [ ] Definir módulos e expor o conteúdo dos módulos, 
+    - [ ] Inclusive por meio de reflexão,
+    - [ ] Declarar dependências de módulos
+    - [ ] Definir serviços, provedores e consumidores.
+  - [ ] Compilar código Java, criar JARs modulares e não modulares
+    - [ ] Imagens de tempo de execução
+    - [ ] implementar a migração para módulos usando módulos anônimos e automáticos.

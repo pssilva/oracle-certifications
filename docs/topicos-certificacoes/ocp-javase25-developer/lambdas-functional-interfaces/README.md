@@ -18,15 +18,15 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
 - [ ] Utilizar Conceitos de Orientação a Objetos em Java
-  -[ ] Declarar e instanciar objetos Java
-  -[ ] Incluindo objetos de classes aninhadas
-  -[ ] Explicar o ciclo de vida do objeto,
-  -[ ] incluindo criação, reatribuição de referências
-  -[ ] coleta de lixo
-  -[ ] Compreender escopos de variáveis
-  -[ ] aplicar encapsulamento
-  -[ ] criar objetos imutáveis
-  -[ ] Utilizar inferência de tipo de variável local.
+  - [ ] Declarar e instanciar objetos Java
+  - [ ] Incluindo objetos de classes aninhadas
+  - [ ] Explicar o ciclo de vida do objeto,
+  - [ ] incluindo criação, reatribuição de referências
+  - [ ] coleta de lixo
+  - [ ] Compreender escopos de variáveis
+  - [ ] aplicar encapsulamento
+  - [ ] criar objetos imutáveis
+  - [ ] Utilizar inferência de tipo de variável local.
   - [ ] Implementar herança, incluindo tipos abstratos e selados
   - [ ] Bem como classes de registro.
   - [ ] Sobrescrever métodos, incluindo os da classe Object.

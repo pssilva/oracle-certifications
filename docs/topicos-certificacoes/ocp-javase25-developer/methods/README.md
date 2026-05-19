@@ -17,8 +17,8 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
- -[ ] Usando Conceitos de Orientação a Objetos em Java
-   -[ ] Criar classes e registros
-     -[ ] Definir e usar campos e métodos de instância e estáticos 
-     -[ ] Construtores e inicializadores de instância e estáticos
-   -[ ] Implementar métodos sobrecarregados, incluindo métodos com argumentos variáveis (var-args).
+ - [ ] Usando Conceitos de Orientação a Objetos em Java
+   - [ ] Criar classes e registros
+     - [ ] Definir e usar campos e métodos de instância e estáticos 
+     - [ ] Construtores e inicializadores de instância e estáticos
+   - [ ] Implementar métodos sobrecarregados, incluindo métodos com argumentos variáveis (var-args).

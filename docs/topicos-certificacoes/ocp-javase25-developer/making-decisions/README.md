@@ -17,17 +17,17 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
--[ ] Controle do Fluxo do Programa
-  -[ ] Criar estruturas de controle de fluxo do programa, incluindo if/else
-  -[ ] instruções e expressões switch, loops e instruções break e continue.
+- [ ] Controle do Fluxo do Programa
+  - [ ] Criar estruturas de controle de fluxo do programa, incluindo if/else
+  - [ ] instruções e expressões switch, loops e instruções break e continue.
 
--[ ] Utilizar Conceitos de Orientação a Objetos em Java
-  -[ ] Declarar e instanciar objetos Java
-  -[ ] Incluindo objetos de classes aninhadas
-  -[ ] Explicar o ciclo de vida do objeto,
-  -[ ] incluindo criação, reatribuição de referências
-  -[ ] coleta de lixo
-  -[ ] Compreender escopos de variáveis
-  -[ ] aplicar encapsulamento
-  -[ ] criar objetos imutáveis
-  -[ ] Utilizar inferência de tipo de variável local.
+- [ ] Utilizar Conceitos de Orientação a Objetos em Java
+  - [ ] Declarar e instanciar objetos Java
+  - [ ] Incluindo objetos de classes aninhadas
+  - [ ] Explicar o ciclo de vida do objeto,
+  - [ ] incluindo criação, reatribuição de referências
+  - [ ] coleta de lixo
+  - [ ] Compreender escopos de variáveis
+  - [ ] aplicar encapsulamento
+  - [ ] criar objetos imutáveis
+  - [ ] Utilizar inferência de tipo de variável local.

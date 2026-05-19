@@ -17,13 +17,13 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
- -[ ] Tratamento de Exceções
-   -[ ] Tratar exceções usando blocos:
+ - [ ] Tratamento de Exceções
+   - [ ] Tratar exceções usando blocos:
      - [ ] try/catch/finally, 
      - [ ] try-with-resources 
      - [ ] multi-catch, incluindo exceções personalizadas
-   -[ ] Implementação de Localização
-   -[ ] Implementar localização usando localidades e pacotes de recursos
+   - [ ] Implementação de Localização
+   - [ ] Implementar localização usando localidades e pacotes de recursos
      - [ ] Analisar e formatar mensagens, datas, horas e números
      - [ ] incluindo valores monetários e percentuais
  

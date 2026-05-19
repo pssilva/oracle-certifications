@@ -17,9 +17,9 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO:
 
--[ ] Manipulação tipos de dados:
-  -[ ] Data, Hora, Texto, Valores Numéricos e Booleanos
-  -[ ] Utilizar tipos primitivos e classes wrapper
-  -[ ] Avaliar expressões aritméticas e booleanas
-  -[ ] Utilizando a API Math e aplicando regras de precedência
-  -[ ] Conversões de tipo e casting
+- [ ] Manipulação tipos de dados:
+  - [ ] Data, Hora, Texto, Valores Numéricos e Booleanos
+  - [ ] Utilizar tipos primitivos e classes wrapper
+  - [ ] Avaliar expressões aritméticas e booleanas
+  - [ ] Utilizando a API Math e aplicando regras de precedência
+  - [ ] Conversões de tipo e casting
