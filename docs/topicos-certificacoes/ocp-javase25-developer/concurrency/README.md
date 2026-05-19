@@ -27,3 +27,10 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
   -[ ] Processar coleções Java concorrentemente e utilizar fluxos paralelos.
 -[ ] Trabalhando com Streams e Expressões Lambda
   -[ ] Realizar decomposição, concatenação, redução, agrupamento e particionamento em fluxos sequenciais e paralelos.
+
+#### Evidências
+
+<img src="docs/topicos-certificacoes/ocp-javase25-developer/concurrency/evidencias/imgs/thread-states.png"/>
+
+
+

@@ -9,6 +9,7 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
  - Java SE
     - [Java SE 17 Developer
 (Exam Number: 1Z0-829)](https://education.oracle.com/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-829/pexam_1Z0-829)
+    - [Java SE 25 Developer Professional (Exam 1Z0-831)](https://mylearn.oracle.com/ou/exam/java-se-25-developer-professional-1z0-831/40805/161532/270890)
  - Java EE
     - [Java EE 7 Application Developer (Exam Number: 1Z0-900)](https://education.oracle.com/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-900/pexam_1Z0-900)
 
