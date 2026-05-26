@@ -1,16 +1,6 @@
 
 # Concorrência (concurrency)
 
-
-### Evidências
-
-Para consolidação do conhecimento, usaremos a [Técnica Faynman](https://youtu.be/CN_SCpGuJ_w?si=cjZukoffz_HNxy7y), onde para cada item dos Tópicos da Certificação registramos:
-
-- Áudio Auto explicativo:
-  - De cada conceito obstrato
-  - Explicar uma questão específica do Exame;
-- Ativação do conhecimento: escrever Manualmente (de 5x a 12x) as definições dos conceitos procurando buscar de memória;
-
 ## Tópicos da Certificação
 
 Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Developer Professional](https://mylearn.oracle.com/ou/exam/java-se-25-developer-professional-1z0-831/40805/161532/270890).
@@ -28,9 +18,23 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 - [ ] Trabalhando com Streams e Expressões Lambda
   - [ ] Realizar decomposição, concatenação, redução, agrupamento e particionamento em fluxos sequenciais e paralelos.
 
-#### Evidências
+
+
+### Evidências de Estudos
+
+Para consolidação do conhecimento, usaremos a [Técnica Faynman](https://youtu.be/CN_SCpGuJ_w?si=cjZukoffz_HNxy7y), onde para cada item dos Tópicos da Certificação registramos:
+
+- Áudio Auto explicativo:
+  - De cada conceito abstrato
+  - Explicar uma questão específica do Exame;
+- Ativação do conhecimento: escrever Manualmente (de 5x a 12x) as definições dos conceitos procurando buscar de memória;
+
+#### Evidência: Diagrama Status Thread
 
 <img src="../../../../docs/topicos-certificacoes/ocp-javase25-developer/concurrency/evidencias/imgs/thread-states.png"/>
 
+#### Evidência: Diagrama Ciclo de Vida Executor de Serviço
+
+<img src="../../../../docs/topicos-certificacoes/ocp-javase25-developer/concurrency/evidencias/imgs/thread-executor-lifecycle.png"/>
 
 
