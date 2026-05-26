@@ -8,12 +8,12 @@ Tomando como base os tópicos da Certificação [Exam 1Z0-831: Java SE 25 Develo
 ### OBJETIVOS DO EXAME OCP ABORDADOS NESTE TÓPICO
 
 - [ ] Gerenciando a Execução Concorrente de Código
-  - [ ] Criar threads de plataforma e virtuais
-    - [ ] Usar objetos Runnable e Callable,
-    - [ ] Gerenciar o ciclo de vida da thread
-    - [ ] Usar diferentes serviços Executor e a API concorrente para executar tarefas.
-  - [ ] Desenvolver código thread-safe
-    - [ ] usando mecanismos de bloqueio e a API concorrente.
+  - [X] ~~Criar threads de plataforma e virtuais~~
+    - [X] ~~Usar objetos Runnable e Callable~~
+    - [X] ~~Gerenciar o ciclo de vida da thread~~
+    - [X] ~~Usar diferentes serviços Executor e a API concorrente para executar tarefas.~~
+  - [X] Desenvolver código thread-safe
+    - [X] ~~usando mecanismos de bloqueio e a API concorrente.~~
   - [ ] Processar coleções Java concorrentemente e utilizar fluxos paralelos.
 - [ ] Trabalhando com Streams e Expressões Lambda
   - [ ] Realizar decomposição, concatenação, redução, agrupamento e particionamento em fluxos sequenciais e paralelos.
