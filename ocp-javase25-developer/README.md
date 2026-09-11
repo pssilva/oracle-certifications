@@ -16,7 +16,7 @@ Tendo em mente que para a presente Certificação:
 - Para cada Objetivo dos Tópicos, explodir em habilidades;
 - Para cada habilidade, identificar boas práticas de uso Empírico;
 - Identificar a forma de como é cobrado o conhecimento no exame;
-- identificar, em projetos open-source, o uso dos conceitos na prática;
+- identificar, em projetos open-source, o uso dos conceitos, na prática;
 - Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 
 --- 
@@ -76,7 +76,7 @@ Executar o projeto `ocp-javase25-developer`, use os seguintes comandos:
 
 ```bash
 export ARTIFACT_ID_PARENT="oracle-certifications"
-export ARTIFACT_ID="oracle-certifications"
+export ARTIFACT_ID="ocp-javase25-developer"
 cd "${HOME}/projetos/${ARTIFACT_ID_PARENT}/${ARTIFACT_ID}"
 sdk install java 25.0.3-amzn
 sdk default java 25.0.3-amzn

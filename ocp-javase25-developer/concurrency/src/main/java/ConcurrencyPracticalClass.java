@@ -259,4 +259,23 @@ public class ConcurrencyPracticalClass {
         for (String key : foodData.keySet())
             foodData.remove(key);
     }
+
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 13 ■ Concorrência
+     * <p> » » Escrevendo Código Thread-Safe
+     * <p> » » » Trabalhando com Classes Concorrentes
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo com os conceitos envolvidos na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     *
+     */
+    private static void trabalhandoComClassesConcorrentes() {
+        var foodData = new ConcurrentHashMap<String, Integer>();
+        foodData.put("penguin", 1);
+        foodData.put("flamingo", 2);
+        for (String key : foodData.keySet())
+            foodData.remove(key);
+    }
 }
