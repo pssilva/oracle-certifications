@@ -279,6 +279,12 @@ Segue abaixo as referências bibliográficas usadas no presente projeto:
 ---
 
 <p align="justify"> 
+[<a id="curso-conceitos-projeto-sistemas">CURSO DE CONCEITOS DE PROJETO de Sistemas e Preparação para Entrevistas</a>]. Direção: Equipe do Canal <a href="https://www.youtube.com/@freecodecamp">@freecodecamp</a>. Produção: Equipe do Canal @freecodecamp. Realização: Equipe do Canal @freecodecamp. Roteiro: Equipe do Canal @freecodecamp. Fotografia: N/A.  Intérpretes: Tradução automática por IA do @youtube. Local: N/A, 25 de jul. de 2024. Tipo vídeo streams, mp3, cor, gerada automaticamente pelo plataforma youtube, automático pela plataforma, stream, duração: 53:37). Disponível em: < <a href="https://youtu.be/F2FmTdLtb_4?si=4sTC9H193-i04U7R"> https://youtu.be/F2FmTdLtb_4?si=4sTC9H193-i04U7R </a> >. Acesso em: 14 jun. 2026.
+</p>
+
+---
+
+<p align="justify"> 
 [<a id="1-How-to-pass-Exam-1Z0-811">#1 HOW TO PASS EXAM 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1</a>]. Direção: Canal do youtube @elearningfreechannel. Produção: Canal do youtube @elearningfreechannel. Realização: Canal do youtube @elearningfreechannel. Roteiro: Canal do youtube @elearningfreechannel. Fotografia: N/A. Intérpretes: N/A. Local: Canal do youtube @elearningfreechannel, 23 de jan. de 2022. Indicação do suporte físico e duração entre parênteses, demais características (streams, som, cor, legenda, tradução, vídeo stream). Disponível em: < <a href="https://youtu.be/Dzz-sb8huWk?si=o1TE15Go3bsz4uH4"> https://youtu.be/Dzz-sb8huWk?si=o1TE15Go3bsz4uH4 </a> >. Acesso em: 29 jun. 2024
 </p>
 

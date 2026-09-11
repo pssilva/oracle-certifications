@@ -1,6 +1,6 @@
 # Indexação de Vídeos
 
-Aplicando efetivamente na prática a mentalidade de aprendizagem continuada (#livelonglearning).
+Aplicando efetivamente, na prática a mentalidade de aprendizagem continuada (#livelonglearning).
 
 Indexação de vídeos é uma estratégia para se aplicar técnicas de aprendizagem acelerada ([técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC)). Onde se corta um vídeo de orientações técnicas. Relacionando um momento do vídeo com um Tema (uma palavra-chave) onde se explica um conceito ou técnica de codificação.
 
@@ -39,6 +39,8 @@ Tendo em mente que sempre buscamos melhorar o protocolo de trabalho operacional 
 
 <img src="../../docs/imgs/pdca.png" alt="PDCA: Aplicar na prática o empirismo" title="PDCA" style="width:475px;"/>
 
+
+
 ---
 
 <a href="#FOWLER-Martin" id="da-analise-exploratoria">
@@ -46,5 +48,10 @@ Tendo em mente que sempre buscamos melhorar o protocolo de trabalho operacional 
 </a>
 
 ---
- 
+
+<p align="justify"> 
+[<a id="curso-conceitos-projeto-sistemas">CURSO DE CONCEITOS DE PROJETO de Sistemas e Preparação para Entrevistas</a>]. Direção: Equipe do Canal <a href="https://www.youtube.com/@freecodecamp">@freecodecamp</a>. Produção: Equipe do Canal @freecodecamp. Realização: Equipe do Canal @freecodecamp. Roteiro: Equipe do Canal @freecodecamp. Fotografia: N/A.  Intérpretes: Tradução automática por IA do @youtube. Local: N/A, 25 de jul. de 2024. Tipo vídeo streams, mp3, cor, gerada automaticamente pelo plataforma youtube, automático pela plataforma, stream, duração: 53:37). Disponível em: < <a href="https://youtu.be/F2FmTdLtb_4?si=4sTC9H193-i04U7R"> https://youtu.be/F2FmTdLtb_4?si=4sTC9H193-i04U7R </a> >. Acesso em: 14 jun. 2026.
+</p>
+
+---
 
