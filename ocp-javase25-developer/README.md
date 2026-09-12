@@ -69,6 +69,20 @@ OracleCertificationsScriptsUteis.installAllTools
 
 ```
 
+Para verificar o ambiente SDK, use os comandos do script de automação:
+
+```bash
+
+export ARTIFACT_ID="oracle-certifications"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export SCRIPT_PATH="${HOME}/projetos${ARTIFACT_ID}/scripts"
+export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
+export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
+
+source "${TOOL_PATH}/check-ambiente-sdk.sh
+OracleCertificationsScriptsUteis.checkAmbienteSDK
+
+```
 
 Depois de instalar as ferramentas necessárias.
 
@@ -95,13 +109,7 @@ Aqui temos uma lista do que idenficamos com status de pendente:
 
 Segue abaixo (não se limita) os objetivos do presente projeto:
 
-- [X] ~~Formatando documentação README.md~~
-- [x] ~~Indexação completa do vídeo longo: [VIDEO LONGO 071518 – 03.04.02.01.17.06 – 1 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1 – Questões](../docs/indexacoes/VIDEO%20LONGO%20071518%20–%2003.04.02.01.17.06%20–%201%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part1%20–%20Questões.pdf)~~
-    - Mais detalhes veja [aqui](../docs/indexacoes/README.md)
-- [X] ~~Indexação completa do vídeo longo: [VIDEO LONGO 074048 – 03.04.02.01.17.06 – 2 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 2 – Questões](../docs/indexacoes/VIDEO%20LONGO%20074048%20–%2003.04.02.01.17.06%20–%202%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%202%20–%20Questões.pdf)~~
-    - Mais detalhes veja [aqui](../docs/indexacoes/README.md)
-- [X] ~~Indexação completa do vídeo longo: [VIDEO LONGO – 061942 – 03.04.02.01.17.06 – 3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3 – Questões](../docs/indexacoes/VIDEO%20LONGO%20–%20061942%20–%2003.04.02.01.17.06%20–%203%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%203%20–%20Questões.pdf)~~
-    - Mais detalhes veja [aqui](../docs/indexacoes/README.md)
+- [X] ~~Formatando documentação README.md~~s
 
 ### Tópicos da Certificação
 
