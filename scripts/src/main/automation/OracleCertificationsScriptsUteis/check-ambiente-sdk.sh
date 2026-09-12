@@ -4,7 +4,7 @@
 #########################################################
 #
 # Auth: Paulo Sérgio <pss1suporte@gmail.com>
-# Describe: Script Main que reuni as libs do projeto no geral
+# Describe: Script principal para verificar o ambiente SDK depois de instalar as ferramentas!
 # version: 1.0
 # license: MIT License
 #

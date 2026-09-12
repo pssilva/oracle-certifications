@@ -84,11 +84,11 @@ Para verificar o ambiente SDK, use os comandos do script de automação:
 
 export ARTIFACT_ID="oracle-certifications"
 export TOOL_NAME="OracleCertificationsScriptsUteis"
-export SCRIPT_PATH="${HOME}/projetos${ARTIFACT_ID}/scripts"
+export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
 export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
 export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
-source "${TOOL_PATH}/check-ambiente-sdk.sh
+source "${TOOL_PATH}/check-ambiente-sdk.sh"
 OracleCertificationsScriptsUteis.checkAmbienteSDK
 
 ```
