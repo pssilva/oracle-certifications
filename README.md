@@ -78,6 +78,22 @@ OracleCertificationsScriptsUteis.installAllTools
 
 ```
 
+Para verificar o ambiente SDK, use os comandos do script de automação:
+
+```bash
+
+export ARTIFACT_ID="oracle-certifications"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export SCRIPT_PATH="${HOME}/projetos${ARTIFACT_ID}/scripts"
+export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
+export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
+
+source "${TOOL_PATH}/check-ambiente-sdk.sh
+OracleCertificationsScriptsUteis.checkAmbienteSDK
+
+```
+
+
 #### Módulos Internos
 
 Para cada certificação um projeto / módulo dedicaro. Depois de instalar as ferramentas necessárias.

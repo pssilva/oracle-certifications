@@ -1127,7 +1127,6 @@ EOF
 
 		fi
 
-
 	 countLine=$[ ${countLine} + 1 ]
 
 	done < "${INPUT_FILE_CSV}"
