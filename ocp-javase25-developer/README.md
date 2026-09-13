@@ -83,9 +83,23 @@ source "${TOOL_PATH}/check-ambiente-sdk.sh"
 OracleCertificationsScriptsUteis.checkAmbienteSDK
 
 ```
+Para criar a estrutura da [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)! 
+Onde temos `OracleCertificationsScriptsUteis.CriarStructureByConceito "{{NOME_MODULO}}" "{{CONCEITO}}"`. 
+Use os seguintes comandos:
 
-Depois de instalar as ferramentas necessárias.
+```bash
+export ARTIFACT_ID="oracle-certifications"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
+export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
+export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
+source "${TOOL_PATH}/ocp-training-lab.sh"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "TituloConceitoXPTO_11"
+```
+
+
+Após instalar as ferramentas necessárias.
 Executar o projeto `ocp-javase25-developer`, use os seguintes comandos:
 
 ```bash
@@ -131,8 +145,7 @@ Tomando como base [Exam 1Z0-831: Java SE 25 Developer Professional](https://myle
 - [ ] Aplicar Princípios de Orientação a Objetos em Programas Java
   - [ ] Declarar e instanciar objetos Java
   - [ ] incluindo objetos de classe aninhados
-  - [ ] explicar o ciclo de vida do objeto, incluindo criação, reatribuição de referências e coleta de lixo.
-
+  - [ ] explicar o ciclo de vida do objeto, incluindo criação, reatribuição de referências e coleta de lixo
   - [ ] Criar classes e registros
     - [ ] Classes definir e usar campos e métodos de instância e estáticos,
     - [ ] Construtores, incluindo corpos de construtores flexíveis
@@ -141,7 +154,7 @@ Tomando como base [Exam 1Z0-831: Java SE 25 Developer Professional](https://myle
   - [ ] Implementar métodos sobrecarregados, incluindo métodos var-arg.
 
   - [ ] Compreender escopos de variáveis, aplicar encapsulamento e criar objetos imutáveis.
-  - [ ] Utilize inferência de tipo de variável local e variáveis ​​sem nome.
+  - [ ] Utilize inferência de tipo de variável local e variáveis sem nome.
 
   - [ ] Implemente herança, incluindo tipos abstratos e selados
     - [ ] bem como classes de registro.

@@ -93,6 +93,21 @@ OracleCertificationsScriptsUteis.checkAmbienteSDK
 
 ```
 
+Para criar a estrutura da [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)! 
+Onde temos `OracleCertificationsScriptsUteis.CriarStructureByConceito "{{NOME_MODULO}}" "{{CONCEITO}}"`. 
+Use os seguintes comandos:
+
+```bash
+export ARTIFACT_ID="oracle-certifications"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
+export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
+export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
+
+source "${TOOL_PATH}/ocp-training-lab.sh"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "TituloConceitoXPTO_11"
+```
+
 
 #### Módulos Internos
 
