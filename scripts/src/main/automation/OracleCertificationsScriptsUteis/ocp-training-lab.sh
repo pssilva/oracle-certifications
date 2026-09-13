@@ -244,10 +244,10 @@ EOF
 				mkdir -p "${CONCEITO_PATH}/questions-exam"
 				touch "${CONCEITO_PATH}/questions-exam/.gitkeep"
 
-				echo -e "${FEYNMAN_TEMPLATE}" > "${CONCEITO_PATH}/feynman.md"
+				echo -e "${FEYNMAN_TEMPLATE}" > "${CONCEITO_PATH}/README.md"
 				echo -e "${MISTAKES_TEMPLATE}" > "${CONCEITO_PATH}/mistakes/mistakes-modelo.md"
 
-				sed -i -e 's%{{CONCEITO}}%'"${CONCEITO}"'%g' "${CONCEITO_PATH}/feynman.md"
+				sed -i -e 's%{{CONCEITO}}%'"${CONCEITO}"'%g' "${CONCEITO_PATH}/README.md"
 				
 				break
 			fi
