@@ -41,6 +41,8 @@ O áudio pode começar com alguma coisa assim:
 
 Isso força você a abandonar o reconhecimento passivo e fazer recuperação ativa.
 
+IMPORTANTE: Tendo em mente o vídeo: [Você Aprendeu Idiomas do Jeito Errado a Vida Toda — Richard Feynman Explica](https://youtu.be/7iFNXjXLY7Y?si=b9M_xaJjytUxnRKy), assim que possível, gravar áudios em inglês também para praticar as habilidades de escrita e fala! Assim, buscando recondicionar o cérebro para se adaptar e entender inglês!
+
 ## Verificar (50-60 min)
 
 Fazer a revisão de correções do material, do roteiro do áudio!
