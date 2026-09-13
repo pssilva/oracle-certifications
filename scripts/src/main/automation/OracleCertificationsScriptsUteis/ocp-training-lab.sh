@@ -156,7 +156,7 @@ Explique sem condultas como se estivesse ensinando para um desenvolvedor Jr.
 
 Gravar o áudio auto explicativo sem consultas, assim acionando, ativando e consolidando a rede do conhecimento.
 
-O áudio deve começar assim:
+O áudio pode começar com alguma coisa assim:
 
 > "Hoje vou explicar como se eu estivesse ensinando um desenvolvedor Java júnior..."
 
@@ -164,11 +164,8 @@ Isso força você a abandonar o reconhecimento passivo e fazer recuperação ati
 
 ## Verificar (50-60 min)
 
-O áudio deve começar assim:
-
-"Hoje vou explicar como se eu estivesse ensinando um desenvolvedor Java júnior..."
-
-Isso força você a abandonar o reconhecimento passivo e fazer recuperação ativa.
+Fazer a revisão de correções do material, do roteiro do áudio! 
+Buscando complementando com mais detalhes ou deixar a explicação o mais simples possível para qualquer criança de 5 anos possa entender!
 
 
 ## Código :: Pratique 
