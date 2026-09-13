@@ -237,7 +237,12 @@ EOF
 				mkdir -p "${CONCEITO_PATH}/evidencias/imgs"
 				touch "${CONCEITO_PATH}/evidencias/imgs/.gitkeep"
 
+				mkdir -p "${CONCEITO_PATH}/evidencias/audios"
+				touch "${CONCEITO_PATH}/evidencias/audios/.gitkeep"
+
 				mkdir -p "${CONCEITO_PATH}/mistakes"
+				mkdir -p "${CONCEITO_PATH}/questions-exam"
+				touch "${CONCEITO_PATH}/questions-exam/.gitkeep"
 
 				echo -e "${FEYNMAN_TEMPLATE}" > "${CONCEITO_PATH}/feynman.md"
 				echo -e "${MISTAKES_TEMPLATE}" > "${CONCEITO_PATH}/mistakes/mistakes-modelo.md"
