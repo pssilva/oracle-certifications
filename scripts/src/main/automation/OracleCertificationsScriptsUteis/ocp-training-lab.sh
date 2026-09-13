@@ -130,6 +130,17 @@ Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: {{C
 
 CONCEITO: {{CONCEITO}}
 
+Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
+
+\`\`\`
+OCP Oracle Certified Professional Java SE 21 Developer
+» Capítulo NN ■ ??????????
+» » ?????????? ...
+» » » ?????????? ...
+» » » » ?????????? ...
+
+\`\`\`
+
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva: 
@@ -170,8 +181,6 @@ Fazer a revisão de correções do material, do roteiro do áudio!
 Buscando complementando com mais detalhes ou deixar a explicação o mais simples possível para qualquer criança de 5 anos possa entender!
 
 
-
-
 ## Código :: Pratique 
 
 Pratique com código e responda questões da prova de certificação
@@ -183,6 +192,16 @@ NOTA:
 // Coloque o código aqui!!
 
 \`\`\`
+
+Procure responder o seguinte:
+
+\`\`\`
+
+Respondeu no mínimo 10 questões do simulador do exame?
+Quais são as pegadinhas mais comuns no exame?
+
+\`\`\`
+
 
 
 EOF

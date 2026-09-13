@@ -4,10 +4,20 @@ Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A
 
 Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Primitivos / Wrappers! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
-
 ## Escolha o Assunto (0-2 min)
 
 CONCEITO: Primitivos / Wrappers
+
+Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
+
+```
+OCP Oracle Certified Professional Java SE 21 Developer
+» Capítulo 1 ■ Blocos de Construção
+» » Compreendendo Tipos de Dados
+» » » Usando Tipos Primitivos
+» » » » Os Tipos Primitivos
+
+```
 
 ## Escrever à Mão (2-25 min)
 
@@ -52,10 +62,15 @@ Buscando complementando com mais detalhes ou deixar a explicação o mais simple
 
 Pratique com código e responda questões da prova de certificação
 
-NOTA: 
-
 ```java
 
 // Coloque o código aqui!!
+
+```
+Procure responder o seguinte:
+
+```
+Respondeu no mínimo 10 questões do simulador do exame?
+Quais são as pegadinhas mais comuns no exame?
 
 ```
