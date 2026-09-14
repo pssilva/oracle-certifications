@@ -37,6 +37,15 @@ E tire uma foto de evidência e coloque na pasta: `oracle-certifications/ocp-jav
 
 <img src="evidencias/imgs/evidencia-card-tipos-primitivos-conceito_v2.jpeg" alt="Conceito: Tipos Primitivos" title="Tipos Primitivos" style="width:250px;"/>
 
+
+<img src="evidencias/imgs/evidencia-primitivos-4-em-1.jpeg" alt="Conceito: Tipos Primitivos String, boolean, short, char " title="Tipos Primitivos multiplos" style="width:250px;"/>
+
+```
+String é um tipo primitivo?
+Qual é o tamanho em bits do tipo boolean?
+Com ou Sem Sinal: `short` e `char`? 
+```
+
 ## Explique em voz alta (25-40 min)
 
 Explique sem consultas como se estivesse ensinando para um desenvolvedor Jr.
