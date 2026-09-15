@@ -37,6 +37,7 @@ E tire uma foto de evidência e coloque na pasta: `oracle-certifications/ocp-jav
 
 <img src="evidencias/imgs/evidencia-card-tipos-primitivos-conceito_v2.jpeg" alt="Conceito: Tipos Primitivos" title="Tipos Primitivos" style="width:250px;"/>
 
+---
 
 <img src="evidencias/imgs/evidencia-primitivos-4-em-1.jpeg" alt="Conceito: Tipos Primitivos String, boolean, short, char " title="Tipos Primitivos multiplos" style="width:250px;"/>
 

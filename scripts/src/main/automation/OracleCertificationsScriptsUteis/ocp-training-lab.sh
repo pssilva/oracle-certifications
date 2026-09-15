@@ -229,12 +229,13 @@ EOF
 
 		if [[ -d "${pasta}" ]]; then
 		
-			echo "Processando: ${pasta}"
-			echo "Nome Diretório: ${NOME_PASTA}"
-			echo -e "\n\n"	
-
 			# Compara com o parâmetro de entrada
 			if [[ "$NOME_PASTA" == "$NOME_MODULO" ]]; then
+
+				echo "Processando: ${pasta}"
+				echo "Nome Diretório: ${NOME_PASTA}"
+				echo -e "\n\n"	
+
 
 				if [[ ! -f "${pasta}/README.md" ]]; then
 
@@ -251,23 +252,25 @@ EOF
 					sed -i -e 's%{{NOME_MODULO}}%'"${NOME_MODULO}"'%g' "${pasta}/README.md"
 					sed -i -e 's%{{FEYNMAN_PATH}}%'"${pasta}/docs/feynman/${CONCEITO_NOME_PASTA}/"'%g' "${pasta}/README.md"
 
+					CONCEITO_PATH="${pasta}/docs/feynman/${CONCEITO_NOME_PASTA}/"
+					mkdir -p "${CONCEITO_PATH}/evidencias/imgs"
+					touch "${CONCEITO_PATH}/evidencias/imgs/.gitkeep"
+
+					mkdir -p "${CONCEITO_PATH}/evidencias/audios"
+					touch "${CONCEITO_PATH}/evidencias/audios/.gitkeep"
+
+					mkdir -p "${CONCEITO_PATH}/mistakes"
+					mkdir -p "${CONCEITO_PATH}/questions-exam"
+					touch "${CONCEITO_PATH}/questions-exam/.gitkeep"
+
+					echo -e "${FEYNMAN_TEMPLATE}" > "${CONCEITO_PATH}/README.md"
+					echo -e "${MISTAKES_TEMPLATE}" > "${CONCEITO_PATH}/mistakes/mistakes-modelo.md"
+
+					sed -i -e 's%{{CONCEITO}}%'"${CONCEITO}"'%g' "${CONCEITO_PATH}/README.md"
+
 				fi
 
-				CONCEITO_PATH="${pasta}/docs/feynman/${CONCEITO_NOME_PASTA}/"
-				mkdir -p "${CONCEITO_PATH}/evidencias/imgs"
-				touch "${CONCEITO_PATH}/evidencias/imgs/.gitkeep"
-
-				mkdir -p "${CONCEITO_PATH}/evidencias/audios"
-				touch "${CONCEITO_PATH}/evidencias/audios/.gitkeep"
-
-				mkdir -p "${CONCEITO_PATH}/mistakes"
-				mkdir -p "${CONCEITO_PATH}/questions-exam"
-				touch "${CONCEITO_PATH}/questions-exam/.gitkeep"
-
-				echo -e "${FEYNMAN_TEMPLATE}" > "${CONCEITO_PATH}/README.md"
-				echo -e "${MISTAKES_TEMPLATE}" > "${CONCEITO_PATH}/mistakes/mistakes-modelo.md"
-
-				sed -i -e 's%{{CONCEITO}}%'"${CONCEITO}"'%g' "${CONCEITO_PATH}/README.md"
+				
 				
 				break
 			fi
