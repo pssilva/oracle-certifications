@@ -24,6 +24,10 @@ Numa folha de papel (card), escreva:
 
 <img src="evidencias/imgs/evidencia-string-stringbuilder.jpeg" alt="Conceito: String e StringBuilder" title="String e StringBuilder" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-block-text-stringpool.jpeg" alt="Conceito: Text block e String Pool" title="Text block e String Pool" style="width:250px;"/>
+
 ```
 O que é?
 Como funciona?
