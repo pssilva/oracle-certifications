@@ -236,23 +236,25 @@ EOF
 				echo "Nome Diretório: ${NOME_PASTA}"
 				echo -e "\n\n"	
 
+				CONCEITO_NOME_PASTA=$(echo "${CONCEITO}" \
+					| tr '[:upper:]' '[:lower:]' \
+					| sed 's/[[:space:]]\+/-/g' \
+					| sed 's/--\+/-/g' \
+					| sed 's/\///g')
 
-				if [[ ! -f "${pasta}/README.md" ]]; then
+				CONCEITO_NOME_PASTA="${CONCEITO_NOME_PASTA//--/-}"
+				
+				CONCEITO_PATH="${pasta}/docs/feynman/${CONCEITO_NOME_PASTA}"
 
-					CONCEITO_NOME_PASTA=$(echo "${CONCEITO}" \
-						| tr '[:upper:]' '[:lower:]' \
-						| sed 's/[[:space:]]\+/-/g' \
-						| sed 's/--\+/-/g' \
-						| sed 's/\///g')
+				if [[ ! -f "${CONCEITO_PATH}/README.md" ]]; then
 
-					CONCEITO_NOME_PASTA="${CONCEITO_NOME_PASTA//--/-}"
 
 					echo -e "${README_TEMPLATE}" > "${pasta}/README.md"
 					
 					sed -i -e 's%{{NOME_MODULO}}%'"${NOME_MODULO}"'%g' "${pasta}/README.md"
 					sed -i -e 's%{{FEYNMAN_PATH}}%'"${pasta}/docs/feynman/${CONCEITO_NOME_PASTA}/"'%g' "${pasta}/README.md"
 
-					CONCEITO_PATH="${pasta}/docs/feynman/${CONCEITO_NOME_PASTA}/"
+					EVIDENCIA_PATH="${CONCEITO_PATH}/evidencias"
 					mkdir -p "${CONCEITO_PATH}/evidencias/imgs"
 					touch "${CONCEITO_PATH}/evidencias/imgs/.gitkeep"
 
@@ -267,6 +269,7 @@ EOF
 					echo -e "${MISTAKES_TEMPLATE}" > "${CONCEITO_PATH}/mistakes/mistakes-modelo.md"
 
 					sed -i -e 's%{{CONCEITO}}%'"${CONCEITO}"'%g' "${CONCEITO_PATH}/README.md"
+					sed -i -e 's%{{EVIDENCIA_PATH}}%'"${EVIDENCIA_PATH}"'%g' "${CONCEITO_PATH}/README.md"
 
 				fi
 
