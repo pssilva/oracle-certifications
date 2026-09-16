@@ -41,4 +41,74 @@ public class BuildingBlocksPracticalClass {
         System.out.println(animal.getName());
 
     }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 1 ■ Blocos de Construção
+     * <p> » » Compreendendo Tipos de Dados
+     * <p> » » » Usando Tipos Primitivos
+     * <p> » » » » Escrevendo Literais
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void escrevendoLiterais() {
+
+        // long max = 3123456789;  // DOES NOT COMPILE
+        long max = 3123456789L;  // Now Java knows it is a long
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 1 ■ Blocos de Construção
+     * <p> » » Compreendendo Tipos de Dados
+     * <p> » » » Usando Tipos Primitivos
+     * <p> » » » » Literais e o caractere de sublinhado (*underscore*)
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void literaisCaractereSublinhado() {
+
+        int million1 = 1000000;
+        int million2 = 1_000_000;
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 1 ■ Blocos de Construção
+     * <p> » » Compreendendo Tipos de Dados
+     * <p> » » » Using Primitive Types
+     * <p> » » » » The Primitive Types
+     * <p> » » » » » TABLE 1.5 Primitive types
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void primitiveTypes() {
+
+        boolean bool = false;
+        byte b = 1;
+        short sh = 1;
+        int i = 0;
+        long l = 0L;
+        float f = 0F;
+        double d = 0D;
+        char c = 'c';
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 1 ■ Blocos de Construção
+     * <p> » » Compreendendo Tipos de Dados
+     * <p> » » » Criando Classes Wrapper
+     * <p> » » » » TABLE 1.6 Wrapper classes
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void criandoClassesWrapper() {
+
+    }
+
 }
