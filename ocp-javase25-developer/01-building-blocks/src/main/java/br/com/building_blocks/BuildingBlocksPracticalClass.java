@@ -109,6 +109,14 @@ public class BuildingBlocksPracticalClass {
      */
     private static void criandoClassesWrapper() {
 
+        Boolean bool = false;
+        Byte b = 1;
+        Short sh = 1;
+        Integer i = 0;
+        Long l = 0L;
+        Float f = 0F;
+        Double d = 0D;
+        Character c = 'c';
     }
 
 }
