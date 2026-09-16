@@ -10,11 +10,10 @@ Descrição sucinta vem aqui .....
 Conceitos OCP
 -------------
 
-Os conceitos se encontram na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/15-core-apis/docs/feynman/strings-2/`
+Os conceitos se encontram na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/15-core-apis/docs/feynman/math-api/`
 
 [TRABALHO EM PROGRESSO]
 
-- [String](#)
-- [StringBuilder](#)
-- [Text Block](#)
-- [String Pool](#)
+- [Conceito XPTO 1](#)
+- [Conceito XPTO 2](#)
+- [Conceito XPTO 3](#)
