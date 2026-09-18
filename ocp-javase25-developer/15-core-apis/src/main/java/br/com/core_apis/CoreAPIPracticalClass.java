@@ -1,5 +1,8 @@
 package br.com.core_apis;
 
+import java.time.*;
+import java.time.temporal.ChronoUnit;
+
 /**
  * <p> OBJETIVOS DO EXAME OCP ABORDADOS NESTE CAPÍTULO:
  * <ul>
@@ -37,11 +40,14 @@ public class CoreAPIPracticalClass {
     }
 
     public static void main(String[] args){
-
-        criandoManipulandoStrings();
-        concatenacao();
-        encontrandoMinimoMaximo();
-        determinandoTetoCeilingPisoFloor();
+        //  criandoManipulandoStrings();
+        //  concatenacao();
+        //  encontrandoMinimoMaximo();
+        //  determinandoTetoCeilingPisoFloor();
+        trabalhandoDatasHoras();
+        manipulandDatasHoras();
+        chronoUnitDiferencas();
+        levandoEmContaHorarioVerao();
 
     }
 
@@ -109,8 +115,6 @@ public class CoreAPIPracticalClass {
 
     }
 
-
-
     /**
      * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
      * <p> » Capítulo 4 ■ APIs Principais
@@ -124,6 +128,164 @@ public class CoreAPIPracticalClass {
     private static void determinandoTetoCeilingPisoFloor() {
         double c = Math.ceil(3.14);  // 4.0
         double f = Math.floor(3.14); // 3.0
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Trabalhando com Datas e Horas
+     *
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoDatasHoras() {
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoDatasHoras()");
+        System.out.println("###################################################");
+        System.out.println(LocalDate.now());
+        System.out.println(LocalTime.now());
+        System.out.println(LocalDateTime.now());
+        System.out.println(ZonedDateTime.now());
+
+        var date1 = LocalDate.of(2025, Month.JANUARY, 20);
+        var date2 = LocalDate.of(2025, 1, 20);
+
+        var time1 = LocalTime.of(6, 15);               // hour and minute
+        var time2 = LocalTime.of(6, 15, 30);           // + seconds
+        var time3 = LocalTime.of(6, 15, 30, 200);      // + nanoseconds
+
+        var dateTime1 = LocalDateTime.of(2025, Month.JANUARY, 20, 6, 15, 30);
+        var dateTime2 = LocalDateTime.of(date1, time2);
+
+        var zone = ZoneId.of("US/Eastern");
+        var zoned1 = ZonedDateTime.of(2025, 1, 20,
+                6, 15, 30, 200, zone);
+        var zoned2 = ZonedDateTime.of(date1, time1, zone);
+        var zoned3 = ZonedDateTime.of(dateTime1, zone);
+
+        // var d = new LocalDate(); // DOES NOT COMPILE
+        // var d = LocalDate.of(2025, Month.JANUARY, 32); // DateTimeException
+
+        System.out.println("###################################################");
+        System.out.println("\n\n\n");
+
+
+    }
+
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Trabalhando com Datas e Horas
+     * <p> » » » Manipulando Datas e Horas
+     *
+     *
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void manipulandDatasHoras() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: manipulandDatasHoras()");
+        System.out.println("###################################################");
+        var date = LocalDate.of(2025, Month.JANUARY, 20);
+        System.out.println(date);    // 2025–01–20
+        date = date.plusDays(2);
+        System.out.println(date);    // 2025–01–22
+        date = date.plusWeeks(1);
+        System.out.println(date);    // 2025–01–29
+        date = date.plusMonths(1);
+        System.out.println(date);    // 2025–02–28
+        date = date.plusYears(5);
+        System.out.println(date);    // 2030–02–28
+
+        var time = LocalTime.of(5, 15);
+        var dateTime = LocalDateTime.of(date, time);
+        System.out.println(dateTime);       // 2025–01–20T05:15
+        dateTime = dateTime.minusDays(1);
+        System.out.println(dateTime);       // 2025–01–19T05:15
+        dateTime = dateTime.minusHours(10);
+        System.out.println(dateTime);       // 2025–01–18T19:15
+        dateTime = dateTime.minusSeconds(30);
+        System.out.println(dateTime);       // 2025–01–18T19:14:30
+
+        var dateTime2 = LocalDateTime.of(date, time)
+                .minusDays(1)
+                .minusHours(10)
+                .minusSeconds(30);
+
+        System.out.println(dateTime2);
+
+        System.out.println("###################################################");
+        System.out.println("\n\n\n");
+
+    }
+
+
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Trabalhando com Datas e Horas
+     * <p> » » » ChronoUnit para Diferenças
+     *
+     *
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void chronoUnitDiferencas() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: chronoUnitDiferencas()");
+        System.out.println("###################################################");
+        var one = LocalTime.of(5, 15);
+        var two = LocalTime.of(6, 55);
+        var date = LocalDate.of(2025, 1, 20);
+        System.out.println(ChronoUnit.HOURS.between(one, two));     // 1
+        System.out.println(ChronoUnit.MINUTES.between(one, two));   // 100
+        //System.out.println(ChronoUnit.MINUTES.between(one, date));  // DateTimeException
+
+        System.out.println("###################################################");
+        System.out.println("\n\n\n");
+
+    }
+
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Trabalhando com Datas e Horas
+     * <p> » » » Levando em conta o Horário de Verão
+     *
+     *
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void levandoEmContaHorarioVerao() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: levandoEmContaHorarioVerao()");
+        System.out.println("###################################################");
+        var date = LocalDate.of(2025, Month.MARCH, 9);
+        var time = LocalTime.of(1, 30);
+        var zone = ZoneId.of("US/Eastern");
+        var dateTime = ZonedDateTime.of(date, time, zone);
+
+        System.out.println(dateTime);  // 2025–03-09T01:30-05:00[US/Eastern]
+        System.out.println(dateTime.getHour());   // 1
+        System.out.println(dateTime.getOffset()); // -05:00
+
+        dateTime = dateTime.plusHours(1);
+        System.out.println(dateTime);  // 2025–03-09T03:30-04:00[US/Eastern]
+        System.out.println(dateTime.getHour());   // 3
+        System.out.println(dateTime.getOffset()); // -04:00
+        System.out.println("###################################################");
+        System.out.println("\n\n\n");
 
     }
 }

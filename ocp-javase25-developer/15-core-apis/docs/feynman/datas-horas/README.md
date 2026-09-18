@@ -2,20 +2,19 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)! 
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Operações / Casting! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Datas e Horas! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Operações / Casting
+CONCEITO: Datas e Horas
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Capítulo 2 ■ Operadores
-» » Compreendendo os Operadores Java
-
+» Capítulo 4 ■ APIs Principais (APIS Core)
+» » Trabalhando com Datas e Horas
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -32,17 +31,22 @@ Quando NÃO usar?
 Qual pegadinha?
 
 ```
-### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `oracle-certifications/ocp-javase25-developer/01-beyond-classes/docs/feynman/primitivos-wrappers/evidencias`
-
-<img src="evidencias/imgs/evidencia-card-casting.jpeg" alt="Conceito: Casting" title="Casting" style="width:250px;"/>
-
-<img src="evidencias/imgs/evidencia-card-operador.jpeg" alt="Conceito: Operador" title="Operador" style="width:250px;"/>
+E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/15-core-apis/docs/feynman/datas-e-horas/evidencias`
 
 ## Explique em voz alta (25-40 min)
 
 Explique sem consultas como se estivesse ensinando para um desenvolvedor Jr.
+
+### Evidências
+
+E tire uma foto de evidência e coloque na pasta: `docs/feynman/datas-horas/evidencias`
+
+<img src="evidencias/imgs/evidencia-datas-horas-4em1.jpeg" alt="Conceito: Casting" title="Casting" style="width:250px;"/>
+
+----
+
+<img src="evidencias/imgs/evidencia-datas-horas-horario-verao.jpeg" alt="Conceito: Operador" title="Operador" style="width:250px;"/>
 
 
 ## Grave Áudio (40-50 min)
