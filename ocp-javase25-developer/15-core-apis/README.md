@@ -10,7 +10,7 @@ Descrição sucinta vem aqui .....
 Conceitos OCP
 -------------
 
-Os conceitos se encontram na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/15-core-apis/docs/feynman/datas-e-horas/`
+Os conceitos se encontram na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/15-core-apis/docs/feynman/classes-objetos/`
 
 [TRABALHO EM PROGRESSO]
 

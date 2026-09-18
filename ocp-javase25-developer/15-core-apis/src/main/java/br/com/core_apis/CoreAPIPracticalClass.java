@@ -44,10 +44,18 @@ public class CoreAPIPracticalClass {
         //  concatenacao();
         //  encontrandoMinimoMaximo();
         //  determinandoTetoCeilingPisoFloor();
-        trabalhandoDatasHoras();
-        manipulandDatasHoras();
-        chronoUnitDiferencas();
-        levandoEmContaHorarioVerao();
+        //trabalhandoDatasHoras();
+        //manipulandDatasHoras();
+        //chronoUnitDiferencas();
+        //levandoEmContaHorarioVerao();
+
+        // Não é necessário criar um objeto (instância)
+        Zoo zoo = new Zoo();
+
+        //Podemos chamar diretamente o método main()
+        Zoo.main(new String[]{""});
+
+        Park park = new Park();
 
     }
 
