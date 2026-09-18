@@ -109,6 +109,7 @@ public class BuildingBlocksPracticalClass {
      */
     private static void criandoClassesWrapper() {
 
+<<<<<<< Updated upstream
         Boolean bool = false;
         Byte b = 1;
         Short sh = 1;
@@ -117,6 +118,8 @@ public class BuildingBlocksPracticalClass {
         Float f = 0F;
         Double d = 0D;
         Character c = 'c';
+=======
+>>>>>>> Stashed changes
     }
 
 }
