@@ -36,7 +36,7 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 ## Explique em voz alta (25-40 min)
 
-Explique sem condultas como se estivesse ensinando para um desenvolvedor Jr.
+Explique sem consultas como se estivesse ensinando para um desenvolvedor Jr.
 
 
 ## Grave Áudio (40-50 min)
