@@ -38,6 +38,10 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 <img src="evidencias/imgs/evidencia-metodos.jpeg" alt="Conceito: Métodos" title="Métodos" style="width:250px;"/>
 
+----
+
+<img src="evidencias/imgs/evidencia-metodos-4em1.jpeg" alt="Conceito: Métodos sobreescrita, autoboxing, umboxing" title="Métodos sobreescrita, autoboxing, umboxing" style="width:250px;"/>
+
 ## Explique em voz alta (25-40 min)
 
 Explique sem condultas como se estivesse ensinando para um desenvolvedor Jr.
