@@ -156,7 +156,12 @@ Qual pegadinha?
 
 \`\`\`
 
+### Evidências
+
 E tire uma foto de evidência e coloque na pasta: \`{{EVIDENCIA_PATH}}\`
+
+<img src="evidencias/imgs/evidencia-card-operador.jpeg" alt="Conceito: {{CONCEITO}}" title="{{CONCEITO}}" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 
@@ -202,11 +207,8 @@ Quais são as pegadinhas mais comuns no exame?
 
 \`\`\`
 
-
-
 EOF
 	);
-
 
 	cd "${WORK_PATH}"
 
@@ -216,16 +218,13 @@ EOF
 	echo "##############################################"
 	for pasta in "${WORK_PATH}"/*; do
 
-
 		NOME_PASTA=$(basename "${pasta}")
-
 
 		if [[ "$NOME_PASTA" == "docs" ]]; then
 
 			continue
 
 		fi
-
 
 		if [[ -d "${pasta}" ]]; then
 		

@@ -1,9 +1,9 @@
 package br.com.beyond_classes;
 
 /**
- * <p> OBJETIVOS DO EXAME OCP ABORDADOS NESTE CAPÍTULO:
+ * <p> OBJETIVOS DO EXAME OCP ABORDADOS NESTE CAPÍTULO: beyond-classes
  * <ul>
- *     <li> Utilizando Conceitos de Orientação a Objetos em Java
+ *     <li>Utilizando Conceitos de Orientação a Objetos em Java<li>
  *     <ul>
  *          <li>
  *              Declarar e instanciar objetos Java, incluindo objetos de classes aninhadas, e explicar o ciclo
@@ -32,7 +32,6 @@ package br.com.beyond_classes;
  *              Criar e usar tipos enum com campos, métodos e construtores.
  *           </li>
  *     </ul>
- *
  * </ul>
  *
  * <p> Para mais detalhes veja em:
@@ -47,6 +46,17 @@ public class BeyondClassesPracticalClass {
 
     public static void main(String[] args){
 
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 7 ■ Além das Classes
+     * <p> » » Encapsulando Dados com Registros
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void encapsulandoDadosComRegistros() {
 
     }
 
