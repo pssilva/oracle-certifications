@@ -245,13 +245,16 @@ EOF
 				
 				CONCEITO_PATH="${pasta}/docs/feynman/${CONCEITO_NOME_PASTA}"
 
-				if [[ ! -f "${CONCEITO_PATH}/README.md" ]]; then
-
+				if [[ ! -f "${pasta}/README.md" ]]; then
 
 					echo -e "${README_TEMPLATE}" > "${pasta}/README.md"
 					
 					sed -i -e 's%{{NOME_MODULO}}%'"${NOME_MODULO}"'%g' "${pasta}/README.md"
 					sed -i -e 's%{{FEYNMAN_PATH}}%'"${pasta}/docs/feynman/${CONCEITO_NOME_PASTA}/"'%g' "${pasta}/README.md"
+
+				fi
+
+				if [[ ! -f "${CONCEITO_PATH}/README.md" ]]; then
 
 					EVIDENCIA_PATH="${CONCEITO_PATH}/evidencias"
 					mkdir -p "${CONCEITO_PATH}/evidencias/imgs"
@@ -272,8 +275,6 @@ EOF
 
 				fi
 
-				
-				
 				break
 			fi
 
