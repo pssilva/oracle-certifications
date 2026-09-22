@@ -10,7 +10,7 @@ Descrição sucinta vem aqui .....
 Conceitos OCP
 -------------
 
-Os conceitos se encontram na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/01-beyond-classes/docs/feynman/ecapsulamento/`
+Os conceitos se encontram na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/01-beyond-classes/docs/feynman/herança/`
 
 [TRABALHO EM PROGRESSO]
 

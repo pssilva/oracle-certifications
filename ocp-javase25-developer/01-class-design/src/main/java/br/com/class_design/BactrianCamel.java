@@ -4,16 +4,13 @@ package br.com.class_design;
  * <p> Capítulo 6 ■ Projeto de Classes
  * <p> » » Herdando Membros
  * <p> » » » Sobrescrita de Método
+ * <p> » » » » Regra nº 2: Modificadores de Acesso
  * </ br>
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
  */
-public class Kangaroo extends Marsupial {
-    public double getAverageWeight() {
-        return super.getAverageWeight()+20;
-    }
-    public static void main(String[] args) {
-        System.out.println(new Marsupial().getAverageWeight());  // 50.0
-        System.out.println(new Kangaroo().getAverageWeight());   // 70.0
-    }
+public class BactrianCamel extends Camel {
+//    private int getNumberOfHumps() {  // DOES NOT COMPILE
+//        return 2;
+//    }
 }

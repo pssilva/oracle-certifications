@@ -4,16 +4,19 @@ package br.com.class_design;
  * <p> Capítulo 6 ■ Projeto de Classes
  * <p> » » Herdando Membros
  * <p> » » » Sobrescrita de Método
+ * <p> » » » » Ocultação de métodos estáticos
  * </ br>
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
  */
-public class Kangaroo extends Marsupial {
-    public double getAverageWeight() {
-        return super.getAverageWeight()+20;
+public class Bear {
+    public static void sneeze() {
+        System.out.println("Bear is sneezing");
     }
-    public static void main(String[] args) {
-        System.out.println(new Marsupial().getAverageWeight());  // 50.0
-        System.out.println(new Kangaroo().getAverageWeight());   // 70.0
+    public void hibernate() {
+        System.out.println("Bear is hibernating");
+    }
+    public static void laugh() {
+        System.out.println("Bear is laughing");
     }
 }
