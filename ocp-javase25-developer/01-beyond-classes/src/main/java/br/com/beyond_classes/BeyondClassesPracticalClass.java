@@ -41,11 +41,10 @@ package br.com.beyond_classes;
 public class BeyondClassesPracticalClass {
 
     public BeyondClassesPracticalClass() {
-
     }
 
     public static void main(String[] args){
-
+        compreendendoPolimorfismo();
     }
 
     /**
@@ -58,6 +57,22 @@ public class BeyondClassesPracticalClass {
      */
     private static void encapsulandoDadosComRegistros() {
 
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 7 ■ Além das Classes
+     * <p> » » Encapsulando Dados com Registros
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void compreendendoPolimorfismo() {
+        HasTail hasTail = new Lemur();
+        // System.out.println(hasTail.age);             // DOES NOT COMPILE
+
+        Primate primate = new Lemur();
+        // System.out.println(primate.isTailStriped()); // DOES NOT COMPILE
     }
 
 }

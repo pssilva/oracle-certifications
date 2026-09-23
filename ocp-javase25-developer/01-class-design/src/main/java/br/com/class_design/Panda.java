@@ -9,17 +9,11 @@ package br.com.class_design;
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
  */
-public class Bear {
-    public static void sneeze() {
-        System.out.println("Bear is sneezing");
-    }
-    public void hibernate() {
-        System.out.println("Bear is hibernating");
-    }
-    public static void laugh() {
-        System.out.println("Bear is laughing");
-    }
+public class Panda extends Bear {
     public static void eat() {
-        System.out.println("Bear is eating");
+        System.out.println("Panda is chewing");
+    }
+    public static void main(String[] args) {
+        eat();
     }
 }
