@@ -34,7 +34,7 @@ public class ClassDesignPracticalClass {
 
     public static void main(String[] args){
 
-
+        introduzindoClassesAbstratas();
 
     }
 
@@ -48,9 +48,24 @@ public class ClassDesignPracticalClass {
      *
      * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
      */
-    private static void escrevendoLiterais() {
+    private static void criandoConstrutor() {
 
 
+    }
+
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> Capítulo 6 ■ Projeto de Classes
+     * <p> » » Criando Classes Abstratas
+     * <p> » » » Introduzindo Classes Abstratas
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void introduzindoClassesAbstratas() {
+        Canine w = new Fox();
+        w.bark();  // Squeak!
     }
 
 }
