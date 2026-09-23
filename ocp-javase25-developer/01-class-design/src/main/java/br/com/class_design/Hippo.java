@@ -4,6 +4,9 @@ package br.com.class_design;
  * <p> Capítulo 6 ■ Projeto de Classes
  * <p> » » Inicializando Objetos
  * <p> » » » Inicializar Classe X
+ *
+ * <p> » » Criando Classes Abstratas
+ * <p> » » » Criando uma Classe Concreta
  * </ br>
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
@@ -16,4 +19,9 @@ public class Hippo extends Animal {
         new Hippo();
     }
     static { System.out.print("B"); }
+
+    @Override
+    public String getName() {
+        return "Hippo-B";
+    }
 }
