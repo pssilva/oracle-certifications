@@ -44,7 +44,10 @@ public class BeyondClassesPracticalClass {
     }
 
     public static void main(String[] args){
-        compreendendoPolimorfismo();
+        //compreendendoPolimorfismo();
+        //criandoEnumsSimples();
+        chamandoMetodosComunsEnum();
+
     }
 
     /**
@@ -73,6 +76,59 @@ public class BeyondClassesPracticalClass {
 
         Primate primate = new Lemur();
         // System.out.println(primate.isTailStriped()); // DOES NOT COMPILE
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 7 ■ Além das Classes
+     * <p> » » Trabalhando com Enums
+     * <p> » » » Criando Enums Simples
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void criandoEnumsSimples() {
+        var s = Season.SUMMER;
+        System.out.println(Season.SUMMER);       // SUMMER
+        System.out.println(s == Season.SUMMER);  // true
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 7 ■ Além das Classes
+     * <p> » » Trabalhando com Enums
+     * <p> » » » Chamando Métodos Comuns de Enum
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void chamandoMetodosComunsEnum() {
+        for(var season: Season.values()) {
+            System.out.println(season.name() + " " + season.ordinal());
+        }
+
+        // if (Season.SUMMER == 2) {} // DOES NOT COMPILE
+
+        Season s = Season.valueOf("SUMMER"); // SUMMER
+        Season t = Season.valueOf("summer"); // IllegalArgumentException
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 7 ■ Além das Classes
+     * <p> » » Trabalhando com Enums
+     * <p> » » » Usando Enums em Instruções switch
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    String getWeather(Season value) {
+        return switch (value) {
+            case SUMMER        -> "Too hot";
+            case Season.WINTER -> "Too cold";
+            //case 0      -> "Too cold";  // DOES NOT COMPILE
+            case SPRING, FALL  -> "Just right";
+        };
     }
 
 }

@@ -11,6 +11,12 @@ public class Lemur extends Primate implements HasTail {
     public boolean isTailStriped() {
         return false;
     }
+
+    @Override
+    public int getTailLength() {
+        return 0;
+    }
+
     public int age = 10;
     public static void main(String[] args) {
         Lemur lemur = new Lemur();
