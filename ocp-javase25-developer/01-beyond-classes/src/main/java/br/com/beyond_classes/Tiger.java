@@ -5,9 +5,17 @@ package br.com.beyond_classes;
  * <p> » » Selando Classes
  * <p> » » » Declarando uma Classe Selada
  * </ br>
+ * <p> » Capítulo 8 ■ Lambdas e Interfaces Funcionais
+ * <p> » » Codificando Interfaces Funcionais
+ * <p> » » » Definindo uma Interface Funcional
+ * </ br>
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
  */
-public final class Tiger {}
+public final class Tiger implements Sprint {
+    public void sprint(int speed) {
+        System.out.println("Animal is sprinting fast! " + speed);
+    }
+}
 
 //public final class Tiger extends Mammal {}  // DOES NOT COMPILE

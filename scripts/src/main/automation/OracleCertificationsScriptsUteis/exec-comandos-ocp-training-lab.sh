@@ -9,7 +9,7 @@ export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
 export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Interfaces"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "06-lambdas-functional-interfaces" "Interfaces Funcional"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Classes Sealed"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "01-class-design" "Classes Abstratas"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Polimorfismo"

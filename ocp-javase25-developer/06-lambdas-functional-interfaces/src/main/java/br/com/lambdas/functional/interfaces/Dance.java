@@ -1,10 +1,6 @@
-package br.com.beyond_classes;
+package br.com.lambdas.functional.interfaces;
 /**
  * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
- * <p> » Capítulo 7 ■ Além das Classes
- * <p> » » Implementando Interfaces
- * <p> » » » Modificadores Conflitantes
- * </ br>
  * <p> » Capítulo 8 ■ Lambdas e Interfaces Funcionais
  * <p> » » Codificando Interfaces Funcionais
  * <p> » » » Definindo uma Interface Funcional

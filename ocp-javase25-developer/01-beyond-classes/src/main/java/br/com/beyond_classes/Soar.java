@@ -5,6 +5,10 @@ package br.com.beyond_classes;
  * <p> » » Implementando Interfaces
  * <p> » » » Herdando Métodos Abstratos Duplicados
  * </ br>
+ * <p> » Capítulo 8 ■ Lambdas e Interfaces Funcionais
+ * <p> » » Codificando Interfaces Funcionais
+ * <p> » » » Adicionando Métodos da classe Object
+ * </ br>
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
  */
