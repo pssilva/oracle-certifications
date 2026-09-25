@@ -2,13 +2,12 @@ package br.com.beyond_classes;
 /**
  * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
  * <p> » Capítulo 7 ■ Além das Classes
- * <p> » » Compreendendo Polimorfismo
+ * <p> » » Implementando Interfaces
+ * <p> » » » Diferenças entre Interfaces e Classes Abstratas
  * </ br>
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
  */
-public interface HasTail {
-    public abstract boolean isTailStriped();
-
-    public int getTailLength();
+public class Webby extends Husky {
+    void play() {}      // play() is declared with package access in Husky
 }

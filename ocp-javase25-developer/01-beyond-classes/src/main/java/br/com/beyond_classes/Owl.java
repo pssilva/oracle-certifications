@@ -2,13 +2,14 @@ package br.com.beyond_classes;
 /**
  * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
  * <p> » Capítulo 7 ■ Além das Classes
- * <p> » » Compreendendo Polimorfismo
+ * <p> » » Implementando Interfaces
+ * <p> » » » Estendendo uma Interface
  * </ br>
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
  */
-public interface HasTail {
-    public abstract boolean isTailStriped();
-
-    public int getTailLength();
+public class Owl implements HasBigEyes {
+    public int hunt() { return 5; }
+    public void flap() { System.out.println("Flap!"); }
 }
+
