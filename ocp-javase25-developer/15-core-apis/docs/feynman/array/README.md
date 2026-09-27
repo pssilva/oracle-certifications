@@ -2,19 +2,19 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)! 
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Enums! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Array! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Enums
+CONCEITO: Array
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Capítulo 7 ■ Além das Classes
-» » Trabalhando com Enums 
+» Capítulo 4 ■ APIs Principais (APIS Core)
+» » Entendendo Arrays
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -34,10 +34,17 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/01-beyond-classes/docs/feynman/enums/evidencias`
+E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/15-core-apis/docs/feynman/array/evidencias`
 
-<img src="evidencias/imgs/evidencia-enum.jpeg" alt="Conceito: Enums" title="Enums" style="width:250px;"/>
+<img src="evidencias/imgs/evidencia-array-comaprando-pesquisando.jpeg" alt="Conceito: Array" title="Array" style="width:250px;"/>
 
+--- 
+
+<img src="evidencias/imgs/evidencia-array-entendendo-ordenando-usando.jpeg" alt="Conceito: Array" title="Array" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/evidencia-array-multidimencional-mismatch.jpeg" alt="Conceito: Array" title="Array" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

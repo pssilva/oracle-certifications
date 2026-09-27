@@ -2,6 +2,7 @@ package br.com.core_apis;
 
 import java.time.*;
 import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
 
 /**
  * <p> OBJETIVOS DO EXAME OCP ABORDADOS NESTE CAPÍTULO:
@@ -50,12 +51,17 @@ public class CoreAPIPracticalClass {
         //levandoEmContaHorarioVerao();
 
         // Não é necessário criar um objeto (instância)
-        Zoo zoo = new Zoo();
+        //Zoo zoo = new Zoo();
 
         //Podemos chamar diretamente o método main()
-        Zoo.main(new String[]{""});
+        //Zoo.main(new String[]{""});
 
-        Park park = new Park();
+        //Park park = new Park();
+
+        //criandoArrayPrimitivos();
+        //criandoArrayVariaveisReferencia();
+        //criandoArrayDeArrays();
+        usandoArrayDeArrays();
 
     }
 
@@ -294,6 +300,351 @@ public class CoreAPIPracticalClass {
         System.out.println(dateTime.getOffset()); // -04:00
         System.out.println("###################################################");
         System.out.println("\n\n\n");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Criando um Array de Primitivos
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void criandoArrayPrimitivos() {
+
+        char[] letters;
+        int[] moreNumbers = new int[] {42, 55, 99};
+        // int[] moreNumbers = {42, 55, 99};
+
+        int[] numAnimals;
+        int [] numAnimals2;
+        int []numAnimals3;
+        int numAnimals4[];
+        int numAnimals5 [];
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Criando um Array com Variáveis   de Referência
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void criandoArrayVariaveisReferencia() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: criandoArrayVariaveisReferencia()");
+        System.out.println("###################################################");
+        String[] bugs = { "cricket", "beetle", "ladybug" };
+        String[] alias = bugs;
+        String[] anotherArray = { "cricket", "beetle", "ladybug" };
+        System.out.println(bugs.equals(alias));        // true
+        System.out.println(bugs.equals(anotherArray)); // false
+        System.out.println(bugs.toString());           // [Ljava.lang.String;@160bc7c0
+
+        System.out.println("====================================================");
+
+        String[] strings = { "stringValue" };
+        Object[] objects = strings;
+        String[] againStrings = (String[]) objects;
+       // againStrings[0] = new StringBuilder();   // DOES NOT COMPILE
+         objects[0] = new StringBuilder();        // Careful!
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Usando um Array
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void usandoArray() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: UsandoArray()");
+        System.out.println("###################################################");
+        String[] mammals = {"monkey", "chimp", "donkey"};
+        System.out.println(mammals.length);           // 3
+        System.out.println(mammals[0]);               // monkey
+        System.out.println(mammals[1]);               // chimp
+        System.out.println(mammals[2]);               // donkey
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Ordenação
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void ordenacao() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: ordenacao()");
+        System.out.println("###################################################");
+        int[] numbers = { 6, 9, 1 };
+        Arrays.sort(numbers);
+        for (int i = 0; i < numbers.length; i++)
+            System.out.print(numbers[i] +  " ");
+
+        System.out.println("===================================================");
+
+        String[] strings = { "10", "9", "100" };
+        Arrays.sort(strings);
+        for (String s : strings)
+            System.out.print(s + " ");
+
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Pesquisa
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void pesquisa() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: pesquisa()");
+        System.out.println("###################################################");
+         int[] numbers = {2,4,6,8};
+         System.out.println(Arrays.binarySearch(numbers, 2)); // 0
+         System.out.println(Arrays.binarySearch(numbers, 4)); // 1
+         System.out.println(Arrays.binarySearch(numbers, 1)); // -1
+         System.out.println(Arrays.binarySearch(numbers, 3)); // -2
+         System.out.println(Arrays.binarySearch(numbers, 9)); // -5
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Comparando
+     * <p> » » » » Usando o `equals()`
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void arrayEquals() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: arrayEquals()");
+        System.out.println("###################################################");
+        System.out.println(new int[] {1} == new int[] {1});                 // false
+        System.out.println(Arrays.equals(new int[] {1}, new int[] {1}));    // true
+        System.out.println(Arrays.equals(new int[] {1}, new int[] {2}));    // false
+        System.out.println(Arrays.equals(new int[] {1}, new int[] {1, 2})); // false
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Comparando
+     * <p> » » » » Usando o `compare()`
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void arrayCompare() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: arrayCompare()");
+        System.out.println("###################################################");
+        System.out.println(Arrays.compare(new int[] {1}, new int[] {2}));
+
+        System.out.println("===================================================");
+
+        //System.out.println(Arrays.compare(new int[] {1}, new String[] {"a"})); // DOES NOT COMPILE
+
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Comparando
+     * <p> » » » » Usando `mismatch()`
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void arrayUsandoMismatch() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: arrayUsandoMismatch()");
+        System.out.println("###################################################");
+
+        System.out.println(Arrays.mismatch(new int[] {1}, new int[] {1}));
+        System.out.println(Arrays.mismatch(new String[] {"a"},
+                new String[] {"A"}));
+        System.out.println(Arrays.mismatch(new int[] {1, 2}, new int[] {1}));
+
+        System.out.println("===================================================");
+
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Using Methods with Varargs
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void usingMethodsVarargs() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: usingMethodsVarargs()");
+        System.out.println("###################################################");
+        String[] args = new String[0];
+        main1(args);
+        main2(args);
+        main3(args); // varargs
+        System.out.println("===================================================");
+
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Using Methods with Varargs
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void main1(String[] args){
+
+        System.out.println("###################################################");
+        System.out.println("Método: main1()");
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Using Methods with Varargs
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void main2(String args[]){
+
+        System.out.println("###################################################");
+        System.out.println("Método: main2()");
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Entendendo Arrays
+     * <p> » » » Using Methods with Varargs
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void main3(String ... args){  // varargs
+        System.out.println("###################################################");
+        System.out.println("Método: main3()");
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Trabalhando com arrays de arrays
+     * <p> » » » Criando um array de arrays
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void criandoArrayDeArrays() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: criandoArrayDeArrays()");
+        System.out.println("###################################################");
+        int[][] vars1;               // 2D array
+        int vars2 [][];              // 2D array
+        int[] vars3[];               // 2D array
+        int[] vars4 [], space [][];  // 2D and 3D arrays
+        System.out.println("===================================================");
+
+        String [][] rectangle = new String[3][2];
+        rectangle[0][1] = "set";
+        System.out.println(Arrays.toString(rectangle));
+        System.out.println(Arrays.toString(rectangle[0]));
+        System.out.println(Arrays.toString(rectangle[1]));
+        System.out.println("===================================================");
+
+
+
+        System.out.println("###################################################");
+
+    }
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Trabalhando com arrays de arrays
+     * <p> » » » Usando um array de arrays
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void usandoArrayDeArrays() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: usandoArrayDeArrays()");
+        System.out.println("###################################################");
+        var twoD = new int[3][2];
+        for(int i = 0; i < twoD.length; i++) {
+            for(int j = 0; j < twoD[i].length; j++)
+                System.out.print(twoD[i][j] + " "); // print element
+            System.out.println();                  // time for a new row
+        }
+
+
+        System.out.println("===================================================");
+        System.out.println("Loop Aprimorado (enhanced for loop) ");
+        System.out.println("===================================================");
+        for(int[] inner : twoD) {
+            for(int num : inner)
+                System.out.print(num + " ");
+            System.out.println();
+        }
+
+        System.out.println("###################################################");
 
     }
 }

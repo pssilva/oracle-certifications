@@ -8,8 +8,10 @@ export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
 export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
 export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
+
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Classes Aninhadas"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "15-core-apis" "Array"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Classes Aninhadas"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Enums"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "06-lambdas-functional-interfaces" "Interfaces Funcional"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Classes Sealed"
