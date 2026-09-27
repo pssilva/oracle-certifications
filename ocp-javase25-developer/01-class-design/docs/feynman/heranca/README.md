@@ -45,6 +45,10 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 ---
 
+<img src="evidencias/imgs/evidencia-coletor-lixo.jpeg" alt="Conceito: Herança" title="Herança" style="width:250px;"/>
+
+---
+
 
 <img src="evidencias/imgs/evidencia-heranca-subclasse-4em1.jpeg" alt="Conceito: Herança" title="Herança" style="width:250px;"/>
 

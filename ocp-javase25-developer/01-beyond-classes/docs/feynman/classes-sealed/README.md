@@ -39,6 +39,15 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 <img src="evidencias/imgs/evidencia-classes-sealed-abstract-4em1.jpeg" alt="Conceito: Classes Sealed" title="Classes Sealed" style="width:250px;"/>
 
+ ---
+
+<img src="evidencias/imgs/evidencia-metodo-ciclo-vida-objeto.jpeg" alt="Conceito: Classes Sealed" title="Classes Sealed" style="width:250px;"/>
+
+ ---
+
+<img src="evidencias/imgs/evidencia-pattern-matching-classe-sealed.jpeg" alt="Conceito: Classes Sealed" title="Classes Sealed" style="width:250px;"/>
+
+
 
 ## Explique em voz alta (25-40 min)
 
