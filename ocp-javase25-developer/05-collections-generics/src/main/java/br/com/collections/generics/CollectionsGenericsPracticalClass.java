@@ -99,4 +99,50 @@ public class CollectionsGenericsPracticalClass {
         System.out.println("###################################################");
     }
 
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Usando a Interface List
+     * <p> » » » Trabalhando com Métodos de List
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoMetodosList() {
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoMetodosList()");
+        System.out.println("###################################################");
+        List<String> list = new ArrayList<>();
+        list.add("SD");                  // [SD]
+        list.add(0, "NY");               // [NY,SD]
+        list.set(1, "FL");               // [NY,FL]
+        System.out.println(list.get(0)); // NY
+        list.remove("NY");               // [FL]
+        list.remove(0);                  // []
+        list.set(0, "?");                // IndexOutOfBoundsException
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Usando a Interface List
+     * <p> » » » Métodos `remove()` Sobrecarregados
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void metodosRemoveSobrecarregados() {
+        System.out.println("###################################################");
+        System.out.println("Método: metodosRemoveSobrecarregados()");
+        System.out.println("###################################################");
+         var list = new LinkedList<Integer>();
+         list.add(3);
+         list.add(2);
+         list.add(1);
+         list.remove(2);
+         list.remove(Integer.valueOf(2));
+         System.out.println(list);
+        System.out.println("###################################################");
+    }
 }
