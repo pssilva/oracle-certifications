@@ -10,7 +10,8 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "List"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Set"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "List"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-arrays-collections" "List"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "15-core-apis" "Array"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Classes Aninhadas"

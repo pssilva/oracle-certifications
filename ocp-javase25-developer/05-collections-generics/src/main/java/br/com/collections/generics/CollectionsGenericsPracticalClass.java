@@ -1,9 +1,6 @@
 package br.com.collections.generics;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * <p> OBJETIVOS DO EXAME OCP ABORDADOS NESTE PACOTE: collection-generics
@@ -136,13 +133,47 @@ public class CollectionsGenericsPracticalClass {
         System.out.println("###################################################");
         System.out.println("Método: metodosRemoveSobrecarregados()");
         System.out.println("###################################################");
-         var list = new LinkedList<Integer>();
-         list.add(3);
-         list.add(2);
-         list.add(1);
-         list.remove(2);
-         list.remove(Integer.valueOf(2));
-         System.out.println(list);
+        var list = new LinkedList<Integer>();
+        list.add(3);
+        list.add(2);
+        list.add(1);
+        list.remove(2);
+        list.remove(Integer.valueOf(2));
+        System.out.println(list);
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Usando a Interface Set
+     * <p> » » » Trabalhando com métodos de Set
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoMetodosSet() {
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoMetodosSet()");
+        System.out.println("###################################################");
+
+        Set<Character> letters = Set.of('c', 'a', 't');
+        Set<Character> copy = Set.copyOf(letters);
+
+        System.out.println("===================================================");
+
+        Set<Integer> set = new HashSet<>();
+        boolean b1 = set.add(66);  // true
+        boolean b2 = set.add(10);  // true
+        boolean b3 = set.add(66);  // false
+        boolean b4 = set.add(8);   // true
+        for (Integer value: set)
+            System.out.print(value + ","); // 66,8,10,
+
+        System.out.println("===================================================");
+
+        Set<Integer> set2 = new LinkedHashSet<>();
+
         System.out.println("###################################################");
     }
 }
