@@ -10,7 +10,8 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Queue / Deque"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Generics"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Queue / Deque"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Map"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Set"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "List"

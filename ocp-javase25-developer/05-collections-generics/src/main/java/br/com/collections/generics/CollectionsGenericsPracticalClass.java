@@ -570,4 +570,33 @@ public class CollectionsGenericsPracticalClass {
         System.out.println("###################################################");
     }
 
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Trabalhando com Genéricos
+     * <p> » » » Criando Classes Genéricas
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void criandoClassesGenericas() {
+        System.out.println("###################################################");
+        System.out.println("Método: criandoClassesGenericas()");
+        System.out.println("###################################################");
+        Elephant elephant = new Elephant();
+        Crate<Elephant> crateForElephant = new Crate<>();
+        crateForElephant.packCrate(elephant);
+        Elephant inNewHome = crateForElephant.lookInCrate();
+
+        Crate<Zebra> crateForZebra = new Crate<>();
+
+        Robot joeBot = new Robot();
+        Crate<Robot> robotCrate = new Crate<>();
+        robotCrate.packCrate(joeBot);
+// ship to Houston
+        Robot atDestination = robotCrate.lookInCrate();
+
+        System.out.println("###################################################");
+    }
+
 }
