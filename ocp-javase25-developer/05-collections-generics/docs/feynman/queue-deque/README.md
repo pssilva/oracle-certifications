@@ -2,20 +2,20 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)! 
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Classes Abstratas! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Queue / Deque! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Classes Abstratas
+CONCEITO: Queue / Deque
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Capítulo 1 ■ Blocos de Construção
-» » Criando Classes Abstratas
-» » » Introduzindo Classes Abstratas
+» Capítulo 9 ■ Coleções e Genéricos
+» » Usando as Interfaces Queue e Deque
+
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -35,10 +35,15 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/01-class-design/docs/feynman/classes-abstratas/evidencias`
+E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/05-collections-generics/docs/feynman/queue-deque/evidencias`
 
-<img src="evidencias/imgs/evidencia-classes-abstract-4em1.jpeg" alt="Conceito: Classes Abstratas" title="Classes Abstratas" style="width:250px;"/>
+<img src="evidencias/imgs/evidencia-sequenced-collection-4em1.jpeg" alt="Conceito: Queue / Deque" title="Queue / Deque" style="width:250px;"/>
 
+--- 
+<img src="evidencias/imgs/evidencia-tipos-collections.jpeg" alt="Conceito: Queue / Deque" title="Queue / Deque" style="width:250px;"/>
+
+--- 
+<img src="evidencias/imgs/evidencia-queue-deque.jpeg" alt="Conceito: Queue / Deque" title="Queue / Deque" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

@@ -29,7 +29,9 @@ public class CollectionsGenericsPracticalClass {
 
         //iterandoSobreMap();
         //obtendoValoresFormaSegura();
-        substituindoValores();
+        //substituindoValores();
+        //trabalhandoComSequencedCollection();
+        trabalhandoComSequencedCollectionMoveToEnd();
     }
 
     /**
@@ -393,6 +395,178 @@ public class CollectionsGenericsPracticalClass {
          System.out.println(favorites); // {Tom=Skyride, Jenny=Bus Tour}
          System.out.println(jenny);     // Bus Tour
          System.out.println(tom);       // Skyride
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Usando a Interface Map
+     * <p> » » » Trabalhando com métodos de Queue e Deque
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoMetodosQueueDeque() {
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoMetodosQueueDeque()");
+        System.out.println("###################################################");
+
+        System.out.println("===================================================");
+        System.out.println("TABELA 9.3 Métodos da interface Queue");
+        System.out.println("===================================================");
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(10);
+        queue.add(4);
+        System.out.println(queue.remove());   // 10
+        System.out.println(queue.peek());     // 4
+        System.out.println("===================================================");
+
+        System.out.println("===================================================");
+        System.out.println("FIGURA 9.6 Trabalhando com um *Deque*");
+        System.out.println("===================================================");
+        Deque<Integer> deque = new LinkedList<>();
+        deque.offerFirst(10); // true
+        deque.offerLast(4); // true
+        System.out.println(deque.peekFirst()); // 10
+        System.out.println(deque.pollLast()); // 4
+        System.out.println(deque.pollFirst()); // null
+        System.out.println(deque.peekFirst()); // null
+        System.out.println("===================================================");
+
+        System.out.println("===================================================");
+        System.out.println("FIGURA 9.6 Trabalhando com um *Deque*");
+        System.out.println("===================================================");
+        Deque<Integer> stack = new ArrayDeque<>();
+        stack.offerFirst(10); // true
+        stack.offerLast(4); // true
+        System.out.println(stack.peekFirst()); // 10
+        System.out.println(stack.pollLast()); // 4
+        System.out.println(stack.pollFirst()); // null
+        System.out.println(stack.peekFirst()); // null
+        System.out.println("===================================================");
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Introduzindo Coleções Sequenciadas
+     * <p> » » » Trabalhando com SequencedCollection
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void welcomeNext(SequencedCollection<String> visitors) {
+        System.out.println("Welcome to the Zoo! " + visitors.getFirst());
+        visitors.removeFirst();
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Introduzindo Coleções Sequenciadas
+     * <p> » » » Trabalhando com SequencedCollection
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoComSequencedCollection() {
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoComSequencedCollection()");
+        System.out.println("###################################################");
+        var visitArrayList = new ArrayList<String>(List.of("Huey", "Dewey", "Louie"));
+        var visitLinkedList = new LinkedList<String>(List.of("Moe", "Larry", "Shemp"));
+        var visitTreeSet = new TreeSet<String>(Set.of("Alvin", "Simon", "Theodore"));
+
+        welcomeNext(visitArrayList);  // Welcome to the Zoo! Huey
+        welcomeNext(visitLinkedList); // Welcome to the Zoo! Moe
+        welcomeNext(visitTreeSet);    // Welcome to the Zoo! Alvin
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Introduzindo Coleções Sequenciadas
+     * <p> » » » Trabalhando com SequencedCollection
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoComSequencedCollectionMoveToEnd() {
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoComSequencedCollectionMoveToEnd()");
+        System.out.println("###################################################");
+        var visitArrayList = new ArrayList<String>(
+                List.of("Bluey", "Bingo", "Socks"));
+        var visitLinkedList = new LinkedList<String>(List.of("Garfield", "Odie"));
+        var visitTreeSet = new TreeSet<String>(Set.of("Tom", "Jerry"));
+
+        moveToEnd(visitArrayList);
+        welcomeNext(visitArrayList);  // Welcome to the Zoo! Bingo
+
+        moveToEnd(visitLinkedList);
+        welcomeNext(visitLinkedList); // Welcome to the Zoo! Odie
+
+      //  moveToEnd(visitTreeSet);      // java.lang.UnsupportedOperationException
+        welcomeNext(visitTreeSet);
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Introduzindo Coleções Sequenciadas
+     * <p> » » » Trabalhando com SequencedCollection
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void moveToEnd(SequencedCollection<String> visitors) {
+        visitors.addLast(visitors.removeFirst());
+    }
+
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Introduzindo Coleções Sequenciadas
+     * <p> » » » Trabalhando com SequencedCollection
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void welcomeNext(SequencedMap<String, String> visitors) {
+        System.out.println("Welcome to the Zoo! " + visitors.pollFirstEntry());
+    }
+
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 9 ■ Coleções e Genéricos
+     * <p> » » Introduzindo Coleções Sequenciadas
+     * <p> » » » Trabalhando com SequencedCollection
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoComSequencedCollectionMoveToEndMap() {
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoComSequencedCollectionMoveToEndMap()");
+        System.out.println("###################################################");
+        var  visitHashMap = new HashMap<String,String>(
+                Map.of("1", "Yakko", "2", "Wakko", "3", "Dot"));
+       // welcomeNext(visitHashMap);// não compila
+
+        System.out.println("===================================================");
+
+        var visitTreeMap = new TreeMap<String,String>(
+                Map.of("Pink", "Blossom", "Green", "Buttercup", "Blue", "Bubbles"));
+        welcomeNext(visitTreeMap);
+
         System.out.println("###################################################");
     }
 
