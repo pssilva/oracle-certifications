@@ -42,6 +42,10 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 <img src="evidencias/imgs/evidencia-generics.jpeg" alt="Conceito: Generics" title="Generics" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-generics-4em1-p2.jpeg" alt="Conceito: Generics" title="Generics" style="width:250px;"/>
+
 
 
 ## Explique em voz alta (25-40 min)
