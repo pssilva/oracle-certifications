@@ -10,7 +10,8 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Generics"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "06-lambdas-functional-interfaces" "Lambda / Funcional Interface"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Generics"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Queue / Deque"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Map"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Set"
@@ -39,3 +40,9 @@ OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generi
 #source /home/pssilva/projetos/oracle-certifications/scripts/src/main/automation/OracleCertificationsScriptsUteis/ocp-training-lab.sh
 
 echo "${TOOL_PATH}"
+
+
+[20:28, 13/09/2026] Paulo Sérgio:
+O Jeito certo de aprender:
+[20:28, 13/09/2026] Paulo Sérgio: https://www.youtube.com/watch?t=1618&v=oUPaJxk6TZ0&feature=youtu.be
+[20:29, 13/09/2026] Lucas Vieira - Montreal: Hmmm interessante

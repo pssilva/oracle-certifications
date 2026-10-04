@@ -5,10 +5,17 @@ package br.com.collections.generics;
  * <p> » Capítulo 9 ■ Coleções e Genéricos
  * <p> » » Trabalhando com Genéricos
  * <p> » » » Entendendo a Erasure de Tipo (Type Erasure)
- * <p> » » » » Sobrecarga de um Método Genérico
+ * <p> » » » » Escrevendo Métodos Genéricos
  * </ br>
  *
  * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
  */
-public class Elephant {
+public class Handler {
+    public static <T> void prepare(T t) {
+        System.out.println("Preparing " + t);
+    }
+    public static <T> Crate<T> ship(T t) {
+        System.out.println("Shipping " + t);
+        return new Crate<T>();
+    }
 }

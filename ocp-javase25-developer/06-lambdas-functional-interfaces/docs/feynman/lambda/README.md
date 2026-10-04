@@ -2,19 +2,21 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)! 
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Generics! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Lambda! 
+E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Generics
+CONCEITO: Lambda
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Capítulo 9 ■ Coleções e Genéricos
-» » Trabalhando com Genéricos
+ » Capítulo 8 ■ Lambdas e Interfaces Funcionais
+ » » Escrevendo Lambdas Simples
+
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -34,18 +36,20 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/05-collections-generics/docs/feynman/generics/evidencias`
+E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/06-lambdas-functional-interfaces/docs/feynman/lambda-funcional-interface/evidencias`
 
-<img src="evidencias/imgs/evidencia-generics-4em1.jpeg" alt="Conceito: Generics" title="Generics" style="width:250px;"/>
+<img src="evidencias/imgs/evidencia-lambda-4em1.jpeg" alt="Conceito: Lambda" title="Lambda" style="width:250px;"/>
+
+---
+<img src="evidencias/imgs/evidencia-lambda-sintaxe.jpeg" alt="Conceito: Lambda" title="Lambda" style="width:250px;"/>
 
 ---
 
-<img src="evidencias/imgs/evidencia-generics.jpeg" alt="Conceito: Generics" title="Generics" style="width:250px;"/>
+<img src="evidencias/imgs/evidencia-lambda.jpeg" alt="Conceito: Lambda" title="Lambda" style="width:250px;"/>
 
 ---
 
-<img src="evidencias/imgs/evidencia-generics-4em1-p2.jpeg" alt="Conceito: Generics" title="Generics" style="width:250px;"/>
-
+<img src="evidencias/imgs/evidencia-lambda-supplier-predicate-consumer.jpeg" alt="Conceito: Lambda" title="Lambda" style="width:250px;"/>
 
 
 ## Explique em voz alta (25-40 min)
