@@ -43,6 +43,14 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 ---
 <img src="evidencias/imgs/evidencia-lambda-sintaxe.jpeg" alt="Conceito: Lambda" title="Lambda" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-lambda.jpeg" alt="Conceito: Lambda" title="Lambda" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-lambda-supplier-predicate-consumer.jpeg" alt="Conceito: Lambda" title="Lambda" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 
