@@ -38,6 +38,9 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 <img src="evidencias/imgs/evidencia-streams-4em1.jpeg" alt="Conceito: Streams" title="Streams" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-streams-4em1.jpeg" alt="Conceito: Streams" title="Streams" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
