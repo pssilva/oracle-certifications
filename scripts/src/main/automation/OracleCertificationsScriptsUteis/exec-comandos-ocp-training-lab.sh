@@ -10,7 +10,7 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "07-streams" "Streams"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "09-io-api" "IO API e NIO2"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "06-lambdas-functional-interfaces" "Lambda / Funcional Interface"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Generics"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Queue / Deque"

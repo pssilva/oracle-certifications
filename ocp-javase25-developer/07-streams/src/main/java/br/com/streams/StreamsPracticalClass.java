@@ -263,7 +263,7 @@ public class StreamsPracticalClass {
 
     /**
      * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
-     * <p> » Capítulo 10 ■ Streams
+     * <p> » Capítulo 14 ■ Entrada/Saída I/O
      * <p> » » Usando Streams
      * <p> » » » Usando Operações Terminais Comuns
      * <p> » » » » Redução
