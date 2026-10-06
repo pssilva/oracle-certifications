@@ -37,18 +37,18 @@ public class IOAPI_NIO2PracticalClass {
 
     /**
      * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
-     * <p> » Capítulo 10 ■ Streams
-     * <p> » » Retornando um Optional
-     * <p> » » » Definindo uma Interface Funcional
-     * <p> » » » » Criando um Optional
+     * <p> » Capítulo 14 ■ Entrada/Saída I/O
+     * <p> » » Referenciando Arquivos e Diretórios
+     * <p> » » » Separadores de Arquivo do Sistema Operacional
+     * <p> » » » » Criando um Arquivo
      * </ br>
      *
      * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
      */
-    private static void criandoOptional() {
+    private static void criandoArquivo() {
 
         System.out.println("###################################################");
-        System.out.println("Método: criandoOptional()");
+        System.out.println("Método: criandoArquivo()");
         System.out.println("###################################################");
 
         System.out.println("###################################################");
