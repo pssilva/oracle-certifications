@@ -1,5 +1,6 @@
 package br.com.io_api;
 
+import java.io.File;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
@@ -50,7 +51,13 @@ public class IOAPI_NIO2PracticalClass {
         System.out.println("###################################################");
         System.out.println("Método: criandoArquivo()");
         System.out.println("###################################################");
+        File zooFile1 = new File("/home/tiger/data/stripes.txt");
+        File zooFile2 = new File("/home/tiger", "data/stripes.txt");
 
+        File parent = new File("/home/tiger");
+        File zooFile3 = new File(parent, "data/stripes.txt");
+
+        System.out.println(zooFile1.exists());
         System.out.println("###################################################");
     }
 
