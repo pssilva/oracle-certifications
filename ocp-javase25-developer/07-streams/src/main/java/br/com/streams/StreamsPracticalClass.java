@@ -1,11 +1,9 @@
 package br.com.streams;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -263,7 +261,7 @@ public class StreamsPracticalClass {
 
     /**
      * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
-     * <p> » Capítulo 14 ■ Entrada/Saída I/O
+     * <p> » Capítulo 10 ■ Streams
      * <p> » » Usando Streams
      * <p> » » » Usando Operações Terminais Comuns
      * <p> » » » » Redução
@@ -271,10 +269,10 @@ public class StreamsPracticalClass {
      *
      * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
      */
-    public static void  redução() {
+    public static void  reducao() {
 
         System.out.println("###################################################");
-        System.out.println("Método: redução()");
+        System.out.println("Método: reducao()");
         System.out.println("###################################################");
 
         var array = new String[] { "w", "o", "l", "f" };
@@ -294,7 +292,7 @@ public class StreamsPracticalClass {
         System.out.println(word2); // wolf
 
         System.out.println("==================================================");
-        
+
         Stream<Integer> streamI = Stream.of(3, 5, 6);
         System.out.println(streamI.reduce(1, (a, b) -> a*b)); // 90
 
@@ -302,4 +300,214 @@ public class StreamsPracticalClass {
 
     }
 
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 10 ■ Streams
+     * <p> » » Trabalhando com Conceitos Avançados de Pipeline de Streams
+     * <p> » » » Vinculando Streams aos Dados Subjacentes
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void  vinculandoStreamsDadosSubjacentes() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: vinculandoStreamsDadosSubjacentes()");
+        System.out.println("###################################################");
+        var cats = new ArrayList<String>();
+        cats.add("Annie");
+        cats.add("Ripley");
+        var stream = cats.stream();
+        cats.add("KC");
+        System.out.println(stream.count());
+
+        System.out.println("==================================================");
+
+        System.out.println("==================================================");
+
+        System.out.println("==================================================");
+
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 10 ■ Streams
+     * <p> » » Trabalhando com Conceitos Avançados de Pipeline de Streams
+     * <p> » » » Coletando em Maps
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void  coletandoMaps() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: coletandoMaps()");
+        System.out.println("###################################################");
+        var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<String, Integer> map = ohMy.collect(
+            Collectors.toMap(s -> s, String::length));
+        System.out.println(map); // {lions=5, bears=5, tigers=6}
+
+        System.out.println("==================================================");
+       // var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Integer, String> map2 = ohMy.collect(
+            Collectors.toMap(String::length, k -> k)); // BAD
+        System.out.println("==================================================");
+
+        //var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Integer, String> map3 = ohMy.collect(Collectors.toMap(
+                String::length,
+                k -> k,
+                (s1, s2) -> s1 + "," + s2));
+        System.out.println(map3);            // {5=lions,bears, 6=tigers}
+        System.out.println(map3.getClass()); // class java.util.HashMap
+        System.out.println("==================================================");
+        //var ohMy = Stream.of("lions", "tigers", "bears");
+        TreeMap<Integer, String> map4 = ohMy.collect(Collectors.toMap(
+                String::length,
+                k -> k,
+                (s1, s2) -> s1 + "," + s2,
+                TreeMap::new));
+        System.out.println(map4);            // {5=lions,bears, 6=tigers}
+        System.out.println(map4.getClass()); // class java.util.TreeMap
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 10 ■ Streams
+     * <p> » » Trabalhando com Conceitos Avançados de Pipeline de Streams
+     * <p> » » » Agrupamento, Particionamento e Mapeamento
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void  agrupamento() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: agrupamento()");
+        System.out.println("###################################################");
+        var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Integer, List<String>> map = ohMy.collect(Collectors.groupingBy(String::length));
+        System.out.println(map);    // {5=[lions, bears], 6=[tigers]}
+
+        System.out.println("==================================================");
+        System.out.println("Valores do tipo Set<String>");
+        System.out.println("==================================================");
+
+        //var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Integer, Set<String>> map2 = ohMy.collect(
+                Collectors.groupingBy(
+                        String::length,
+                        Collectors.toSet()));
+        System.out.println(map2);    // {5=[lions, bears], 6=[tigers]}
+
+        System.out.println("==================================================");
+        System.out.println("TreeMap com Valores do tipo Set<String>");
+        System.out.println("==================================================");
+       // var ohMy = Stream.of("lions", "tigers", "bears");
+        TreeMap<Integer, Set<String>> map3 = ohMy.collect(
+                Collectors.groupingBy(
+                        String::length,
+                        TreeMap::new,
+                        Collectors.toSet()));
+        System.out.println(map3); // {5=[lions, bears], 6=[tigers]}
+
+        System.out.println("==================================================");
+        System.out.println("TreeMap com Valores do tipo List<String>");
+        System.out.println("==================================================");
+        //var ohMy = Stream.of("lions", "tigers", "bears");
+        TreeMap<Integer, List<String>> map4 = ohMy.collect(
+            Collectors.groupingBy(
+                    String::length,
+                    TreeMap::new,
+                    Collectors.toList()));
+        System.out.println(map4);
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 10 ■ Streams
+     * <p> » » Trabalhando com Conceitos Avançados de Pipeline de Streams
+     * <p> » » » Agrupamento, Particionamento e Mapeamento
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void  particionamento() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: particionamento()");
+        System.out.println("###################################################");
+
+        var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Boolean, List<String>> map = ohMy.collect(
+                Collectors.partitioningBy(s -> s.length() <= 5));
+        System.out.println(map);    // {false=[tigers], true=[lions, bears]}
+
+        System.out.println("==================================================");
+
+       // var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Boolean, List<String>> map2 = ohMy.collect(
+                Collectors.partitioningBy(s -> s.length() <= 7));
+        System.out.println(map2);    // {false=[], true=[lions, tigers, bears]}
+
+        System.out.println("==================================================");
+        //var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Boolean, Set<String>> map3 = ohMy.collect(
+                Collectors.partitioningBy(
+                        s -> s.length() <= 7,
+                        Collectors.toSet()));
+        System.out.println(map3);    // {false=[], true=[lions, tigers, bears]}
+
+        System.out.println("==================================================");
+        //var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Integer, Long> map4 = ohMy.collect(
+                Collectors.groupingBy(
+                        String::length,
+                        Collectors.counting()));
+        System.out.println(map4);    // {5=2, 6=1}
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 10 ■ Streams
+     * <p> » » Trabalhando com Conceitos Avançados de Pipeline de Streams
+     * <p> » » » Agrupamento, Particionamento e Mapeamento
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void  mapeamento() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: mapeamento()");
+        System.out.println("###################################################");
+
+        var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Integer, Long> map4 = ohMy.collect(
+            Collectors.groupingBy(
+                String::length,
+                Collectors.counting()));
+        System.out.println(map4);    // {5=2, 6=1}
+
+        System.out.println("==================================================");
+        //var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Integer, Optional<Character>> map2 = ohMy.collect(
+            Collectors.groupingBy(
+                String::length,
+                Collectors.mapping(
+                        s -> s.charAt(0),
+                        Collectors.minBy((a, b) -> a - b))));
+        System.out.println(map2);    // {5=Optional[b], 6=Optional[t]}
+        System.out.println("###################################################");
+
+    }
 }
