@@ -9,6 +9,13 @@
   <artifactId>ocp-javase25-developer</artifactId>
   <packaging>pom</packaging>
   <name>ocp-javase25-developer</name>
+
+  <properties>
+    <maven.compiler.release>25</maven.compiler.release>
+    <maven.compiler.source>25</maven.compiler.source>
+    <maven.compiler.target>25</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <modules>
     <module>01-building-blocks</module>
     <module>01-beyond-classes</module>
