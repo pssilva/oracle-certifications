@@ -1,4 +1,4 @@
-package br.com.exceptions.localization;
+package br.com.localization;
 
 /**
  * Hello world!
