@@ -19,15 +19,14 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <version>3.8.1</version> 
 <scope>test</scope> 
 </dependency> 
-</dependencies> 
- 
- 
-<properties> 
-<maven.compiler.source>21</maven.compiler.source> 
-<maven.compiler.target>21</maven.compiler.target> 
-<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-</properties> 
- 
+</dependencies>
+
+<properties>
+    <maven.compiler.release>25</maven.compiler.release>
+    <maven.compiler.source>25</maven.compiler.source>
+    <maven.compiler.target>25</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
   
     <build>
         <plugins>
@@ -37,6 +36,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <version>3.14.0</version>
                 <configuration>
                     <release>21</release>
+                    <source>24</source>
+                    <target>24</target>
                 </configuration>
             </plugin>
         </plugins>
