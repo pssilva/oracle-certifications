@@ -2,27 +2,26 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)! 
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Exceptions! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Recursos try-catch! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Exceptions
+CONCEITO: Recursos try-catch
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
 » Capítulo 11 ■ Exceções e Localização
-» » Entendendo Exceções
-» » Tratamento Exceções
+» »  Automatizando o Gerenciamento de Recursos
+» » » Entendendo Exceções Suprimidas
 
 ```
 
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva: 
-
 
 ```
 O que é?
@@ -36,16 +35,21 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/04-exceptions-localization/docs/feynman/exceptions/evidencias`
+E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/04-exceptions-localization/docs/feynman/recursos-try-catch/evidencias`
 
-<img src="../recursos-try-catch/evidencias/imgs/evidencia-exception-tipo-tratamento-throw-error-4em1.jpeg" alt="Conceito: Exceptions" title="Exceptions" style="width:250px;"/>
+<img src="evidencias/imgs/evidencia-exception-tipo-tratamento-throw-error-4em1.jpeg" alt="Conceito: Recursos try-catch" title="Recursos try-catch" style="width:250px;"/>
 
---- 
-<img src="evidencias/imgs/evidencia-exception-tratamento-4em1.jpeg" alt="Conceito: Exceptions" title="Exceptions" style="width:250px;"/>
+---
 
---- 
+<img src="evidencias/imgs/evidencia-tratamento-excecoes-try-with-resource-4em1.jpeg" alt="Conceito: Recursos try-catch" title="Recursos try-catch" style="width:250px;"/>
 
-<img src="evidencias/imgs/evidencia-exception.jpeg" alt="Conceito: Exceptions" title="Exceptions" style="width:250px;"/>
+---
+
+<img src="evidencias/imgs/evidencia-try-with-resource-4em1.jpeg" alt="Conceito: Recursos try-catch" title="Recursos try-catch" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-try-with-resource.jpeg" alt="Conceito: Recursos try-catch" title="Recursos try-catch" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
