@@ -41,5 +41,6 @@
     <module>14-operators</module>
     <module>15-core-apis</module>
     <module>16-data-type-manipulation</module>
+      <module>11-modules/care</module>
   </modules>
 </project>
