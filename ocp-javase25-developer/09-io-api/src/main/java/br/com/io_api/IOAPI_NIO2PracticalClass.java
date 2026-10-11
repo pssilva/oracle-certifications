@@ -1,6 +1,6 @@
 package br.com.io_api;
 
-import java.io.File;
+import java.io.*;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
@@ -59,6 +59,25 @@ public class IOAPI_NIO2PracticalClass {
 
         System.out.println(zooFile1.exists());
         System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 14 ■ Entrada/Saída I/O
+     * <p> » » Serialização de Dados
+     * <p> » » » Aplicando a Interface Serializable
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    void saveToFile(List<Gorilla> gorillas, File dataFile)
+            throws IOException {
+        try (var out = new ObjectOutputStream(
+                new BufferedOutputStream(
+                        new FileOutputStream(dataFile)))) {
+            for (Gorilla gorilla : gorillas)
+                out.writeObject(gorilla);
+        }
     }
 
 }

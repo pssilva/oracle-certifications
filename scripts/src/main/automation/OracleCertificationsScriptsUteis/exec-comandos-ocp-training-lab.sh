@@ -10,8 +10,10 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "12-packaging-deployment" "Deploy e Packaging"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "09-io-api" "Serialization"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "12-packaging-deployment" "Deploy e Packaging"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "04-exceptions-localization" "Recursos try-catch"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "04-exceptions-localization" "Internacionalização e Localização"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "04-exceptions-localization" "Exceptions"
