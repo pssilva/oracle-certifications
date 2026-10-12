@@ -40,7 +40,15 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 ---
 
-<img src="evidencias/imgs/evidencia-modules-3em1.jpeg.jpeg" alt="Conceito: Módulos" title="Módulos" style="width:250px;"/>
+<img src="evidencias/imgs/evidencia-modules-3em1.jpeg" alt="Conceito: Módulos" title="Módulos" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-modulos-4em1-p3.jpeg" alt="Conceito: Módulos" title="Módulos" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-modulos-4em1-p4.jpeg" alt="Conceito: Módulos" title="Módulos" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
@@ -117,6 +125,45 @@ jar --create --file "${WORK_PATH}/11-modules/zoo.animal.care.jar" -C care/target
 
 ```
 
+
+Para criar compilar e executar o módulo `talks`, use os comandos:
+
+```shell
+
+export ARTIFACT_ID_PARENT="oracle-certifications"
+export ARTIFACT_ID="ocp-javase25-developer"
+export WORK_PATH="${HOME}/projetos/${ARTIFACT_ID_PARENT}/${ARTIFACT_ID}"
+        
+cd "${WORK_PATH}/11-modules"
+
+# 1. Compilação (Mantida igual, apenas corrigindo o caminho relativo do module-info se necessário)
+javac --module-path care/target/classes \
+  -d talks/target/classes \
+  ${WORK_PATH}/11-modules/talks/src/main/java/zoo/animal/talks/content/*.java \
+  ${WORK_PATH}/11-modules/talks/src/main/java/zoo/animal/talks/media/*.java \
+  ${WORK_PATH}/11-modules/talks/src/main/java/zoo/animal/talks/schedule/*.java \
+  talks/module-info.java
+
+# 3. Comando para criar o Jar
+jar --create --file "${WORK_PATH}/11-modules/zoo.animal.talks.jar" -C talks/target/classes .
+export ARTIFACT_ID_PARENT="oracle-certifications"
+export ARTIFACT_ID="ocp-javase25-developer"
+export WORK_PATH="${HOME}/projetos/${ARTIFACT_ID_PARENT}/${ARTIFACT_ID}"
+        
+cd "${WORK_PATH}/11-modules"
+
+# 1. Compilação corrigida (adicionado feeding/target/classes ao module-path)
+javac --module-path feeding/target/classes:care/target/classes \
+  -d talks/target/classes \
+  ${WORK_PATH}/11-modules/talks/src/main/java/zoo/animal/talks/content/*.java \
+  ${WORK_PATH}/11-modules/talks/src/main/java/zoo/animal/talks/media/*.java \
+  ${WORK_PATH}/11-modules/talks/src/main/java/zoo/animal/talks/schedule/*.java \
+  talks/module-info.java
+
+# 2. Comando para criar o Jar (agora funcionará pois a pasta terá os arquivos compilados)
+jar --create --file "${WORK_PATH}/11-modules/zoo.animal.talks.jar" -C talks/target/classes .
+
+```
 
 Procure responder o seguinte:
 

@@ -35,12 +35,18 @@
     <module>09-io-api</module>
     <module>10-localization-support</module>
     <module>11-modules</module>
+    <module>11-modules/care</module>
+    <module>11-modules/talks</module>
+    <module>11-modules/staff</module>
+    <module>11-modules/api</module>
+    <module>11-modules/reservations</module>
+    <module>11-modules/visitor</module>
     <module>12-packaging-deployment</module>
     <module>13-concurrency</module>
     <module>13-concurrent-multithreading-execution</module>
     <module>14-operators</module>
     <module>15-core-apis</module>
     <module>16-data-type-manipulation</module>
-      <module>11-modules/care</module>
+    <module>11-modules/agency</module>
   </modules>
 </project>
