@@ -17,7 +17,7 @@ Tendo em mente que para a presente [{{TITULO_CERTIFICATION}}]({{LINK_CERTIFICATI
 - Objetivo dos Tópicos, para cada tópico, explodir em Habilidades;
 - Para cada habilidade, identificar boas práticas e seus usos Empírico;
 - Identificar a forma do como é cobrado o conhecimento no exame;
-- identificar, em projetos open-source, o uso dos conceitos, na prática;
+- identificar, em projetos open-source, o uso dos conceitos na prática;
 - Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 
 --- 

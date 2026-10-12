@@ -16,7 +16,7 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
   - Para cada Objetivo dos Tópicos, explodir em habilidades;
   - Para cada habilidade, identificar boas práticas de uso Empírico;
   - Identificar a forma de como é cobrado o conhecimento no exame;
-  - identificar, em projetos open-source, o uso dos conceitos, na prática;
+  - identificar, em projetos open-source, o uso dos conceitos na prática;
   - Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 
 --- 
