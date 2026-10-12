@@ -93,9 +93,12 @@ Aqui temos uma lista do que idenficamos com status de pendente:
 Segue abaixo (não se limita) os objetivos do presente projeto:
 
 - [X] ~~Formatando documentação README.md~~
-- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 071518 – 03.04.02.01.17.06 – 1 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1 – Questões](../docs/indexacoes/VIDEO%20LONGO%20071518%20–%2003.04.02.01.17.06%20–%201%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part1%20–%20Questões.pdf) (mais detalhes veja [aqui](../docs/indexacoes/README.md))
-- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 074048 – 03.04.02.01.17.06 – 2 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 2 – Questões](../docs/indexacoes/VIDEO%20LONGO%20074048%20–%2003.04.02.01.17.06%20–%202%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%202%20–%20Questões.pdf) (mais detalhes veja [aqui](../docs/indexacoes/README.md))
-- [ ] Indexação completa do vídeo longo: [VIDEO LONGO – 061942 – 03.04.02.01.17.06 – 3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3 – Questões](../docs/indexacoes/VIDEO%20LONGO%20–%20061942%20–%2003.04.02.01.17.06%20–%203%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%203%20–%20Questões.pdf) (mais detalhes veja [aqui](../docs/indexacoes/README.md))
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 071518 – 03.04.02.01.17.06 – 1 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1 – Questões](../docs/indexacoes/VIDEO%20LONGO%20071518%20–%2003.04.02.01.17.06%20–%201%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part1%20–%20Questões.pdf) 
+  - Mais detalhes veja [aqui](../docs/indexacoes/README.md)
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 074048 – 03.04.02.01.17.06 – 2 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 2 – Questões](../docs/indexacoes/VIDEO%20LONGO%20074048%20–%2003.04.02.01.17.06%20–%202%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%202%20–%20Questões.pdf) 
+  - Mais detalhes veja [aqui](../docs/indexacoes/README.md)
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO – 061942 – 03.04.02.01.17.06 – 3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3 – Questões](../docs/indexacoes/VIDEO%20LONGO%20–%20061942%20–%2003.04.02.01.17.06%20–%203%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%203%20–%20Questões.pdf) 
+  - Mais detalhes veja [aqui](../docs/indexacoes/README.md)
 - [ ] Organizar o Código Usando o Sistema de Módulos do Java. Um módulo para cada [Tópico do Conteúdo Programático da Certificação](#SELIKOFF-Scott)
   - [ ] Tratamento de Data, Hora, Texto, Valores Numéricos e Booleanos	
   - [ ] Controlando o Fluxo do Programa	
@@ -104,11 +107,12 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
   - [ ] Trabalhando Com Matrizes e Coleções	
   - [ ] Trabalhando com Streams e Expressões Lambda	
   - [ ] Empacotar e Implementar Código Java e Usar o Java Platform Module System	
-  - [ ] Gerenciando a Execução Simultânea (Concurrent) de Código	
-  - [ ] Usando API de E/S Java	
-  - [ ] Acessando Bancos de Dados Usando JDBC	
-  - [ ] Implementando Localização	
-  - [ ] Candidatos Devem Supor o Seguinte	
+  - [ ] Gerenciando a Execução Simultânea (Concurrent) de Código
+    - Veja mais detalhes em: [Objetivos - Gerenciando a Execução Simultânea (Concurrent) de Código](execucao-simultanea-codigo/README.md#gerenciando-a-execução-simultânea--concorrentes-de-código)
+  - [ ] Usando API de E/S Java
+  - [ ] Acessando Bancos de Dados Usando JDBC
+  - [ ] Implementando Localização
+  - [ ] Candidatos Devem Supor o Seguinte
   - [ ] Espera-se Também que os Candidatos
 - [ ] Criar um Caso de Uso para cada [Funcionalidade Java SE](#SELIKOFF-Scott) os seus respectivos Casos de Testes
   - [ ] Java Database Connectivity (JDBC)	
@@ -140,11 +144,8 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
   - [X] ~~instalação das Ferramentas de Desenvolvimento.~~
   - [ ] Criar automação para as principais funcionalidade (features) disponíveis no Java SE
 - [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
-  - [ ] Aplicar técncia para análise explorativa da implementação do [AxonFramework](https://github.com/AxonFramework/AxonFramework) e dos seus respectivos conceitos: [DDD, CQRS, Microservices e Event Sourcing](https://www.axoniq.io/concepts)
-  - [ ] Aplicar técncia para análise explorativa da implementação do [Axon Server](https://github.com/AxonIQ/axon-server-se)
+  - Aplicar técncia para [Análise Explorativa da Implementação dos Artefatos](#da-analise-exploratoria)
 - [ ] [Implementar Testes (TDD)](#GONZALEZ_Javier_cap_11): Técnica Red-Green-Refact
-- [ ] [Teste e Monitoramento de Aplicativos Simultâneos](#GONZALEZ_Javier_cap_11): Ferramenta Java VisualVM
-- [ ] Descrição sucinta da tarefa a ser feita aqui ......
 - [ ] Descrição sucinta [TRABALHO EM PROGRESSO]
 
 ### Atividades - DevOps
@@ -171,6 +172,12 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
 Tendo em mente que sempre buscamos melhorar o protocolo de trabalho operacinal do dia a dia usando empirismo (colocar realmente em prática os conheicmentos abstratos):
 
 <img src="../docs/imgs/pdca.png" alt="PDCA: Aplicar na prática o empirismo" title="PDCA" style="width:475px;"/>
+
+---
+
+<a href="#FOWLER-Martin" id="da-analise-exploratoria">
+<img src="../docs/imgs/DA - Análise de Repositório Genárico.drawio.png" alt="Diagrama: Documentação Elaboração do Diagrama de Atividade da Análise Exploratória Genérico" title="Documentação: Processo Genérico: Atividades da Análise Exploratória de um Repositório"/>
+</a>
 
 ---
 
@@ -224,7 +231,7 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](LICE
 
 ---
 
-## Referencias Usadas
+## Referências Usadas
 
 Seque abaixo as referências bibliográficas usadas no presente projeto:
 

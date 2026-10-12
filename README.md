@@ -9,6 +9,7 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
  - Java SE
     - [Java SE 17 Developer
 (Exam Number: 1Z0-829)](https://education.oracle.com/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-829/pexam_1Z0-829)
+    - [Java SE 25 Developer Professional (Exam 1Z0-831)](https://mylearn.oracle.com/ou/exam/java-se-25-developer-professional-1z0-831/40805/161532/270890)
  - Java EE
     - [Java EE 7 Application Developer (Exam Number: 1Z0-900)](https://education.oracle.com/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-900/pexam_1Z0-900)
 
@@ -33,6 +34,7 @@ Tendo em mente que para cada Certificação:
 Procuro evidência as proficiências nas seguintes habilidades técnicas:
 
 - [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
+  - Aplicar técncia para [Análise Explorativa da Implementação dos Artefatos](#da-analise-exploratoria)
 - Técnicas em [Análise Código-fonte Legados](#FEATHERS-michael);
 - Técnicas em [Refatoração Código-fonte Legados](#FEATHERS-michael);
 - Implementar Soluções usando algoritmos Reutilizáveis
@@ -66,7 +68,7 @@ Para isso, use os comandos do script de automação:
 
 export ARTIFACT_ID="oracle-certifications"
 export TOOL_NAME="OracleCertificationsScriptsUteis"
-export SCRIPT_PATH="${HOME}/projetos${ARTIFACT_ID}/scripts"
+export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
 export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
 export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
@@ -75,6 +77,37 @@ source "${TOOL_PATH}/OracleCertificationsScriptsUteis_main.sh"
 OracleCertificationsScriptsUteis.installAllTools
 
 ```
+
+Para verificar o ambiente SDK, use os comandos do script de automação:
+
+```bash
+
+export ARTIFACT_ID="oracle-certifications"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
+export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
+export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
+
+source "${TOOL_PATH}/check-ambiente-sdk.sh"
+OracleCertificationsScriptsUteis.checkAmbienteSDK
+
+```
+
+Para criar a estrutura da [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)! 
+Onde temos `OracleCertificationsScriptsUteis.CriarStructureByConceito "{{NOME_MODULO}}" "{{CONCEITO}}"`. 
+Use os seguintes comandos:
+
+```bash
+export ARTIFACT_ID="oracle-certifications"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
+export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
+export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
+
+source "${TOOL_PATH}/ocp-training-lab.sh"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "TituloConceitoXPTO_11"
+```
+
 
 #### Módulos Internos
 
@@ -139,13 +172,16 @@ Aqui temos uma lista do que idenficamos com status de pendente:
 Segue abaixo (não se limita) os objetivos do presente projeto:
 
 - [X] ~~Formatando documentação README.md~~
-- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 071518 – 03.04.02.01.17.06 – 1 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1 – Questões](docs/indexacoes/VIDEO%20LONGO%20071518%20–%2003.04.02.01.17.06%20–%201%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part1%20–%20Questões.pdf) (mais detalhes veja [aqui](docs/indexacoes/README.md))
-- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 074048 – 03.04.02.01.17.06 – 2 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 2 – Questões](docs/indexacoes/VIDEO%20LONGO%20074048%20–%2003.04.02.01.17.06%20–%202%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%202%20–%20Questões.pdf) (mais detalhes veja [aqui](docs/indexacoes/README.md))
-- [ ] Indexação completa do vídeo longo: [VIDEO LONGO – 061942 – 03.04.02.01.17.06 – 3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3 – Questões](docs/indexacoes/VIDEO%20LONGO%20–%20061942%20–%2003.04.02.01.17.06%20–%203%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%203%20–%20Questões.pdf) (mais detalhes veja [aqui](docs/indexacoes/README.md))
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 071518 – 03.04.02.01.17.06 – 1 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1 – Questões](docs/indexacoes/VIDEO%20LONGO%20071518%20–%2003.04.02.01.17.06%20–%201%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part1%20–%20Questões.pdf) 
+  - Mais detalhes veja [aqui](docs/indexacoes/README.md)
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO 074048 – 03.04.02.01.17.06 – 2 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 2 – Questões](docs/indexacoes/VIDEO%20LONGO%20074048%20–%2003.04.02.01.17.06%20–%202%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%202%20–%20Questões.pdf) 
+  - Mais detalhes veja [aqui](docs/indexacoes/README.md)
+- [ ] Indexação completa do vídeo longo: [VIDEO LONGO – 061942 – 03.04.02.01.17.06 – 3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3 – Questões](docs/indexacoes/VIDEO%20LONGO%20–%20061942%20–%2003.04.02.01.17.06%20–%203%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%203%20–%20Questões.pdf) 
+  - Mais detalhes veja [aqui](docs/indexacoes/README.md)
 - [ ] Scritps de Automação
   - [X] ~~instalação das Ferramentas de Desenvolvimento.~~
-  - [ ] Criar para as principais funcionalidade (features) disponíveis no Java SE
-  - [ ] Criar para as principais as Java EE APIs (temos cerva de 27 APIs) 
+  - [ ] Para as principais funcionalidade (features) disponíveis no Java SE
+  - [ ] Para as principais as Java EE APIs (temos cerca de 27 APIs) 
 - [ ] [Metodologia Básica de Análise de Algoritmos](#GOODRICH-Michael-T)
   - [ ] Aplicar técncia para análise explorativa da implementação do [AxonFramework](https://github.com/AxonFramework/AxonFramework) e dos seus respectivos conceitos: [DDD, CQRS, Microservices e Event Sourcing](https://www.axoniq.io/concepts)
   - [ ] Aplicar técncia para análise explorativa da implementação do [Axon Server](https://github.com/AxonIQ/axon-server-se)
@@ -179,11 +215,17 @@ Tendo em mente que sempre buscamos melhorar o protocolo de trabalho operacinal d
 
 <img src="docs/imgs/pdca.png" alt="PDCA: Aplicar na prática o empirismo" title="PDCA" style="width:475px;"/>
 
+--- 
+
+<a href="#FOWLER-Martin" id="da-analise-exploratoria">
+<img src="docs/imgs/DA - Análise de Repositório Genárico.drawio.png" alt="Diagrama: Documentação Elaboração do Diagrama de Atividade da Análise Exploratória Genérico" title="Documentação: Processo Genérico: Atividades da Análise Exploratória de um Repositório"/>
+</a>
+
 ---
 
 ## 🛠️ Construído com
 
-Seque aqui as ferramentas utilizadas na construção presente projeto:
+Segue aqui as ferramentas utilizadas na construção presente projeto:
 
 ### Ferramentas
 
@@ -231,11 +273,17 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](LICE
 
 ---
 
-## Referencias Usadas
+## Referências Usadas
 
-Seque abaixo as referências bibliográficas usadas no presente projeto:
+Segue abaixo as referências bibliográficas usadas no presente projeto:
 
 ### Livros
+
+---
+
+<p align="justify">
+[<a id="BOYARSKY-Jeanne">BOYARSKY, Jeanne</a>]; [<a id="SELIKOFF-Scott">SELIKOFF, Scott</a>]: OCP Oracle® Certified Professional Java® SE 21 Developer: Study Guide Exam 1Z0-830 ISBNs: 9781394286614 (paperback), 9781394286638 (ePDF), 9781394286621 (ePub). Published by John Wiley & Sons, Inc., Hoboken, New Jersey. Published simultaneously in Canada and the United Kingdom. 1040 pages. 1st Edition,  November 27, 2024 Disponível em: < <a href="https://a.co/d/0alQOByp">https://a.co/d/0alQOByp</a>>.Acesso em: 16 mai. 2026.
+</p>
 
 ---
 
@@ -258,6 +306,12 @@ Seque abaixo as referências bibliográficas usadas no presente projeto:
 ---
 
 ### Vídeos / Playlists
+
+---
+
+<p align="justify"> 
+[<a id="curso-conceitos-projeto-sistemas">CURSO DE CONCEITOS DE PROJETO de Sistemas e Preparação para Entrevistas</a>]. Direção: Equipe do Canal <a href="https://www.youtube.com/@freecodecamp">@freecodecamp</a>. Produção: Equipe do Canal @freecodecamp. Realização: Equipe do Canal @freecodecamp. Roteiro: Equipe do Canal @freecodecamp. Fotografia: N/A.  Intérpretes: Tradução automática por IA do @youtube. Local: N/A, 25 de jul. de 2024. Tipo vídeo streams, mp3, cor, gerada automaticamente pelo plataforma youtube, automático pela plataforma, stream, duração: 53:37). Disponível em: < <a href="https://youtu.be/F2FmTdLtb_4?si=4sTC9H193-i04U7R"> https://youtu.be/F2FmTdLtb_4?si=4sTC9H193-i04U7R </a> >. Acesso em: 14 jun. 2026.
+</p>
 
 ---
 

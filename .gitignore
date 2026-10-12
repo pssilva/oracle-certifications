@@ -34,3 +34,4 @@ build/
 
 # Arquivos temporários
 .~lock.**.csv#
+.env

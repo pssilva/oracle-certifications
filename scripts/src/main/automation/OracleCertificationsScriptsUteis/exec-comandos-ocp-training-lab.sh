@@ -1,0 +1,58 @@
+
+
+
+
+export ARTIFACT_ID="oracle-certifications"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
+export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
+export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
+
+
+source "${TOOL_PATH}/ocp-training-lab.sh"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "09-io-api" "Serialization"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "12-packaging-deployment" "Deploy e Packaging"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "04-exceptions-localization" "Recursos try-catch"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "04-exceptions-localization" "Internacionalização e Localização"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "04-exceptions-localization" "Exceptions"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "07-streams" "Streams Gatherers"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "09-io-api" "IO API e NIO2"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "07-streams" "Streams"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "06-lambdas-functional-interfaces" "Lambda / Funcional Interface"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Generics"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Queue / Deque"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Map"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Set"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "List"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "05-arrays-collections" "List"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "15-core-apis" "Array"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Classes Aninhadas"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Enums"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "06-lambdas-functional-interfaces" "Interfaces Funcional"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Classes Sealed"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-class-design" "Classes Abstratas"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Polimorfismo"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Polimorfismo"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-class-design" "Herança"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Ecapsulamento"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-class-design" "Construtores"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "03-methods" "Métodos"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "15-core-apis" "Classes / Objetos"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "15-core-apis" "Datas e Horas"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "15-core-apis" "Strings-2"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "TituloConceitoXPTO_11"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-building-blocks" "Operações / Casting"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "14-operators" "Operações"
+
+# OracleCertificationsScriptsUteis.OCPTrainingLabStructure
+#source /home/pssilva/projetos/oracle-certifications/scripts/src/main/automation/OracleCertificationsScriptsUteis/ocp-training-lab.sh
+
+echo "${TOOL_PATH}"
+
+
+[20:28, 13/09/2026] Paulo Sérgio:
+O Jeito certo de aprender:
+[20:28, 13/09/2026] Paulo Sérgio: https://www.youtube.com/watch?t=1618&v=oUPaJxk6TZ0&feature=youtu.be
+[20:29, 13/09/2026] Lucas Vieira - Montreal: Hmmm interessante
