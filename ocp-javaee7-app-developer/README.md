@@ -4,10 +4,10 @@ Se trata de um projeto prático prova de conceito - POC para deixar pegadas digi
 
 ## Visão do Projeto
 
-Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo programático das certificações: 
+Objetivo é focar no uso prático real dos conceitos abstratos do conteúdo programático das certificações: 
 
  - Java EE
-    - [Java EE 7 Application Developer (Exam Number: 1Z0-900)](https://education.oracle.com/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-900/pexam_1Z0-900)
+    - [Java EE 7 Application Developer (Exam Number: 1Z0-900)](https://mylearn.oracle.com/ou/exam/java-ee-7-application-developer-1z0-900/105037/110661/170392)
  
  Tendo em mente que para a presente Certificação: 
 
@@ -15,7 +15,7 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
   - Para cada Objetivo dos Tópicos, explodir em habilidades;
   - Para cada habilidade, identificar boas práticas de uso Empírico;
   - Identificar a forma de como é cobrado o conhecimento no exame;
-  - identificar, em projetos open-source, o uso dos conceitos na prática;
+  - identificar, em projetos open-source, o uso dos conceitos, na prática;
   - Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 
 --- 
@@ -74,11 +74,65 @@ Depois de instalar as ferramentas necessárias.
 Executar o projeto `ocp-javaee7-app-developer`, use os seguintes comandos:
 
 ```bash
-cd "${HOME}/projetos/ocp-javaee7-app-developer"
-sdk use java 17.0.11-amzn
-mvn clean install
+export ARTIFACT_ID_PARENT="oracle-certifications"
+export ARTIFACT_ID="ocp-javaee7-app-developer"
+cd "${HOME}/projetos/${ARTIFACT_ID_PARENT}/${ARTIFACT_ID}"
+sdk install java 8.0.472-amzn
+sdk use java 8.0.472-amzn      # o exame cobra Java EE 7: GlassFish/Payara 4.1 rodam em Java 8
+mvn clean verify               # gera um WAR por laboratório em labs/NN-*/target/
 source ~/.bash_profile
 idea .
+```
+
+> Também compila com o JDK 25 do POM raiz: o perfil `jdk9-plus` usa `--release 8`.
+
+Para implantar um laboratório, use um servidor **Java EE 7 Full Profile** — [Payara Server 4.1](https://www.payara.fish/downloads/payara-platform-community-edition/) ou [GlassFish 4.1](https://javaee.github.io/glassfish/download) (JMS/MDB exigem o full profile):
+
+```bash
+asadmin start-domain
+asadmin deploy --force=true labs/06-servlets/target/06-servlets.war
+# http://localhost:8080/06-servlets/hello?name=Ana
+```
+
+### 🧪 Estrutura do Laboratório
+
+O repositório é usado como laboratório durante os 21 dias do [Plano de Estudos](study-plan/daily-log.md), em três níveis:
+**código existente** (ler e prever o resultado) → **experimento mínimo** (alterar e observar) → **evidência de domínio** (objetivo atendido + questão de revisão).
+
+```
+ocp-javaee7-app-developer/
+├── README.md
+├── pom.xml                      # POM pai: javaee-api 7.0 (provided), Java 8, JUnit 5
+├── study-plan/
+│   ├── objectives-checklist.md  # 14 tópicos × itens oficiais (E/C/Q/R)
+│   ├── daily-log.md             # cronograma de 21 dias + registro diário
+│   ├── feynman-notes.md         # índice das versões de 10 linhas + critérios de prontidão
+│   └── error-log.md             # índice de MISTAKEs com revisão espaçada
+├── labs/                        # um módulo Maven (WAR) por tópico do exame
+│   └── NN-topico/
+│       ├── README.md            # objetivos, experimentos, pegadinhas, Feynman do tópico
+│       ├── src/main/java/br/com/oracle_certificatons/ocp/javaee7/<pacote>/
+│       ├── src/test/java/...
+│       └── docs/feynman/<conceito>/
+│           ├── README.md        # protocolo Feynman de 60 min
+│           ├── mistakes/        # registros MISTAKE-NNN
+│           ├── questions-exam/  # questões do conceito
+│           └── evidencias/imgs/ # fotos dos cards
+└── mock-exams/                  # simulados 1 e 2 (Dias 19–20)
+```
+
+Para criar a estrutura da [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz) de um novo conceito,
+use `OracleCertificationsScriptsUteis.CriarStructureByConceito "{{NOME_MODULO}}" "{{CONCEITO}}" "ocp-javaee7-app-developer"`:
+
+```bash
+export ARTIFACT_ID="oracle-certifications"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export SCRIPT_PATH="${HOME}/projetos/${ARTIFACT_ID}/scripts"
+export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
+export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
+
+source "${TOOL_PATH}/ocp-training-lab.sh"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "12-cdi" "Alternatives e Specialization" "ocp-javaee7-app-developer"
 ```
 
 ---
@@ -95,49 +149,34 @@ Segue abaixo (não se limita) os objetivos do presente projeto:
 - [ ] Indexação completa do vídeo longo: [VIDEO LONGO 071518 – 03.04.02.01.17.06 – 1 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part1 – Questões](../docs/indexacoes/VIDEO%20LONGO%20071518%20–%2003.04.02.01.17.06%20–%201%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part1%20–%20Questões.pdf) (mais detalhes veja [aqui](../docs/indexacoes/README.md))
 - [ ] Indexação completa do vídeo longo: [VIDEO LONGO 074048 – 03.04.02.01.17.06 – 2 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 2 – Questões](../docs/indexacoes/VIDEO%20LONGO%20074048%20–%2003.04.02.01.17.06%20–%202%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%202%20–%20Questões.pdf) (mais detalhes veja [aqui](../docs/indexacoes/README.md))
 - [ ] Indexação completa do vídeo longo: [VIDEO LONGO – 061942 – 03.04.02.01.17.06 – 3 How to pass Exam 1Z0-811 | Java Oracle Certified Foundations Associate in 20 hours | Part 3 – Questões](../docs/indexacoes/VIDEO%20LONGO%20–%20061942%20–%2003.04.02.01.17.06%20–%203%20How%20to%20pass%20Exam%201Z0-811%20|%20Java%20Oracle%20Certified%20Foundations%20Associate%20in%2020%20hours%20|%20Part%203%20–%20Questões.pdf) (mais detalhes veja [aqui](../docs/indexacoes/README.md))
-- [ ] Organizar o Código Usando o Sistema de Módulos do Java. Um módulo para cada Tópico do Conteúdo Programático da Certificação
-  - [ ] Entenda a Arquitetura Java EE
-  - [ ] Gerenciar persistência usando entidades JPA e BeanValidation
-  - [ ] Implementar lógica de negócios usando EJBs
-  - [ ] Use a API do serviço de mensagens Java
-  - [ ] Implemente serviços SOAP usando APIs JAX-WS e JAXB
-  - [ ] Crie aplicativos Web Java usando Servlets
-  - [ ] Crie aplicativos Web Java usando JSPs
-  - [ ] Implementar serviços REST usando API JAX-RS
-  - [ ] Crie aplicativos Java usando WebSockets
-  - [ ] Desenvolva aplicações web usando JSFs
-  - [ ] Aplicativos Java EE 7 seguros
-  - [ ] Use Beans CDI
-  - [ ] Use API de simultaneidade em aplicativos Java EE 7
-  - [ ] Use a API Batch em aplicativos Java EE 7
-- [ ] Criar um Caso de Uso para cada API do Java EE e os seus respectivos Casos de Testes
-  - [ ] JavaServer Faces (JSF) 2.3	
-  - [ ] API de Persistência Java (JPA) 2.2	
-  - [ ] Enterprise JavaBeans (EJB) 3.2	
-  - [ ] Contextos e Injeção de Dependência (CDI) 2.0	
-  - [ ] API Java Para Processamento JSON (JSON-P) 1.1	
-  - [ ] API Java Para Ligação JSON (JSON-B) 1.0	
-  - [ ] API Java Para WebSocket 1.0	
-  - [ ] Serviço de Mensagens Java (JMS) 2.0	
-  - [ ] API de Segurança Java EE 1.0	
-  - [ ] API Java Para Serviços da Web RESTful (JAX-RS) 2.1	
-  - [ ] API Java Para Serviços da Web XML (JAX-WS) 2.2	
-  - [ ] Servlets 4.0	
-  - [ ] Linguagem de Expressão (EL) 3.0	
-  - [ ] JavaServer Pages (JSP) 2.3	
-  - [ ] Interface de Nomenclatura e Diretório Java (JNDI) 1.2	
-  - [ ] API de Transação Java (JTA) 1.2	
-  - [ ] Serviço de Transação Java (JTS) 1.0	
-  - [ ] Java Mail 1.5	
-  - [ ] Arquitetura do Conector Java EE (JCA) 1.7	
-  - [ ] Arquitetura Java para Ligação XML (JAXB) 2.2	
-  - [ ] Extensões de Gerenciamento Java (JMX) 1.2	
-  - [ ] Biblioteca de Tags Padrão Para JavaServer Pages (JSTL) 1.2	
-  - [ ] Validação de Bean 2.0	
-  - [ ] Gerenciado Beans 1.0	
-  - [ ] Interceptadores 1.2	
-  - [ ] Utilitários de Simultaneidade (Concurrency) para Java EE 1.0	
-  - [ ] Aplicativos em Lote (Batch) para a Plataforma Java 1.0
+- [X] ~~Organizar o código em módulos Maven: um módulo para cada tópico do conteúdo programático da certificação~~
+
+### Tópicos da Certificação
+
+Tomando como base [Exam 1Z0-900: Java EE 7 Application Developer](https://mylearn.oracle.com/ou/exam/java-ee-7-application-developer-1z0-900/105037/110661/170392)
+(~70 questões, corte de 66%). Atenção: o exame cobra as versões do **Java EE 7**, não do EE 8
+(nada de JSF 2.3, JPA 2.2, CDI 2.0, Servlet 4.0, JSON-B ou Security API 1.0).
+
+| # | Tópico | Laboratório | Versões EE 7 | Peso estimado | Dia(s) |
+| --- | --- | --- | --- | --- | --- |
+| 01 | [Entender a Arquitetura Java EE](labs/01-architecture/README.md) | `labs/01-architecture` | Plataforma 7 | Médio | 1–2 (13/10–14/10) |
+| 02 | [Gerenciar persistência usando entidades JPA e Bean Validation](labs/02-jpa-validation/README.md) | `labs/02-jpa-validation` | JPA 2.1, BV 1.1 | Alto | 4–5 (16/10–17/10) |
+| 03 | [Implementar lógica de negócios usando EJBs](labs/03-ejb-transactions/README.md) | `labs/03-ejb-transactions` | EJB 3.2 | Alto | 6–7 (18/10–19/10) |
+| 04 | [Usar a API Java Message Service (JMS)](labs/04-jms/README.md) | `labs/04-jms` | JMS 2.0 | Médio | 15 (27/10) |
+| 05 | [Implementar serviços SOAP usando JAX-WS e JAXB](labs/05-jax-ws-jaxb/README.md) | `labs/05-jax-ws-jaxb` | JAX-WS 2.2, JAXB 2.2 | Médio | 16 (28/10) |
+| 06 | [Criar aplicações Web Java usando Servlets](labs/06-servlets/README.md) | `labs/06-servlets` | Servlet 3.1 | Alto | 8–9 (20/10–21/10) |
+| 07 | [Criar aplicações Web Java usando JSPs](labs/07-jsp/README.md) | `labs/07-jsp` | JSP 2.3, EL 3.0 | Médio | 9–10 (21/10–22/10) |
+| 08 | [Implementar serviços REST usando a API JAX-RS](labs/08-jax-rs/README.md) | `labs/08-jax-rs` | JAX-RS 2.0 | Alto | 13 (25/10) |
+| 09 | [Criar aplicações Java usando WebSockets](labs/09-websocket/README.md) | `labs/09-websocket` | WebSocket 1.0 | Médio | 14 (26/10) |
+| 10 | [Desenvolver aplicações Web usando JSF](labs/10-jsf/README.md) | `labs/10-jsf` | JSF 2.2 | Alto | 11–12 (23/10–24/10) |
+| 11 | [Proteger aplicações Java EE 7](labs/11-security/README.md) | `labs/11-security` | Servlet/EJB security | Médio | 17 (29/10) |
+| 12 | [Usar beans CDI](labs/12-cdi/README.md) | `labs/12-cdi` | CDI 1.1 | Alto | 3 (15/10) |
+| 13 | [Usar a API de Concorrência em aplicações Java EE 7](labs/13-concurrency/README.md) | `labs/13-concurrency` | Concurrency 1.0 | Baixo | 18 (30/10) |
+| 14 | [Usar a API Batch em aplicações Java EE 7](labs/14-batch/README.md) | `labs/14-batch` | Batch 1.0 | Baixo | 18 (30/10) |
+
+O peso é estimativa a partir da quantidade de itens por tópico; a Oracle não publica percentuais.
+O acompanhamento item a item fica em [study-plan/objectives-checklist.md](study-plan/objectives-checklist.md).
+
 - [ ] Scritps de Automação
   - [X] ~~instalação das Ferramentas de Desenvolvimento.~~
   - [ ] Criar automação para as principais funcionalidade (features) disponíveis no Java EE
@@ -231,6 +270,18 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](LICE
 Segue abaixo as referências bibliográficas usadas no presente projeto:
 
 ### Livros
+
+---
+
+<p align="justify">
+[<a id="GONCALVES-Antonio">GONCALVES, Antonio</a>]: Beginning Java EE 7. Apress, 2013. ISBN 978-1430246268. Livro guia do plano de estudos. Disponível em: < <a href="https://tenlong.com.tw/products/9781430246268">https://tenlong.com.tw/products/9781430246268</a> >. Acesso em: 12 out. 2026.
+</p>
+
+---
+
+<p align="justify">
+[<a id="ORACLE-JavaEE7-Tutorial">ORACLE</a>]: The Java EE 7 Tutorial. Fonte oficial complementar (Servlets, JSP, WebSocket, Security, Batch, Concurrency). Disponível em: < <a href="https://docs.oracle.com/javaee/7/tutorial/">https://docs.oracle.com/javaee/7/tutorial/</a> >. Acesso em: 12 out. 2026.
+</p>
 
 ---
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="uppercase-job" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <step id="uppercase" next="cleanup">
+        <chunk item-count="3">
+            <reader ref="wordReader">
+                <properties>
+                    <property name="words" value="java,ee,sete,batch,jsr,trezentos,cinquenta,dois"/>
+                </properties>
+            </reader>
+            <processor ref="uppercaseProcessor"/>
+            <writer ref="consoleWriter"/>
+        </chunk>
+    </step>
+    <step id="cleanup">
+        <batchlet ref="cleanupBatchlet"/>
+    </step>
+</job>

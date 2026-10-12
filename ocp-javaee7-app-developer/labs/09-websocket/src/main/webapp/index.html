@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Lab 09 · WebSocket</title></head>
+<body>
+<input id="msg" placeholder="autor|mensagem"> <button onclick="ws.send(msg.value)">Enviar</button>
+<pre id="log"></pre>
+<script>
+  var ws = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + location.pathname.replace(/\/[^/]*$/, '') + '/chat');
+  ws.onmessage = function (e) { document.getElementById('log').textContent += e.data + '\n'; };
+</script>
+</body>
+</html>

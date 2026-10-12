@@ -3,63 +3,130 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>oracle-certificatons</artifactId>
+        <groupId>br.com.oracle_certificatons.ocp</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>br.com.oracle_certificaions.ocp.javaee_7_app_developer</groupId>
+    <groupId>br.com.oracle_certificatons.ocp.javaee_7_app_developer</groupId>
     <artifactId>ocp-javaee7-app-developer</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>ocp-javaee7-app-developer</name>
+    <description>Laboratório de estudos do exame 1Z0-900: Java EE 7 Application Developer</description>
+
+    <!-- Um módulo por tópico oficial do exame 1Z0-900 -->
     <modules>
-        <module>arquitetura-javaee</module>
-        <module>gerenciar-persistencia-entidades-jpa-bean-validation</module>
-        <module>implementar-logica-negocios-ejbs</module>
-        <module>api-servico-de-mensagens-java-smj</module>
-        <module>implemente-servicos-soap-apis-jaxws-jaxb</module>
-        <module>crie-app-web-java-servlets</module>
-        <module>crie-app-web-java-jsp</module>
-        <module>implementar-servicos-rest-api-jaxrs</module>
-        <module>crie-app-java-websockets</module>
-        <module>desenvolva-app-web-jsf</module>
-        <module>app-javaee7-seguros</module>
-        <module>beans-cdi</module>
-        <module>api-simultaneidade-app-javaee7</module>
-        <module>api-batch-app-javaee7</module>
+        <module>labs/01-architecture</module>
+        <module>labs/02-jpa-validation</module>
+        <module>labs/03-ejb-transactions</module>
+        <module>labs/04-jms</module>
+        <module>labs/05-jax-ws-jaxb</module>
+        <module>labs/06-servlets</module>
+        <module>labs/07-jsp</module>
+        <module>labs/08-jax-rs</module>
+        <module>labs/09-websocket</module>
+        <module>labs/10-jsf</module>
+        <module>labs/11-security</module>
+        <module>labs/12-cdi</module>
+        <module>labs/13-concurrency</module>
+        <module>labs/14-batch</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <!-- O exame cobra Java EE 7: servidores EE 7 (GlassFish/Payara 4.1) rodam em Java 8 -->
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <javaee-api.version>7.0</javaee-api.version>
+        <junit-jupiter.version>5.10.2</junit-jupiter.version>
+        <mockito.version>4.11.0</mockito.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.10.2</version>
-            <scope>compile</scope>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee-api.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>5.7.0</version>
-            <scope>compile</scope>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
-            <version>5.7.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-            <version>3.8.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jeasy</groupId>
-            <artifactId>easy-random-core</artifactId>
-            <version>5.0.0</version>
+            <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+                <executions>
+                    <!-- Descarta o release 21 herdado do POM raiz: aqui o alvo é Java 8 -->
+                    <execution>
+                        <id>default-compile</id>
+                        <configuration combine.self="override"/>
+                    </execution>
+                    <execution>
+                        <id>default-testCompile</id>
+                        <configuration combine.self="override"/>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <!-- Build com JDK 9+ (ex.: JDK 25 do POM raiz): compila contra a API do Java 8 via ct.sym -->
+        <profile>
+            <id>jdk9-plus</id>
+            <activation>
+                <jdk>[9,)</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.release>8</maven.compiler.release>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <configuration>
+                            <release>${maven.compiler.release}</release>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
