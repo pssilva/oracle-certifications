@@ -11,7 +11,7 @@ Objetivo é focar  no uso prático real dos conceitos abstratos do conteúdo pro
 (Exam Number: 1Z0-829)](https://education.oracle.com/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-829/pexam_1Z0-829)
     - [Java SE 25 Developer Professional (Exam 1Z0-831)](https://mylearn.oracle.com/ou/exam/java-se-25-developer-professional-1z0-831/40805/161532/270890)
  - Java EE
-    - [Java EE 7 Application Developer (Exam Number: 1Z0-900)](https://mylearn.oracle.com/ou/exam/java-ee-7-application-developer-1z0-900/105037/110661/170392)
+    - [Java EE 7 Application Developer (Exam Number: 1Z0-900)](https://education.oracle.com/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-900/pexam_1Z0-900)
 
  - Oracle Cloud Infrastructure - OCI
     -  [Oracle Cloud Infrastructure 2024 DevOps Professional (Exam Number: 1Z0-1109-24)](https://education.oracle.com/ouexam-pexam_1z0-1109-24/pexam_1Z0-1109-24)
@@ -24,7 +24,7 @@ Tendo em mente que para cada Certificação:
   - Para cada Objetivo dos Tópicos, explodir em habilidades;
   - Para cada habilidade, identificar boas práticas de uso Empírico;
   - Identificar a forma de como é cobrado o conhecimento no exame;
-  - identificar, em projetos open-source, o uso dos conceitos, na prática;
+  - identificar, em projetos open-source, o uso dos conceitos na prática;
   - Elaborar estratégias (checklists) de refatoração para aplicar boas práticas em projetos legados;
 
 --- 
