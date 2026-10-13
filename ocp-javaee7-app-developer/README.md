@@ -79,7 +79,7 @@ export ARTIFACT_ID="ocp-javaee7-app-developer"
 cd "${HOME}/projetos/${ARTIFACT_ID_PARENT}/${ARTIFACT_ID}"
 sdk install java 8.0.472-amzn
 sdk use java 8.0.472-amzn      # o exame cobra Java EE 7: GlassFish/Payara 4.1 rodam em Java 8
-mvn clean verify               # gera um WAR por laboratório em labs/NN-*/target/
+mvn clean verify               # gera um WAR por módulo em NN-*/target/
 source ~/.bash_profile
 idea .
 ```
@@ -90,8 +90,8 @@ Para implantar um laboratório, use um servidor **Java EE 7 Full Profile** — [
 
 ```bash
 asadmin start-domain
-asadmin deploy --force=true labs/06-servlets/target/06-servlets.war
-# http://localhost:8080/06-servlets/hello?name=Ana
+asadmin deploy --force=true 06-app-web-servlets/target/06-app-web-servlets.war
+# http://localhost:8080/06-app-web-servlets/hello?name=Ana
 ```
 
 ### 🧪 Estrutura do Laboratório
@@ -108,8 +108,10 @@ ocp-javaee7-app-developer/
 │   ├── daily-log.md             # cronograma de 21 dias + registro diário
 │   ├── feynman-notes.md         # índice das versões de 10 linhas + critérios de prontidão
 │   └── error-log.md             # índice de MISTAKEs com revisão espaçada
-├── labs/                        # um módulo Maven (WAR) por tópico do exame
-│   └── NN-topico/
+├── 01-arquitetura-javaee/       # um módulo Maven (WAR) por tópico do exame,
+├── ...                          # numerado na ordem oficial do 1Z0-900
+├── 14-api-batch/
+│   └── (cada NN-tópico/)
 │       ├── README.md            # objetivos, experimentos, pegadinhas, Feynman do tópico
 │       ├── src/main/java/br/com/oracle_certificatons/ocp/javaee7/<pacote>/
 │       ├── src/test/java/...
@@ -117,7 +119,7 @@ ocp-javaee7-app-developer/
 │           ├── README.md        # protocolo Feynman de 60 min
 │           ├── mistakes/        # registros MISTAKE-NNN
 │           ├── questions-exam/  # questões do conceito
-│           └── evidencias/imgs/ # fotos dos cards
+│           └── evidencias/      # imgs/ (cards) e audios/
 └── mock-exams/                  # simulados 1 e 2 (Dias 19–20)
 ```
 
@@ -132,7 +134,7 @@ export AUTOMATION_PATH="${SCRIPT_PATH}/src/main/automation"
 export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "12-cdi" "Alternatives e Specialization" "ocp-javaee7-app-developer"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "12-beans-cdi" "Alternatives e Specialization" "ocp-javaee7-app-developer"
 ```
 
 ---
@@ -159,20 +161,20 @@ Tomando como base [Exam 1Z0-900: Java EE 7 Application Developer](https://mylear
 
 | # | Tópico | Laboratório | Versões EE 7 | Peso estimado | Dia(s) |
 | --- | --- | --- | --- | --- | --- |
-| 01 | [Entender a Arquitetura Java EE](labs/01-architecture/README.md) | `labs/01-architecture` | Plataforma 7 | Médio | 1–2 (13/10–14/10) |
-| 02 | [Gerenciar persistência usando entidades JPA e Bean Validation](labs/02-jpa-validation/README.md) | `labs/02-jpa-validation` | JPA 2.1, BV 1.1 | Alto | 4–5 (16/10–17/10) |
-| 03 | [Implementar lógica de negócios usando EJBs](labs/03-ejb-transactions/README.md) | `labs/03-ejb-transactions` | EJB 3.2 | Alto | 6–7 (18/10–19/10) |
-| 04 | [Usar a API Java Message Service (JMS)](labs/04-jms/README.md) | `labs/04-jms` | JMS 2.0 | Médio | 15 (27/10) |
-| 05 | [Implementar serviços SOAP usando JAX-WS e JAXB](labs/05-jax-ws-jaxb/README.md) | `labs/05-jax-ws-jaxb` | JAX-WS 2.2, JAXB 2.2 | Médio | 16 (28/10) |
-| 06 | [Criar aplicações Web Java usando Servlets](labs/06-servlets/README.md) | `labs/06-servlets` | Servlet 3.1 | Alto | 8–9 (20/10–21/10) |
-| 07 | [Criar aplicações Web Java usando JSPs](labs/07-jsp/README.md) | `labs/07-jsp` | JSP 2.3, EL 3.0 | Médio | 9–10 (21/10–22/10) |
-| 08 | [Implementar serviços REST usando a API JAX-RS](labs/08-jax-rs/README.md) | `labs/08-jax-rs` | JAX-RS 2.0 | Alto | 13 (25/10) |
-| 09 | [Criar aplicações Java usando WebSockets](labs/09-websocket/README.md) | `labs/09-websocket` | WebSocket 1.0 | Médio | 14 (26/10) |
-| 10 | [Desenvolver aplicações Web usando JSF](labs/10-jsf/README.md) | `labs/10-jsf` | JSF 2.2 | Alto | 11–12 (23/10–24/10) |
-| 11 | [Proteger aplicações Java EE 7](labs/11-security/README.md) | `labs/11-security` | Servlet/EJB security | Médio | 17 (29/10) |
-| 12 | [Usar beans CDI](labs/12-cdi/README.md) | `labs/12-cdi` | CDI 1.1 | Alto | 3 (15/10) |
-| 13 | [Usar a API de Concorrência em aplicações Java EE 7](labs/13-concurrency/README.md) | `labs/13-concurrency` | Concurrency 1.0 | Baixo | 18 (30/10) |
-| 14 | [Usar a API Batch em aplicações Java EE 7](labs/14-batch/README.md) | `labs/14-batch` | Batch 1.0 | Baixo | 18 (30/10) |
+| 01 | [Entender a Arquitetura Java EE](01-arquitetura-javaee/README.md) | `01-arquitetura-javaee` | Plataforma 7 | Médio | 1–2 (13/10–14/10) |
+| 02 | [Gerenciar persistência usando entidades JPA e Bean Validation](02-persistencia-jpa-bean-validation/README.md) | `02-persistencia-jpa-bean-validation` | JPA 2.1, BV 1.1 | Alto | 4–5 (16/10–17/10) |
+| 03 | [Implementar lógica de negócios usando EJBs](03-logica-negocios-ejbs/README.md) | `03-logica-negocios-ejbs` | EJB 3.2 | Alto | 6–7 (18/10–19/10) |
+| 04 | [Usar a API Java Message Service (JMS)](04-servico-mensagens-jms/README.md) | `04-servico-mensagens-jms` | JMS 2.0 | Médio | 15 (27/10) |
+| 05 | [Implementar serviços SOAP usando JAX-WS e JAXB](05-servicos-soap-jaxws-jaxb/README.md) | `05-servicos-soap-jaxws-jaxb` | JAX-WS 2.2, JAXB 2.2 | Médio | 16 (28/10) |
+| 06 | [Criar aplicações Web Java usando Servlets](06-app-web-servlets/README.md) | `06-app-web-servlets` | Servlet 3.1 | Alto | 8–9 (20/10–21/10) |
+| 07 | [Criar aplicações Web Java usando JSPs](07-app-web-jsp/README.md) | `07-app-web-jsp` | JSP 2.3, EL 3.0 | Médio | 9–10 (21/10–22/10) |
+| 08 | [Implementar serviços REST usando a API JAX-RS](08-servicos-rest-jaxrs/README.md) | `08-servicos-rest-jaxrs` | JAX-RS 2.0 | Alto | 13 (25/10) |
+| 09 | [Criar aplicações Java usando WebSockets](09-app-websockets/README.md) | `09-app-websockets` | WebSocket 1.0 | Médio | 14 (26/10) |
+| 10 | [Desenvolver aplicações Web usando JSF](10-app-web-jsf/README.md) | `10-app-web-jsf` | JSF 2.2 | Alto | 11–12 (23/10–24/10) |
+| 11 | [Proteger aplicações Java EE 7](11-seguranca-javaee7/README.md) | `11-seguranca-javaee7` | Servlet/EJB security | Médio | 17 (29/10) |
+| 12 | [Usar beans CDI](12-beans-cdi/README.md) | `12-beans-cdi` | CDI 1.1 | Alto | 3 (15/10) |
+| 13 | [Usar a API de Concorrência em aplicações Java EE 7](13-api-concorrencia/README.md) | `13-api-concorrencia` | Concurrency 1.0 | Baixo | 18 (30/10) |
+| 14 | [Usar a API Batch em aplicações Java EE 7](14-api-batch/README.md) | `14-api-batch` | Batch 1.0 | Baixo | 18 (30/10) |
 
 O peso é estimativa a partir da quantidade de itens por tópico; a Oracle não publica percentuais.
 O acompanhamento item a item fica em [study-plan/objectives-checklist.md](study-plan/objectives-checklist.md).

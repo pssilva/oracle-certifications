@@ -10,7 +10,7 @@
 #
 # Certificações suportadas (3º parâmetro ARTIFACT_ID):
 #   - ocp-javase25-developer    (padrão) módulos na raiz, estudo em docs/ocp-study
-#   - ocp-javaee7-app-developer módulos em labs/, estudo em study-plan
+#   - ocp-javaee7-app-developer módulos numerados na raiz, estudo em study-plan
 #
 #########################################################
 
@@ -44,7 +44,7 @@ NOTA: "
             ;;
 
         ocp-javaee7-app-developer)
-            export MODULOS_PATH="${WORK_PATH}/labs"
+            export MODULOS_PATH="${WORK_PATH}"
             export OCP_STUDY_PATH="${WORK_PATH}/study-plan"
             export OCP_STUDY_FILES="objectives-checklist.md daily-log.md feynman-notes.md error-log.md"
             export EXAME="1Z0-900: Java EE 7 Application Developer"
@@ -173,7 +173,7 @@ export -f OracleCertificationsScriptsUteis.OCPTrainingLabStructure
 # Describe: Cria a estrutura da Técnica Feynman de um conceito dentro de um módulo.
 # Uso: OracleCertificationsScriptsUteis.CriarStructureByConceito "{{NOME_MODULO}}" "{{CONCEITO}}" ["{{ARTIFACT_ID}}"]
 # Ex.: OracleCertificationsScriptsUteis.CriarStructureByConceito "07-streams" "Streams"
-#      OracleCertificationsScriptsUteis.CriarStructureByConceito "12-cdi" "Qualifiers" "ocp-javaee7-app-developer"
+#      OracleCertificationsScriptsUteis.CriarStructureByConceito "12-beans-cdi" "Qualifiers" "ocp-javaee7-app-developer"
 #
 #########################################################
 function OracleCertificationsScriptsUteis.CriarStructureByConceito(){

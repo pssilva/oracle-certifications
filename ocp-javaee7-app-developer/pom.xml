@@ -16,22 +16,22 @@
     <name>ocp-javaee7-app-developer</name>
     <description>Laboratório de estudos do exame 1Z0-900: Java EE 7 Application Developer</description>
 
-    <!-- Um módulo por tópico oficial do exame 1Z0-900 -->
+    <!-- Um módulo por tópico oficial do exame 1Z0-900, numerado na ordem oficial -->
     <modules>
-        <module>labs/01-architecture</module>
-        <module>labs/02-jpa-validation</module>
-        <module>labs/03-ejb-transactions</module>
-        <module>labs/04-jms</module>
-        <module>labs/05-jax-ws-jaxb</module>
-        <module>labs/06-servlets</module>
-        <module>labs/07-jsp</module>
-        <module>labs/08-jax-rs</module>
-        <module>labs/09-websocket</module>
-        <module>labs/10-jsf</module>
-        <module>labs/11-security</module>
-        <module>labs/12-cdi</module>
-        <module>labs/13-concurrency</module>
-        <module>labs/14-batch</module>
+        <module>01-arquitetura-javaee</module>
+        <module>02-persistencia-jpa-bean-validation</module>
+        <module>03-logica-negocios-ejbs</module>
+        <module>04-servico-mensagens-jms</module>
+        <module>05-servicos-soap-jaxws-jaxb</module>
+        <module>06-app-web-servlets</module>
+        <module>07-app-web-jsp</module>
+        <module>08-servicos-rest-jaxrs</module>
+        <module>09-app-websockets</module>
+        <module>10-app-web-jsf</module>
+        <module>11-seguranca-javaee7</module>
+        <module>12-beans-cdi</module>
+        <module>13-api-concorrencia</module>
+        <module>14-api-batch</module>
     </modules>
 
     <properties>
