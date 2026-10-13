@@ -30,6 +30,45 @@ javac --module-path "${WORK_PATH}/11-modules" -d feeding/target/classes ${WORK_P
 
 ```
 
+### Descrevendo com o jar
+
+Para obter informações do módulo `feeding`, use os seguintes comandos:
+
+```shell
+
+export ARTIFACT_ID_PARENT="oracle-certifications"
+export ARTIFACT_ID="ocp-javase25-developer"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export WORK_PATH="${HOME}/projetos/${ARTIFACT_ID_PARENT}/${ARTIFACT_ID}"
+        
+cd "${WORK_PATH}/11-modules"
+
+jar -f zoo.animal.feeding.jar -d
+ 
+jar --file zoo.animal.feeding.jar --describe-module
+```
+
+### Aprendendo sobre Dependências com o jdeps
+
+Para obter informações do artefacto `Animatronic.java`, use os seguintes comandos:
+
+```shell
+
+export ARTIFACT_ID_PARENT="oracle-certifications"
+export ARTIFACT_ID="ocp-javase25-developer"
+export TOOL_NAME="OracleCertificationsScriptsUteis"
+export WORK_PATH="${HOME}/projetos/${ARTIFACT_ID_PARENT}/${ARTIFACT_ID}"
+        
+cd "${WORK_PATH}/11-modules"
+
+jar -cvf br.com.modules.zoo.dinos.jar src/main/java/br/com/modules/zoo/dinos
+
+jdeps br.com.modules.zoo.dinos.jar
+
+jdeps -s br.com.modules.zoo.dinos.jar
+
+```
+
 Conceitos OCP
 -------------
 

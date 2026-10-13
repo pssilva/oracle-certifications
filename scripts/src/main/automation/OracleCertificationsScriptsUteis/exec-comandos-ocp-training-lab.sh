@@ -11,9 +11,6 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
 OracleCertificationsScriptsUteis.CriarStructureByConceito "09-io-api" "Serialization"
-# 1Z0-900 (Java EE 7): 3º parâmetro = ARTIFACT_ID; módulos numerados na raiz de ocp-javaee7-app-developer
-# OracleCertificationsScriptsUteis.CriarStructureByConceito "12-beans-cdi" "Alternatives e Specialization" "ocp-javaee7-app-developer"
-# OracleCertificationsScriptsUteis.CriarStructureByConceito "03-logica-negocios-ejbs" "Singleton e Concorrência" "ocp-javaee7-app-developer"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "12-packaging-deployment" "Deploy e Packaging"

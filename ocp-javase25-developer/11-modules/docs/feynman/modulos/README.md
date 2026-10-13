@@ -50,6 +50,14 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 <img src="evidencias/imgs/evidencia-modulos-4em1-p4.jpeg" alt="Conceito: Módulos" title="Módulos" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-modulos-services-4em1-p1.jpeg" alt="Conceito: Módulos" title="Módulos" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-modulos-services-4em1.jpeg" alt="Conceito: Módulos" title="Módulos" style="width:250px;"/>
+
 ## Explique em voz alta (25-40 min)
 
 Explique sem condultas como se estivesse ensinando para um desenvolvedor Jr.
