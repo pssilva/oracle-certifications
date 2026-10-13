@@ -198,9 +198,20 @@ export -f OracleCertificationsScriptsUteis.installToolJavaComJDK
 function OracleCertificationsScriptsUteis.installAllTools(){
 	
 	OracleCertificationsScriptsUteis.installPreRequisito
-  OracleCertificationsScriptsUteis.installToolSDKMAN
-  OracleCertificationsScriptsUteis.installToolJavaComJDK "17.0.11-amzn"
+	OracleCertificationsScriptsUteis.installToolSDKMAN
+	OracleCertificationsScriptsUteis.installToolJavaComJDK "17.0.11-amzn"
+	OracleCertificationsScriptsUteis.installToolJavaComJDK "8.0.472-amzn"
 	OracleCertificationsScriptsUteis.installDocker
+
+	# Servidores Java EE 7 (JDK 8) para a certificação 1Z0-900
+	if [[ -f /etc/fedora-release ]]; then
+		OracleCertificationsScriptsUteis.installServidorGlassFish41Fedora
+		OracleCertificationsScriptsUteis.installServidorPayara41Fedora
+	else
+		OracleCertificationsScriptsUteis.installServidorGlassFish41
+		OracleCertificationsScriptsUteis.installServidorPayara41
+	fi
+
 	OracleCertificationsScriptsUteis.makeAllTools
 
 }
@@ -268,6 +279,301 @@ function OracleCertificationsScriptsUteis.installDocker(){
 }
 
 export -f OracleCertificationsScriptsUteis.installDocker
+#########################################################
+
+#########################################################
+#
+# Describe: Detecta o gerenciador de pacotes da distribuição Linux
+# Retorno: imprime dnf|yum|apt-get|zypper|pacman|apk (exit 1 se nenhum)
+#
+#########################################################
+function OracleCertificationsScriptsUteis.detectarGerenciadorPacotes(){
+
+	local GERENCIADOR
+	for GERENCIADOR in dnf yum apt-get zypper pacman apk; do
+		if command -v "${GERENCIADOR}" >/dev/null 2>&1; then
+			echo "${GERENCIADOR}"
+			return 0
+		fi
+	done
+	return 1
+
+}
+
+export -f OracleCertificationsScriptsUteis.detectarGerenciadorPacotes
+#########################################################
+
+#########################################################
+#
+# Describe: Instala (somente se faltarem) as dependências dos servidores Java EE 7
+#           em qualquer distribuição Linux: curl e unzip
+#
+#########################################################
+function OracleCertificationsScriptsUteis.instalarDependenciasServidorJavaEE7(){
+
+	local FALTANDO=""
+	local CMD GERENCIADOR
+	for CMD in curl unzip sha1sum; do
+		command -v "${CMD}" >/dev/null 2>&1 || FALTANDO="${FALTANDO} ${CMD}"
+	done
+	FALTANDO="${FALTANDO/sha1sum/coreutils}"
+
+	[[ -z "${FALTANDO}" ]] && return 0
+
+	GERENCIADOR=$(OracleCertificationsScriptsUteis.detectarGerenciadorPacotes) || {
+		echo -e "# ERRO: gerenciador de pacotes não suportado. Instale manualmente:${FALTANDO}" >&2
+		return 1
+	}
+
+	case "${GERENCIADOR}" in
+		dnf|yum) sudo "${GERENCIADOR}" install -y ${FALTANDO} ;;
+		apt-get) sudo apt-get update && sudo apt-get install -y ${FALTANDO} ;;
+		zypper)  sudo zypper --non-interactive install ${FALTANDO} ;;
+		pacman)  sudo pacman -S --needed --noconfirm ${FALTANDO} ;;
+		apk)     sudo apk add ${FALTANDO} ;;
+	esac
+
+}
+
+export -f OracleCertificationsScriptsUteis.instalarDependenciasServidorJavaEE7
+#########################################################
+
+#########################################################
+#
+# Describe: Garante o JDK 8 via SDKMAN e imprime o JAVA_HOME dele
+# $1: versão SDKMAN do JDK 8 (padrão: 8.0.472-amzn)
+#
+#########################################################
+function OracleCertificationsScriptsUteis.resolverJavaHomeJDK8(){
+
+	local SDK_JAVA_VERSION="${1:-8.0.472-amzn}"
+	local SDKMAN_HOME="${SDKMAN_DIR:-${HOME}/.sdkman}"
+	local JAVA_HOME_JDK8="${SDKMAN_HOME}/candidates/java/${SDK_JAVA_VERSION}"
+
+	if [[ ! -x "${JAVA_HOME_JDK8}/bin/java" ]]; then
+		if [[ ! -s "${SDKMAN_HOME}/bin/sdkman-init.sh" ]]; then
+			OracleCertificationsScriptsUteis.installToolSDKMAN >&2
+		fi
+		source "${SDKMAN_HOME}/bin/sdkman-init.sh"
+		OracleCertificationsScriptsUteis.installToolJavaComJDK "${SDK_JAVA_VERSION}" >&2
+	fi
+
+	if [[ ! -x "${JAVA_HOME_JDK8}/bin/java" ]]; then
+		echo -e "# ERRO: JDK ${SDK_JAVA_VERSION} não encontrado em ${JAVA_HOME_JDK8}" >&2
+		return 1
+	fi
+	echo "${JAVA_HOME_JDK8}"
+
+}
+
+export -f OracleCertificationsScriptsUteis.resolverJavaHomeJDK8
+#########################################################
+
+#########################################################
+#
+# Describe: Instalação genérica (qualquer distro Linux) de um servidor Java EE 7
+#           da família GlassFish (GlassFish/Payara) rodando com JDK 8.
+#           Idempotente: se já houver bin/asadmin no destino, apenas reconfigura o JDK.
+# $1: nome do servidor (payara|glassfish) — usado no nome da pasta
+# $2: versão
+# $3: URL do .zip (se houver <URL>.sha1, o download é verificado)
+# $4: pasta das ferramentas (padrão: ${HOME}/dev_tools)
+# $5: versão SDKMAN do JDK 8 (padrão: 8.0.472-amzn)
+#
+#########################################################
+function OracleCertificationsScriptsUteis.instalarServidorJavaEE7(){
+
+	local NOME_SERVIDOR="$1"
+	local VERSAO="$2"
+	local URL_ZIP="$3"
+	local DEV_TOOLS="${4:-${HOME}/dev_tools}"
+	local SDK_JAVA_VERSION="${5:-8.0.472-amzn}"
+	local DESTINO="${DEV_TOOLS}/${NOME_SERVIDOR}-${VERSAO}"
+	local ASADMIN="${DESTINO}/bin/asadmin"
+	local ASENV="${DESTINO}/glassfish/config/asenv.conf"
+	local JAVA_HOME_JDK8 TMP_DIR SHA1_ESPERADO SHA1_OBTIDO DIR_EXTRAIDO
+
+	if [[ -z "${NOME_SERVIDOR}" || -z "${VERSAO}" || -z "${URL_ZIP}" ]]; then
+		echo -e "# ERRO: uso: OracleCertificationsScriptsUteis.instalarServidorJavaEE7 <nome> <versao> <url-zip> [dev_tools] [sdk-java-8]" >&2
+		return 1
+	fi
+
+	OracleCertificationsScriptsUteis.instalarDependenciasServidorJavaEE7 || return 1
+	JAVA_HOME_JDK8=$(OracleCertificationsScriptsUteis.resolverJavaHomeJDK8 "${SDK_JAVA_VERSION}") || return 1
+
+	if [[ -x "${ASADMIN}" ]]; then
+		echo -e "# ${NOME_SERVIDOR} ${VERSAO} já instalado em ${DESTINO}"
+	else
+		if [[ -e "${DESTINO}" ]]; then
+			echo -e "# ERRO: ${DESTINO} existe mas não contém bin/asadmin; remova-o e rode novamente." >&2
+			return 1
+		fi
+
+		TMP_DIR=$(mktemp -d)
+		echo -e "# Baixando ${URL_ZIP}"
+		if ! curl -fL --retry 3 -o "${TMP_DIR}/servidor.zip" "${URL_ZIP}"; then
+			echo -e "# ERRO: falha no download de ${URL_ZIP}" >&2
+			rm -rf "${TMP_DIR}"
+			return 1
+		fi
+
+		SHA1_ESPERADO=$(curl -fsSL "${URL_ZIP}.sha1" 2>/dev/null | awk '{print $1}')
+		if [[ -n "${SHA1_ESPERADO}" ]]; then
+			SHA1_OBTIDO=$(sha1sum "${TMP_DIR}/servidor.zip" | awk '{print $1}')
+			if [[ "${SHA1_ESPERADO}" != "${SHA1_OBTIDO}" ]]; then
+				echo -e "# ERRO: SHA-1 inválido (esperado ${SHA1_ESPERADO}, obtido ${SHA1_OBTIDO})" >&2
+				rm -rf "${TMP_DIR}"
+				return 1
+			fi
+			echo -e "# SHA-1 verificado: ${SHA1_OBTIDO}"
+		else
+			echo -e "# AVISO: ${URL_ZIP}.sha1 indisponível; download não verificado." >&2
+		fi
+
+		unzip -q "${TMP_DIR}/servidor.zip" -d "${TMP_DIR}/extraido"
+		# O zip traz uma única pasta raiz (glassfish4/ ou payara41/)
+		DIR_EXTRAIDO=$(find "${TMP_DIR}/extraido" -mindepth 1 -maxdepth 1 -type d | head -n 1)
+		mkdir -p "${DEV_TOOLS}"
+		mv "${DIR_EXTRAIDO}" "${DESTINO}"
+		rm -rf "${TMP_DIR}"
+	fi
+
+	# Fixa o JDK 8 no servidor: asadmin e os domínios leem AS_JAVA do asenv.conf
+	sed -i '/^AS_JAVA=/d' "${ASENV}"
+	echo "AS_JAVA=\"${JAVA_HOME_JDK8}\"" >> "${ASENV}"
+
+	"${ASADMIN}" version --local
+
+	cat <<EOF2
+
+##############################################
+# ${NOME_SERVIDOR} ${VERSAO} pronto (Java EE 7 + JDK 8)
+#   Home    : ${DESTINO}
+#   AS_JAVA : ${JAVA_HOME_JDK8}
+#
+#   ${ASADMIN} start-domain domain1
+#   App: http://localhost:8080   Admin: http://localhost:4848
+#   ${ASADMIN} stop-domain domain1
+#
+# NOTA: GlassFish e Payara usam as mesmas portas no domain1;
+#       não suba os dois ao mesmo tempo.
+##############################################
+EOF2
+
+}
+
+export -f OracleCertificationsScriptsUteis.instalarServidorJavaEE7
+#########################################################
+
+#########################################################
+#
+# Describe: Preparação específica do Fedora para os servidores Java EE 7:
+#           dependências via dnf e, se ABRIR_PORTAS_FIREWALL=true e o firewalld
+#           estiver ativo, libera as portas 8080, 8181 e 4848.
+#           O JDK 8 vem do SDKMAN (o Fedora não empacota mais o OpenJDK 8).
+#
+#########################################################
+function OracleCertificationsScriptsUteis.prepararFedoraServidorJavaEE7(){
+
+	local PORTA
+
+	if [[ ! -f /etc/fedora-release ]]; then
+		echo -e "# ERRO: esta função é específica do Fedora; use a versão genérica." >&2
+		return 1
+	fi
+
+	if ! rpm -q curl unzip coreutils >/dev/null 2>&1; then
+		sudo dnf install -y curl unzip coreutils || return 1
+	fi
+
+	if [[ "${ABRIR_PORTAS_FIREWALL}" == "true" ]] && systemctl is-active --quiet firewalld; then
+		for PORTA in 8080 8181 4848; do
+			sudo firewall-cmd --permanent --add-port="${PORTA}/tcp"
+		done
+		sudo firewall-cmd --reload
+	fi
+
+}
+
+export -f OracleCertificationsScriptsUteis.prepararFedoraServidorJavaEE7
+#########################################################
+
+#########################################################
+#
+# Describe: Instalação do Payara Server 4.1 (Java EE 7, JDK 8) — qualquer distro Linux
+# $1: versão (padrão: 4.1.2.181, última release da linha 4.1)
+# $2: pasta das ferramentas (padrão: ${HOME}/dev_tools)
+# $3: versão SDKMAN do JDK 8 (padrão: 8.0.472-amzn)
+#
+# Uso: OracleCertificationsScriptsUteis.installServidorPayara41
+#
+#########################################################
+function OracleCertificationsScriptsUteis.installServidorPayara41(){
+
+	local VERSAO="${1:-4.1.2.181}"
+
+	OracleCertificationsScriptsUteis.instalarServidorJavaEE7 "payara" "${VERSAO}" \
+		"https://repo1.maven.org/maven2/fish/payara/distributions/payara/${VERSAO}/payara-${VERSAO}.zip" \
+		"${2:-${HOME}/dev_tools}" "${3:-8.0.472-amzn}"
+
+}
+
+export -f OracleCertificationsScriptsUteis.installServidorPayara41
+#########################################################
+
+#########################################################
+#
+# Describe: Instalação do Payara Server 4.1 específica do Fedora
+# Parâmetros: os mesmos de OracleCertificationsScriptsUteis.installServidorPayara41
+#
+#########################################################
+function OracleCertificationsScriptsUteis.installServidorPayara41Fedora(){
+
+	OracleCertificationsScriptsUteis.prepararFedoraServidorJavaEE7 || return 1
+	OracleCertificationsScriptsUteis.installServidorPayara41 "$@"
+
+}
+
+export -f OracleCertificationsScriptsUteis.installServidorPayara41Fedora
+#########################################################
+
+#########################################################
+#
+# Describe: Instalação do GlassFish 4.1 (Java EE 7, JDK 8) — qualquer distro Linux
+# $1: versão (padrão: 4.1)
+# $2: pasta das ferramentas (padrão: ${HOME}/dev_tools)
+# $3: versão SDKMAN do JDK 8 (padrão: 8.0.472-amzn)
+#
+# Uso: OracleCertificationsScriptsUteis.installServidorGlassFish41
+#
+#########################################################
+function OracleCertificationsScriptsUteis.installServidorGlassFish41(){
+
+	local VERSAO="${1:-4.1}"
+
+	OracleCertificationsScriptsUteis.instalarServidorJavaEE7 "glassfish" "${VERSAO}" \
+		"https://repo1.maven.org/maven2/org/glassfish/main/distributions/glassfish/${VERSAO}/glassfish-${VERSAO}.zip" \
+		"${2:-${HOME}/dev_tools}" "${3:-8.0.472-amzn}"
+
+}
+
+export -f OracleCertificationsScriptsUteis.installServidorGlassFish41
+#########################################################
+
+#########################################################
+#
+# Describe: Instalação do GlassFish 4.1 específica do Fedora
+# Parâmetros: os mesmos de OracleCertificationsScriptsUteis.installServidorGlassFish41
+#
+#########################################################
+function OracleCertificationsScriptsUteis.installServidorGlassFish41Fedora(){
+
+	OracleCertificationsScriptsUteis.prepararFedoraServidorJavaEE7 || return 1
+	OracleCertificationsScriptsUteis.installServidorGlassFish41 "$@"
+
+}
+
+export -f OracleCertificationsScriptsUteis.installServidorGlassFish41Fedora
 #########################################################
 
 #########################################################
