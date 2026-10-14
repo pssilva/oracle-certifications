@@ -11,11 +11,15 @@ CONCEITO: Ciclo de Vida e Escopos EJB x CDI
 
 Objetivo oficial (1Z0-900 · Tópico 01): Entender a Arquitetura Java EE
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://tenlong.com.tw/products/9781430246268); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/overview.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/overview.htm).
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 2 ■ CDI » Scopes; Cap. 8 ■ Callbacks
+» Cap. 2 ■ CDI 
+» » Scopes; 
+
+» Cap. 8 ■ Callbacks
+
 ```
 
 ## Escrever à Mão (2-25 min)

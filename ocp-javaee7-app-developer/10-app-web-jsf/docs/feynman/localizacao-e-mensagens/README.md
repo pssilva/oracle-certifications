@@ -11,7 +11,7 @@ CONCEITO: Localização e Mensagens
 
 Objetivo oficial (1Z0-900 · Tópico 10): Desenvolver aplicações Web usando JSF
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://tenlong.com.tw/products/9781430246268); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partwebtier.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partwebtier.htm).
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)

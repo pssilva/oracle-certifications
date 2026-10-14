@@ -48,7 +48,7 @@ idea .
 ```
 
 
-#### 📋 Pré-requisitos
+#### Pré-requisitos
 
 Depois de baixar o projeto: De que coisas precisamos para atuar no projeto `oracle-certifications` e executá-lo?
 
@@ -139,7 +139,7 @@ OracleCertificationsScriptsUteis.CriarStructureByConceito "12-beans-cdi" "Altern
 
 ---
 
-## 🔩 Débitos Técnicos
+## Débitos Técnicos
 
 Aqui temos uma lista do que idenficamos com status de pendente:
 
@@ -276,7 +276,7 @@ Segue abaixo as referências bibliográficas usadas no presente projeto:
 ---
 
 <p align="justify">
-[<a id="GONCALVES-Antonio">GONCALVES, Antonio</a>]: Beginning Java EE 7. Apress, 2013. ISBN 978-1430246268. Livro guia do plano de estudos. Disponível em: < <a href="https://tenlong.com.tw/products/9781430246268">https://tenlong.com.tw/products/9781430246268</a> >. Acesso em: 12 out. 2026.
+[<a id="GONCALVES-Antonio">GONCALVES, Antonio</a>]: Beginning Java EE 7. Apress, 2013. ISBN 978-1430246268. Livro guia do plano de estudos. Disponível em: < <a href="https://a.co/d/04zua8PD">https://a.co/d/04zua8PD</a> >. Acesso em: 12 out. 2026.
 </p>
 
 ---

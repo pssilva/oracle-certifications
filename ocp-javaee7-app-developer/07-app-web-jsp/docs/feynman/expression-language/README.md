@@ -11,7 +11,7 @@ CONCEITO: Expression Language 3.0
 
 Objetivo oficial (1Z0-900 · Tópico 07): Criar aplicações Web Java usando JSPs
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://tenlong.com.tw/products/9781430246268); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/jsf-el.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/jsf-el.htm).
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)

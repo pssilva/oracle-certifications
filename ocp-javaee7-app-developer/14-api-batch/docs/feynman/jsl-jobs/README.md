@@ -11,7 +11,7 @@ CONCEITO: Job Specification Language (JSL)
 
 Objetivo oficial (1Z0-900 · Tópico 14): Usar a API Batch em aplicações Java EE 7
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://tenlong.com.tw/products/9781430246268); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/batch-processing.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/batch-processing.htm).
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)

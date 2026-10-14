@@ -11,7 +11,7 @@ CONCEITO: JPQL e Criteria API
 
 Objetivo oficial (1Z0-900 · Tópico 02): Gerenciar persistência usando entidades JPA e Bean Validation
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://tenlong.com.tw/products/9781430246268); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partpersist.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partpersist.htm).
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)

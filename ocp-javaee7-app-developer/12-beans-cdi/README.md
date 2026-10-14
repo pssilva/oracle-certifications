@@ -3,7 +3,7 @@ Módulo: 12-beans-cdi
 
 Tópico 12 do exame **1Z0-900 — Java EE 7 Application Developer**: *Usar beans CDI*.
 
-Para este módulo usaremos como base de referência o Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://tenlong.com.tw/products/9781430246268); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partcdi.htm).
+Para este módulo usaremos como base de referência o Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partcdi.htm).
 
 | Item | Valor |
 | --- | --- |
