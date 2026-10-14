@@ -185,6 +185,7 @@ Tomando como base [Exam 1Z0-831: Java SE 25 Developer Professional](https://myle
     - [ ] concatenação,
     - [ ] redução
     - [ ] agrupamento e particionamento,
+    - [ ] gathering (Gatherers),
   - [ ] além de operações de coleta em fluxos sequenciais e paralelos
 
 - [ ] Empacotamento e Implantação de Código Java
@@ -217,6 +218,30 @@ Tomando como base [Exam 1Z0-831: Java SE 25 Developer Professional](https://myle
   - [ ] e pacotes de recursos.
   - [ ] Analise e formate mensagens, datas, horas e números, incluindo valores monetários e percentuais.
 
+### Mapa: Módulos × Tópicos do Exame 1Z0-831
+
+Os módulos seguem a **ordem dos capítulos do livro** (ordem de estudo); cada um cobre um ou mais tópicos do exame. Os conceitos de cada módulo ficam em `{{NOME_MODULO}}/docs/feynman/{{CONCEITO}}`.
+
+| Ordem | Módulo | Capítulo do livro | Tópicos do exame |
+|------:|--------|-------------------|------------------|
+| 1 | [01-building-blocks](01-building-blocks/README.md) | 1 Building Blocks | 1 (primitivos, wrappers, casting), 3 (ciclo de vida, escopo, `var`, variáveis sem nome) |
+| 2 | [14-operators](14-operators/README.md) | 2 Operators | 1 (expressões, precedência) |
+| 3 | [02-making-decisions](02-making-decisions/README.md) | 3 Making Decisions | 2 (if/else, switch, loops, break/continue) |
+| 4 | [15-core-apis](15-core-apis/README.md) | 4 Core APIs | 1 (String, StringBuilder, text blocks, Math, Date-Time), 5 (arrays) |
+| 5 | [03-methods](03-methods/README.md) | 5 Methods | 3 (métodos, static, sobrecarga, varargs, encapsulamento) |
+| 6 | [01-class-design](01-class-design/README.md) | 6 Class Design | 3 (herança, construtores flexíveis, inicializadores, abstratas, imutáveis, sobrescrita) |
+| 7 | [01-beyond-classes](01-beyond-classes/README.md) | 7 Beyond Classes | 3 (interfaces, enums, sealed, records, aninhadas, polimorfismo) |
+| 8 | [06-lambdas-functional-interfaces](06-lambdas-functional-interfaces/README.md) | 8 Lambdas and Functional Interfaces | 3 (interfaces funcionais), 6 (lambdas) |
+| 9 | [05-collections-generics](05-collections-generics/README.md) | 9 Collections and Generics | 5 (List, Set, Map, Deque, sequenced, ordenação) |
+| 10 | [07-streams](07-streams/README.md) | 10 Streams | 6 (streams, primitivos, redução, agrupamento, gatherers) |
+| 11 | [04-exceptions-localization](04-exceptions-localization/README.md) | 11 Exceptions and Localization | 4 (exceções), 10 (localização) |
+| 12 | [11-modules](11-modules/README.md) | 12 Modules | 7 (módulos, serviços, migração, `import module`) |
+| 13 | [12-packaging-deployment](12-packaging-deployment/README.md) | 12 Modules + JEPs Java 25 | 7 (arquivos-fonte compactos, `main` de instância, multi-arquivo, JARs, `jlink`) |
+| 14 | [13-concurrency](13-concurrency/README.md) | 13 Concurrency | 8 (threads virtuais, executors, scoped values, thread-safety, parallel streams) |
+| 15 | [09-io-api](09-io-api/README.md) | 14 I/O | 9 (I/O streams, console, serialização, NIO.2) |
+
+> Conteúdos do Java 22–25 que **não** estão no livro OCP 21 (estudar pelas JEPs): variáveis sem nome (JEP 456), Gatherers (JEP 485), `import module` (JEP 511), arquivos-fonte compactos e `main` de instância (JEP 512), corpos de construtores flexíveis (JEP 513), scoped values (JEP 506) e programas multi-arquivo (JEP 458).
+
 ### Atividades - DevOps
 
 - [ ] Scritps de Automação
@@ -227,10 +252,10 @@ Tomando como base [Exam 1Z0-831: Java SE 25 Developer Professional](https://myle
 - [ ] [Implementar Testes (TDD)](#GONZALEZ_Javier_cap_11): Técnica Red-Green-Refact
 - [ ] Descrição sucinta [TRABALHO EM PROGRESSO]
 
-- [ ] Implementação dos Pipelines CI/CD de Implatação num Provedor de Nuvem (mais detalhes veja [aqui](docs/provedores_nuvem/README.md)).
-- [ ] Implementar restrições de Commit no Git: vinculado com o ID de regra de negócio e ID do checklist de validação das entragas de funcionalidades (mais detalhes [aqui](docs/checklists/README.md))
+- [ ] Implementação dos Pipelines CI/CD de Implatação num Provedor de Nuvem (detalhes em `docs/provedores_nuvem/` — a documentar).
+- [ ] Implementar restrições de Commit no Git: vinculado com o ID de regra de negócio e ID do checklist de validação das entragas de funcionalidades (mais detalhes [aqui](../docs/checklists/README.md))
 - [ ] Implementar Dockerfiles para Kubernetes
-- [ ] Colocar em prática o Desenvolvimento Orientado a Interface onde se deve desacoplar a aplicação do procedor de nuvem (Princípio da Segregação de Interface (ISP) - SOLID) (mais detalhes veja [aqui](docs/provedores_nuvem/README.md))
+- [ ] Colocar em prática o Desenvolvimento Orientado a Interface onde se deve desacoplar a aplicação do procedor de nuvem (Princípio da Segregação de Interface (ISP) - SOLID) (detalhes em `docs/provedores_nuvem/` — a documentar)
 - [ ] Implementar Arquitetura Orienta a Eventos ([EDA](https://aws.amazon.com/pt/what-is/eda/))
 
 ### Suporte / Sustentação
@@ -271,11 +296,11 @@ Seque aqui as ferramentas utilizadas na construção presente projeto:
 
 ## 🖇️ Colaborando
 
-Por favor, leia o [COLABORACAO.md](COLABORACAO.md) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+Por favor, leia o `COLABORACAO.md` (a criar) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto).
+Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/pssilva/oracle-certifications/tags).
 
 ## ✒️ Autores
 
@@ -284,13 +309,13 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 * **Um desenvolvedor** - *Trabalho Inicial* - [pssilva](https://github.com/pssilva)
 
 
-Você também pode ver a lista de todos os [colaboradores](COLABORACAO.md) que participaram deste projeto.
+Você também pode ver a lista de todos os colaboradores (`COLABORACAO.md`, a criar) que participaram deste projeto.
 
 ---
 
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está sob a licença (sua licença) - arquivo `LICENSE` a criar.
 
 ---
 

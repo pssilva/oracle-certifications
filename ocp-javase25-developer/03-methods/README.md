@@ -1,27 +1,30 @@
-Módulo: 03-methods 
+Módulo: 03-methods — Métodos
 --------
 
-Para este módulo usaremos como base de referência o Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
+> Ordem de estudo: **5 de 15** · anterior: [15-core-apis](../15-core-apis/README.md) · próximo: [01-class-design](../01-class-design/README.md)
+
+Base de referência: livro [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp) — **Chapter 5: Methods**.
+
+Exame alvo: [1Z0-831: Java SE 25 Developer Professional](https://mylearn.oracle.com/ou/exam/java-se-25-developer-professional-1z0-831/40805/161532/270890).
 
 ## Objetivo
 
-Descrição sucinta vem aqui ..... 
+Desenho de métodos, variáveis locais e de instância, varargs, modificadores de acesso, membros `static`, passagem de parâmetros e sobrecarga.
 
-```
-• Usando Conceitos de Orientação a Objetos em Java
-    ◦ Criar classes e registros, e definir e usar campos e métodos de instância e estáticos, 
-      construtores e inicializadores de instância e estáticos.
-    ◦ Implementar métodos sobrecarregados, incluindo métodos com argumentos variáveis (var-args).
+### Tópicos do exame cobertos
 
-```
+- 3. Princípios de Orientação a Objetos
 
 Conceitos OCP
 -------------
 
-Os conceitos se encontram na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/03-methods/docs/feynman/métodos/`
+Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz) em `docs/feynman/<conceito>/` (`README.md`, `evidencias/`, `mistakes/`, `questions-exam/`).
 
-[TRABALHO EM PROGRESSO]
+| Conceito | Seção do livro | Objetivo 1Z0-831 | Evidências |
+|----------|----------------|------------------|------------|
+| [Métodos](docs/feynman/metodos/README.md) | Designing Methods | 3.2 Definir e usar métodos de instância e estáticos | ✅ 2 img |
+| [Sobrecarga e Varargs](docs/feynman/sobrecarga-e-varargs/README.md) | Working with Varargs / Overloading Methods | 3.3 Métodos sobrecarregados, incluindo var-arg | ⏳ pendente |
+| [Modificadores de Acesso e Membros Static](docs/feynman/modificadores-de-acesso-e-membros-static/README.md) | Applying Access Modifiers / Accessing Static Data | 3.2 Campos e métodos static; 3.4 encapsulamento | ⏳ pendente |
+| [Passagem de Parâmetros](docs/feynman/passagem-de-parametros/README.md) | Passing Data among Methods (autoboxing, pass-by-value) | 3.1 Reatribuição de referências | ⏳ pendente |
 
-- [Conceito XPTO 1](#)
-- [Conceito XPTO 2](#)
-- [Conceito XPTO 3](#)
+Para criar um novo conceito use `OracleCertificationsScriptsUteis.CriarStructureByConceito "03-methods" "<Conceito>"` (veja o [README da certificação](../README.md)).
