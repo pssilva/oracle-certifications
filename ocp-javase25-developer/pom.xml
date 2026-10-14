@@ -48,5 +48,7 @@
     <module>15-core-apis</module>
     <module>16-data-type-manipulation</module>
     <module>11-modules/agency</module>
+      <module>11-modules/butterfly</module>
+    <module>11-modules/caterpillar</module>
   </modules>
 </project>
