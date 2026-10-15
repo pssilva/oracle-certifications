@@ -15,16 +15,15 @@ Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer
 
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 5: Methods
-» » Passing Data among Methods (autoboxing, pass-by-value)
+» Chapter 5: Métodos
+» » Passando Dados entre Variáveis Métodos 
+» » Autoboxing e Unboxing de Variáveis
 » » » Objetivo do exame 1Z0-831: 3.1 Reatribuição de referências
-
 ```
 
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva:
-
 
 ```
 O que é?
@@ -40,7 +39,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `03-methods/docs/feynman/passagem-de-parametros/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-passagem-de-parametros-4em1.jpeg" alt="Conceito: Passagem de Parâmetros" title="Passagem de Parâmetros" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-java-se25-passagem-parametros.jpeg" alt="Conceito: Passagem de Parâmetros" title="Passagem de Parâmetros" style="width:250px;"/>
 
 
 ## Explique em voz alta (25-40 min)

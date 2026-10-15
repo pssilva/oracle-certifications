@@ -56,6 +56,39 @@ public class MethodsPracticalClass {
         return "apple";                   // COMPILER WARNING
     }
 
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 5 ■ Métodos
+     * <p> » » Passando Dados entre Variáveis Métodos
+     * <p> » » » Passagem de Objetos
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void passagemObjetos() {
+        System.out.println("###################################################");
+        System.out.println("Método: passagemObjetos()");
+        System.out.println("###################################################");
+        int original1 = 1;
+        int original2 = 2;
+        swap(original1, original2);
+        System.out.println(original1);   // 1
+        System.out.println(original2);   // 2
+        System.out.println("###################################################");
+    }
 
-
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 5 ■ Métodos
+     * <p> » » Passando Dados entre Variáveis Métodos
+     * <p> » » » Passagem de Objetos
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void swap(int a, int b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
 }
