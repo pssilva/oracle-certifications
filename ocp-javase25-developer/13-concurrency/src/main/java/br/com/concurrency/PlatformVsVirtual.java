@@ -32,7 +32,5 @@ public class PlatformVsVirtual {
         threads.forEach(Thread::start);
         for (var t : threads)
             t.join();
-
-
     }
 }

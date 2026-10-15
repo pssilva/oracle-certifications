@@ -40,8 +40,11 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `13-concurrency/docs/feynman/threads-de-plataforma-e-virtuais/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-threads-de-plataforma-e-virtuais-4em1.jpeg" alt="Conceito: Threads de Plataforma e Virtuais" title="Threads de Plataforma e Virtuais" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-javase25-threads-plataforma-4em1.jpeg" alt="Conceito: Threads de Plataforma e Virtuais" title="Threads de Plataforma e Virtuais" style="width:250px;"/>
 
+--- 
+
+<img src="evidencias/imgs/evidencia-javase25-threads-plataforma.jpeg" alt="Conceito: Threads de Plataforma e Virtuais" title="Threads de Plataforma e Virtuais" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
