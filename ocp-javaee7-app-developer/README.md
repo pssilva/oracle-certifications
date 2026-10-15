@@ -83,8 +83,27 @@ mvn clean verify               # gera um WAR por módulo em NN-*/target/
 source ~/.bash_profile
 idea .
 ```
-
 > Também compila com o JDK 25 do POM raiz: o perfil `jdk9-plus` usa `--release 8`.
+
+### Análise Exploratória 
+
+Para realizar a análise exploratória do repositório do código-fonte do e-book: [Beginning Java EE 7](https://a.co/d/04zua8PD)
+
+Mas veja bem, o presente projeto replica o código com o objetivo de ter contato real com a codificação e conceitos cobrado no exam de certificação.
+
+Use os seguintes comandos:
+```bash
+export LINK_GITHUB="https://github.com/agoncal/agoncal-book-javaee7"
+export ARTIFACT_ID="agoncal-book-javaee7"
+cd "${HOME}/projetos"
+git clone "${LINK_GITHUB}" "${ARTIFACT_ID}"
+cd "${ARTIFACT_ID}"
+git status
+git fetch
+git checkout -b develop
+source ~/.bash_profile
+idea .
+```
 
 Para implantar um laboratório, use um servidor **Java EE 7 Full Profile** — [Payara Server 4.1](https://www.payara.fish/downloads/payara-platform-community-edition/) ou [GlassFish 4.1](https://javaee.github.io/glassfish/download) (JMS/MDB exigem o full profile):
 

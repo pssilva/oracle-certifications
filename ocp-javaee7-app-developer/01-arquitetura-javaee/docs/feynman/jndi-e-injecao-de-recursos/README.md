@@ -15,7 +15,9 @@ Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 7 ■ Enterprise JavaBeans » Dependency Injection / JNDI
+» Capítulo 1 ■ Visão Geral do Java EE 7
+» Dependency Injection / JNDI
+
 ```
 
 ## Escrever à Mão (2-25 min)

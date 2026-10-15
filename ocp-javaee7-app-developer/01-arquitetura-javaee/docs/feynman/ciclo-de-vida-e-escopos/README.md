@@ -15,10 +15,11 @@ Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 2 ■ CDI 
-» » Scopes; 
+» Capítulo 2 ■ Contexto e Injeção de Dependência (CDI)
+» » Scopes
 
-» Cap. 8 ■ Callbacks
+» Capítulo 8 ■ Callbacks, Serviço de Temporizador e Autorização
+
 
 ```
 
