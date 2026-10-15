@@ -12,7 +12,7 @@ CONCEITO: Ciclo de Vida e Escopos EJB x CDI
 Objetivo oficial (1Z0-900 · Tópico 01): Entender a Arquitetura Java EE
 
 Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/overview.htm).
-
+ 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
 » Capítulo 2 ■ Contexto e Injeção de Dependência (CDI)
