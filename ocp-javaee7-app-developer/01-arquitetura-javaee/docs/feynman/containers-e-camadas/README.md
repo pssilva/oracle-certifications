@@ -38,7 +38,16 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `01-arquitetura-javaee/docs/feynman/containers-e-camadas/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-containers-e-camadas-4em1.jpeg" alt="Conceito: Containers e Camadas" title="Containers e Camadas" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-visao-geral-javaee-7-4em1.jpeg" alt="Conceito: Empacotamento WAR, EJB-JAR e EAR" title="Empacotamento WAR, EJB-JAR e EAR" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-javaee-7-container.png" alt="Conceito: Empacotamento WAR, EJB-JAR e EAR" title="Empacotamento WAR, EJB-JAR e EAR" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-javaee-7-servicos.jpeg" alt="Conceito: Empacotamento WAR, EJB-JAR e EAR" title="Empacotamento WAR, EJB-JAR e EAR" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 

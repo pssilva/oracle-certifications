@@ -41,7 +41,11 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `01-arquitetura-javaee/docs/feynman/ciclo-de-vida-e-escopos/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-ciclo-de-vida-e-escopos-4em1.jpeg" alt="Conceito: Ciclo de Vida e Escopos EJB x CDI" title="Ciclo de Vida e Escopos EJB x CDI" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-javaee-7-ciclo-vida.png" alt="Conceito: Empacotamento WAR, EJB-JAR e EAR" title="Empacotamento WAR, EJB-JAR e EAR" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-javaee-7-escopos.png" alt="Conceito: Empacotamento WAR, EJB-JAR e EAR" title="Empacotamento WAR, EJB-JAR e EAR" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

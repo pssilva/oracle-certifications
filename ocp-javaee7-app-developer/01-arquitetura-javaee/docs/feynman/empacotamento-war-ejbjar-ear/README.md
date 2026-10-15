@@ -39,8 +39,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `01-arquitetura-javaee/docs/feynman/empacotamento-war-ejbjar-ear/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-empacotamento-war-ejbjar-ear-4em1.jpeg" alt="Conceito: Empacotamento WAR, EJB-JAR e EAR" title="Empacotamento WAR, EJB-JAR e EAR" style="width:250px;"/> -->
-
+<img src="evidencias/imgs/evidencia-javaee-7-empacotamento-jar-war-ejb-jar.png" alt="Conceito: Empacotamento WAR, EJB-JAR e EAR" title="Empacotamento WAR, EJB-JAR e EAR" style="width:250px;"/>
 ## Explique em voz alta (25-40 min)
 
 Explique sem consultas como se estivesse ensinando para um desenvolvedor Jr. Use **uma analogia** por conceito

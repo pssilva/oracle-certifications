@@ -31,7 +31,7 @@ Os conceitos se encontram na pasta: `01-arquitetura-javaee/docs/feynman/`
 - [Containers e Camadas](docs/feynman/containers-e-camadas/README.md)
 - [Empacotamento WAR, EJB-JAR e EAR](docs/feynman/empacotamento-war-ejbjar-ear/README.md)
 - [JNDI e Injeção de Recursos](docs/feynman/jndi-e-injecao-de-recursos/README.md)
-- [Ciclo de Vida e Escopos EJB x CDI](docs/feynman/ciclo-de-vida-e-escopos/README.md)
+- [Ciclo de Vida e Escopos EJB x CDI](docs/feynman/ciclo-vida-escopos/README.md)
 
 ## Laboratório
 
