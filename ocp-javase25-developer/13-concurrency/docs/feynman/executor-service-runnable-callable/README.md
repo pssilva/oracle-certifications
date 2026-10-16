@@ -13,11 +13,13 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 13-concurrency
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 8.1 Runnable, Callable e serviços Executor
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 13: Concurrency
-» » Creating Threads with the Concurrency API
-» » » Objetivo do exame 1Z0-831: 8.1 Runnable, Callable e serviços Executor
+» Capítulo 13 ■ Concorrência (Concurrency)
+» » Criando Threads com a API de Concorrência
+» » » Encerrando um Executor de Threads
 
 ```
 
@@ -40,8 +42,11 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `13-concurrency/docs/feynman/executor-service-runnable-e-callable/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-executor-service-runnable-e-callable-4em1.jpeg" alt="Conceito: Executor Service, Runnable e Callable" title="Executor Service, Runnable e Callable" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-java-se-25-executors-executors-service.jpeg" alt="Conceito: Executor Service, Runnable e Callable" title="Executor Service, Runnable e Callable" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-java-se-25-runnable-callable.jpeg" alt="Conceito: Executor Service, Runnable e Callable" title="Executor Service, Runnable e Callable" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

@@ -278,4 +278,28 @@ public class ConcurrencyPracticalClass {
         for (String key : foodData.keySet())
             foodData.remove(key);
     }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 13 ■ Concorrência
+     * <p> » » Criando Threads com a API de Concorrência
+     * <p> » » » Submetendo Tarefas
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo com os conceitos envolvidos na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     *
+     */
+    private static void submetendoTarefas() {
+        System.out.println("###################################################");
+        System.out.println("Método: submetendoTarefas()");
+        System.out.println("###################################################");
+
+        try (ExecutorService service = Executors.newSingleThreadExecutor()) {
+            System.out.println("begin");
+            Future<?> future = service.submit(() -> System.out.println("Hello"));
+            System.out.println("end");
+        }
+
+        System.out.println("###################################################");
+    }
 }

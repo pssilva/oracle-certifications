@@ -23,7 +23,7 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 | Conceito | Seção do livro | Objetivo 1Z0-831 | Evidências |
 |----------|----------------|------------------|------------|
 | [Threads de Plataforma e Virtuais](docs/feynman/threads-plataforma-virtuais/README.md) | Introducing Threads | 8.1 Criar threads de plataforma e virtuais; ciclo de vida da thread | ⏳ pendente |
-| [Executor Service, Runnable e Callable](docs/feynman/executor-service-runnable-e-callable/README.md) | Creating Threads with the Concurrency API | 8.1 Runnable, Callable e serviços Executor | ⏳ pendente |
+| [Executor Service, Runnable e Callable](docs/feynman/executor-service-runnable-callable/README.md) | Creating Threads with the Concurrency API | 8.1 Runnable, Callable e serviços Executor | ⏳ pendente |
 | [Scoped Values](docs/feynman/scoped-values/README.md) | ScopedValue.where(...).run(...) | 8.1 Valores com escopo para compartilhar contexto imutável | ⏳ pendente |
 | [Thread-safety, Locks e Atômicos](docs/feynman/thread-safety-locks-e-atomicos/README.md) | Writing Thread-Safe Code / Identifying Threading Problems | 8.2 Código thread-safe com bloqueios e API concorrente | ⏳ pendente |
 | [Coleções Concorrentes](docs/feynman/colecoes-concorrentes/README.md) | Using Concurrent Collections | 8.3 Processar coleções concorrentemente | ⏳ pendente |
