@@ -37,7 +37,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `12-beans-cdi/docs/feynman/eventos/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-eventos-4em1.jpeg" alt="Conceito: Eventos" title="Eventos" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-eventos-produtores-4em1.jpeg" alt="Conceito: CDI" title="CDI" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

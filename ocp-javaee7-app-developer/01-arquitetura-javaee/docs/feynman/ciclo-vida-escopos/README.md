@@ -19,8 +19,6 @@ Beginning Java EE 7 (Antonio Goncalves)
 » » Scopes
 
 » Capítulo 8 ■ Callbacks, Serviço de Temporizador e Autorização
-
-
 ```
 
 ## Escrever à Mão (2-25 min)

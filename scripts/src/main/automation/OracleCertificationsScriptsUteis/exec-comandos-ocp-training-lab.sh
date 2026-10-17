@@ -10,7 +10,9 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "09-io-api" "Serialization"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "12-beans-cdi" "CDI" "ocp-javaee7-app-developer"
+
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "09-io-api" "Serialization"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "Módulos"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "12-packaging-deployment" "Deploy e Packaging"
