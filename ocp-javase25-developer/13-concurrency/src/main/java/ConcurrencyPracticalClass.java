@@ -51,9 +51,9 @@ public class ConcurrencyPracticalClass {
         //formasCriarThreadMaisComplexo();
         //gerenciandoCicloVidaThread();
         //executorServiceNewSingleThreadExecutor();
-        //scheduledExecutorService();
+        scheduledExecutorService();
         //entendendoErrosConsistenciaMemoria();
-        entendendoSemErrosConsistenciaMemoria();
+        //entendendoSemErrosConsistenciaMemoria();
 
     }
 
@@ -217,10 +217,11 @@ public class ConcurrencyPracticalClass {
     private static void scheduledExecutorService() {
         try (var service = Executors.newSingleThreadScheduledExecutor()) {
             Runnable task1 = () -> System.out.println("Hello Zoo");
-            Callable<String> task2 = () -> "Monkey";
+            Callable<String> task2 = () -> {var s = "Monkey"; System.out.println(s); return s;};
             ScheduledFuture<?> r1 = service.schedule(task1, 10, TimeUnit.SECONDS);
-            ScheduledFuture<?> r2 = service.schedule(task2, 8,  TimeUnit.MINUTES);
-
+            ScheduledFuture<?> r2 = service.schedule(task2, 13,  TimeUnit.SECONDS);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 

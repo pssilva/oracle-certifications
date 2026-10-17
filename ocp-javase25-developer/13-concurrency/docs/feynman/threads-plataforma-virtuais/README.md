@@ -13,11 +13,13 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 13-concurrency
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente: Objetivo do exame 1Z0-831: 
+8.1 Criar threads de plataforma e virtuais; ciclo de vida da thread
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 13: Concurrency
-» » Introducing Threads
-» » » Objetivo do exame 1Z0-831: 8.1 Criar threads de plataforma e virtuais; ciclo de vida da thread
+» Capítulo 13 ■ Concorrência (Concurrency)
+» » Introdução a Threads
 
 ```
 
@@ -45,6 +47,10 @@ E tire uma foto de evidência e coloque na pasta: `13-concurrency/docs/feynman/t
 --- 
 
 <img src="evidencias/imgs/evidencia-javase25-threads-plataforma.jpeg" alt="Conceito: Threads de Plataforma e Virtuais" title="Threads de Plataforma e Virtuais" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/evidencia-thread-virtual-executor-service-2em1.jpeg" alt="Conceito: Threads de Plataforma e Virtuais" title="Threads de Plataforma e Virtuais" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

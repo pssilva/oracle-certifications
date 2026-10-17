@@ -13,12 +13,13 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 13-concurrency
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 8.2 Código thread-safe com bloqueios e API concorrente
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 13: Concurrency
-» » Writing Thread-Safe Code / Identifying Threading Problems
-» » » Objetivo do exame 1Z0-831: 8.2 Código thread-safe com bloqueios e API concorrente
-
+» Capítulo 13 ■ Concorrência (Concurrency)
+» » Escrevendo Código Thread-Safe
+» » Identificando Problemas de Threading
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -40,7 +41,8 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `13-concurrency/docs/feynman/thread-safety-locks-e-atomicos/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-thread-safety-locks-e-atomicos-4em1.jpeg" alt="Conceito: Thread-safety, Locks e Atômicos" title="Thread-safety, Locks e Atômicos" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-thread-safe-virtual-4em1.jpeg" alt="Conceito: Thread-safety, Locks e Atômicos" title="Thread-safety, Locks e Atômicos" style="width:250px;"/>
+
 
 
 ## Explique em voz alta (25-40 min)
