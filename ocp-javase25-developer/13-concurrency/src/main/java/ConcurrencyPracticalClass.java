@@ -3,6 +3,7 @@ import br.com.concurrency.PlatformVsVirtual;
 
 import java.util.HashMap;
 import java.util.concurrent.*;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.stream.Stream;
 
 /**
@@ -300,6 +301,38 @@ public class ConcurrencyPracticalClass {
             Future<?> future = service.submit(() -> System.out.println("Hello"));
             System.out.println("end");
         }
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 13 ■ Concorrência
+     * <p> » » Escrevendo Código Thread-Safe
+     * <p> » » » Entendendo o Framework de Locks
+     * <p> » » » » Revisando o Framework de Locks
+     * <p> » » » » » Introduzindo o ReentrantReadWriteLock
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo com os conceitos envolvidos na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     *
+     */
+    private static void introduzindoReentrantReadWriteLock() {
+        System.out.println("###################################################");
+        System.out.println("Método: introduzindoReentrantReadWriteLock()");
+        System.out.println("###################################################");
+        var lock = new ReentrantReadWriteLock();
+        lock.writeLock().lock();
+        lock.readLock().lock();
+        System.out.println(lock.isWriteLocked());     // true
+        System.out.println(lock.getReadLockCount());  // 1
+
+        lock.writeLock().unlock();
+        System.out.println(lock.isWriteLocked());     // false
+        System.out.println(lock.getReadLockCount());  // 1
+
+        lock.readLock().unlock();
+        System.out.println(lock.getReadLockCount());  // 0
 
         System.out.println("###################################################");
     }

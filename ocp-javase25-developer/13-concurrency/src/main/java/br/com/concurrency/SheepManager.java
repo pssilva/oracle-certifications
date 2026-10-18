@@ -142,7 +142,6 @@ public class SheepManager {
         }
     }
 
-
     public static void main(String[] args) {
         try (var service = Executors.newFixedThreadPool(20)) {
             SheepManager manager = new SheepManager();
@@ -155,8 +154,4 @@ public class SheepManager {
             }
         }
     }
-
-
-
-
 }
