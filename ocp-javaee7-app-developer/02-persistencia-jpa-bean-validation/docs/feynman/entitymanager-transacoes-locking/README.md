@@ -15,7 +15,11 @@ Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 6 ■ Managing Persistent Objects
+» Capítulo 6 ■ Gerenciando Objetos Persistentes
+» » Gerenciador de Entidades (Entity Manager)
+» » Concorrência
+» » » Bloqueio Otimista
+» » » Bloqueio Pessimista
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +41,11 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `02-persistencia-jpa-bean-validation/docs/feynman/entitymanager-transacoes-locking/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-entitymanager-transacoes-locking-4em1.jpeg" alt="Conceito: EntityManager, Transações e Locking" title="EntityManager, Transações e Locking" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-entitymanager-3em1.jpeg" alt="Conceito: EntityManager, Transações e Locking" title="EntityManager, Transações e Locking" style="width:250px;"/> 
+
+---
+
+<img src="evidencias/imgs/evidencia-entitymanager-jpql-4em1.jpeg" alt="Conceito: EntityManager, Transações e Locking" title="EntityManager, Transações e Locking" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

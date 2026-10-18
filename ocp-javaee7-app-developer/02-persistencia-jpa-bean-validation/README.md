@@ -33,11 +33,11 @@ Conceitos OCP
 Os conceitos se encontram na pasta: `02-persistencia-jpa-bean-validation/docs/feynman/`
 
 - [Entidades e Mapeamento O/R](docs/feynman/entidades-mapeamento-or/README.md)
-- [Relacionamentos e Herança](docs/feynman/relacionamentos-e-heranca/README.md)
+- [Relacionamentos e Herança](docs/feynman/relacionamentos-heranca/README.md)
 - [EntityManager, Transações e Locking](docs/feynman/entitymanager-transacoes-locking/README.md)
 - [JPQL e Criteria API](docs/feynman/jpql/README.md)
 - [Bean Validation](docs/feynman/bean-validation/README.md)
-- [Conversores e Geração de Chaves](docs/feynman/conversores-e-geracao-chaves/README.md)
+- [Conversores e Geração de Chaves](docs/feynman/conversores-geracao-chaves/README.md)
 
 ## Laboratório
 

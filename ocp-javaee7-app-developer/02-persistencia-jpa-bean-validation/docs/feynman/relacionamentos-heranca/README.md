@@ -15,7 +15,9 @@ Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 5 ■ Relationship Mapping / Inheritance Mapping
+» Capítulo 5 ■ Mapeamento Objeto-Relacional
+» » Mapeamento de Relacionamentos
+» » Mapeamento de Herança
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +39,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `02-persistencia-jpa-bean-validation/docs/feynman/relacionamentos-e-heranca/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-relacionamentos-e-heranca-4em1.jpeg" alt="Conceito: Relacionamentos e Herança" title="Relacionamentos e Herança" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-mapeamento-orm.jpeg" alt="Conceito: Relacionamentos e Herança" title="Relacionamentos e Herança" style="width:250px;"/> 
 
 ## Explique em voz alta (25-40 min)
 

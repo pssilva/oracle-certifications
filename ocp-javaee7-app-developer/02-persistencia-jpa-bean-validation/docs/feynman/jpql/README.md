@@ -15,7 +15,8 @@ Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 6 ■ JPQL / Queries
+» Capítulo 6 ■ Gerenciando Objetos Persistentes
+» » JPQL
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +38,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `02-persistencia-jpa-bean-validation/docs/feynman/jpql/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-jpql-4em1.jpeg" alt="Conceito: JPQL e Criteria API" title="JPQL e Criteria API" style="width:250px;"/> -->
+ <img src="evidencias/imgs/evidencia-jpql.jpeg" alt="Conceito: JPQL e Criteria API" title="JPQL e Criteria API" style="width:250px;"/> 
 
 ## Explique em voz alta (25-40 min)
 
