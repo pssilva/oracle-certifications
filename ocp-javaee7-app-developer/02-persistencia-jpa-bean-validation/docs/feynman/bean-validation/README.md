@@ -15,7 +15,8 @@ Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 3 ■ Bean Validation
+» Capítulo 3 ■ Bean Validation
+» » Entendendo Restrições e Validação
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +38,11 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `02-persistencia-jpa-bean-validation/docs/feynman/bean-validation/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-bean-validation-4em1.jpeg" alt="Conceito: Bean Validation" title="Bean Validation" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-bean-validation-4em1.jpeg" alt="Conceito: Bean Validation" title="Bean Validation" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/evidencia-bean-validation.jpeg" alt="Conceito: Bean Validation" title="Bean Validation" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
