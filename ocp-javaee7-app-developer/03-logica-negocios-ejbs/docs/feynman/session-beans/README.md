@@ -11,11 +11,22 @@ CONCEITO: Session Beans: Stateless, Stateful e Singleton
 
 Objetivo oficial (1Z0-900 · Tópico 03): Implementar lógica de negócios usando EJBs
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 7 ■ Enterprise JavaBeans
+» Capítulo 7 ■ Enterprise JavaBeans
+» » Entendendo os Enterprise JavaBeans
+» » Visão Geral da Especificação EJB
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte VII ■ Enterprise Beans
+» » Capítulo ■ 32 Enterprise Beans
+» » Capítulo ■ 33 Introdução aos Enterprise Beans
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +48,11 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `03-logica-negocios-ejbs/docs/feynman/session-beans/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-session-beans-4em1.jpeg" alt="Conceito: Session Beans: Stateless, Stateful e Singleton" title="Session Beans: Stateless, Stateful e Singleton" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-entendendo-ejb-4em1-p2.jpeg" alt="Conceito: Session Beans: Stateless, Stateful e Singleton" title="Session Beans: Stateless, Stateful e Singleton" style="width:250px;"/> 
+
+--- 
+
+<img src="evidencias/imgs/evidencia-entendendo-ejb-4em1.jpeg" alt="Conceito: Session Beans: Stateless, Stateful e Singleton" title="Session Beans: Stateless, Stateful e Singleton" style="width:250px;"/> 
 
 ## Explique em voz alta (25-40 min)
 

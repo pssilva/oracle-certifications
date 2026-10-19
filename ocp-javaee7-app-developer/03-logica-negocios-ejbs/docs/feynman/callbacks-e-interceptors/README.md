@@ -15,7 +15,8 @@ Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 8 ■ Callbacks and Timer Service; Cap. 2 ■ Interceptors
+» Cap. 2 ■ Interceptors
+» Cap. 8 ■ Callbacks and Timer Service; 
 ```
 
 ## Escrever à Mão (2-25 min)
