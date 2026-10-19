@@ -38,6 +38,22 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 <img src="evidencias/imgs/evidencia-stream-parallel-particionamento.jpeg" alt="Conceito: Parallel Streams" title="Parallel Streams" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-thread-safe-4em1-p3.jpeg" alt="Conceito: Parallel Streams" title="Parallel Streams" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-thread-safe-stream-parallel.jpeg" alt="Conceito: Parallel Streams" title="Parallel Streams" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-thread-safe-stream-parallel-p2.jpeg" alt="Conceito: Parallel Streams" title="Parallel Streams" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-thread-safe-4em1-p3.jpeg" alt="Conceito: Parallel Streams" title="Parallel Streams" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 

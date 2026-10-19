@@ -13,14 +13,14 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 13-concurrency
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 8.3 Processar coleções concorrentemente
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 13: Concurrency
-» » Using Concurrent Collections
-» » » Objetivo do exame 1Z0-831: 8.3 Processar coleções concorrentemente
-
+» Capítulo 13 ■ Concorrência (Concurrency)
+» » Escrevendo Código Thread-Safe
+» » Usando Coleções Concorrentes
 ```
-
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva:
@@ -40,7 +40,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `13-concurrency/docs/feynman/colecoes-concorrentes/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-colecoes-concorrentes-4em1.jpeg" alt="Conceito: Coleções Concorrentes" title="Coleções Concorrentes" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-thread-safe-collection-currency.jpeg" alt="Conceito: Parallel Streams" title="Parallel Streams" style="width:250px;"/>
 
 
 ## Explique em voz alta (25-40 min)
