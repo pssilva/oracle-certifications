@@ -55,6 +55,10 @@ E tire uma foto de evidência e coloque na pasta: `13-concurrency/docs/feynman/t
 
 <img src="evidencias/imgs/evidencia-thread-safe-reentrantReadWriteLock.jpeg" alt="Conceito: Thread-safety, Locks e Atômicos" title="Thread-safety, Locks e Atômicos" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-thread-safe-class-atomica.jpeg" alt="Conceito: Thread-safety, Locks e Atômicos" title="Thread-safety, Locks e Atômicos" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 

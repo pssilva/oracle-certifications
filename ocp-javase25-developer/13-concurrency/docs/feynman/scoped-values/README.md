@@ -13,11 +13,13 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 13-concurrency
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tenha em mente Objetivo do exame 1Z0-831: 8.1 Valores com escopo para compartilhar contexto imutável
+
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
 » JEP 506 Scoped Values (fora do livro)
 » » ScopedValue.where(...).run(...)
-» » » Objetivo do exame 1Z0-831: 8.1 Valores com escopo para compartilhar contexto imutável
 
 ```
 
