@@ -42,6 +42,10 @@ E tire uma foto de evidência e coloque na pasta: `13-concurrency/docs/feynman/c
 
 <img src="evidencias/imgs/evidencia-thread-safe-collection-currency.jpeg" alt="Conceito: Parallel Streams" title="Parallel Streams" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-collections-pararllels.jpeg" alt="Conceito: Parallel Streams" title="Parallel Streams" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 
