@@ -23,7 +23,7 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 | Conceito | Seção do livro | Objetivo 1Z0-831 | Evidências |
 |----------|----------------|------------------|------------|
 | [Métodos](docs/feynman/metodos/README.md) | Designing Methods | 3.2 Definir e usar métodos de instância e estáticos | ✅ 2 img |
-| [Sobrecarga e Varargs](docs/feynman/sobrecarga-e-varargs/README.md) | Working with Varargs / Overloading Methods | 3.3 Métodos sobrecarregados, incluindo var-arg | ⏳ pendente |
+| [Sobrecarga e Varargs](docs/feynman/sobrecarga-varargs/README.md) | Working with Varargs / Overloading Methods | 3.3 Métodos sobrecarregados, incluindo var-arg | ⏳ pendente |
 | [Modificadores de Acesso](docs/feynman/modificadores-acesso/README.md) | Applying Access Modifiers / Accessing Static Data | 3.2 Campos e métodos static; 3.4 encapsulamento | ⏳ pendente |
 | [Passagem de Parâmetros](docs/feynman/passagem-parametros/README.md) | Passing Data among Methods (autoboxing, pass-by-value) | 3.1 Reatribuição de referências | ⏳ pendente |
 

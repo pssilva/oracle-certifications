@@ -91,4 +91,26 @@ public class MethodsPracticalClass {
         a = b;
         b = temp;
     }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 5 ■ Métodos
+     * <p> » » Sobrecarga de Métodos
+     * <p> » » » Arrays
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void sobrecargaMetodosArrays() {
+        System.out.println("###################################################");
+        System.out.println("Método: sobrecargaMetodosArrays()");
+        System.out.println("###################################################");
+        int[] ints = new int[0];
+        walk( ints);
+        Integer[] integer = new Integer[0];
+        walk( integer);
+        System.out.println("###################################################");
+    }
+    public static void walk(int[] ints) {}
+    public static void walk(Integer[] integers) {}
 }
