@@ -613,6 +613,7 @@ public class CoreAPIPracticalClass {
         System.out.println("###################################################");
 
     }
+
     /**
      * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
      * <p> » Capítulo 4 ■ APIs Principais
@@ -644,6 +645,73 @@ public class CoreAPIPracticalClass {
             System.out.println();
         }
 
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Usando a Classe StringBuilder
+     * <p> » » » Mutabilidade e Encadeamento
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void usandoClasseStringBuilder() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: usandoClasseStringBuilder()");
+        System.out.println("###################################################");
+        System.out.println("===================================================");
+        System.out.println("String: quantos objetos você acha que este trecho de código cria? ");
+        System.out.println("===================================================");
+        String alpha = "";
+        for(char current = 'a'; current <= 'z'; current++)
+            alpha += current;
+        System.out.println(alpha);
+        System.out.println("===================================================");
+
+        System.out.println("===================================================");
+        System.out.println("StringBuilder: quantos objetos você acha que este trecho de código cria? ");
+        System.out.println("===================================================");
+        StringBuilder alphaSB = new StringBuilder();
+        for(char current = 'a'; current <= 'z'; current++)
+            alphaSB.append(current);
+        System.out.println(alphaSB);
+        System.out.println("===================================================");
+
+        System.out.println("###################################################");
+
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 4 ■ APIs Principais
+     * <p> » » Criando e Manipulando Strings
+     * <p> » » » Trabalhando com Indentação
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoIndentacao() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoIndentacao()");
+        System.out.println("###################################################");
+        var block = """
+             a
+              b
+             c""";
+        var concat = " a\n"
+                + "  b\n"
+                + " c";
+        System.out.println(block.length());                 // 6
+        System.out.println(concat.length());                // 9
+        System.out.println(block.indent(1).length());       // 10
+        System.out.println(concat.indent(-1).length());     // 7
+        System.out.println(concat.indent(-4).length());     // 6
+        System.out.println(concat.stripIndent().length());  // 6
         System.out.println("###################################################");
 
     }

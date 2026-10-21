@@ -13,12 +13,14 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 14-operators
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 1.3 Regras de precedência
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 2: Operators
-» » Understanding Java Operators / Applying Unary Operators
-» » » Objetivo do exame 1Z0-831: 1.3 Regras de precedência
-
+» Capítulo 2 ■ Operadores
+» » Compreendendo os Operadores Java 
+» » » Precedência de Operadores
+» » Aplicando Operadores Unários
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -40,7 +42,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `14-operators/docs/feynman/precedencia-de-operadores/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-precedencia-de-operadores-4em1.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-precedencia-operadores.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/>
 
 
 ## Explique em voz alta (25-40 min)

@@ -119,4 +119,57 @@ public class BuildingBlocksPracticalClass {
         Character c = 'c';
     }
 
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 1 ■ Blocos de Construção
+     * <p> » » Inicializando Variáveis
+     * <p> » » » Definição de Variáveis de Instância e de Classe
+     * <p> » » » » Inferência de Tipo com `var`
+     * <p> » » » » Tipo Inferência de `var`
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void tipoInferenciaVar() {
+        System.out.println("###################################################");
+        System.out.println("Método: tipoInferenciaVar()");
+        System.out.println("###################################################");
+        reassignment();
+        breakingDeclaration();
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 1 ■ Blocos de Construção
+     * <p> » » Inicializando Variáveis
+     * <p> » » » Definição de Variáveis de Instância e de Classe
+     * <p> » » » » Inferência de Tipo com `var`
+     * <p> » » » » Tipo Inferência de `var`
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void reassignment() {
+        var number = 7;
+        number = 4;
+        //number = "five";  // DOES NOT COMPILE
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 1 ■ Blocos de Construção
+     * <p> » » Inicializando Variáveis
+     * <p> » » » Definição de Variáveis de Instância e de Classe
+     * <p> » » » » Inferência de Tipo com `var`
+     * <p> » » » » Tipo Inferência de `var`
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    public static void breakingDeclaration() {
+        var silly
+                = 1;
+    }
+
 }

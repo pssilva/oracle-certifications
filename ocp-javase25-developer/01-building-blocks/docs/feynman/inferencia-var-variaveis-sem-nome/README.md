@@ -21,6 +21,21 @@ OCP Oracle Certified Professional Java SE 21 Developer
 
 ```
 
+### Evidências
+
+E tire uma foto de evidência e coloque na pasta: `01-building-blocks/docs/feynman/escopo-de-variaveis/evidencias/imgs`
+
+<img src="evidencias/imgs/evidencia-tipo-var-escopo-text-block-4em1.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
+---
+
+<img src="evidencias/imgs/evidencia-tipo-var-p1.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
+---
+
+<img src="evidencias/imgs/evidencia-tipo-var-p2.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
+
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva:

@@ -24,7 +24,7 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 | Conceito | Seção do livro | Objetivo 1Z0-831 | Evidências |
 |----------|----------------|------------------|------------|
 | [Strings](docs/feynman/strings/README.md) | Creating and Manipulating Strings | 1.5 Manipular texto com String | ✅ 2 img |
-| [StringBuilder e Text Blocks](docs/feynman/stringbuilder-e-text-blocks/README.md) | Using the StringBuilder Class / Text Blocks | 1.5 Manipular texto, incluindo blocos de texto, com StringBuilder | ⏳ pendente |
+| [StringBuilder e Text Blocks](docs/feynman/stringbuilder-text-blocks/README.md) | Using the StringBuilder Class / Text Blocks | 1.5 Manipular texto, incluindo blocos de texto, com StringBuilder | ⏳ pendente |
 | [Classes e Objetos](docs/feynman/classes-objetos/README.md) | Understanding Equality | 3.5 Sobrescrita de equals/hashCode (igualdade) | ✅ 1 img |
 | [Array](docs/feynman/array/README.md) | Understanding Arrays | 5.1 Criar arrays, ordenar e buscar | ✅ 3 img |
 | [Math API](docs/feynman/math-api/README.md) | Calculating with Math APIs | 1.2 Expressões aritméticas usando a API Math | ⏳ pendente |

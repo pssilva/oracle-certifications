@@ -32,7 +32,15 @@ Qual pegadinha?
 
 ```
 
-E tire uma foto de evidência e coloque na pasta: `{{EVIDENCIA_PATH}}`
+### Evidências
+
+E tire uma foto de evidência e coloque na pasta: `14-operators/docs/feynman/precedencia-operadores/evidencias/imgs`
+
+<img src="evidencias/imgs/evidencia-operadores-p1.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
+--- 
+
+<img src="evidencias/imgs/evidencia-operadores-unario.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
 
 ## Explique em voz alta (25-40 min)
 

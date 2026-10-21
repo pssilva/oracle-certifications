@@ -23,7 +23,7 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 | Conceito | Seção do livro | Objetivo 1Z0-831 | Evidências |
 |----------|----------------|------------------|------------|
 | [Operações](docs/feynman/operacoes/README.md) | Understanding Java Operators | 1.2 Expressões aritméticas e booleanas | ⏳ pendente |
-| [Precedência de Operadores](docs/feynman/precedencia-de-operadores/README.md) | Understanding Java Operators / Applying Unary Operators | 1.3 Regras de precedência | ⏳ pendente |
-| [Atribuição, Comparação e Ternário](docs/feynman/atribuicao-comparacao-e-ternario/README.md) | Assigning Values / Comparing Values / Ternary Operator | 1.2 Expressões booleanas (curto-circuito, compound assignment) | ⏳ pendente |
+| [Precedência de Operadores](docs/feynman/precedencia-operadores/README.md) | Understanding Java Operators / Applying Unary Operators | 1.3 Regras de precedência | ⏳ pendente |
+| [Atribuição, Comparação e Ternário](docs/feynman/atribuicao-comparacao-ternario/README.md) | Assigning Values / Comparing Values / Ternary Operator | 1.2 Expressões booleanas (curto-circuito, compound assignment) | ⏳ pendente |
 
 Para criar um novo conceito use `OracleCertificationsScriptsUteis.CriarStructureByConceito "14-operators" "<Conceito>"` (veja o [README da certificação](../README.md)).

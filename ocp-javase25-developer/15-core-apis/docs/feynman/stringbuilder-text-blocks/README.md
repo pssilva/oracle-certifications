@@ -2,24 +2,35 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)!
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Ciclo de Vida de Objetos e Garbage Collection! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: StringBuilder e Text Blocks! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Ciclo de Vida de Objetos e Garbage Collection
+CONCEITO: StringBuilder e Text Blocks
 
-Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 01-building-blocks
+Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 15-core-apis
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 1: Building Blocks
-» » Creating Objects / Destroying Objects
-» » » Objetivo do exame 1Z0-831: 3.1 Ciclo de vida do objeto: criação, reatribuição de referências e GC
+» Chapter 4: Core APIs
+» » Using the StringBuilder Class / Text Blocks
+» » » Objetivo do exame 1Z0-831: 1.5 Manipular texto, incluindo blocos de texto, com StringBuilder
 
 ```
+
+### Evidências
+
+E tire uma foto de evidência e coloque na pasta: `15-core-apis/docs/feynman/stringbuilder-text-blocks/evidencias/imgs`
+
+<img src="evidencias/imgs/evidencia-stringbuilder.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-text-block.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/>
+
 
 ## Escrever à Mão (2-25 min)
 
@@ -38,9 +49,9 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `01-building-blocks/docs/feynman/ciclo-de-vida-de-objetos-e-garbage-collection/evidencias/imgs`
+E tire uma foto de evidência e coloque na pasta: `15-core-apis/docs/feynman/stringbuilder-e-text-blocks/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-ciclo-de-vida-de-objetos-e-garbage-collection-4em1.jpeg" alt="Conceito: Ciclo de Vida de Objetos e Garbage Collection" title="Ciclo de Vida de Objetos e Garbage Collection" style="width:250px;"/> -->
+<!-- <img src="evidencias/imgs/evidencia-stringbuilder-e-text-blocks-4em1.jpeg" alt="Conceito: StringBuilder e Text Blocks" title="StringBuilder e Text Blocks" style="width:250px;"/> -->
 
 
 ## Explique em voz alta (25-40 min)

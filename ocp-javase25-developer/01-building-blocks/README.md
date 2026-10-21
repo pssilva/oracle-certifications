@@ -26,7 +26,7 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 | [Primitivos e Wrappers](docs/feynman/primitivos-wrappers/README.md) | Understanding Data Types | 1.1 Use classes primitivas e wrapper | ✅ 2 img |
 | [Operações e Casting](docs/feynman/operacoes-casting/README.md) | Understanding Data Types | 1.4 Conversões de tipo e casting | ✅ 2 img |
 | [Escopo de Variáveis](docs/feynman/escopo-de-variaveis/README.md) | Managing Variable Scope | 3.4 Escopos de variáveis | ⏳ pendente |
-| [Inferência var e Variáveis sem Nome](docs/feynman/inferencia-var-e-variaveis-sem-nome/README.md) | Declaring Variables (var) + JEP 456 Unnamed Variables (fora do livro) | 3.4 Inferência de tipo de variável local e variáveis sem nome | ⏳ pendente |
-| [Ciclo de Vida de Objetos e Garbage Collection](docs/feynman/ciclo-de-vida-de-objetos-e-garbage-collection/README.md) | Creating Objects / Destroying Objects | 3.1 Ciclo de vida do objeto: criação, reatribuição de referências e GC | ⏳ pendente |
+| [Inferência var e Variáveis sem Nome](docs/feynman/inferencia-var-variaveis-sem-nome/README.md) | Declaring Variables (var) + JEP 456 Unnamed Variables (fora do livro) | 3.4 Inferência de tipo de variável local e variáveis sem nome | ⏳ pendente |
+| [Ciclo de Vida de Objetos e Garbage Collection](docs/feynman/ciclo-vida-objetos-garbage-collection/README.md) | Creating Objects / Destroying Objects | 3.1 Ciclo de vida do objeto: criação, reatribuição de referências e GC | ⏳ pendente |
 
 Para criar um novo conceito use `OracleCertificationsScriptsUteis.CriarStructureByConceito "01-building-blocks" "<Conceito>"` (veja o [README da certificação](../README.md)).
