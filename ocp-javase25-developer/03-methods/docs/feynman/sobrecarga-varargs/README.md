@@ -40,7 +40,21 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `03-methods/docs/feynman/sobrecarga-e-varargs/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-sobrecarga-e-varargs-4em1.jpeg" alt="Conceito: Sobrecarga e Varargs" title="Sobrecarga e Varargs" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-imutaveis.jpeg" alt="Conceito: Sobrecarga e Varargs" title="Sobrecarga e Varargs" style="width:250px;"/> 
+
+--- 
+
+<img src="evidencias/imgs/evidencia-inicializadores-2em1.jpeg" alt="Conceito: Sobrecarga e Varargs" title="Sobrecarga e Varargs" style="width:250px;"/> 
+
+--- 
+
+<img src="evidencias/imgs/evidencia-sobrecarga-metodos-4em1.jpeg" alt="Conceito: Sobrecarga e Varargs" title="Sobrecarga e Varargs" style="width:250px;"/> 
+
+--- 
+
+<img src="evidencias/imgs/evidencia-sobrecarga-metodos-imutaveis-4em1.jpeg" alt="Conceito: Sobrecarga e Varargs" title="Sobrecarga e Varargs" style="width:250px;"/> 
+
+
 
 
 ## Explique em voz alta (25-40 min)
