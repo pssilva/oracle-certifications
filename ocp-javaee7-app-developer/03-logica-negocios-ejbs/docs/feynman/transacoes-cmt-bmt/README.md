@@ -11,11 +11,25 @@ CONCEITO: Transações CMT x BMT
 
 Objetivo oficial (1Z0-900 · Tópico 03): Implementar lógica de negócios usando EJBs
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 9 ■ Transactions
+» Capítulo 9 ■ Transações
+» » Suporte a Transações em EJBs
+» » » Transações Gerenciadas pelo Container (CMT)
+» » » Transações Gerenciadas pelo Bean (BMT)
+
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte XI ■ Tecnologias de Suporte ao Java EE
+» » Capítulo ■ 51 Transações
+» » » 51.3 Transações Gerenciadas pelo Contêiner
+» » » 51.4 Transações Gerenciadas pelo Bean
 ```
 
 ## Escrever à Mão (2-25 min)

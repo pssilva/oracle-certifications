@@ -32,7 +32,7 @@ Os conceitos se encontram na pasta: `03-logica-negocios-ejbs/docs/feynman/`
 
 - [Session Beans: Stateless, Stateful e Singleton](docs/feynman/session-beans/README.md)
 - [Métodos Assíncronos (@Asynchronous)](docs/feynman/metodos-assincronos/README.md)
-- [Callbacks e Interceptors](docs/feynman/callbacks-e-interceptors/README.md)
+- [Callbacks e Interceptors](docs/feynman/callbacks-interceptors/README.md)
 - [Transações CMT x BMT](docs/feynman/transacoes-cmt-bmt/README.md)
 - [Timer Service](docs/feynman/timer-service/README.md)
 
