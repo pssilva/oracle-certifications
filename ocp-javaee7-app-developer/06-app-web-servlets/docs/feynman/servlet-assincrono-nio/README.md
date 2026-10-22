@@ -11,11 +11,24 @@ CONCEITO: Servlet Assíncrono e I/O Não Bloqueante
 
 Objetivo oficial (1Z0-900 · Tópico 06): Criar aplicações Web Java usando Servlets
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/servlets.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Tutorial ■ Asynchronous Processing / Nonblocking I/O
+» Capítulo 10 ■ JavaServer Faces
+» » Compreendendo Páginas Web
+» » » 
+
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte III ■ A Camada Web
+» » Capítulo ■ 17 Tecnologia Java Servlet
+» » » 17.12 Processamento Assíncrono
+» » » 17.13 E/S Não Bloqueante (Nonblocking I/O)
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +50,8 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `06-app-web-servlets/docs/feynman/servlet-assincrono-e-nio/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-servlet-assincrono-e-nio-4em1.jpeg" alt="Conceito: Servlet Assíncrono e I/O Não Bloqueante" title="Servlet Assíncrono e I/O Não Bloqueante" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-servlets-facelets-facesservlets.jpeg" alt="Conceito: Servlet Assíncrono e I/O Não Bloqueante" title="Servlet Assíncrono e I/O Não Bloqueante" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 
