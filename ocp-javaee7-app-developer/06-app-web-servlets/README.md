@@ -31,10 +31,10 @@ Conceitos OCP
 
 Os conceitos se encontram na pasta: `06-app-web-servlets/docs/feynman/`
 
-- [Mapeamento de URLs e Métodos HTTP](docs/feynman/mapeamento-e-metodos-http/README.md)
+- [Mapeamento de URLs e Métodos HTTP](docs/feynman/mapeamento-metodos-http/README.md)
 - [Headers, Parâmetros, Cookies e Sessão](docs/feynman/headers-parametros-cookies-sessao/README.md)
 - [Ciclo de Vida, Filters e Listeners](docs/feynman/ciclo-de-vida-filters-listeners/README.md)
-- [Servlet Assíncrono e I/O Não Bloqueante](docs/feynman/servlet-assincrono-e-nio/README.md)
+- [Servlet Assíncrono e I/O Não Bloqueante](docs/feynman/servlet-assincrono-nio/README.md)
 
 ## Laboratório
 
