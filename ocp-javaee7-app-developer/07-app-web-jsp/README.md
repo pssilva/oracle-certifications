@@ -26,10 +26,10 @@ Conceitos OCP
 
 Os conceitos se encontram na pasta: `07-app-web-jsp/docs/feynman/`
 
-- [Ciclo de Vida e Sintaxe JSP](docs/feynman/ciclo-de-vida-e-sintaxe-jsp/README.md)
+- [Ciclo de Vida e Sintaxe JSP](docs/feynman/ciclo-de-vida-sintaxe-jsp/README.md)
 - [JSTL e Tag Libraries](docs/feynman/jstl-tag-libraries/README.md)
 - [Expression Language 3.0](docs/feynman/expression-language/README.md)
-- [Tratamento de Erros (error-page)](docs/feynman/tratamento-de-erros/README.md)
+- [Tratamento de Erros (error-page)](docs/feynman/tratamento-erros/README.md)
 
 ## Laboratório
 
