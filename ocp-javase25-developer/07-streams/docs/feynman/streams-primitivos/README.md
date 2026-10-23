@@ -13,12 +13,12 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 07-streams
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 6.1 Streams primitivos
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 10: Streams
-» » Working with Primitive Streams
-» » » Objetivo do exame 1Z0-831: 6.1 Streams primitivos
-
+» Capítulo 10 ■ Streams
+» » Trabalhando com Streams Primitivos
 ```
 
 ## Escrever à Mão (2-25 min)

@@ -163,4 +163,125 @@ public class LambdasFuncionalInterfacesPracticalClass {
         System.out.println(b2.apply("baby ", "chick"));  // baby chick
         System.out.println("###################################################");
     }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 8 ■ Lambdas e Interfaces Funcionais
+     * <p> » » Usando Referências de Método
+     * <p> » » » Chamando métodos estáticos
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void  chamandoMetodosEstaticos() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: chamandoMetodosEstaticos()");
+        System.out.println("###################################################");
+        Converter methodRef = Math::round;
+        Converter lambda = x -> Math.round(x);
+
+        System.out.println(methodRef.round(100.1));  // 100
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 8 ■ Lambdas e Interfaces Funcionais
+     * <p> » » Usando Referências de Método
+     * <p> » » » Chamando métodos de instância em um objeto específico
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void  chamandoMetodosInstanciaObjetoEspecifico() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: chamandoMetodosInstanciaObjetoEspecifico()");
+        System.out.println("###################################################");
+        var str = "Zoo";
+        StringStart methodRef = str::startsWith;
+        StringStart lambda = s -> str.startsWith(s);
+
+        System.out.println(methodRef.beginningCheck("A"));  // false
+
+        System.out.println("===================================================");
+
+        var str2 = "";
+        StringChecker methodRef2 = str2::isEmpty;
+        StringChecker lambda2 = () -> str2.isEmpty();
+        System.out.print(methodRef2.check());  // true
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 8 ■ Lambdas e Interfaces Funcionais
+     * <p> » » Usando Referências de Método
+     * <p> » » » Chamando métodos de instância em um objeto específico
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void  ChamandoMetodosInstanciaParametro() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: ChamandoMetodosInstanciaParametro()");
+        System.out.println("###################################################");
+
+        StringParameterChecker methodRef = String::isEmpty;
+        StringParameterChecker lambda = s -> s.isEmpty();
+
+        System.out.println(methodRef.check("Zoo"));  // false
+
+        System.out.println("===================================================");
+
+        StringTwoParameterChecker methodRef2 = String::startsWith;
+        StringTwoParameterChecker lambda2 = (s, p) -> s.startsWith(p);
+
+        System.out.println(methodRef2.check("Zoo", "A"));  // false
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 8 ■ Lambdas e Interfaces Funcionais
+     * <p> » » Usando Referências de Método
+     * <p> » » » Chamando construtores
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void  construtores() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: construtores()");
+        System.out.println("###################################################");
+
+        StringParameterChecker methodRef = String::isEmpty;
+        StringParameterChecker lambda = s -> s.isEmpty();
+
+        System.out.println(methodRef.check("Zoo"));  // false
+
+        System.out.println("===================================================");
+
+        StringTwoParameterChecker methodRef2 = String::startsWith;
+        StringTwoParameterChecker lambda2 = (s, p) -> s.startsWith(p);
+
+        System.out.println(methodRef2.check("Zoo", "A"));  // false
+
+        System.out.println("===================================================");
+
+        StringCopier methodRef3 = String::new;
+        StringCopier lambda3 = x -> new String(x);
+
+        var myString = methodRef3.copy("Zebra");
+        System.out.println(myString.equals("Zebra"));  // true
+
+        System.out.println("###################################################");
+    }
+
 }
