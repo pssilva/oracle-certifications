@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -51,6 +52,25 @@ public class StreamsPracticalClass {
         System.out.println("###################################################");
         System.out.println("Método: criandoOptional()");
         System.out.println("###################################################");
+
+        System.out.println(average(90, 100)); // Optional[95.0]
+        System.out.println(average());        // Optional.empty
+
+        System.out.println("===================================================");
+
+        Optional<Double> opt = average(90, 100);
+        if (opt.isPresent())
+            System.out.println(opt.get()); // 95.0
+
+        System.out.println("===================================================");
+
+        Optional<Double> opt2 = average();
+        System.out.println(opt2.get()); // NoSuchElementException
+
+        System.out.println("===================================================");
+
+        Optional<Double> opt3 = average(90, 100);
+        opt3.ifPresent(System.out::println);
 
         System.out.println("###################################################");
     }
@@ -510,4 +530,58 @@ public class StreamsPracticalClass {
         System.out.println("###################################################");
 
     }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 10 ■ Streams
+     * <p> » » Retornando um Optional
+     * <p> » » » Lidando com um Optional Vazio
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void lidandoOptionalVazio() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: lidandoOptionalVazio()");
+        System.out.println("###################################################");
+
+        Optional<Double> opt = average();
+        System.out.println(opt.orElse(Double.NaN));
+        System.out.println(opt.orElseGet(() -> Math.random()));
+
+        System.out.println("###################################################");
+    }
+
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 10 ■ Streams
+     * <p> » » Trabalhando com Streams Primitivos
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void trabalhandoStreamsPrimitivos() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: trabalhandoStreamsPrimitivos()");
+        System.out.println("###################################################");
+        Stream<Integer> stream = Stream.of(1, 2, 3);
+        System.out.println(stream.reduce(0, (s, n) -> s + n));  // 6
+
+        System.out.println("==================================================");
+
+        Stream<Integer> stream2 = Stream.of(1, 2, 3);
+        System.out.println(stream2.mapToInt(x -> x).sum());  // 6
+
+        System.out.println("==================================================");
+
+        IntStream intStream = IntStream.of(1, 2, 3);
+        OptionalDouble avg = intStream.average();
+        System.out.println(avg.getAsDouble());  // 2.0
+
+        System.out.println("###################################################");
+    }
+
 }

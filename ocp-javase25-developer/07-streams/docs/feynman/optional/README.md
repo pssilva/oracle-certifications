@@ -13,12 +13,13 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 07-streams
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 6.1 Processar dados (Optional como resultado de operações terminais)
+
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 10: Streams
-» » Returning an Optional
-» » » Objetivo do exame 1Z0-831: 6.1 Processar dados (Optional como resultado de operações terminais)
-
+» Capítulo 10 ■ Streams
+» » Retornando um Optional
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -40,7 +41,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `07-streams/docs/feynman/optional/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-optional-4em1.jpeg" alt="Conceito: Optional" title="Optional" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-optional.jpeg" alt="Conceito: Optional" title="Optional" style="width:250px;"/>
 
 
 ## Explique em voz alta (25-40 min)

@@ -13,11 +13,12 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 06-lambdas-functio
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente o Objetivo do exame 1Z0-831: 6.1 Lambdas que implementam interfaces funcionais
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 8: Lambdas and Functional Interfaces
-» » Using Method References
-» » » Objetivo do exame 1Z0-831: 6.1 Lambdas que implementam interfaces funcionais
+» Capítulo 8 ■ Lambdas e Interfaces Funcionais
+» » Usando Referências de Método
 
 ```
 
@@ -40,7 +41,12 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `06-lambdas-functional-interfaces/docs/feynman/method-references/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-method-references-4em1.jpeg" alt="Conceito: Method References" title="Method References" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-metodo-referencia-p2.jpeg" alt="Conceito: Method References" title="Method References" style="width:250px;"/> 
+
+---
+
+<img src="evidencias/imgs/evidencia-metodo-referencia.jpeg" alt="Conceito: Method References" title="Method References" style="width:250px;"/> 
+
 
 
 ## Explique em voz alta (25-40 min)
