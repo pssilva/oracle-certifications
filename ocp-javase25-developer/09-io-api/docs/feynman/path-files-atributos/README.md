@@ -13,12 +13,13 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 09-io-api
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 9.3 Construir, percorrer, criar, ler e escrever Path e propriedades
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 14: I/O
-» » Operating on File and Path / Working with Advanced APIs
-» » » Objetivo do exame 1Z0-831: 9.3 Construir, percorrer, criar, ler e escrever Path e propriedades
-
+» Capítulo 14 ■ Entrada/Saída I/O
+» » Operando com File e Path
+» » Trabalhando com APIs Avançadas
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -40,7 +41,8 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `09-io-api/docs/feynman/path-files-e-atributos/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-path-files-e-atributos-4em1.jpeg" alt="Conceito: Path, Files e Atributos" title="Path, Files e Atributos" style="width:250px;"/> -->
+<img src="evidencias/imgs/envidencia-file-path.jpeg" alt="Conceito: Path, Files e Atributos" title="Path, Files e Atributos" style="width:250px;"/> 
+
 
 
 ## Explique em voz alta (25-40 min)

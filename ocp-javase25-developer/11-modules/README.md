@@ -84,9 +84,9 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 | Conceito | Seção do livro | Objetivo 1Z0-831 | Evidências |
 |----------|----------------|------------------|------------|
 | [Módulos](docs/feynman/modulos/README.md) | Introducing Modules / Creating and Running a Modular Program | 7.1 Definir módulos | ✅ 7 img |
-| [Diretivas module-info e Reflexão](docs/feynman/diretivas-module-info-e-reflexao/README.md) | Diving into the Module Declaration (exports, requires transitive, opens) | 7.1 Expor conteúdo (inclusive por reflexão) e declarar dependências | ⏳ pendente |
-| [Serviços, Provedores e Consumidores](docs/feynman/servicos-provedores-e-consumidores/README.md) | Creating a Service | 7.1 Definir serviços, provedores e consumidores | ⏳ pendente |
-| [Tipos de Módulos e Migração](docs/feynman/tipos-de-modulos-e-migracao/README.md) | Comparing Types of Modules / Migrating an Application | 7.3 Migração com módulos sem nome e automáticos | ⏳ pendente |
-| [Declarações de Importação de Módulos](docs/feynman/declaracoes-de-importacao-de-modulos/README.md) | import module java.base; | 7.1 Usar declarações de importação de módulos | ⏳ pendente |
+| [Diretivas module-info e Reflexão](docs/feynman/diretivas-module-info-reflexao/README.md) | Diving into the Module Declaration (exports, requires transitive, opens) | 7.1 Expor conteúdo (inclusive por reflexão) e declarar dependências | ⏳ pendente |
+| [Serviços, Provedores e Consumidores](docs/feynman/servicos-provedores-consumidores/README.md) | Creating a Service | 7.1 Definir serviços, provedores e consumidores | ⏳ pendente |
+| [Tipos de Módulos e Migração](docs/feynman/tipos-modulos-migracao/README.md) | Comparing Types of Modules / Migrating an Application | 7.3 Migração com módulos sem nome e automáticos | ⏳ pendente |
+| [Declarações de Importação de Módulos](docs/feynman/declaracoes-importacao-modulos/README.md) | import module java.base; | 7.1 Usar declarações de importação de módulos | ⏳ pendente |
 
 Para criar um novo conceito use `OracleCertificationsScriptsUteis.CriarStructureByConceito "11-modules" "<Conceito>"` (veja o [README da certificação](../README.md)).

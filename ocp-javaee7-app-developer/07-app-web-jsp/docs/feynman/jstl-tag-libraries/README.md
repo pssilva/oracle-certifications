@@ -48,7 +48,7 @@ Qual pegadinha?
 ### Evidências
 
 E tire uma foto de evidência e coloque na pasta: `07-app-web-jsp/docs/feynman/jstl-tag-libraries/evidencias/imgs`
-
+    
 <img src="evidencias/imgs/evidencia-jstl-el30-2em1.jpeg" alt="Conceito: JSTL e Tag Libraries" title="JSTL e Tag Libraries" style="width:250px;"/>
 
 ---

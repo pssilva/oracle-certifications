@@ -13,10 +13,9 @@ Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer
 
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Capítulo NN ■ ??????????
-» » ?????????? ...
-» » » ?????????? ...
-» » » » ?????????? ...
+» Capítulo 12 ■ Módulos
+» » Criando e Executando um Programa Modular
+» » » Empacotando nosso primeiro módulo
 
 ```
 
@@ -39,7 +38,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/12-packaging-deployment/docs/feynman/deploy-e-packaging/evidencias`
 
-<img src="evidencias/imgs/evidencia-card-operador.jpeg" alt="Conceito: Deploy e Packaging" title="Deploy e Packaging" style="width:250px;"/>
+<img src="evidencias/imgs/envidencia-arquivos-fontes.jpeg" alt="Conceito: Deploy e Packaging" title="Deploy e Packaging" style="width:250px;"/>
 
 
 ## Explique em voz alta (25-40 min)

@@ -13,11 +13,14 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 12-packaging-deplo
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tenha em mente Objetivo do exame 1Z0-831: 7.2 Programas de código-fonte com vários arquivos
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 1: Building Blocks
-» » Learning About the Environment (java Arquivo.java) + JEP 458 Multi-File Source-Code Programs (fora do livro)
-» » » Objetivo do exame 1Z0-831: 7.2 Programas de código-fonte com vários arquivos
+» Capítulo 1 ■ Blocos de Construção
+» » Aprendendo sobre o Ambiente (java Arquivo.java) 
+
++ JEP 458 Multi-File Source-Code Programs (fora do livro)
 
 ```
 

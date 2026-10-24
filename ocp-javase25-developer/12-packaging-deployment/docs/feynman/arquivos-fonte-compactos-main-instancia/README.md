@@ -2,23 +2,27 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)!
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Console e Interação com Usuário! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Arquivos-fonte Compactos e Main de Instância! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Console e Interação com Usuário
+CONCEITO: Arquivos-fonte Compactos e Main de Instância
 
-Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 09-io-api
+Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 12-packaging-deployment
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 7.2 Arquivos-fonte compactos e métodos main de instância
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 14: I/O
-» » Interacting with Users
-» » » Objetivo do exame 1Z0-831: 9.1 Ler e escrever dados do console
+» Capítulo 1 ■ Blocos de Construção
+» » Compreendendo a Estrutura de Classes
+» » » Classes e Arquivos de Código-Fonte
+» » Escrevendo um Método main()
 
+» + JEP 512 Compact Source Files and Instance Main Methods (fora do livro)
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -38,9 +42,9 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `09-io-api/docs/feynman/console-e-interacao-com-usuario/evidencias/imgs`
+E tire uma foto de evidência e coloque na pasta: `12-packaging-deployment/docs/feynman/arquivos-fonte-compactos-e-main-de-instancia/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-console-e-interacao-com-usuario-4em1.jpeg" alt="Conceito: Console e Interação com Usuário" title="Console e Interação com Usuário" style="width:250px;"/> -->
+<!-- <img src="evidencias/imgs/evidencia-arquivos-fonte-compactos-e-main-de-instancia-4em1.jpeg" alt="Conceito: Arquivos-fonte Compactos e Main de Instância" title="Arquivos-fonte Compactos e Main de Instância" style="width:250px;"/> -->
 
 
 ## Explique em voz alta (25-40 min)
