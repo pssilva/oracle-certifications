@@ -29,7 +29,7 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 | [Array](docs/feynman/array/README.md) | Understanding Arrays | 5.1 Criar arrays, ordenar e buscar | ✅ 3 img |
 | [Math API](docs/feynman/math-api/README.md) | Calculating with Math APIs | 1.2 Expressões aritméticas usando a API Math | ⏳ pendente |
 | [Datas e Horas](docs/feynman/datas-horas/README.md) | Working with Dates and Times | 1.6 Data, hora (API Date-Time) | ✅ 2 img |
-| [Duration, Period e Instant](docs/feynman/duration-period-e-instant/README.md) | Working with Dates and Times (Period, Duration, Instant) | 1.6 Duração, período e instante | ⏳ pendente |
-| [Fusos Horários e Horário de Verão](docs/feynman/fusos-horarios-e-horario-de-verao/README.md) | Working with Dates and Times (ZonedDateTime, DST) | 1.6 Fuso horário, incluindo horário de verão | ⏳ pendente |
+| [Duration, Period e Instant](docs/feynman/duration-period-instant/README.md) | Working with Dates and Times (Period, Duration, Instant) | 1.6 Duração, período e instante | ⏳ pendente |
+| [Fusos Horários e Horário de Verão](docs/feynman/fusos-horarios-horario-verao/README.md) | Working with Dates and Times (ZonedDateTime, DST) | 1.6 Fuso horário, incluindo horário de verão | ⏳ pendente |
 
 Para criar um novo conceito use `OracleCertificationsScriptsUteis.CriarStructureByConceito "15-core-apis" "<Conceito>"` (veja o [README da certificação](../README.md)).
