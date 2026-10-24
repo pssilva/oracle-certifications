@@ -11,12 +11,26 @@ CONCEITO: Arquitetura e as 6 Fases do Ciclo de Vida
 
 Objetivo oficial (1Z0-900 · Tópico 10): Desenvolver aplicações Web usando JSF
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partwebtier.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 10 ■ JavaServer Faces » Life Cycle
+» Capítulo 10 ■ JavaServer Faces (JSF)
+» » Anatomia de uma Página JSF
+» » » Ciclo de vida
 ```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte III ■ A Camada Web
+» » Capítulo ■ 16 Configurando Aplicações JavaServer Faces
+» » » 16.12 Requisitos Básicos de uma Aplicação JavaServer Faces
+» » » » 16.12.1 Configurando uma Aplicação com um Descritor de Implantação Web
+» » » » » 16.12.1.1 Identificação do Servlet para processamento do ciclo de vida
+```
+
 
 ## Escrever à Mão (2-25 min)
 
@@ -37,7 +51,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `10-app-web-jsf/docs/feynman/arquitetura-e-ciclo-de-vida/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-arquitetura-e-ciclo-de-vida-4em1.jpeg" alt="Conceito: Arquitetura e as 6 Fases do Ciclo de Vida" title="Arquitetura e as 6 Fases do Ciclo de Vida" style="width:250px;"/> -->
+<img src="evidencias/imgs/envidencia-jsf-ciclo-vida.jpeg" alt="Conceito: Arquitetura e as 6 Fases do Ciclo de Vida" title="Arquitetura e as 6 Fases do Ciclo de Vida" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

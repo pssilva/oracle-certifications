@@ -27,11 +27,11 @@ Conceitos OCP
 
 Os conceitos se encontram na pasta: `10-app-web-jsf/docs/feynman/`
 
-- [Arquitetura e as 6 Fases do Ciclo de Vida](docs/feynman/arquitetura-e-ciclo-de-vida/README.md)
+- [Arquitetura e as 6 Fases do Ciclo de Vida](docs/feynman/arquitetura-ciclo-vida/README.md)
 - [Navegação Implícita e Explícita](docs/feynman/navegacao/README.md)
-- [Facelets e Tag Libraries](docs/feynman/facelets-e-tag-libraries/README.md)
-- [Localização e Mensagens](docs/feynman/localizacao-e-mensagens/README.md)
-- [EL e Integração com CDI](docs/feynman/el-e-integracao-cdi/README.md)
+- [Facelets e Tag Libraries](docs/feynman/facelets-tag-libraries/README.md)
+- [Localização e Mensagens](docs/feynman/localizacao-mensagens/README.md)
+- [EL e Integração com CDI](docs/feynman/el-integracao-cdi/README.md)
 
 ## Laboratório
 

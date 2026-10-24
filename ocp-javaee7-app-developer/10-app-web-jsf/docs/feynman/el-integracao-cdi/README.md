@@ -2,20 +2,44 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)!
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Facelets e Tag Libraries! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: EL e Integração com CDI! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Facelets e Tag Libraries
+CONCEITO: EL e Integração com CDI
 
 Objetivo oficial (1Z0-900 · Tópico 10): Desenvolver aplicações Web usando JSF
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partwebtier.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 10 ■ Facelets / Standard Components
+» Capítulo 2 ■ Contexto e Injeção de Dependência (CDI)
+» » Injeção de Dependência
+
+» Capítulo 10 ■ JavaServer Faces (JSF)
+» » Compreendendo o JSF
+» » » Expression Language
+
+» Capítulo 11 ■ Processamento e Navegação
+» » Escrevendo Backing Beans
+» » » Integrando JSF e EJBs
+
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte I ■ Introdução
+» » Capítulo ■ 1 Visão Geral
+» » » 1.7 APIs do Java EE 7
+» » » » 1.7.10 Contexts and Dependency Injection for Java EE
+
+» Parte III ■ A Camada Web
+» » Capítulo ■ 9 Linguagem de Expressão (Expression Language - EL)
+» » » 9.1 Visão geral da EL
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -35,9 +59,13 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `10-app-web-jsf/docs/feynman/facelets-e-tag-libraries/evidencias/imgs`
+E tire uma foto de evidência e coloque na pasta: `10-app-web-jsf/docs/feynman/el-e-integracao-cdi/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-facelets-e-tag-libraries-4em1.jpeg" alt="Conceito: Facelets e Tag Libraries" title="Facelets e Tag Libraries" style="width:250px;"/> -->
+<img src="evidencias/imgs/envidencia-cdi.jpeg" alt="Conceito: EL e Integração com CDI" title="EL e Integração com CDI" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/envidencia-el.jpeg" alt="Conceito: EL e Integração com CDI" title="EL e Integração com CDI" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
