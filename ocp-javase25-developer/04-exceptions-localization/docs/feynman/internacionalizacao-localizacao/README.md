@@ -38,8 +38,11 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle-certifications/ocp-javase25-developer/04-exceptions-localization/docs/feynman/internacionalização-e-localização/evidencias`
 
-<img src="evidencias/imgs/evidencia-card-operador.jpeg" alt="Conceito: Internacionalização e Localização" title="Internacionalização e Localização" style="width:250px;"/>
+<img src="evidencias/imgs/evidencia-localidade-4em1.jpeg" alt="Conceito: Internacionalização e Localização" title="Internacionalização e Localização" style="width:250px;"/>
 
+--- 
+
+<img src="evidencias/imgs/evidencia-localidade.jpeg" alt="Conceito: Internacionalização e Localização" title="Internacionalização e Localização" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

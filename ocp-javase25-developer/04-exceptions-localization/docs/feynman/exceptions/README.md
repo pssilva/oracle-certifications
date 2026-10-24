@@ -47,6 +47,22 @@ E tire uma foto de evidência e coloque na pasta: `/home/pssilva/projetos/oracle
 
 <img src="evidencias/imgs/evidencia-exception.jpeg" alt="Conceito: Exceptions" title="Exceptions" style="width:250px;"/>
 
+--- 
+
+<img src="evidencias/imgs/evidencia-multi-catch-finally.jpeg" alt="Conceito: Exceptions" title="Exceptions" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/evidencia-multi-catch-finally-p2.jpeg" alt="Conceito: Exceptions" title="Exceptions" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/evidencia-multi-catch-finally-p3.jpeg" alt="Conceito: Exceptions" title="Exceptions" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/evidencia-multi-catch-finally-localidade-4em1.jpeg" alt="Conceito: Exceptions" title="Exceptions" style="width:250px;"/>
+
 ## Explique em voz alta (25-40 min)
 
 Explique sem condultas como se estivesse ensinando para um desenvolvedor Jr.

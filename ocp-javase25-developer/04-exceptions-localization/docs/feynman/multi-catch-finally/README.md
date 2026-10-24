@@ -2,23 +2,25 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)!
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Formatação de Números, Moeda e Percentual! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Multi-catch e Finally! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Formatação de Números, Moeda e Percentual
+CONCEITO: Multi-catch e Finally
 
 Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 04-exceptions-localization
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 4.1 try/catch/finally e multi-catch
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 11: Exceptions and Localization
-» » Formatting Values / Supporting Internationalization (NumberFormat, CompactNumberFormat)
-» » » Objetivo do exame 1Z0-831: 10.2 Formatar números, valores monetários e percentuais
-
+» Capítulo 11 ■ Exceções e Localização
+» » Entendendo Exceções
+» » Tratamento Exceções
+» » » Aplicando um bloco Multi-catch
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -38,9 +40,9 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `04-exceptions-localization/docs/feynman/formatacao-de-numeros-moeda-e-percentual/evidencias/imgs`
+E tire uma foto de evidência e coloque na pasta: `04-exceptions-localization/docs/feynman/multi-catch-e-finally/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-formatacao-de-numeros-moeda-e-percentual-4em1.jpeg" alt="Conceito: Formatação de Números, Moeda e Percentual" title="Formatação de Números, Moeda e Percentual" style="width:250px;"/> -->
+<!-- <img src="evidencias/imgs/evidencia-multi-catch-e-finally-4em1.jpeg" alt="Conceito: Multi-catch e Finally" title="Multi-catch e Finally" style="width:250px;"/> -->
 
 
 ## Explique em voz alta (25-40 min)

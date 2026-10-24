@@ -24,12 +24,12 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 | Conceito | Seção do livro | Objetivo 1Z0-831 | Evidências |
 |----------|----------------|------------------|------------|
 | [Exceptions](docs/feynman/exceptions/README.md) | Understanding Exceptions / Recognizing Exception Classes | 4.1 Hierarquia checked/unchecked | ✅ 4 img |
-| [Multi-catch e Finally](docs/feynman/multi-catch-e-finally/README.md) | Handling Exceptions | 4.1 try/catch/finally e multi-catch | ⏳ pendente |
+| [Multi-catch e Finally](docs/feynman/multi-catch-finally/README.md) | Handling Exceptions | 4.1 try/catch/finally e multi-catch | ⏳ pendente |
 | [Recursos Try-Catch](docs/feynman/recursos-try-catch/README.md) | Automating Resource Management | 4.1 try-with-resources | ✅ 4 img |
 | [Exceções Personalizadas](docs/feynman/excecoes-personalizadas/README.md) | Understanding Exceptions (custom exceptions) | 4.1 Exceções personalizadas | ⏳ pendente |
-| [Internacionalização e Localização](docs/feynman/internacionalizacao-e-localizacao/README.md) | Supporting Internationalization and Localization | 10.1 Localização usando Locale | ⏳ pendente |
+| [Internacionalização e Localização](docs/feynman/internacionalizacao-localizacao/README.md) | Supporting Internationalization and Localization | 10.1 Localização usando Locale | ⏳ pendente |
 | [Resource Bundles](docs/feynman/resource-bundles/README.md) | Loading Properties with Resource Bundles | 10.1 Pacotes de recursos | ⏳ pendente |
-| [Formatação de Números, Moeda e Percentual](docs/feynman/formatacao-de-numeros-moeda-e-percentual/README.md) | Formatting Values / Supporting Internationalization (NumberFormat, CompactNumberFormat) | 10.2 Formatar números, valores monetários e percentuais | ⏳ pendente |
-| [Formatação de Mensagens, Datas e Horas](docs/feynman/formatacao-de-mensagens-datas-e-horas/README.md) | Formatting Values (DateTimeFormatter, MessageFormat) | 10.2 Analisar e formatar mensagens, datas e horas | ⏳ pendente |
+| [Formatação de Números, Moeda e Percentual](docs/feynman/formatacao-numeros-moeda-percentual/README.md) | Formatting Values / Supporting Internationalization (NumberFormat, CompactNumberFormat) | 10.2 Formatar números, valores monetários e percentuais | ⏳ pendente |
+| [Formatação de Mensagens, Datas e Horas](docs/feynman/formatacao-mensagens-datas-horas/README.md) | Formatting Values (DateTimeFormatter, MessageFormat) | 10.2 Analisar e formatar mensagens, datas e horas | ⏳ pendente |
 
 Para criar um novo conceito use `OracleCertificationsScriptsUteis.CriarStructureByConceito "04-exceptions-localization" "<Conceito>"` (veja o [README da certificação](../README.md)).
