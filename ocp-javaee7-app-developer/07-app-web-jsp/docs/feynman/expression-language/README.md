@@ -11,13 +11,23 @@ CONCEITO: Expression Language 3.0
 
 Objetivo oficial (1Z0-900 · Tópico 07): Criar aplicações Web Java usando JSPs
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/jsf-el.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Tutorial EE 7 ■ Expression Language
+» Capítulo 10 ■ JavaServer Faces
+» » Compreendendo JSF
+» » » Expression Language
 ```
 
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte III ■ A Camada Web
+» » Capítulo ■ 9 Linguagem de Expressão (Expression Language - EL)
+» » » 9.1 Visão geral da EL
+```
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva:
@@ -37,7 +47,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `07-app-web-jsp/docs/feynman/expression-language/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-expression-language-4em1.jpeg" alt="Conceito: Expression Language 3.0" title="Expression Language 3.0" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-el30.jpeg" alt="Conceito: Expression Language 3.0" title="Expression Language 3.0" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

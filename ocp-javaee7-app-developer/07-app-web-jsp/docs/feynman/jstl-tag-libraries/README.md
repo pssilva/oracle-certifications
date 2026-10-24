@@ -11,12 +11,24 @@ CONCEITO: JSTL e Tag Libraries
 
 Objetivo oficial (1Z0-900 · Tópico 07): Criar aplicações Web Java usando JSPs
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/jsf-el.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Tutorial ■ JavaServer Pages Standard Tag Library
+» Capítulo 1 ■ Visão Geral do Java EE 7
+» » Java Standard Edition 7
 ```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte I ■ Introdução
+» » Capítulo ■ 1 Visão Geral
+» » » 1.7 APIs do Java EE 7
+» » » » 1.7.5 JavaServer Pages Standard Tag Library
+```
+
 
 ## Escrever à Mão (2-25 min)
 
@@ -37,7 +49,11 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `07-app-web-jsp/docs/feynman/jstl-tag-libraries/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-jstl-tag-libraries-4em1.jpeg" alt="Conceito: JSTL e Tag Libraries" title="JSTL e Tag Libraries" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-jstl-el30-2em1.jpeg" alt="Conceito: JSTL e Tag Libraries" title="JSTL e Tag Libraries" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-jstl.jpeg" alt="Conceito: JSTL e Tag Libraries" title="JSTL e Tag Libraries" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
