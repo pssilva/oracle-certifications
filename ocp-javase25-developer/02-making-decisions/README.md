@@ -22,9 +22,9 @@ Cada conceito segue a [Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5f
 
 | Conceito | Seção do livro | Objetivo 1Z0-831 | Evidências |
 |----------|----------------|------------------|------------|
-| [If-Else e Pattern Matching](docs/feynman/if-else-e-pattern-matching/README.md) | Creating Decision-Making Statements | 2.1 Estruturas if/else (pattern matching instanceof) | ⏳ pendente |
-| [Switch Statements e Expressions](docs/feynman/switch-statements-e-expressions/README.md) | Building switch Statements and Expressions | 2.1 Instruções e expressões switch (patterns, guards, record patterns) | ⏳ pendente |
-| [Laços While, For e For-Each](docs/feynman/lacos-while-for-e-for-each/README.md) | Writing while Loops / Constructing for Loops | 2.1 Loops | ⏳ pendente |
-| [Break, Continue e Labels](docs/feynman/break-continue-e-labels/README.md) | Controlling Flow with Branching | 2.1 Instruções break e continue | ⏳ pendente |
+| [If-Else e Pattern Matching](docs/feynman/if-else-pattern-matching/README.md) | Creating Decision-Making Statements | 2.1 Estruturas if/else (pattern matching instanceof) | ⏳ pendente |
+| [Switch Statements e Expressions](docs/feynman/switch-statements-expressions/README.md) | Building switch Statements and Expressions | 2.1 Instruções e expressões switch (patterns, guards, record patterns) | ⏳ pendente |
+| [Laços While, For e For-Each](docs/feynman/lacos-while-for-foreach/README.md) | Writing while Loops / Constructing for Loops | 2.1 Loops | ⏳ pendente |
+| [Break, Continue e Labels](docs/feynman/break-continue-labels/README.md) | Controlling Flow with Branching | 2.1 Instruções break e continue | ⏳ pendente |
 
 Para criar um novo conceito use `OracleCertificationsScriptsUteis.CriarStructureByConceito "02-making-decisions" "<Conceito>"` (veja o [README da certificação](../README.md)).

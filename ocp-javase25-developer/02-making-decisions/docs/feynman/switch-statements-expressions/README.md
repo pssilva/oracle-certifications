@@ -13,12 +13,13 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 02-making-decision
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 2.1 Instruções e expressões switch (patterns, guards, record patterns)
+
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 3: Making Decisions
-» » Building switch Statements and Expressions
-» » » Objetivo do exame 1Z0-831: 2.1 Instruções e expressões switch (patterns, guards, record patterns)
-
+» Capítulo 3 ■ Tomando Decisões
+» » Construindo Instruções e Expressões switch
 ```
 
 ## Escrever à Mão (2-25 min)
