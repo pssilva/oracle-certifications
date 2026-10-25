@@ -49,6 +49,10 @@ E tire uma foto de evidência e coloque na pasta: `07-app-web-jsp/docs/feynman/c
 
 <img src="evidencias/imgs/evidencia-ciclo-vida-servlets.jpeg" alt="Conceito: Ciclo de Vida e Sintaxe JSP" title="Ciclo de Vida e Sintaxe JSP" style="width:250px;"/> 
 
+---
+
+<img src="evidencias/imgs/evidencia-facelets.jpeg" alt="Conceito: Ciclo de Vida e Sintaxe JSP" title="Ciclo de Vida e Sintaxe JSP" style="width:250px;"/> 
+
 ## Explique em voz alta (25-40 min)
 
 Explique sem consultas como se estivesse ensinando para um desenvolvedor Jr. Use **uma analogia** por conceito

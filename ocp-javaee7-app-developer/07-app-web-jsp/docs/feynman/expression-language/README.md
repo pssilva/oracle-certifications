@@ -49,6 +49,11 @@ E tire uma foto de evidência e coloque na pasta: `07-app-web-jsp/docs/feynman/e
 
 <img src="evidencias/imgs/evidencia-el30.jpeg" alt="Conceito: Expression Language 3.0" title="Expression Language 3.0" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-el.jpeg" alt="Conceito: Expression Language 3.0" title="Expression Language 3.0" style="width:250px;"/>
+
+
 ## Explique em voz alta (25-40 min)
 
 Explique sem consultas como se estivesse ensinando para um desenvolvedor Jr. Use **uma analogia** por conceito
