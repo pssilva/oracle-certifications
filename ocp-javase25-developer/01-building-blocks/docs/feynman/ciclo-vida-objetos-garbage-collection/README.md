@@ -13,12 +13,13 @@ Exame: 1Z0-831: Java SE 25 Developer Professional · Módulo: 01-building-blocks
 
 Base referêncial Livro: [OCP Oracle Certified Professional Java SE 21 Developer: Study Guide Exam 1Z0-830](https://a.co/d/0alQOByp).
 
+Tendo em mente Objetivo do exame 1Z0-831: 3.1 Ciclo de vida do objeto: criação, reatribuição de referências e GC
+
 ```
 OCP Oracle Certified Professional Java SE 21 Developer
-» Chapter 1: Building Blocks
+» Capítulo 1 ■ Blocos de Construção
 » » Creating Objects / Destroying Objects
-» » » Objetivo do exame 1Z0-831: 3.1 Ciclo de vida do objeto: criação, reatribuição de referências e GC
-
+» » » 
 ```
 
 ### Evidências
