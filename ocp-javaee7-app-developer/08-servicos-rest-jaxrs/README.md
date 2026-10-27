@@ -31,7 +31,7 @@ Conceitos OCP
 Os conceitos se encontram na pasta: `08-servicos-rest-jaxrs/docs/feynman/`
 
 - [Convenções REST](docs/feynman/convencoes-rest/README.md)
-- [Recursos e Parâmetros](docs/feynman/recursos-e-parametros/README.md)
+- [Recursos e Parâmetros](docs/feynman/recursos-parametros/README.md)
 - [Providers, Filtros e Interceptors](docs/feynman/providers-filtros-interceptors/README.md)
 - [Cliente JAX-RS 2.0](docs/feynman/cliente-jaxrs/README.md)
 

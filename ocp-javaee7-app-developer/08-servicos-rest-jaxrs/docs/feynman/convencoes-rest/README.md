@@ -11,13 +11,20 @@ CONCEITO: Convenções REST
 
 Objetivo oficial (1Z0-900 · Tópico 08): Implementar serviços REST usando a API JAX-RS
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partwebsvcs.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD);
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 15 ■ Understanding RESTful Web Services
-```
+» Capítulo 15 ■ Web Services RESTful
 
+```
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte VI ■ Web Services
+» » Capítulo ■ 29 Construindo Web Services RESTful com JAX-RS
+```
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva:
