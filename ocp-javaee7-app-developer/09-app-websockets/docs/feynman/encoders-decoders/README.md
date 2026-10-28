@@ -2,22 +2,31 @@
 
 Tendo em mente o vídeo [Como APRENDER QUALQUER COISA de maneira INTELIGENTE | A Técnica Feynman](https://youtu.be/CN_SCpGuJ_w?si=7eqvv5fpdCkjXVdz)!
 
-Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Endpoints Anotados e Programáticos! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
+Aplicando o protocolo Feynman de 60 minutos especificamente para o CONCEITO: Encoders e Decoders! E usar os áudios e cards para aplicar a [técnica revisão espaçada](https://youtu.be/XG0CAM_VYdE?si=-YqvN01n5A44NIGC).
 
 
 ## Escolha o Assunto (0-2 min)
 
-CONCEITO: Endpoints Anotados e Programáticos
+CONCEITO: Encoders e Decoders
 
 Objetivo oficial (1Z0-900 · Tópico 09): Criar aplicações Java usando WebSockets
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/websocket.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD);
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Tutorial ■ Creating WebSocket Applications
+» Capítulo 1 ■ Visão Geral do Java EE 7
+» » Visão Geral das Especificações do Java EE
+» » Especificações do Java EE 7
 ```
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
 
+```
+Java EE 7 Tutorial
+» Parte III ■ A Camada Web
+» » Capítulo ■ 18 API Java para WebSocket
+» » » 18.2 Criando aplicações WebSocket na plataforma Java EE
+```
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva:
@@ -35,9 +44,9 @@ Qual pegadinha?
 
 ### Evidências
 
-E tire uma foto de evidência e coloque na pasta: `09-app-websockets/docs/feynman/endpoints-anotados-e-programaticos/evidencias/imgs`
+E tire uma foto de evidência e coloque na pasta: `09-app-websockets/docs/feynman/encoders-e-decoders/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-endpoints-anotados-e-programaticos-4em1.jpeg" alt="Conceito: Endpoints Anotados e Programáticos" title="Endpoints Anotados e Programáticos" style="width:250px;"/> -->
+<!-- <img src="evidencias/imgs/evidencia-encoders-e-decoders-4em1.jpeg" alt="Conceito: Encoders e Decoders" title="Encoders e Decoders" style="width:250px;"/> -->
 
 ## Explique em voz alta (25-40 min)
 

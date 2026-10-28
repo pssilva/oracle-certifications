@@ -11,13 +11,22 @@ CONCEITO: Ciclo de Vida do WebSocket
 
 Objetivo oficial (1Z0-900 · Tópico 09): Criar aplicações Java usando WebSockets
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/websocket.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Tutorial ■ Introduction to WebSocket
+» Capítulo 1 ■ Visão Geral do Java EE 7
+» » Visão Geral das Especificações do Java EE
+» » Especificações do Java EE 7
 ```
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
 
+```
+Java EE 7 Tutorial
+» Parte III ■ A Camada Web
+» » Capítulo ■ 18 API Java para WebSocket
+» » » 18.2 Criando aplicações WebSocket na plataforma Java EE
+```
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva:
@@ -37,7 +46,8 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `09-app-websockets/docs/feynman/ciclo-de-vida-websocket/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-ciclo-de-vida-websocket-4em1.jpeg" alt="Conceito: Ciclo de Vida do WebSocket" title="Ciclo de Vida do WebSocket" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-websockets-2em1.jpeg" alt="Conceito: Ciclo de Vida do WebSocket" title="Ciclo de Vida do WebSocket" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 

@@ -26,9 +26,9 @@ Conceitos OCP
 
 Os conceitos se encontram na pasta: `09-app-websockets/docs/feynman/`
 
-- [Ciclo de Vida do WebSocket](docs/feynman/ciclo-de-vida-websocket/README.md)
-- [Endpoints Anotados e Programáticos](docs/feynman/endpoints-anotados-e-programaticos/README.md)
-- [Encoders e Decoders](docs/feynman/encoders-e-decoders/README.md)
+- [Ciclo de Vida do WebSocket](docs/feynman/ciclo-vida-websocket/README.md)
+- [Endpoints Anotados e Programáticos](docs/feynman/endpoints-anotados-programaticos/README.md)
+- [Encoders e Decoders](docs/feynman/encoders-decoders/README.md)
 
 ## Laboratório
 
