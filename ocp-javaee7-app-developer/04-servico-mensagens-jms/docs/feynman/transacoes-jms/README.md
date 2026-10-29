@@ -32,7 +32,6 @@ Java EE 7 Tutorial
 
 Numa folha de papel (card), escreva:
 
-
 ```
 O que é?
 Como funciona?
