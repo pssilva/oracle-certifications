@@ -28,7 +28,7 @@ Conceitos OCP
 Os conceitos se encontram na pasta: `04-servico-mensagens-jms/docs/feynman/`
 
 - [Modelos Ponto a Ponto e Publish/Subscribe](docs/feynman/modelos-p2p-pubsub/README.md)
-- [Produtores e Consumidores (JMSContext)](docs/feynman/produtores-e-consumidores/README.md)
+- [Produtores e Consumidores (JMSContext)](docs/feynman/produtores-consumidores/README.md)
 - [Transações com JMS](docs/feynman/transacoes-jms/README.md)
 - [Message-Driven Beans](docs/feynman/message-driven-beans/README.md)
 

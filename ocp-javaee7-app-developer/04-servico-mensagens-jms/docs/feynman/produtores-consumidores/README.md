@@ -15,7 +15,17 @@ Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 13 ■ Java Messaging Service API
+» Capítulo 13 ■ Mensageria
+» » Mecanismos de Confiabilidade
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte IX ■ Mensageria
+» » Capítulo ■ 45 Conceitos do Java Message Service (JMS)
+» » Capítulo ■ 46 Exemplos de Java Message Service (JMS)
 ```
 
 ## Escrever à Mão (2-25 min)

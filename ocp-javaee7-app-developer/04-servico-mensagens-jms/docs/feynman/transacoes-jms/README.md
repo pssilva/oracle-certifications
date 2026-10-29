@@ -11,11 +11,21 @@ CONCEITO: Transações com JMS
 
 Objetivo oficial (1Z0-900 · Tópico 04): Usar a API Java Message Service (JMS)
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partmessaging.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 13 ■ Reliability Mechanisms
+» Capítulo 13 ■ Mensageria
+» » Mecanismos de Confiabilidade
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte IX ■ Mensageria
+» » Capítulo ■ 45 Conceitos do Java Message Service (JMS)
+» » Capítulo ■ 46 Exemplos de Java Message Service (JMS)
 ```
 
 ## Escrever à Mão (2-25 min)

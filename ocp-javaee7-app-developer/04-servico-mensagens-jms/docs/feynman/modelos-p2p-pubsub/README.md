@@ -18,6 +18,21 @@ Beginning Java EE 7 (Antonio Goncalves)
 » Cap. 13 ■ Messaging » Understanding Messaging
 ```
 
+```
+Beginning Java EE 7 (Antonio Goncalves)
+» Capítulo 13 ■ Mensageria
+» » Entendendo a Mensageria
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte IX ■ Mensageria
+» » Capítulo ■ 45 Conceitos do Java Message Service (JMS)
+» » Capítulo ■ 46 Exemplos de Java Message Service (JMS)
+```
+
 ## Escrever à Mão (2-25 min)
 
 Numa folha de papel (card), escreva:
@@ -37,7 +52,15 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `04-servico-mensagens-jms/docs/feynman/modelos-p2p-pubsub/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-modelos-p2p-pubsub-4em1.jpeg" alt="Conceito: Modelos Ponto a Ponto e Publish/Subscribe" title="Modelos Ponto a Ponto e Publish/Subscribe" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-modelo-p2p-2em1.jpeg" alt="Conceito: Modelos Ponto a Ponto e Publish/Subscribe" title="Modelos Ponto a Ponto e Publish/Subscribe" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/evidencia-modelo-pub-sub-2em1.jpeg" alt="Conceito: Modelos Ponto a Ponto e Publish/Subscribe" title="Modelos Ponto a Ponto e Publish/Subscribe" style="width:250px;"/>
+
+--- 
+
+<img src="evidencias/imgs/evidencia-modelo-pub-sub.jpeg" alt="Conceito: Modelos Ponto a Ponto e Publish/Subscribe" title="Modelos Ponto a Ponto e Publish/Subscribe" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
@@ -62,7 +85,7 @@ IMPORTANTE: assim que possível, gravar áudios em inglês também (os termos do
 
 ## Verificar (50-60 min)
 
-Revise o roteiro do áudio: onde a explicação travou ou ficou vaga é uma **lacuna** — volte ao livro/Tutorial e prove no código.
+Reveja o roteiro do áudio: onde a explicação travou ou ficou vaga é uma **lacuna** — volte ao livro/Tutorial e prove no código.
 
 ### Lacunas encontradas
 

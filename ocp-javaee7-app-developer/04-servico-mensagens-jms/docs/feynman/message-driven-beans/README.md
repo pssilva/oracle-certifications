@@ -11,11 +11,21 @@ CONCEITO: Message-Driven Beans
 
 Objetivo oficial (1Z0-900 · Tópico 04): Usar a API Java Message Service (JMS)
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partmessaging.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD);
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 13 ■ Writing Message-Driven Beans
+» Capítulo 13 ■ Mensageria
+» » Message-Driven Beans (MDBs)
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte IX ■ Mensageria
+» » Capítulo ■ 45 Conceitos do Java Message Service (JMS)
+» » Capítulo ■ 46 Exemplos de Java Message Service (JMS)
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +47,7 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `04-servico-mensagens-jms/docs/feynman/message-driven-beans/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-message-driven-beans-4em1.jpeg" alt="Conceito: Message-Driven Beans" title="Message-Driven Beans" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-mdb.jpeg" alt="Conceito: Message-Driven Beans" title="Message-Driven Beans" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
