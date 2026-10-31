@@ -29,8 +29,11 @@ Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/part
 Java EE 7 Tutorial
 » Parte X ■ Segurança
 » » Capítulo ■ 47 Introdução à segurança na plataforma Java EE
+» » » 47.1 Visão Geral da Segurança no Java EE
 » » Capítulo ■ 48 Introdução à Segurança de Aplicações Web
+» » » 48.1 Visão Geral da Segurança de Aplicações Web
 » » Capítulo ■ 49 Introdução à segurança de aplicações corporativas
+» » » 49.2 Protegendo Enterprise Beans
 » » Capítulo ■ 50 Segurança no Java EE: Tópicos Avançados
 
 ```
