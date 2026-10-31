@@ -11,11 +11,23 @@ CONCEITO: JAXB: Mapeamento Java ↔ XML
 
 Objetivo oficial (1Z0-900 · Tópico 05): Implementar serviços SOAP usando JAX-WS e JAXB
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partwebsvcs.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 12 ■ XML and JSON Processing » JAXB
+» Capítulo 12 ■ Processamento de XML e JSON
+» » Arquitetura Java para Binding XML (JAXB)
+```
+
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte I ■ Introdução
+» » Capítulo ■ 1 Visão Geral
+» » » 1.8 APIs do Java EE 7 na Java Platform, Standard Edition 7
+» » » » 1.8.5 Java Architecture for XML Binding
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +49,8 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `05-servicos-soap-jaxws-jaxb/docs/feynman/jaxb-mapeamento-xml/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-jaxb-mapeamento-xml-4em1.jpeg" alt="Conceito: JAXB: Mapeamento Java ↔ XML" title="JAXB: Mapeamento Java ↔ XML" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-soap-jaxb.jpeg" alt="Conceito: JAXB: Mapeamento Java ↔ XML" title="JAXB: Mapeamento Java ↔ XML" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 

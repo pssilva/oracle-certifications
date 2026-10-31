@@ -11,11 +11,21 @@ CONCEITO: Serviços e Clientes SOAP (JAX-WS)
 
 Objetivo oficial (1Z0-900 · Tópico 05): Implementar serviços SOAP usando JAX-WS e JAXB
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partwebsvcs.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD);
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Cap. 14 ■ SOAP Web Services
+» Capítulo 14 ■ Web Services SOAP
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte I ■ Introdução
+» » Capítulo ■ 1 Visão Geral
+» » » 1.8 APIs do Java EE 7 na Java Platform, Standard Edition 7
+» » » » 1.8.5 Java Architecture for XML Binding
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +47,16 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `05-servicos-soap-jaxws-jaxb/docs/feynman/servicos-e-clientes-soap/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-servicos-e-clientes-soap-4em1.jpeg" alt="Conceito: Serviços e Clientes SOAP (JAX-WS)" title="Serviços e Clientes SOAP (JAX-WS)" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-soap-jaxws.jpeg" alt="Conceito: Serviços e Clientes SOAP (JAX-WS)" title="Serviços e Clientes SOAP (JAX-WS)" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-soap-cliente.jpeg" alt="Conceito: Serviços e Clientes SOAP (JAX-WS)" title="Serviços e Clientes SOAP (JAX-WS)" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-soap.jpeg" alt="Conceito: Serviços e Clientes SOAP (JAX-WS)" title="Serviços e Clientes SOAP (JAX-WS)" style="width:250px;"/>
+
 
 ## Explique em voz alta (25-40 min)
 
