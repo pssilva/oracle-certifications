@@ -11,11 +11,29 @@ CONCEITO: Segurança em Web Services
 
 Objetivo oficial (1Z0-900 · Tópico 11): Proteger aplicações Java EE 7
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partsecurity.htm).
+
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD);
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Tutorial ■ Securing Web Services / transport-guarantee
+» Capítulo 1 ■ Visão Geral do Java EE 7
+» » Entendendo o Java EE
+» » » Serviços
+
+» Capítulo 8 ■ Callbacks, Serviço de Temporizador e Autorização
+» » Autorização
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte X ■ Segurança
+» » Capítulo ■ 47 Introdução à Segurança na Plataforma Java EE
+» » Capítulo ■ 48 Introdução à Segurança de Aplicações Web
+» » Capítulo ■ 49 Introdução à Segurança de Aplicações Corporativas
+» » Capítulo ■ 50 Segurança no Java EE: Tópicos Avançados
+
 ```
 
 ## Escrever à Mão (2-25 min)

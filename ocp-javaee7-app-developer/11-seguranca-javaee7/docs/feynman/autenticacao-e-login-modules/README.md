@@ -11,12 +11,30 @@ CONCEITO: Autenticação, Roles e Login Modules
 
 Objetivo oficial (1Z0-900 · Tópico 11): Proteger aplicações Java EE 7
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partsecurity.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); 
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Tutorial ■ Specifying an Authentication Mechanism
+» Capítulo 1 ■ Visão Geral do Java EE 7
+» » Entendendo o Java EE
+» » » Serviços
+
+» Capítulo 8 ■ Callbacks, Serviço de Temporizador e Autorização
+» » Autorização
 ```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte X ■ Segurança
+» » Capítulo ■ 47 Introdução à segurança na plataforma Java EE
+» » Capítulo ■ 48 Introdução à Segurança de Aplicações Web
+» » Capítulo ■ 49 Introdução à segurança de aplicações corporativas
+» » Capítulo ■ 50 Segurança no Java EE: Tópicos Avançados
+
+```
+
 
 ## Escrever à Mão (2-25 min)
 
@@ -37,7 +55,9 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `11-seguranca-javaee7/docs/feynman/autenticacao-e-login-modules/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-autenticacao-e-login-modules-4em1.jpeg" alt="Conceito: Autenticação, Roles e Login Modules" title="Autenticação, Roles e Login Modules" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-seguranca-jaas-aplicacao-web.png" alt="Conceito: Autenticação, Roles e Login Modules" title="Autenticação, Roles e Login Modules" style="width:250px;"/>
+---
+<img src="evidencias/imgs/evidencia-seguranca-jaas-modelo-ejb.jpeg" alt="Conceito: Autenticação, Roles e Login Modules" title="Autenticação, Roles e Login Modules" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 
