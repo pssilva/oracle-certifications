@@ -11,11 +11,27 @@ CONCEITO: ManagedExecutorService
 
 Objetivo oficial (1Z0-900 · Tópico 13): Usar a API de Concorrência em aplicações Java EE 7
 
-Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD); complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/concurrency-utilities.htm).
+Base referencial Livro: [Beginning Java EE 7 — Antonio Goncalves (Apress, 2013)](https://a.co/d/04zua8PD);
 
 ```
 Beginning Java EE 7 (Antonio Goncalves)
-» Tutorial ■ Concurrency Utilities » Main Components
+» Capítulo 6 ■ Gerenciando Objetos Persistentes
+» » Concorrência
+```
+
+Complemento: [Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/partentbeans.htm).
+
+```
+Java EE 7 Tutorial
+» Parte I ■ Introdução
+» » Capítulo ■ 1 Visão Geral
+» » » 1.7 APIs do Java EE 7
+» » » » 1.7.20 Concurrency Utilities for Java EE
+
+» Parte XI ■ Tecnologias de Suporte ao Java EE
+» » Capítulo ■ 56 Utilitários de Concorrência para Java EE
+» » » 56.1 Noções Básicas de Concorrência
+» » » 56.2 Principais Componentes dos Utilitários de Concorrência
 ```
 
 ## Escrever à Mão (2-25 min)
@@ -37,7 +53,13 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `13-api-concorrencia/docs/feynman/managed-executor-service/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-managed-executor-service-4em1.jpeg" alt="Conceito: ManagedExecutorService" title="ManagedExecutorService" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-concurrency-utilities-managedExecutorService.jpeg" alt="Conceito: ManagedExecutorService" title="ManagedExecutorService" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-concurrency-utilities-processos-threads.jpeg" alt="Conceito: ManagedExecutorService" title="ManagedExecutorService" style="width:250px;"/>
+
+
 
 ## Explique em voz alta (25-40 min)
 

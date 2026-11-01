@@ -31,7 +31,7 @@ Os conceitos se encontram na pasta: `13-api-concorrencia/docs/feynman/`
 
 - [ManagedExecutorService](docs/feynman/managed-executor-service/README.md)
 - [ManagedScheduledExecutorService e Trigger](docs/feynman/managed-scheduled-executor/README.md)
-- [ContextService e ManagedThreadFactory](docs/feynman/context-service-e-thread-factory/README.md)
+- [ContextService e ManagedThreadFactory](docs/feynman/context-service-thread-factory/README.md)
 
 ## Laboratório
 
