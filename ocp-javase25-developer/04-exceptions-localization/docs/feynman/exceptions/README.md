@@ -16,7 +16,7 @@ OCP Oracle Certified Professional Java SE 21 Developer
 » Capítulo 11 ■ Exceções e Localização
 » » Entendendo Exceções
 » » Tratamento Exceções
-
+    
 ```
 
 ## Escrever à Mão (2-25 min)
