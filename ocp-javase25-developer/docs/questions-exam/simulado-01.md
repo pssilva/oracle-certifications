@@ -1118,70 +1118,74 @@ G. None of the above.
 
 Preencha **Resposta**; depois confira no livro (Apêndice *Answers to Review Questions*) e registre os erros em `docs/ocp-study/error-log.md`.
 
-| # | Tópico | Fonte | Resposta | Gabarito | ✔/✘ |
-|--:|---|---|---|---|:-:|
-| 01 | T10 | `04-exceptions-localization/QCAP11_19` | | | |
-| 02 | T7 | `01-building-blocks/QCAP01_11` | | | |
-| 03 | T9 | `09-io-api/QCAP14_01` | | | |
-| 04 | T3 | `03-methods/QCAP05_07` | | | |
-| 05 | T3 | `01-beyond-classes/QCAP07_14` | | | |
-| 06 | T3 | `01-beyond-classes/QCAP07_19` | | | |
-| 07 | T6 | `07-streams/QCAP10_20` | | | |
-| 08 | T4 | `04-exceptions-localization/QCAP11_21` | | | |
-| 09 | T1 | `14-operators/QCAP02_08` | | | |
-| 10 | T2 | `02-making-decisions/QCAP03_08` | | | |
-| 11 | T7 | `11-modules/QCAP12_23` | | | |
-| 12 | T8 | `13-concurrency/QCAP13_23` | | | |
-| 13 | T7 | `11-modules/QCAP12_07` | | | |
-| 14 | T6 | `07-streams/QCAP10_01` | | | |
-| 15 | T3 | `01-building-blocks/QCAP01_08` | | | |
-| 16 | T5 | `05-collections-generics/QCAP09_14` | | | |
-| 17 | T1 | `14-operators/QCAP02_04` | | | |
-| 18 | T7 | `11-modules/QCAP12_10` | | | |
-| 19 | T6 | `06-lambdas-functional-interfaces/QCAP08_20` | | | |
-| 20 | T3 | `03-methods/QCAP05_01` | | | |
-| 21 | T5 | `05-collections-generics/QCAP09_10` | | | |
-| 22 | T4 | `04-exceptions-localization/QCAP11_14` | | | |
-| 23 | T1 | `01-building-blocks/QCAP01_19` | | | |
-| 24 | T5 | `05-collections-generics/QCAP09_09` | | | |
-| 25 | T3 | `01-building-blocks/QCAP01_05` | | | |
-| 26 | T2 | `02-making-decisions/QCAP03_13` | | | |
-| 27 | T10 | `04-exceptions-localization/QCAP11_22` | | | |
-| 28 | T6 | `06-lambdas-functional-interfaces/QCAP08_06` | | | |
-| 29 | T8 | `13-concurrency/QCAP13_11` | | | |
-| 30 | T6 | `07-streams/QCAP10_14` | | | |
-| 31 | T6 | `07-streams/QCAP10_16` | | | |
-| 32 | T4 | `04-exceptions-localization/QCAP11_18` | | | |
-| 33 | T8 | `13-concurrency/QCAP13_18` | | | |
-| 34 | T3 | `01-class-design/QCAP06_01` | | | |
-| 35 | T6 | `07-streams/QCAP10_05` | | | |
-| 36 | T3 | `01-building-blocks/QCAP01_21` | | | |
-| 37 | T5 | `15-core-apis/QCAP04_02` | | | |
-| 38 | T9 | `09-io-api/QCAP14_06` | | | |
-| 39 | T5 | `05-collections-generics/QCAP09_11` | | | |
-| 40 | T3 | `01-beyond-classes/QCAP07_29` | | | |
-| 41 | T2 | `02-making-decisions/QCAP03_29` | | | |
-| 42 | T9 | `09-io-api/QCAP14_16` | | | |
-| 43 | T1 | `15-core-apis/QCAP04_01` | | | |
-| 44 | T2 | `02-making-decisions/QCAP03_02` | | | |
-| 45 | T3 | `01-building-blocks/QCAP01_18` | | | |
-| 46 | T4 | `04-exceptions-localization/QCAP11_23` | | | |
-| 47 | T8 | `13-concurrency/QCAP13_03` | | | |
-| 48 | T1 | `15-core-apis/QCAP04_16` | | | |
-| 49 | T1 | `01-building-blocks/QCAP01_07` | | | |
-| 50 | T3 | `01-beyond-classes/QCAP07_18` | | | |
+| # | Tópico | Fonte | Resposta      | Gabarito    | ✔/✘ |
+|--:|---|---|---------------|-------------|:---:|
+| 01 | T10 | `04-exceptions-localization/QCAP11_19` | `D`           | `D`         |  ✔  |
+| 02 | T7 | `01-building-blocks/QCAP01_11` | `E`           | `E`         |  ✔  |
+| 03 | T9 | `09-io-api/QCAP14_01` | `E`           | `C`         |  ✘  |
+| 04 | T3 | `03-methods/QCAP05_07` | `D`, `E`      | `D`, `F`    |  ✘  |
+| 05 | T3 | `01-beyond-classes/QCAP07_14` | `A, B, C,D,E` | `A, C, E`   |  ✘  |
+| 06 | T3 | `01-beyond-classes/QCAP07_19` | `F`           | `F`         |  ✔  |
+| 07 | T6 | `07-streams/QCAP10_20` | `C,D,E`       | `C, E, F`   |  ✘  |
+| 08 | T4 | `04-exceptions-localization/QCAP11_21` | `C`           | `C`         |  ✔  |
+| 09 | T1 | `14-operators/QCAP02_08` | `E`           | `A`         |  ✘  |
+| 10 | T2 | `02-making-decisions/QCAP03_08` | `C`           | `G`         |  ✘  |
+| 11 | T7 | `11-modules/QCAP12_23` | `A`           | `E`         |  ✘  |
+| 12 | T8 | `13-concurrency/QCAP13_23` | `F`           | `F`         |  ✔  |
+| 13 | T7 | `11-modules/QCAP12_07` | `A, B, E`     | `A, B, E`   |  ✔  |
+| 14 | T6 | `07-streams/QCAP10_01` | `E`           | `D`         |  ✘  |
+| 15 | T3 | `01-building-blocks/QCAP01_08` | `A, B, D, H`  | `B, D, E, H` |  ✘  |
+| 16 | T5 | `05-collections-generics/QCAP09_14` | `E`           | `A`         |  ✘  |
+| 17 | T1 | `14-operators/QCAP02_04` | `E`           | `B`         |  ✘  |
+| 18 | T7 | `11-modules/QCAP12_10` | `A, C, E`     | `C, D`¹     |  ✘  |
+| 19 | T6 | `06-lambdas-functional-interfaces/QCAP08_20` | `E`           | `E`         |  ✔  |
+| 20 | T3 | `03-methods/QCAP05_01` | `A, B`        | `A, E`      |  ✘  |
+| 21 | T5 | `05-collections-generics/QCAP09_10` | `A, B, D`     | `A, B, D`   |  ✔  |
+| 22 | T4 | `04-exceptions-localization/QCAP11_14` | `C`           | `C`         |  ✔  |
+| 23 | T1 | `01-building-blocks/QCAP01_19` | `D, F`        | `A, D`      |  ✘  |
+| 24 | T5 | `05-collections-generics/QCAP09_09` | `A`           | `A`         |  ✔  |
+| 25 | T3 | `01-building-blocks/QCAP01_05` | `A, C, F.`    | `A, D, F`   |  ✘  |
+| 26 | T2 | `02-making-decisions/QCAP03_13` | `F`           | `F`         |  ✔  |
+| 27 | T10 | `04-exceptions-localization/QCAP11_22` | `F`           | `B`         |  ✘  |
+| 28 | T6 | `06-lambdas-functional-interfaces/QCAP08_06` | `A, C, E`     | `A, C`      |  ✘  |
+| 29 | T8 | `13-concurrency/QCAP13_11` | `F`           | `F`         |  ✔  |
+| 30 | T6 | `07-streams/QCAP10_14` | `C, E`        | `B, D`      |  ✘  |
+| 31 | T6 | `07-streams/QCAP10_16` | `B, C`        | `B, C`      |  ✔  |
+| 32 | T4 | `04-exceptions-localization/QCAP11_18` | `B`           | `C`         |  ✘  |
+| 33 | T8 | `13-concurrency/QCAP13_18` | `A, C, D`     | `C, E, G`   |  ✘  |
+| 34 | T3 | `01-class-design/QCAP06_01` | `E`           | `E`         |  ✔  |
+| 35 | T6 | `07-streams/QCAP10_05` | `D`           | `C, F`      |  ✘  |
+| 36 | T3 | `01-building-blocks/QCAP01_21` | `F`           | `D`         |  ✘  |
+| 37 | T5 | `15-core-apis/QCAP04_02` | `C, D, E`     | `C, E, F`   |  ✘  |
+| 38 | T9 | `09-io-api/QCAP14_06` | `F`           | `C`         |  ✘  |
+| 39 | T5 | `05-collections-generics/QCAP09_11` | `A, B, C, F`  | `A, B, E, F` |  ✘  |
+| 40 | T3 | `01-beyond-classes/QCAP07_29` | `C`           | `F`         |  ✘  |
+| 41 | T2 | `02-making-decisions/QCAP03_29` | `E`           | `C`         |  ✘  |
+| 42 | T9 | `09-io-api/QCAP14_16` | `A, F`        | `A, D`      |  ✘  |
+| 43 | T1 | `15-core-apis/QCAP04_01` | `C`           | `F`         |  ✘  |
+| 44 | T2 | `02-making-decisions/QCAP03_02` | `C`           | `A, B, C`       |  ✘  |
+| 45 | T3 | `01-building-blocks/QCAP01_18` | `C, F, G`     | `B, C, F`       |  ✘  |
+| 46 | T4 | `04-exceptions-localization/QCAP11_23` | `A, E`        | `A, E`       |  ✔  |
+| 47 | T8 | `13-concurrency/QCAP13_03` | `B, C, F`     | `B, C, F`       |  ✔  |
+| 48 | T1 | `15-core-apis/QCAP04_16` | `B, D`        | `A, G`       |  ✘  |
+| 49 | T1 | `01-building-blocks/QCAP01_07` | `A, B`        | `C, E`       |  ✘  |
+| 50 | T3 | `01-beyond-classes/QCAP07_18` | `G`           | `E`          |  ✘  |
 
-**Resultado:** ___ / 50 (___%) · Tempo: ___ min · Data: ___/___/______
+¹ Gabarito corrigido: o enunciado deslocou as letras (o conteúdo do `module-info.java` virou a alternativa A); o original `B, C` era contraditório.
+
+**Resultado:** 16 / 50 (32%) · Tempo: 116 min · Data: 02/11/2026
+
+> Erros analisados por tópico em [`docs/ocp-study/error-log.md`](../ocp-study/error-log.md).
 
 | Tópico | Acertos |
-|---|--:|
-| T1 Data, hora, texto, números e booleanos | ___ / 6 |
-| T2 Controle de fluxo | ___ / 4 |
-| T3 Princípios de orientação a objetos | ___ / 11 |
-| T4 Tratamento de exceções | ___ / 4 |
-| T5 Arrays e coleções | ___ / 5 |
-| T6 Streams e expressões lambda | ___ / 7 |
-| T7 Empacotamento e implantação | ___ / 4 |
-| T8 Concorrência (multithreading) | ___ / 4 |
-| T9 E/S (java.io e java.nio.file) | ___ / 3 |
-| T10 Localização | ___ / 2 |
+|---|--------:|
+| T1 Data, hora, texto, números e booleanos |   0 / 6 |
+| T2 Controle de fluxo |   1 / 4 |
+| T3 Princípios de orientação a objetos |  2 / 11 |
+| T4 Tratamento de exceções |   3 / 4 |
+| T5 Arrays e coleções |   2 / 5 |
+| T6 Streams e expressões lambda |   2 / 7 |
+| T7 Empacotamento e implantação |   2 / 4 |
+| T8 Concorrência (multithreading) |   3 / 4 |
+| T9 E/S (java.io e java.nio.file) |   0 / 3 |
+| T10 Localização |   1 / 2 |
