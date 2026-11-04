@@ -23,10 +23,12 @@ import java.util.List;
 public class OperadoresPracticalClass {
 
     public OperadoresPracticalClass() {
+
     }
 
     public static void main(String[] args){
-        operadoresComplementoNegacao();
+        //operadoresComplementoNegacao();
+        qCAP02_04();
     }
 
     /**
@@ -97,6 +99,70 @@ public class OperadoresPracticalClass {
         System.out.println(parkAttendance);    // 1
         System.out.println(parkAttendance--);  // 1
         System.out.println(parkAttendance);    // 0
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 2 ■ Operadores
+     * <p> » » Aplicando Operadores Unários
+     * <p> » » » Operadores de incremento e decremento
+     * </ br>
+     *
+     *  <p> 4. What is the output of the following code snippet?
+     *
+     *  <p> 3: boolean canine = true, wolf = true;
+     *  <p> 4: int teeth = 20;
+     *  <p> 5: canine = (teeth != 10) ^ (wolf=false);
+     *  <p> 6: System.out.println(canine+", "+teeth+", "+wolf);
+     *
+     *  <p> A. true, 20, true
+     *  <p> B. true, 20, false
+     *  <p> C. false, 10, true
+     *  <p> D. false, 20, false
+     *  <p> E. The code will not compile because of line 5.
+     *  <p> F. None of the above.
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void qCAP02_04() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: qCAP02_04() - Cáp. 02 Operadores :: questão 04");
+        System.out.println("###################################################");
+
+        boolean canine = true, wolf = true;
+        int teeth = 20;
+        canine = (teeth != 10) ^ (wolf=false);
+        var w = (true) ^ (false);
+        System.out.println(canine+", "+teeth+", "+wolf);
+        System.out.println("w: "+w);
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 2 ■ Operadores
+     * <p> » » Aplicando Operadores Unários
+     * <p> » » » Operadores de incremento e decremento
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void qCAP02_08() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: qCAP02_08() - Cáp. 02 Operadores :: questão 08");
+        System.out.println("###################################################");
+
+        int pig = (short)4;
+        pig = pig++;
+        long goat = (int)2;
+        //int goat = (long)2; // Pegadinha: Um tipo primitivo maior long, fazendo casting para um tipo primitivo menor int
+        goat -= 1.0;
+        System.out.print(pig + " - " + goat);
 
         System.out.println("###################################################");
     }

@@ -85,3 +85,8 @@ Respondeu no mínimo 10 questões do simulador do exame?
 Quais são as pegadinhas mais comuns no exame?
 
 ```
+
+## Revisões Simulado 01
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap02_04-qcap02_08.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
