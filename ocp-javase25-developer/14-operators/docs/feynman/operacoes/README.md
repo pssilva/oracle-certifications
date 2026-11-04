@@ -90,3 +90,19 @@ Quais são as pegadinhas mais comuns no exame?
 
 <img src="evidencias/imgs/evidencia-revisao-simulado01-qcap02_04-qcap02_08.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
 
+---
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap02_04-P1.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
+---
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap02_04-P2.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
+---
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap02_08-P1.jpeg" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
+---
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap02_08-P2.png" alt="Conceito: Precedência de Operadores" title="Precedência de Operadores" style="width:250px;"/> 
+
