@@ -24,15 +24,15 @@
 What is the result of the following code?
 
 public class Lion {
-   public void roar(String roar1, StringBuilder roar2) {
-      roar1.concat("!!!");
-      roar2.append("!!!");
-   }
-   public static void main(String[] args) {
-      var roar1 = "roar";
-      var roar2 = new StringBuilder("roar");
-      new Lion().roar(roar1, roar2);
-      System.out.println(roar1 + " " + roar2);
+      public void roar(String roar1, StringBuilder roar2) {
+            roar1.concat("!!!");
+            roar2.append("!!!");
+      }
+      public static void main(String[] args) {
+            var roar1 = "roar";
+            var roar2 = new StringBuilder("roar");
+            new Lion().roar(roar1, roar2);
+            System.out.println(roar1 + " " + roar2);
 } }
 
 A. roar roar
@@ -128,11 +128,11 @@ F. It compiles but throws an exception at runtime.
 What is the output of the following?
 
 var result = LocalDate.of(2025, Month.OCTOBER, 31)
-   .plusYears(1)
-   .plusMonths(-5)
-   .plusMonths(1)
-   .withYear(2026)
-   .atTime(LocalTime.of(13, 4));
+      .plusYears(1)
+      .plusMonths(-5)
+      .plusMonths(1)
+      .withYear(2026)
+      .atTime(LocalTime.of(13, 4));
 System.out.println(result);
 
 A. 2025-06-30T13:04
@@ -166,12 +166,12 @@ F. None of the above.
 Which of the following can be inserted without causing a compilation error?
 
 public void remove(List<Character> chars) {
-   char end = 'z';
- 
-   // INSERT LINE HERE
- 
-   Predicate<Character> predicate =  c -> {
-      char start = 'a'; return start <= c && c <= end; };
+      char end = 'z';
+  
+      // INSERT LINE HERE
+  
+      Predicate<Character> predicate =    c -> {
+            char start = 'a'; return start <= c && c <= end; };
 }
 
 A. char start = ’a’;
@@ -201,9 +201,9 @@ G. The data for mutable instance variables may be read, provided they cannot be 
 Which are true about this code? (Choose all that apply.)
 
 var blocky = """
-   squirrel \s
-   pigeon   \
-   termite""";
+      squirrel \s
+      pigeon      \
+      termite""";
 System.out.print(blocky);
 
 A. It outputs two lines.
@@ -261,11 +261,11 @@ E. Compiler error on a different line
 Which of the following can be inserted without causing a compilation error? (Choose all that apply.)
 
 public void remove(List<Character> chars) {
-   char end = 'z';
-   Predicate<Character> predicate = c -> {
-      char start = 'a'; return start <= c && c <= end; };
- 
-   // INSERT LINE HERE
+      char end = 'z';
+      Predicate<Character> predicate = c -> {
+            char start = 'a'; return start <= c && c <= end; };
+  
+      // INSERT LINE HERE
 }
 
 A. char start = ’a’;
@@ -294,11 +294,11 @@ F. private and final
 The following code appears in a file named Ostrich.java. What is the result of compiling the source file?
 
 1: public class Ostrich {
-2:    private int count;
-3:    static class OstrichWrangler {
-4:       public int stampede() {
-5:          return count;
-6:       } } }
+2:        private int count;
+3:        static class OstrichWrangler {
+4:              public int stampede() {
+5:                    return count;
+6:              } } }
 
 A. The code compiles successfully, and one bytecode file is generated: Ostrich.class.
 B. The code compiles successfully, and two bytecode files are generated: Ostrich.class and OstrichWrangler.class.
@@ -312,21 +312,21 @@ E. A compiler error occurs on line 5.
 ```text
 Given the following method, how many lines contain compilation errors?
 
-8:  enum DayOfWeek {
-9:     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
-10:    private DayOfWeek getWeekDay(int day, final int thursday) {
-11:       int otherDay = day;
-12:       int Sunday = 0;
-13:       switch (otherDay) {
-14:          default:
-15:          case 1: continue;
-16:          case thursday: return DayOfWeek.THURSDAY;
-17:          case 2,10: break;
-18:          case Sunday: return DayOfWeek.SUNDAY;
-19:          case DayOfWeek.MONDAY: return DayOfWeek.MONDAY;
-20:       }
-21:       return DayOfWeek.FRIDAY;
-22:    } }
+8:    enum DayOfWeek {
+9:          SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+10:        private DayOfWeek getWeekDay(int day, final int thursday) {
+11:              int otherDay = day;
+12:              int Sunday = 0;
+13:              switch (otherDay) {
+14:                    default:
+15:                    case 1: continue;
+16:                    case thursday: return DayOfWeek.THURSDAY;
+17:                    case 2,10: break;
+18:                    case Sunday: return DayOfWeek.SUNDAY;
+19:                    case DayOfWeek.MONDAY: return DayOfWeek.MONDAY;
+20:              }
+21:              return DayOfWeek.FRIDAY;
+22:        } }
 
 A. None, the code compiles and runs without issue.
 B. 1.
@@ -519,18 +519,18 @@ Which lambda expression, when entered into the blank line in the following code,
 
 import java.util.function.Predicate;
 public class Hyena {
-   private int age = 1;
-   public static void main(String[] args) {
-      var p = new Hyena();
-      double height = 10;
-      int age = 1;
-      testLaugh(p,  ________________);
-      age = 2;
-   }
-   static void testLaugh(Hyena panda, Predicate<Hyena> joke) {
-      var r = joke.test(panda) ? "hahaha" : "silence";
-      System.out.print(r);
-   }
+      private int age = 1;
+      public static void main(String[] args) {
+            var p = new Hyena();
+            double height = 10;
+            int age = 1;
+            testLaugh(p,    ________________);
+            age = 2;
+      }
+      static void testLaugh(Hyena panda, Predicate<Hyena> joke) {
+            var r = joke.test(panda) ? "hahaha" : "silence";
+            System.out.print(r);
+      }
 }
 
 A. var -> p.age <= 10
@@ -566,7 +566,7 @@ Which statement about the following program is correct?
 17:        public static void main(String… sing) {
 18:              Bird p = new Macaw(4);
 19:              System.out.print(((Parrot)p.fly()).feathers);
-20:      } }
+20:        } }
 
 A. One line contains a compiler error.
 B. Two lines contain compiler errors.
@@ -581,16 +581,16 @@ F. The program compiles and prints 0.
 ```text
 What is the output of the following code snippet?
 
-6:  String instrument = "violin";
-7:  final String CELLO = "cello";
-8:  String viola = "viola";
-9:  int p = -1;
+6:    String instrument = "violin";
+7:    final String CELLO = "cello";
+8:    String viola = "viola";
+9:    int p = -1;
 10: switch (instrument) {
-11:    case "bass" : break;
-12:    case CELLO : p++;
-13:    default: p++;
-14:    case "VIOLIN": p++;
-15:    case "viola" : ++p; break;
+11:        case "bass" : break;
+12:        case CELLO : p++;
+13:        default: p++;
+14:        case "VIOLIN": p++;
+15:        case "viola" : ++p; break;
 16: }
 17: System.out.print(p);
 
@@ -630,10 +630,10 @@ What is the output of the following code snippet?
 
 22: String zooStatus = "Closed";
 23: int visitors = switch (zooStatus) {
-24:    case String s when s.equals("Open") -> 10;
-25:    case Object s when s != null && !s.equals("") -> 20;
-26:    case null -> {yield 30;}
-27:    default -> 40;
+24:        case String s when s.equals("Open") -> 10;
+25:        case Object s when s != null && !s.equals("") -> 20;
+26:        case null -> {yield 30;}
+27:        default -> 40;
 28: };
 29: System.out.print(visitors);
 
@@ -710,18 +710,18 @@ G. jdk.xerces
 What is the output of the following program?
 
 public sealed class ArmoredAnimal permits Armadillo {
-   public ArmoredAnimal(int size) {}
-   @Override public String toString() { return "Strong"; }
-   public static void main(String[] a) {
-      var c = new Armadillo(10, null);
-      System.out.println(c);
-   }
+      public ArmoredAnimal(int size) {}
+      @Override public String toString() { return "Strong"; }
+      public static void main(String[] a) {
+            var c = new Armadillo(10, null);
+            System.out.println(c);
+      }
 }
 class Armadillo extends ArmoredAnimal {
-   @Override public String toString() { return "Cute"; }
-   public Armadillo(int size, String name) {
-      super(size);
-   }   
+      @Override public String toString() { return "Cute"; }
+      public Armadillo(int size, String name) {
+            super(size);
+      }      
 }
 
 A. Strong
@@ -786,12 +786,12 @@ F. A try-with-resources statement with only one statement can omit the {}.
 Which lines can fill in the blank to make the following code compile? (Choose all that apply.)
 
 void rollOut() throws ClassCastException {}
- 
+  
 public void transform(String c) {
-   try {
-      rollOut();
-   } catch (IllegalArgumentException |________________________) {
-   }
+      try {
+            rollOut();
+      } catch (IllegalArgumentException |________________________) {
+      }
 }
 
 A. IOException a
@@ -879,16 +879,16 @@ G. None of the above
 What is the output of calling printLocation(Animal.MAMMAL)?
 
 10: class Zoo {
-11:    enum Animal {BIRD, FISH, MAMMAL}
-12:    void printLocation(Animal a) {
-13:       long type = switch (a) {
-14:          case BIRD -> 1;
-15:          case FISH -> 2;
-16:          case MAMMAL -> 3;
-17:          default -> 4;
-18:       };
-19:       System.out.print(type);
-20:    } }
+11:        enum Animal {BIRD, FISH, MAMMAL}
+12:        void printLocation(Animal a) {
+13:              long type = switch (a) {
+14:                    case BIRD -> 1;
+15:                    case FISH -> 2;
+16:                    case MAMMAL -> 3;
+17:                    default -> 4;
+18:              };
+19:              System.out.print(type);
+20:        } }
 
 A. 3
 B. 4
@@ -939,19 +939,19 @@ Which lambda can replace the new Sloth() call in the main() method and produce t
 
 import java.util.List;
 interface Yawn {
-   String yawn(double d, List<Integer> time);
+      String yawn(double d, List<Integer> time);
 }
 class Sloth implements Yawn {
-   public String yawn(double zzz, List<Integer> time) {
-      return "Sleep: " + zzz;
-   } }
+      public String yawn(double zzz, List<Integer> time) {
+            return "Sleep: " + zzz;
+      } }
 public class Vet {
-   public static String takeNap(Yawn y) {
-      return y.yawn(10, null);
-   }
-   public static void main(String… unused) {
-      System.out.print(takeNap(new Sloth()));
-   } }
+      public static String takeNap(Yawn y) {
+            return y.yawn(10, null);
+      }
+      public static void main(String… unused) {
+            System.out.print(takeNap(new Sloth()));
+      } }
 
 A. (z,f) -> { String x = ""; return "Sleep: " + x }
 B. (t,s) -> { String t = ""; return "Sleep: " + t; }
@@ -988,27 +988,27 @@ F. provides magic.Magic with dragon.Dragon;
 ```text
 What is printed by the following program?
 
-1:  public class DriveBus {
-2:     public void go() {
-3:        System.out.print("A");
-4:        try {
-5:           stop();
-6:        } catch (ArithmeticException e) {
-7:           System.out.print("B");
-8:        } finally {
-9:           System.out.print("C");
-10:       }
-11:       System.out.print("D");
-12:    }
-13:    public void stop() {
-14:       System.out.print("E");
-15:       Object x = null;
-16:       x.toString();
-17:       System.out.print("F");
-18:    }
-19:    public static void main(String n[]) {
-20:       new DriveBus().go();
-21:    } }
+1:    public class DriveBus {
+2:          public void go() {
+3:                System.out.print("A");
+4:                try {
+5:                      stop();
+6:                } catch (ArithmeticException e) {
+7:                      System.out.print("B");
+8:                } finally {
+9:                      System.out.print("C");
+10:              }
+11:              System.out.print("D");
+12:        }
+13:        public void stop() {
+14:              System.out.print("E");
+15:              Object x = null;
+16:              x.toString();
+17:              System.out.print("F");
+18:        }
+19:        public static void main(String n[]) {
+20:              new DriveBus().go();
+21:        } }
 
 A. AE
 B. AEBCD
@@ -1066,14 +1066,14 @@ Suppose that we have the following three properties files and code. Which bundle
 Dolphins.properties
 name=The Dolphin
 age=0
- 
+  
 Dolphins_en.properties
 name=Dolly
 age=4
- 
+  
 Dolphins_fr.properties
 name=Dolly
- 
+  
 5: var fr = Locale.of("fr");
 6: Locale.setDefault(Locale.of("en", "US"));
 7: var b = ResourceBundle.getBundle("Dolphins", fr);

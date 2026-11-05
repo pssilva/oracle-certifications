@@ -27,17 +27,17 @@ List<Integer> myFavoriteNumbers = new ArrayList<>();
 myFavoriteNumbers.add(10);
 myFavoriteNumbers.add(14);
 for (var a : myFavoriteNumbers) {
-   System.out.print(a + ", ");
-   break;
+      System.out.print(a + ", ");
+      break;
 }
- 
+  
 for (int b : myFavoriteNumbers) {
-   continue;
-   System.out.print(b + ", ");
+      continue;
+      System.out.print(b + ", ");
 }
- 
+  
 for (Object c : myFavoriteNumbers)
-   System.out.print(c + ", ");
+      System.out.print(c + ", ");
 
 A. It compiles and runs without issue but does not produce any output.
 B. 10, 14,
@@ -144,20 +144,20 @@ G. None of the above
 ```text
 What is the result of the following code?
 
-1:  interface Climb {
-2:     boolean isTooHigh(int height, int limit);
-3:  }
+1:    interface Climb {
+2:          boolean isTooHigh(int height, int limit);
+3:    }
 4:
-5:  public class Climber {
-6:     public static void main(String[] args) {
-7:        check((h, m) -> h.append(m).isEmpty(), 5);
-8:     }
-9:     private static void check(Climb climb, int height) {
-10:       if (climb.isTooHigh(height, 10))
-11:          System.out.println("too high");
-12:       else
-13:          System.out.println("ok");
-14:    }
+5:    public class Climber {
+6:          public static void main(String[] args) {
+7:                check((h, m) -> h.append(m).isEmpty(), 5);
+8:          }
+9:          private static void check(Climb climb, int height) {
+10:              if (climb.isTooHigh(height, 10))
+11:                    System.out.println("too high");
+12:              else
+13:                    System.out.println("ok");
+14:        }
 15: }
 
 A. ok
@@ -174,14 +174,14 @@ F. A runtime exception is thrown.
 What is the result of the following program?
 
 11: public class Favorites {
-12:    enum Flavors {
-13:       VANILLA, CHOCOLATE, STRAWBERRY
-14:       public Flavors() {}
-15:    }
-16:    public static void main(String[] args) {
-17:       for(final var e : Flavors.values())
-18:          System.out.print((e.ordinal() % 2) + " ");
-19:    } }
+12:        enum Flavors {
+13:              VANILLA, CHOCOLATE, STRAWBERRY
+14:              public Flavors() {}
+15:        }
+16:        public static void main(String[] args) {
+17:              for(final var e : Flavors.values())
+18:                    System.out.print((e.ordinal() % 2) + " ");
+19:        } }
 
 A. 0 1 0
 B. 1 0 1
@@ -233,7 +233,7 @@ What does the following program print?
 12:              m.setName("Webby");
 13:              t.setName("Olivia");
 14:              System.out.println(m.name + " " + t.name);
-15:    } }
+15:        } }
 
 A. Elysia Sophia
 B. Webby Olivia
@@ -261,16 +261,16 @@ F. pre-increment, post-decrement
 ```text
 What is the output of the following code snippet?
 
-9:  int w = 0, r = 1;
+9:    int w = 0, r = 1;
 10: String name = "";
 11: while (w < 2) {
-12:    name += "A";
-13:    do {
-14:       name += "B";
-15:       if (name.length()>0) name += "C";
-16:       else break;
-17:    } while (r <=1);
-18:    r++; w++; }
+12:        name += "A";
+13:        do {
+14:              name += "B";
+15:              if (name.length()>0) name += "C";
+16:              else break;
+17:        } while (r <=1);
+18:        r++; w++; }
 19: System.out.println(name);
 
 A. ABC
@@ -332,13 +332,13 @@ G. None of the above
 What is the minimum number of lines that would need to be changed or removed for the following code to compile and return a value when called with dance(10)?
 
 41: double dance(Object speed) {
-42:    return switch (speed) {
-43:       case 5 -> {yield 4};
-44:       case 10 -> 8;
-45:       case 15,20 -> 12;
-46:       default -> 20;
-47:       case null -> 16;
-48:    }
+42:        return switch (speed) {
+43:              case 5 -> {yield 4};
+44:              case 10 -> 8;
+45:              case 15,20 -> 12;
+46:              default -> 20;
+47:              case null -> 16;
+48:        }
 49: }
 
 A. Zero, the code compiles and runs without issue
@@ -433,13 +433,13 @@ F. The code hangs.
 Which lines of the following interface declarations do not compile? (Choose all that apply.)
 
 1: public interface Omnivore {
-2:    int amount = 10;
-3:    static boolean gather = true;
-4:    static void eatGrass() {}
-5:    int findMore() { return 2; }
-6:    default float rest() { return 2; }
-7:    protected int chew() { return 13; }
-8:    private static void eatLeaves() {}
+2:        int amount = 10;
+3:        static boolean gather = true;
+4:        static void eatGrass() {}
+5:        int findMore() { return 2; }
+6:        default float rest() { return 2; }
+7:        protected int chew() { return 13; }
+8:        private static void eatLeaves() {}
 9: }
 
 A. All of the lines compile without issue.
@@ -559,9 +559,9 @@ G. Serializable
 Which are true about this code? (Choose all that apply.)
 
 var blocky = """
-   squirrel \s
-   pigeon   \
-   termite""";
+      squirrel \s
+      pigeon      \
+      termite""";
 System.out.print(blocky);
 
 A. It outputs two lines.
@@ -592,18 +592,18 @@ Given the following classes, which of the following snippets can independently b
 
 package aquarium;
 public class Water {
-   boolean salty = false;
+      boolean salty = false;
 }
- 
+  
 package aquarium.jellies;
 public class Water {
-   boolean salty = true;
+      boolean salty = true;
 }
- 
+  
 package employee;
 INSERT IMPORTS HERE
 public class WaterFiller {
-   Water water;
+      Water water;
 }
 
 A. import aquarium.*;
@@ -624,9 +624,9 @@ J. None of the above
 What is the output of the following code?
 
 LocalDate date = LocalDate.parse("2025-04-30",
-   DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+      DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 System.out.println(date.getYear() + " "
-   + date.getMonth() + " "+ date.getDayOfMonth());
+      + date.getMonth() + " "+ date.getDayOfMonth());
 
 A. 2025 APRIL 2
 B. 2025 APRIL 30
@@ -662,12 +662,12 @@ F. provides magic.Magic with dragon.Dragon;
 Which lines can fill in the blank to make the following code compile? (Choose all that apply.)
 
 void rollOut() throws ClassCastException {}
- 
+  
 public void transform(String c) {
-   try {
-      rollOut();
-   } catch (IllegalArgumentException |________________________) {
-   }
+      try {
+            rollOut();
+      } catch (IllegalArgumentException |________________________) {
+      }
 }
 
 A. IOException a
@@ -819,27 +819,27 @@ F. sorted and collect(Collectors.toList())
 ```text
 What is printed by the following program?
 
-1:  public class DriveBus {
-2:     public void go() {
-3:        System.out.print("A");
-4:        try {
-5:           stop();
-6:        } catch (ArithmeticException e) {
-7:           System.out.print("B");
-8:        } finally {
-9:           System.out.print("C");
-10:       }
-11:       System.out.print("D");
-12:    }
-13:    public void stop() {
-14:       System.out.print("E");
-15:       Object x = null;
-16:       x.toString();
-17:       System.out.print("F");
-18:    }
-19:    public static void main(String n[]) {
-20:       new DriveBus().go();
-21:    } }
+1:    public class DriveBus {
+2:          public void go() {
+3:                System.out.print("A");
+4:                try {
+5:                      stop();
+6:                } catch (ArithmeticException e) {
+7:                      System.out.print("B");
+8:                } finally {
+9:                      System.out.print("C");
+10:              }
+11:              System.out.print("D");
+12:        }
+13:        public void stop() {
+14:              System.out.print("E");
+15:              Object x = null;
+16:              x.toString();
+17:              System.out.print("F");
+18:        }
+19:        public static void main(String n[]) {
+20:              new DriveBus().go();
+21:        } }
 
 A. AE
 B. AEBCD
@@ -938,10 +938,10 @@ What is printed by the following program?
 11:              System.out.print("3");
 12:        }
 13:        public static void main(String hopping[]) {
-14:          new Gazelle(0);
-15:    }
-16:    static { System.out.print("8"); }
-17:    { System.out.print("9"); }
+14:              new Gazelle(0);
+15:        }
+16:        static { System.out.print("8"); }
+17:        { System.out.print("9"); }
 18: }
 
 A. 182640
@@ -958,20 +958,20 @@ F. The output cannot be determined until runtime.
 What is the output of the following program?
 
 public class SnowStorm {
-   static class WalkToSchool implements AutoCloseable {
-      public void close() {
-         throw new RuntimeException("flurry");
-      } }
-   public static void main(String[] args) {
-      WalkToSchool walk1 = new WalkToSchool();
-      try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
-         throw new RuntimeException("blizzard");
-      } catch(Exception e) {
-         System.out.println(e.getMessage()
-            + " " + e.getSuppressed().length);
-      }
-      walk1 = null;
-   } }
+      static class WalkToSchool implements AutoCloseable {
+            public void close() {
+                  throw new RuntimeException("flurry");
+            } }
+      public static void main(String[] args) {
+            WalkToSchool walk1 = new WalkToSchool();
+            try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
+                  throw new RuntimeException("blizzard");
+            } catch(Exception e) {
+                  System.out.println(e.getMessage()
+                        + " " + e.getSuppressed().length);
+            }
+            walk1 = null;
+      } }
 
 A. blizzard 0
 B. blizzard 1
@@ -989,9 +989,9 @@ What is the result of the following code snippet?
 
 3: int sing = 8, squawk = 2, notes = 0;
 4: while (sing> squawk) {
-5:    sing--;
-6:    squawk += 2;
-7:    notes += sing + squawk;
+5:        sing--;
+6:        squawk += 2;
+7:        notes += sing + squawk;
 8: }
 9: System.out.println(notes);
 
@@ -1074,18 +1074,18 @@ F. It is possible to use a resource bundle for a locale without specifying a def
 What is the output of the following program?
 
 public sealed class ArmoredAnimal permits Armadillo {
-   public ArmoredAnimal(int size) {}
-   @Override public String toString() { return "Strong"; }
-   public static void main(String[] a) {
-      var c = new Armadillo(10, null);
-      System.out.println(c);
-   }
+      public ArmoredAnimal(int size) {}
+      @Override public String toString() { return "Strong"; }
+      public static void main(String[] a) {
+            var c = new Armadillo(10, null);
+            System.out.println(c);
+      }
 }
 class Armadillo extends ArmoredAnimal {
-   @Override public String toString() { return "Cute"; }
-   public Armadillo(int size, String name) {
-      super(size);
-   }   
+      @Override public String toString() { return "Cute"; }
+      public Armadillo(int size, String name) {
+            super(size);
+      }      
 }
 
 A. Strong
@@ -1101,27 +1101,27 @@ E. None of the above.
 Which of the following are valid functional interfaces? (Choose all that apply.)
 
 public interface Transport {
-   public int go();
-   public boolean equals(Object o);
+      public int go();
+      public boolean equals(Object o);
 }
- 
+  
 public abstract class Car {
-   public abstract Object swim(double speed, int duration);
+      public abstract Object swim(double speed, int duration);
 }
- 
+  
 public interface Locomotive extends Train {
-   public int getSpeed();
+      public int getSpeed();
 }
- 
+  
 public interface Train extends Transport {}
- 
+  
 abstract interface Spaceship extends Transport {
-   default int blastOff();
+      default int blastOff();
 }
- 
+  
 public interface Boat {
-   int hashCode();
-   int hashCode(String input);
+      int hashCode();
+      int hashCode(String input);
 }
 
 A. Boat

@@ -74,14 +74,14 @@ F. If the line(s) with compile errors are removed, the code throws a NullPointer
 ```text
 What is the output of the following snippet, assuming a and b are both 0?
 
-3:  try {
-4:     System.out.print(a / b);
-5:  } catch (RuntimeException e) {
-6:     System.out.print(-1);
-7:  } catch (ArithmeticException e) {
-8:     System.out.print(0);
-9:  } finally {
-10:    System.out.print("done");
+3:    try {
+4:          System.out.print(a / b);
+5:    } catch (RuntimeException e) {
+6:          System.out.print(-1);
+7:    } catch (ArithmeticException e) {
+8:          System.out.print(0);
+9:    } finally {
+10:        System.out.print("done");
 11: }
 
 A. -1
@@ -241,12 +241,12 @@ G. None of the above.
 Which lines of the following interface do not compile? (Choose all that apply.)
 
 1: public interface BigCat {
-2:    abstract String getName();
-3:    static int hunt() { getName(); return 5; }
-4:    default void climb() { rest(); }
-5:    private void roar() { getName();  climb(); hunt(); }
-6:    private static boolean sneak() { roar(); return true; }
-7:    private int rest() { return 2; };
+2:        abstract String getName();
+3:        static int hunt() { getName(); return 5; }
+4:        default void climb() { rest(); }
+5:        private void roar() { getName();    climb(); hunt(); }
+6:        private static boolean sneak() { roar(); return true; }
+7:        private int rest() { return 2; };
 8: }
 
 A. Line 2
@@ -331,23 +331,23 @@ F. A runtime exception is thrown.
 ```text
 Which statement about the following class is correct?
 
-1:  public class PoliceBox {
-2:     String color;
-3:     long age;
-4:     public void PoliceBox() {
-5:        color = "blue";
-6:        age = 1200;
-7:     }
-8:     public static void main(String []time) {
-9:        var p = new PoliceBox();
-10:       var q = new PoliceBox();
-11:       p.color = "green";
-12:       p.age = 1400;
-13:       p = q;
-14:       System.out.println("Q1="+q.color);
-15:       System.out.println("Q2="+q.age);
-16:       System.out.println("P1="+p.color);
-17:       System.out.println("P2="+p.age);
+1:    public class PoliceBox {
+2:          String color;
+3:          long age;
+4:          public void PoliceBox() {
+5:                color = "blue";
+6:                age = 1200;
+7:          }
+8:          public static void main(String []time) {
+9:                var p = new PoliceBox();
+10:              var q = new PoliceBox();
+11:              p.color = "green";
+12:              p.age = 1400;
+13:              p = q;
+14:              System.out.println("Q1="+q.color);
+15:              System.out.println("Q2="+q.age);
+16:              System.out.println("P1="+p.color);
+17:              System.out.println("P2="+p.age);
 18: } }
 
 A. It prints Q1=blue.
@@ -379,16 +379,16 @@ G. Serializable
 ```text
 Which of the following changes, when made independently, would make this code compile? (Choose all that apply.)
 
-1:  import java.io.*;
-2:  public class StuckTurkeyCage implements AutoCloseable {
-3:     public void close() throws IOException {
-4:        throw new FileNotFoundException("Cage not closed");
-5:     }
-6:     public static void main(String[] args) {
-7:        try (StuckTurkeyCage t = new StuckTurkeyCage()) {
-8:           System.out.println("put turkeys in");
-9:        }
-10:    } }
+1:    import java.io.*;
+2:    public class StuckTurkeyCage implements AutoCloseable {
+3:          public void close() throws IOException {
+4:                throw new FileNotFoundException("Cage not closed");
+5:          }
+6:          public static void main(String[] args) {
+7:                try (StuckTurkeyCage t = new StuckTurkeyCage()) {
+8:                      System.out.println("put turkeys in");
+9:                }
+10:        } }
 
 A. Remove throws IOException from the declaration on line 3.
 B. Add throws Exception to the declaration on line 6.
@@ -515,15 +515,15 @@ G. The word var is a reserved word in Java.
 What distinct numbers are printed when the following method is executed? (Choose all that apply.)
 
 private void countAttendees() {
-   int participants = 4, animals = 2, performers = -1;
- 
-   while ((participants = participants + 1) < 10) {}
-   do {} while (animals++ <= 1);
-   for ( ; performers < 2; performers += 2) {}
- 
-   System.out.println(participants);
-   System.out.println(animals);
-   System.out.println(performers);
+      int participants = 4, animals = 2, performers = -1;
+  
+      while ((participants = participants + 1) < 10) {}
+      do {} while (animals++ <= 1);
+      for ( ; performers < 2; performers += 2) {}
+  
+      System.out.println(participants);
+      System.out.println(animals);
+      System.out.println(performers);
 }
 
 A. 6
@@ -578,20 +578,20 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Locale.Category;
 public record Wallet(double money) {
-   private String openWallet() {
-      Locale.setDefault(Category.DISPLAY,
-         new Locale.Builder().setRegion("us").build());
-      Locale.setDefault(Category.FORMAT,
-         new Locale.Builder().setLanguage("en").build());
-      return NumberFormat.getCurrencyInstance(Locale.GERMANY)
-         .format(money);
-   }
-   public void printBalance() {
-      System.out.println(openWallet());
-   }   
-   public static void main(String… unused) {
-      new Wallet(2.4).printBalance();
-   } }
+      private String openWallet() {
+            Locale.setDefault(Category.DISPLAY,
+                  new Locale.Builder().setRegion("us").build());
+            Locale.setDefault(Category.FORMAT,
+                  new Locale.Builder().setLanguage("en").build());
+            return NumberFormat.getCurrencyInstance(Locale.GERMANY)
+                  .format(money);
+      }
+      public void printBalance() {
+            System.out.println(openWallet());
+      }      
+      public static void main(String… unused) {
+            new Wallet(2.4).printBalance();
+      } }
 
 A. 2,40 €
 B. $2.40
@@ -625,20 +625,20 @@ F. zonedDateTime.toInstant()
 ```text
 What is the result of the following class?
 
-1:  import java.util.function.*;
+1:    import java.util.function.*;
 2:
-3:  public class Panda {
-4:     int age;
-5:     public static void main(String[] args) {
-6:        Panda p1 = new Panda();
-7:        p1.age = 1;
-8:        check(p1, p -> p.age < 5);
-9:     }
-10:    private static void check(Panda panda,
-11:       Predicate<Panda> pred) {
-12:       String result =
-13:          pred.test(panda) ? "match" : "not match";
-14:       System.out.print(result);
+3:    public class Panda {
+4:          int age;
+5:          public static void main(String[] args) {
+6:                Panda p1 = new Panda();
+7:                p1.age = 1;
+8:                check(p1, p -> p.age < 5);
+9:          }
+10:        private static void check(Panda panda,
+11:              Predicate<Panda> pred) {
+12:              String result =
+13:                    pred.test(panda) ? "match" : "not match";
+14:              System.out.print(result);
 15: } }
 
 A.match
@@ -672,13 +672,13 @@ F. s.parallel()
 Assuming the current locale uses dollars ($) and the following method is called with a double value of 100_102.2, which of the following values are printed? (Choose all that apply.)
 
 public void print(double t) {
-   System.out.print(NumberFormat.getCompactNumberInstance().format(t));
- 
-   System.out.print(
-      NumberFormat.getCompactNumberInstance(
-         Locale.getDefault(), Style.SHORT).format(t));
- 
-   System.out.print(NumberFormat.getCurrencyInstance().format(t));
+      System.out.print(NumberFormat.getCompactNumberInstance().format(t));
+  
+      System.out.print(
+            NumberFormat.getCompactNumberInstance(
+                  Locale.getDefault(), Style.SHORT).format(t));
+  
+      System.out.print(NumberFormat.getCurrencyInstance().format(t));
 }
 
 A. 100
@@ -699,7 +699,7 @@ var huey = (String)null;
 Integer dewey = null;
 Object louie = null;
 if(louie == huey.substring(dewey.intValue())) {
-   System.out.println("Quack!");
+      System.out.println("Quack!");
 }
 
 A. A NullPointerException that does not include any variable names in the stack trace
@@ -837,7 +837,7 @@ G. The code does not compile.
 Which of these statements is true about the following code?
 
 public void method() {
-   x((var x) -> {}, (var x, var y) -> false);
+      x((var x) -> {}, (var x, var y) -> false);
 }
 public void x(Consumer<String> x, BinaryOperator<Boolean> y) {}
 
@@ -897,18 +897,18 @@ G. The hashCode() method
 What is the result of the following program?
 
 public class Weather {
-   enum Seasons {
-      WINTER, SPRING, SUMMER, FALL
-   }
- 
-   public static void main(String[] args) {
-      Seasons v = null;
-      switch (v) {
-         case Seasons.SPRING -> System.out.print("s");
-         case Seasons.WINTER -> System.out.print("w");
-         case Seasons.SUMMER -> System.out.print("m");
-         default -> System.out.println("missing data"); }
-   } }
+      enum Seasons {
+            WINTER, SPRING, SUMMER, FALL
+      }
+  
+      public static void main(String[] args) {
+            Seasons v = null;
+            switch (v) {
+                  case Seasons.SPRING -> System.out.print("s");
+                  case Seasons.WINTER -> System.out.print("w");
+                  case Seasons.SUMMER -> System.out.print("m");
+                  default -> System.out.println("missing data"); }
+      } }
 
 A. s
 B. w
@@ -928,26 +928,26 @@ char[] wolf = {'W', 'e', 'b', 'b', 'y'};
 
 A. int q = wolf.length;
 for ( ; ; ) {
-   System.out.print(wolf[--q]);
-   if (q==0) break;
+      System.out.print(wolf[--q]);
+      if (q==0) break;
 }
 
 B. for (int m=wolf.length-1; m>=0; --m)
-   System.out.print(wolf[m]);
+      System.out.print(wolf[m]);
 
 C. for (int z=0; z<wolf.length; z++)
-   System.out.print(wolf[wolf.length-z]);
+      System.out.print(wolf[wolf.length-z]);
 
 D. int x = wolf.length-1;
 for (int j=0; x>=0 && j==0; x--)
-   System.out.print(wolf[x]);
+      System.out.print(wolf[x]);
 
 E. final int r = wolf.length;
 for (int w = r-1; r>-1; w = r-1)
-   System.out.print(wolf[w]);
+      System.out.print(wolf[w]);
 
 F. for (int i=wolf.length; i>0; --i)
-   System.out.print(wolf[i]);
+      System.out.print(wolf[i]);
 
 G. None of the above
 ```
@@ -958,9 +958,9 @@ G. None of the above
 Assuming weather is a well-formed nonempty array, which code snippet, when inserted independently into the blank in the following code, prints all of the elements of weather? (Choose all that apply.)
 
 private void print(int[] weather) {
-   for () {
-      System.out.println(weather[i]);
-   }
+      for () {
+            System.out.println(weather[i]);
+      }
 }
 
 A. int i=weather.length; i>0; i--
@@ -1010,11 +1010,11 @@ What is printed by the following code snippet?
 23: byte amphibian = 2;
 24: String name = "Salamander";
 25: String color = switch (amphibian) {
-26:    case 1 -> { yield "Red"; }
-27:    case 2 -> { if (name.equals("Frog")) yield "Green";
-28:                yield "Blue"; }
-29:    case 3 -> { yield "Purple"; }
-30:    default -> throw new RuntimeException();
+26:        case 1 -> { yield "Red"; }
+27:        case 2 -> { if (name.equals("Frog")) yield "Green";
+28:                                yield "Blue"; }
+29:        case 3 -> { yield "Purple"; }
+30:        default -> throw new RuntimeException();
 31: };
 32: System.out.print(color);
 
@@ -1076,8 +1076,8 @@ G. None of the above.
 Which of the following expressions, when inserted independently into the blank line, allow the code to compile? (Choose all that apply.)
 
 public void printMagicData() {
-   var magic = ;
-   System.out.println(magic);
+      var magic = ;
+      System.out.println(magic);
 }
 
 A. 3_1

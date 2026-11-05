@@ -93,13 +93,13 @@ G. None of the above.
 Assuming the current locale uses dollars ($) and the following method is called with a double value of 100_102.2, which of the following values are printed? (Choose all that apply.)
 
 public void print(double t) {
-   System.out.print(NumberFormat.getCompactNumberInstance().format(t));
- 
-   System.out.print(
-      NumberFormat.getCompactNumberInstance(
-         Locale.getDefault(), Style.SHORT).format(t));
- 
-   System.out.print(NumberFormat.getCurrencyInstance().format(t));
+      System.out.print(NumberFormat.getCompactNumberInstance().format(t));
+  
+      System.out.print(
+            NumberFormat.getCompactNumberInstance(
+                  Locale.getDefault(), Style.SHORT).format(t));
+  
+      System.out.print(NumberFormat.getCurrencyInstance().format(t));
 }
 
 A. 100
@@ -143,19 +143,19 @@ F. None of the above
 Given the following program, what can be inserted into the blank line that would allow it to print Swim! at runtime?
 
 interface Swim {
-   default void perform() { System.out.print("Swim!"); }
+      default void perform() { System.out.print("Swim!"); }
 }
 interface Dance {
-   default void perform() { System.out.print("Dance!"); }
+      default void perform() { System.out.print("Dance!"); }
 }
 public class Penguin implements Swim, Dance {
-   public void perform() { System.out.print("Smile!"); }
-   private void doShow() {
-      ____________________;
-   }
-   public static void main(String[] eggs) {
-      new Penguin().doShow();
-   } }
+      public void perform() { System.out.print("Smile!"); }
+      private void doShow() {
+            ____________________;
+      }
+      public static void main(String[] eggs) {
+            new Penguin().doShow();
+      } }
 
 A. super.perform()
 B. Swim.perform()
@@ -183,13 +183,13 @@ E. You can use access modifiers to restrict access to all classes that begin wit
 Which lambda can replace the MySecret class to return the same value? (Choose all that apply.)
 
 interface Secret {
-   String magic(double d);
+      String magic(double d);
 }
- 
+  
 class MySecret implements Secret {
-   public String magic(double d) {
-      return "Poof";
-   } }
+      public String magic(double d) {
+            return "Poof";
+      } }
 
 A. (e) -> "Poof"
 B. (e) -> {"Poof"}
@@ -227,16 +227,16 @@ H. The result cannot be determined.
 ```text
 Which of the following changes, when made independently, would make this code compile? (Choose all that apply.)
 
-1:  import java.io.*;
-2:  public class StuckTurkeyCage implements AutoCloseable {
-3:     public void close() throws IOException {
-4:        throw new FileNotFoundException("Cage not closed");
-5:     }
-6:     public static void main(String[] args) {
-7:        try (StuckTurkeyCage t = new StuckTurkeyCage()) {
-8:           System.out.println("put turkeys in");
-9:        }
-10:    } }
+1:    import java.io.*;
+2:    public class StuckTurkeyCage implements AutoCloseable {
+3:          public void close() throws IOException {
+4:                throw new FileNotFoundException("Cage not closed");
+5:          }
+6:          public static void main(String[] args) {
+7:                try (StuckTurkeyCage t = new StuckTurkeyCage()) {
+8:                      System.out.println("put turkeys in");
+9:                }
+10:        } }
 
 A. Remove throws IOException from the declaration on line 3.
 B. Add throws Exception to the declaration on line 6.
@@ -252,7 +252,7 @@ F. None of the above.
 Which of the following can be inserted on line 8 to make this code compile? (Choose all that apply.)
 
 7: public void whatHappensNext() throws IOException {
-8:    // INSERT CODE HERE
+8:        // INSERT CODE HERE
 9: }
 
 A. System.out.println("it’s ok");
@@ -300,20 +300,20 @@ F. public ArrayList<String> hairy(List<String> list) { return null; }
 ```text
 What is the result of the following code?
 
-1:  interface Climb {
-2:     boolean isTooHigh(int height, int limit);
-3:  }
+1:    interface Climb {
+2:          boolean isTooHigh(int height, int limit);
+3:    }
 4:
-5:  public class Climber {
-6:     public static void main(String[] args) {
-7:        check((h, m) -> h.append(m).isEmpty(), 5);
-8:     }
-9:     private static void check(Climb climb, int height) {
-10:       if (climb.isTooHigh(height, 10))
-11:          System.out.println("too high");
-12:       else
-13:          System.out.println("ok");
-14:    }
+5:    public class Climber {
+6:          public static void main(String[] args) {
+7:                check((h, m) -> h.append(m).isEmpty(), 5);
+8:          }
+9:          private static void check(Climb climb, int height) {
+10:              if (climb.isTooHigh(height, 10))
+11:                    System.out.println("too high");
+12:              else
+13:                    System.out.println("ok");
+14:        }
 15: }
 
 A. ok
@@ -534,23 +534,23 @@ F. juggle(true, new boolean[2]);
 ```text
 What does the following program print?
 
-1:  public class Zebra {
-2:     private int x = 24;
-3:     public int hunt() {
-4:        String message = "x is ";
-5:        abstract class Stripes {
-6:           private int x = 0;
-7:           public void print() {
-8:              System.out.print(message + Zebra.this.x);
-9:           }
-10:       }
-11:       var s = new Stripes() {};
-12:       s.print();
-13:       return x;
-14:    }
-15:    public static void main(String[] args) {
-16:       new Zebra().hunt();
-17:    } }
+1:    public class Zebra {
+2:          private int x = 24;
+3:          public int hunt() {
+4:                String message = "x is ";
+5:                abstract class Stripes {
+6:                      private int x = 0;
+7:                      public void print() {
+8:                            System.out.print(message + Zebra.this.x);
+9:                      }
+10:              }
+11:              var s = new Stripes() {};
+12:              s.print();
+13:              return x;
+14:        }
+15:        public static void main(String[] args) {
+16:              new Zebra().hunt();
+17:        } }
 
 A. x is 0
 B. x is 24
@@ -566,15 +566,15 @@ F. None of the above.
 What does the following method print?
 
 11: public void tryAgain(String s) {
-12:    try (FileReader r = null, p = new FileReader("")) {
-13:       System.out.print("X");
-14:       throw new IllegalArgumentException();
-15:    } catch (Exception s) {
-16:       System.out.print("A");
-17:       throw new FileNotFoundException();
-18:    } finally {
-19:       System.out.print("O");
-20:    }
+12:        try (FileReader r = null, p = new FileReader("")) {
+13:              System.out.print("X");
+14:              throw new IllegalArgumentException();
+15:        } catch (Exception s) {
+16:              System.out.print("A");
+17:              throw new FileNotFoundException();
+18:        } finally {
+19:              System.out.print("O");
+20:        }
 21: }
 
 A. XAO
@@ -611,14 +611,14 @@ What types can be inserted in the blanks on the lines marked X and Z that allow 
 interface Walk { private static List move() { return null; } }
 interface Run extends Walk { public ArrayList move(); }
 class Leopard implements Walk {
-   public ___________ move() {  // X
-      return null;
-   }
+      public ___________ move() {    // X
+            return null;
+      }
 }
 class Panther implements Run {
-   public  move(___________) {  // Z
-      return null;
-   }
+      public    move(___________) {    // Z
+            return null;
+      }
 }
 
 A. Integer on the line marked X
@@ -636,7 +636,7 @@ G. Does not compile for a different reason.
 What is the result of the following code? (Choose all that apply.)
 
 13: String s1 = """
-14:    purr""";
+14:        purr""";
 15: String s2 = "";
 16:
 17: s1.toUpperCase();
@@ -670,14 +670,14 @@ Suppose that we have the following three properties files and code. Which bundle
 Dolphins.properties
 name=The Dolphin
 age=0
- 
+  
 Dolphins_en.properties
 name=Dolly
 age=4
- 
+  
 Dolphins_fr.properties
 name=Dolly
- 
+  
 5: var fr = Locale.of("fr");
 6: Locale.setDefault(Locale.of("en", "US"));
 7: var b = ResourceBundle.getBundle("Dolphins", fr);
@@ -773,15 +773,15 @@ F. (StringBuilder s) --> s.isEmpty()
 What is the output of calling printType(11)?
 
 31: void printType(Object o) {
-32:    if (o instanceof Integer bat) {
-33:       System.out.print("int");
-34:    } else if (o instanceof Integer bat && bat < 10) {
-35:       System.out.print("small int");
-36:    } else if (o instanceof Long bat || bat <= 20) {
-37:       System.out.print("long");
-38:    } default {
-39:       System.out.print("unknown");
-40:    }
+32:        if (o instanceof Integer bat) {
+33:              System.out.print("int");
+34:        } else if (o instanceof Integer bat && bat < 10) {
+35:              System.out.print("small int");
+36:        } else if (o instanceof Long bat || bat <= 20) {
+37:              System.out.print("long");
+38:        } default {
+39:              System.out.print("unknown");
+40:        }
 41: }
 
 A. int
@@ -819,20 +819,20 @@ F. The code does not contain any compiler errors.
 ```text
 What is the result of running the following class?
 
-1:  import java.util.function.*;
+1:    import java.util.function.*;
 2:
-3:  public class Panda {
-4:     int age;
-5:     public static void main(String[] args) {
-6:        Panda p1 = new Panda();
-7:        p1.age = 1;
-8:        check(p1, p -> {p.age < 5});
-9:     }
-10:    private static void check(Panda panda,
-11:       Predicate<Panda> pred) {
-12:       String result = pred.test(panda)
-13:          ? "match" : "not match";
-14:       System.out.print(result);
+3:    public class Panda {
+4:          int age;
+5:          public static void main(String[] args) {
+6:                Panda p1 = new Panda();
+7:                p1.age = 1;
+8:                check(p1, p -> {p.age < 5});
+9:          }
+10:        private static void check(Panda panda,
+11:              Predicate<Panda> pred) {
+12:              String result = pred.test(panda)
+13:                    ? "match" : "not match";
+14:              System.out.print(result);
 15: } }
 
 A. match
@@ -860,20 +860,20 @@ E. Service provider and service provider interface
 ```text
 What is the result of the following class?
 
-1:  import java.util.function.*;
+1:    import java.util.function.*;
 2:
-3:  public class Panda {
-4:     int age;
-5:     public static void main(String[] args) {
-6:        Panda p1 = new Panda();
-7:        p1.age = 1;
-8:        check(p1, p -> p.age < 5);
-9:     }
-10:    private static void check(Panda panda,
-11:       Predicate<Panda> pred) {
-12:       String result =
-13:          pred.test(panda) ? "match" : "not match";
-14:       System.out.print(result);
+3:    public class Panda {
+4:          int age;
+5:          public static void main(String[] args) {
+6:                Panda p1 = new Panda();
+7:                p1.age = 1;
+8:                check(p1, p -> p.age < 5);
+9:          }
+10:        private static void check(Panda panda,
+11:              Predicate<Panda> pred) {
+12:              String result =
+13:                    pred.test(panda) ? "match" : "not match";
+14:              System.out.print(result);
 15: } }
 
 A.match
@@ -948,9 +948,9 @@ What is the output of the following code snippet?
 2: boolean keepGoing = true;
 3: int result = 15, meters = 10;
 4: do {
-5:    meters--;
-6:    if (meters==8) keepGoing = false;
-7:    result -= 2;
+5:        meters--;
+6:        if (meters==8) keepGoing = false;
+7:        result -= 2;
 8: } while keepGoing;
 9: System.out.println(result);
 
@@ -1026,12 +1026,12 @@ F.Line 8 generates a compiler error.
 What is the output of calling getFish("goldie")?
 
 40: void getFish(Object fish) {
-41:    if (!(fish instanceof String guppy))
-42:       System.out.print("Eat!");
-43:    else if (!(fish instanceof String guppy)) {
-44:       throw new RuntimeException();
-45:    }
-46:    System.out.print("Swim!");
+41:        if (!(fish instanceof String guppy))
+42:              System.out.print("Eat!");
+43:        else if (!(fish instanceof String guppy)) {
+44:              throw new RuntimeException();
+45:        }
+46:        System.out.print("Swim!");
 47: }
 
 A. Eat!

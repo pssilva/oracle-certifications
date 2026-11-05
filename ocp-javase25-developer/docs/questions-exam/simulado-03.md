@@ -23,14 +23,14 @@
 ```text
 What is the result of the following class?
 
-1:  import java.util.function.*;
+1:    import java.util.function.*;
 2:
-3:  public class Panda {
-4:     int age;
-5:     public static void main(String[] args) {
-6:        Panda p1 = new Panda();
-7:        p1.age = 1;
-8:        check(p1, p -> p.age < 5);
+3:    public class Panda {
+4:          int age;
+5:          public static void main(String[] args) {
+6:                Panda p1 = new Panda();
+7:                p1.age = 1;
+8:             check(p1, p -> p.age < 5);
 9:     }
 10:    private static void check(Panda panda,
 11:       Predicate<Panda> pred) {

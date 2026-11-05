@@ -24,15 +24,15 @@
 Which statements about the following code snippet are correct? (Choose all that apply.)
 
 for (var penguin : new int[2])
-   System.out.println(penguin);
- 
+      System.out.println(penguin);
+  
 var ostrich = new Character[3];
 for (var emu : ostrich)
-   System.out.println(emu);
- 
+      System.out.println(emu);
+  
 List<Integer> parrots = new ArrayList<Integer>();
-for (var macaw  : parrots)
-   System.out.println(macaw);
+for (var macaw    : parrots)
+      System.out.println(macaw);
 
 A. The data type of penguin is Integer.
 B. The data type of penguin is int.
@@ -74,7 +74,7 @@ F. sorted and collect(Collectors.toList())
 Which of these statements is true about the following code?
 
 public void method() {
-   x((var x) -> {}, (var x, var y) -> false);
+      x((var x) -> {}, (var x, var y) -> false);
 }
 public void x(Consumer<String> x, BinaryOperator<Boolean> y) {}
 
@@ -121,19 +121,19 @@ G. None of the above
 ```text
 Which statements about the following class are true? (Choose all that apply.)
 
-1:  public class River {
-2:     int Depth = 1;
-3:     float temp = 50.0;
-4:     public void flow() {
-5:        for (int i = 0; i < 1; i++) {
-6:           int depth = 2;
-7:           depth++;
-8:           temp--;
-9:        }
-10:       System.out.println(depth);
-11:       System.out.println(temp); }
-12:    public static void main(String… s) {
-13:       new River().flow();
+1:    public class River {
+2:          int Depth = 1;
+3:          float temp = 50.0;
+4:          public void flow() {
+5:                for (int i = 0; i < 1; i++) {
+6:                      int depth = 2;
+7:                      depth++;
+8:                      temp--;
+9:                }
+10:              System.out.println(depth);
+11:              System.out.println(temp); }
+12:        public static void main(String… s) {
+13:              new River().flow();
 14: } }
 
 A. Line 3 generates a compiler error.
@@ -169,20 +169,20 @@ G. None of the above, as the first line does not compile
 ```text
 What is the result of running the following class?
 
-1:  import java.util.function.*;
+1:    import java.util.function.*;
 2:
-3:  public class Panda {
-4:     int age;
-5:     public static void main(String[] args) {
-6:        Panda p1 = new Panda();
-7:        p1.age = 1;
-8:        check(p1, p -> {p.age < 5});
-9:     }
-10:    private static void check(Panda panda,
-11:       Predicate<Panda> pred) {
-12:       String result = pred.test(panda)
-13:          ? "match" : "not match";
-14:       System.out.print(result);
+3:    public class Panda {
+4:          int age;
+5:          public static void main(String[] args) {
+6:                Panda p1 = new Panda();
+7:                p1.age = 1;
+8:                check(p1, p -> {p.age < 5});
+9:          }
+10:        private static void check(Panda panda,
+11:              Predicate<Panda> pred) {
+12:              String result = pred.test(panda)
+13:                    ? "match" : "not match";
+14:              System.out.print(result);
 15: } }
 
 A. match
@@ -214,7 +214,7 @@ var huey = (String)null;
 Integer dewey = null;
 Object louie = null;
 if(louie == huey.substring(dewey.intValue())) {
-   System.out.println("Quack!");
+      System.out.println("Quack!");
 }
 
 A. A NullPointerException that does not include any variable names in the stack trace
@@ -234,14 +234,14 @@ Suppose that we have the following three properties files and code. Which bundle
 Dolphins.properties
 name=The Dolphin
 age=0
- 
+  
 Dolphins_en.properties
 name=Dolly
 age=4
- 
+  
 Dolphins_fr.properties
 name=Dolly
- 
+  
 5: var fr = Locale.of("fr");
 6: Locale.setDefault(Locale.of("en", "US"));
 7: var b = ResourceBundle.getBundle("Dolphins", fr);
@@ -283,18 +283,18 @@ Given the following classes, which of the following snippets can independently b
 
 package aquarium;
 public class Water {
-   boolean salty = false;
+      boolean salty = false;
 }
- 
+  
 package aquarium.jellies;
 public class Water {
-   boolean salty = true;
+      boolean salty = true;
 }
- 
+  
 package employee;
 INSERT IMPORTS HERE
 public class WaterFiller {
-   Water water;
+      Water water;
 }
 
 A. import aquarium.*;
@@ -315,12 +315,12 @@ J. None of the above
 Which of the following can be inserted without causing a compilation error?
 
 public void remove(List<Character> chars) {
-   char end = 'z';
- 
-   // INSERT LINE HERE
- 
-   Predicate<Character> predicate =  c -> {
-      char start = 'a'; return start <= c && c <= end; };
+      char end = 'z';
+  
+      // INSERT LINE HERE
+  
+      Predicate<Character> predicate =    c -> {
+            char start = 'a'; return start <= c && c <= end; };
 }
 
 A. char start = ’a’;
@@ -336,19 +336,19 @@ E. None of the above
 What is printed by the following program?
 
 public class Deer {
-   enum Food {APPLES, BERRIES, GRASS}
-   protected class Diet {
-      private Food getFavorite() {
-         return Food.BERRIES;
-      }
-   }
-   public static void main(String[] seasons) {
-      System.out.print(switch(new Diet().getFavorite()) {
-         case APPLES -> "a";
-         case BERRIES -> "b";
-         default -> "c";
-      });
-   } }
+      enum Food {APPLES, BERRIES, GRASS}
+      protected class Diet {
+            private Food getFavorite() {
+                  return Food.BERRIES;
+            }
+      }
+      public static void main(String[] seasons) {
+            System.out.print(switch(new Diet().getFavorite()) {
+                  case APPLES -> "a";
+                  case BERRIES -> "b";
+                  default -> "c";
+            });
+      } }
 
 A. a
 B. b
@@ -365,19 +365,19 @@ G. None of the above.
 Given the following program, what can be inserted into the blank line that would allow it to print Swim! at runtime?
 
 interface Swim {
-   default void perform() { System.out.print("Swim!"); }
+      default void perform() { System.out.print("Swim!"); }
 }
 interface Dance {
-   default void perform() { System.out.print("Dance!"); }
+      default void perform() { System.out.print("Dance!"); }
 }
 public class Penguin implements Swim, Dance {
-   public void perform() { System.out.print("Smile!"); }
-   private void doShow() {
-      ____________________;
-   }
-   public static void main(String[] eggs) {
-      new Penguin().doShow();
-   } }
+      public void perform() { System.out.print("Smile!"); }
+      private void doShow() {
+            ____________________;
+      }
+      public static void main(String[] eggs) {
+            new Penguin().doShow();
+      } }
 
 A. super.perform()
 B. Swim.perform()
@@ -437,23 +437,23 @@ F. jpackage and jlink
 ```text
 What does the following program print?
 
-1:  public class Zebra {
-2:     private int x = 24;
-3:     public int hunt() {
-4:        String message = "x is ";
-5:        abstract class Stripes {
-6:           private int x = 0;
-7:           public void print() {
-8:              System.out.print(message + Zebra.this.x);
-9:           }
-10:       }
-11:       var s = new Stripes() {};
-12:       s.print();
-13:       return x;
-14:    }
-15:    public static void main(String[] args) {
-16:       new Zebra().hunt();
-17:    } }
+1:    public class Zebra {
+2:          private int x = 24;
+3:          public int hunt() {
+4:                String message = "x is ";
+5:                abstract class Stripes {
+6:                      private int x = 0;
+7:                      public void print() {
+8:                            System.out.print(message + Zebra.this.x);
+9:                      }
+10:              }
+11:              var s = new Stripes() {};
+12:              s.print();
+13:              return x;
+14:        }
+15:        public static void main(String[] args) {
+16:              new Zebra().hunt();
+17:        } }
 
 A. x is 0
 B. x is 24
@@ -468,17 +468,17 @@ F. None of the above.
 ```text
 Which statements, when inserted into the following blanks, allow the code to compile and run without entering an infinite loop? (Choose all that apply.)
 
-4:  int height = 1;
-5:  L1: while (height++ <10) {
-6:     long humidity = 12;
-7:     L2: do {
-8:        if (humidity-- % 12 == 0) ;
-9:        int temperature = 30;
-10:       L3: for ( ; ; ) {
-11:          temperature++;
-12:          if (temperature>50) ;
-13:       }
-14:    } while (humidity> 4);
+4:    int height = 1;
+5:    L1: while (height++ <10) {
+6:          long humidity = 12;
+7:          L2: do {
+8:                if (humidity-- % 12 == 0) ;
+9:                int temperature = 30;
+10:              L3: for ( ; ; ) {
+11:                    temperature++;
+12:                    if (temperature>50) ;
+13:              }
+14:        } while (humidity> 4);
 15: }
 
 A. break L2 on line 8; continue L2 on line 12
@@ -555,12 +555,12 @@ F. Map<String, ? extends Number> hm = new HashMap<String, Integer>();
 What is output by the following code?
 
 1: public class Fish {
-2:    public static void main(String[] args) {
-3:       int numFish = 4;
-4:       String fishType = "tuna";
-5:       String anotherFish = numFish + 1;
-6:       System.out.println(anotherFish + " " + fishType);
-7:       System.out.println(numFish + " " + 1);
+2:        public static void main(String[] args) {
+3:              int numFish = 4;
+4:              String fishType = "tuna";
+5:              String anotherFish = numFish + 1;
+6:              System.out.println(anotherFish + " " + fishType);
+7:              System.out.println(numFish + " " + 1);
 8: } }
 
 A. 4 1
@@ -578,9 +578,9 @@ Which of the following statements can be inserted in the blank line so that the 
 
 interface CanHop {}
 public class Frog implements CanHop {
-   public static void main(String[] args) {
-      ____________ frog = new TurtleFrog();
-   }
+      public static void main(String[] args) {
+            ____________ frog = new TurtleFrog();
+      }
 }
 
 class BrazilianHornedFrog extends Frog {}
@@ -601,18 +601,18 @@ G. None of the above; the code contains a compilation error.
 Which line allows the code to print Not scared at runtime?
 
 public class Ghost {
-   public static void boo() {
-      System.out.println("Not scared");
-   }
-   protected final class Spirit {
-      public void boo() {
-         System.out.println("Booo!!!");
-      }
-   }
-   public static void main(String… haunt) {
-      var g = new Ghost().new Spirit() {};
-      _______________________________;
-   } }
+      public static void boo() {
+            System.out.println("Not scared");
+      }
+      protected final class Spirit {
+            public void boo() {
+                  System.out.println("Booo!!!");
+            }
+      }
+      public static void main(String… haunt) {
+            var g = new Ghost().new Spirit() {};
+            _______________________________;
+      } }
 
 A. g.boo()
 B. g.super.boo()
@@ -659,16 +659,16 @@ F. None of the above; the code already prints 12345
 Which variables or members are accessible from within the hiss() method? (Choose all that apply.)
 
 13: public class BoaConstrictor {
-14:    private Body body;
-15:    BoaConstrictor(Body b) { this.body = b; }
-16:    private long tail = 10;
-17:    record Body(int stripes) {
-18:       private static int counter = 0;
-19:       int counter() { return counter; }
-20:       Body {
-21:          stripes = stripes + counter++;
-22:       }
-23:       private void hiss() {} } }
+14:        private Body body;
+15:        BoaConstrictor(Body b) { this.body = b; }
+16:        private long tail = 10;
+17:        record Body(int stripes) {
+18:              private static int counter = 0;
+19:              int counter() { return counter; }
+20:              Body {
+21:                    stripes = stripes + counter++;
+22:              }
+23:              private void hiss() {} } }
 
 
 A. counter()
@@ -687,16 +687,16 @@ I. Lines 20–22 do not compile.
 ```text
 What is the output of the following code snippet?
 
-6:  String instrument = "violin";
-7:  final String CELLO = "cello";
-8:  String viola = "viola";
-9:  int p = -1;
+6:    String instrument = "violin";
+7:    final String CELLO = "cello";
+8:    String viola = "viola";
+9:    int p = -1;
 10: switch (instrument) {
-11:    case "bass" : break;
-12:    case CELLO : p++;
-13:    default: p++;
-14:    case "VIOLIN": p++;
-15:    case "viola" : ++p; break;
+11:        case "bass" : break;
+12:        case CELLO : p++;
+13:        default: p++;
+14:        case "VIOLIN": p++;
+15:        case "viola" : ++p; break;
 16: }
 17: System.out.print(p);
 
@@ -865,17 +865,17 @@ F. At most one instance of TicketManager will be created in an application that 
 ```text
 Which statement about the following class is correct?
 
-1:  class Problem extends Exception {
-2:     public Problem() {}
-3:  }
-4:  class YesProblem extends Problem {}
-5:  public class MyDatabase {
-6:     public static void connectToDatabase() throw Problem {
-7:        throws new YesProblem();
-8:     }
-9:     public static void main(String[] c) throw Exception {
-10:       connectToDatabase();
-11:    }
+1:    class Problem extends Exception {
+2:          public Problem() {}
+3:    }
+4:    class YesProblem extends Problem {}
+5:    public class MyDatabase {
+6:          public static void connectToDatabase() throw Problem {
+7:                throws new YesProblem();
+8:          }
+9:          public static void main(String[] c) throw Exception {
+10:              connectToDatabase();
+11:        }
 12: }
 
 A. The code compiles and prints a stack trace for YesProblem at runtime.
@@ -913,19 +913,19 @@ Which of the following, when inserted independently in the blank, use locale par
 
 import java.util.Locale;
 public class ReadMap implements AutoCloseable {
-   private Locale locale;
-   private boolean closed = false;
-   @Override public void close() {
-      System.out.println("Folding map");
-      locale = null;
-      closed = true;
-   }
-   public void open() {
-      this.locale = ____________;
-   }
-   public void use() {
-      // Implementation omitted
-   }
+      private Locale locale;
+      private boolean closed = false;
+      @Override public void close() {
+            System.out.println("Folding map");
+            locale = null;
+            closed = true;
+      }
+      public void open() {
+            this.locale = ____________;
+      }
+      public void use() {
+            // Implementation omitted
+      }
 }
 
 A. Locale.of("xM")
@@ -942,16 +942,16 @@ G. The code does not compile regardless of what is placed in the blank.
 ```text
 Which statement about the following program is correct?
 
-1:  interface HasExoskeleton {
-2:     double size = 2.0f;
-3:     abstract int getNumberOfSections();
-4:  }
-5:  abstract class Insect implements HasExoskeleton {
-6:     abstract int getNumberOfLegs();
-7:  }
-8:  public class Beetle extends Insect {
-9:     int getNumberOfLegs() { return 6; }
-10:    int getNumberOfSections(int count) { return 1; }
+1:    interface HasExoskeleton {
+2:          double size = 2.0f;
+3:          abstract int getNumberOfSections();
+4:    }
+5:    abstract class Insect implements HasExoskeleton {
+6:          abstract int getNumberOfLegs();
+7:    }
+8:    public class Beetle extends Insect {
+9:          int getNumberOfLegs() { return 6; }
+10:        int getNumberOfSections(int count) { return 1; }
 11: }
 
 A. It compiles without issue.
@@ -1000,17 +1000,17 @@ How many times is true printed out by this code?
 
 import java.util.function.Predicate;
 public class Fantasy {
-   public static void scary(String animal) {
-      var dino = s -> "dino".equals(animal);
-      var dragon = s -> "dragon".equals(animal);
-      var combined = dino.or(dragon);
-      System.out.println(combined.test(animal));
-   }
-   public static void main(String[] args) {
-      scary("dino");
-      scary("dragon");
-      scary("unicorn");
-   }
+      public static void scary(String animal) {
+            var dino = s -> "dino".equals(animal);
+            var dragon = s -> "dragon".equals(animal);
+            var combined = dino.or(dragon);
+            System.out.println(combined.test(animal));
+      }
+      public static void main(String[] args) {
+            scary("dino");
+            scary("dragon");
+            scary("unicorn");
+      }
 }
 
 A. One.
@@ -1074,7 +1074,7 @@ var date = LocalDate.of(2025, Month.APRIL, 30);
 date.plusDays(2);
 date.plusYears(3);
 System.out.println(date.getYear() + " " + date.getMonth()
-   + " " + date.getDayOfMonth());
+      + " " + date.getDayOfMonth());
 
 A. 2025 APRIL 30
 B. 2025 MAY 2
@@ -1112,9 +1112,9 @@ F. It produces an infinite loop at runtime.
 Assuming weather is a well-formed nonempty array, which code snippet, when inserted independently into the blank in the following code, prints all of the elements of weather? (Choose all that apply.)
 
 private void print(int[] weather) {
-   for () {
-      System.out.println(weather[i]);
-   }
+      for () {
+            System.out.println(weather[i]);
+      }
 }
 
 A. int i=weather.length; i>0; i--

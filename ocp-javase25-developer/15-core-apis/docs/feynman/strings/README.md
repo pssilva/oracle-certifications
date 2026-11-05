@@ -83,3 +83,13 @@ Respondeu no mínimo 10 questões do simulador do exame?
 Quais são as pegadinhas mais comuns no exame?
 
 ```
+
+## Revisões Simulado 01
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap04_01-2em1.jpeg" alt="Conceito: Text block e String Pool" title="Text block e String Pool" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap04_16-2em1.jpeg" alt="Conceito: Text block e String Pool" title="Text block e String Pool" style="width:250px;"/>
+
+---

@@ -82,16 +82,16 @@ H. The code compiles but throws an exception at runtime.
 Which variables or members are accessible from within the hiss() method? (Choose all that apply.)
 
 13: public class BoaConstrictor {
-14:    private Body body;
-15:    BoaConstrictor(Body b) { this.body = b; }
-16:    private long tail = 10;
-17:    record Body(int stripes) {
-18:       private static int counter = 0;
-19:       int counter() { return counter; }
-20:       Body {
-21:          stripes = stripes + counter++;
-22:       }
-23:       private void hiss() {} } }
+14:        private Body body;
+15:        BoaConstrictor(Body b) { this.body = b; }
+16:        private long tail = 10;
+17:        record Body(int stripes) {
+18:              private static int counter = 0;
+19:              int counter() { return counter; }
+20:              Body {
+21:                    stripes = stripes + counter++;
+22:              }
+23:              private void hiss() {} } }
 
 
 A. counter()
@@ -144,16 +144,16 @@ G. An exception is thrown.
 Which is true of the following code?
 
 int length = 3;
- 
+  
 for (int i = 0; i<3; i++) {
-   if (i%2 == 0) {
-      Supplier<Integer> supplier = () -> length; // A
-      System.out.println(supplier.get());        // B
-   } else {
-      int j = i;
-      Supplier<Integer> supplier = () -> j;      // C
-      System.out.println(supplier.get());        // D
-   }
+      if (i%2 == 0) {
+            Supplier<Integer> supplier = () -> length; // A
+            System.out.println(supplier.get());                // B
+      } else {
+            int j = i;
+            Supplier<Integer> supplier = () -> j;            // C
+            System.out.println(supplier.get());                // D
+      }
 }
 
 A. The first compiler error is on line A.
@@ -260,7 +260,7 @@ Which statement about the following program is correct?
 17:        public static void main(String… sing) {
 18:              Bird p = new Macaw(4);
 19:              System.out.print(((Parrot)p.fly()).feathers);
-20:      } }
+20:        } }
 
 A. One line contains a compiler error.
 B. Two lines contain compiler errors.
@@ -322,12 +322,12 @@ What is the output of the following code snippet?
 
 2: double iguana = 0;
 3: do {
-4:    int snake = 1;
-5:    System.out.print(snake++ + " ");
-6:    iguana--;
+4:        int snake = 1;
+5:        System.out.print(snake++ + " ");
+6:        iguana--;
 7: } while (snake <= 5);
 8: System.out.println(iguana);
- 
+  
 
 A. 1 2 3 4 -4.0
 B. 1 2 3 4 -5.0
@@ -386,20 +386,20 @@ G. The code does not compile.
 What is the output of the following program?
 
 public class SnowStorm {
-   static class WalkToSchool implements AutoCloseable {
-      public void close() {
-         throw new RuntimeException("flurry");
-      } }
-   public static void main(String[] args) {
-      WalkToSchool walk1 = new WalkToSchool();
-      try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
-         throw new RuntimeException("blizzard");
-      } catch(Exception e) {
-         System.out.println(e.getMessage()
-            + " " + e.getSuppressed().length);
-      }
-      walk1 = null;
-   } }
+      static class WalkToSchool implements AutoCloseable {
+            public void close() {
+                  throw new RuntimeException("flurry");
+            } }
+      public static void main(String[] args) {
+            WalkToSchool walk1 = new WalkToSchool();
+            try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
+                  throw new RuntimeException("blizzard");
+            } catch(Exception e) {
+                  System.out.println(e.getMessage()
+                        + " " + e.getSuppressed().length);
+            }
+            walk1 = null;
+      } }
 
 A. blizzard 0
 B. blizzard 1
@@ -417,24 +417,24 @@ What is the output of the following code?
 
 import java.io.*;
 public class FamilyCar {
-   static class Door implements AutoCloseable {
-      public void close() {
-         System.out.print("D");
-   } }
-   static class Window implements Closeable {
-      public void close() {
-         System.out.print("W");
-         throw new RuntimeException();
-   } }
-   public static void main(String[] args) {
-      var d = new Door();
-      try (d; var w = new Window()) {
-         System.out.print("T");
-      } catch (Exception e) {
-         System.out.print("E");
-      } finally {
-         System.out.print("F");
-      } } }
+      static class Door implements AutoCloseable {
+            public void close() {
+                  System.out.print("D");
+      } }
+      static class Window implements Closeable {
+            public void close() {
+                  System.out.print("W");
+                  throw new RuntimeException();
+      } }
+      public static void main(String[] args) {
+            var d = new Door();
+            try (d; var w = new Window()) {
+                  System.out.print("T");
+            } catch (Exception e) {
+                  System.out.print("E");
+            } finally {
+                  System.out.print("F");
+            } } }
 
 A.TWF
 B.TWDF
@@ -554,18 +554,18 @@ Given the following classes, which of the following snippets can independently b
 
 package aquarium;
 public class Water {
-   boolean salty = false;
+      boolean salty = false;
 }
- 
+  
 package aquarium.jellies;
 public class Water {
-   boolean salty = true;
+      boolean salty = true;
 }
- 
+  
 package employee;
 INSERT IMPORTS HERE
 public class WaterFiller {
-   Water water;
+      Water water;
 }
 
 A. import aquarium.*;
@@ -675,17 +675,17 @@ List<Integer> myFavoriteNumbers = new ArrayList<>();
 myFavoriteNumbers.add(10);
 myFavoriteNumbers.add(14);
 for (var a : myFavoriteNumbers) {
-   System.out.print(a + ", ");
-   break;
+      System.out.print(a + ", ");
+      break;
 }
- 
+  
 for (int b : myFavoriteNumbers) {
-   continue;
-   System.out.print(b + ", ");
+      continue;
+      System.out.print(b + ", ");
 }
- 
+  
 for (Object c : myFavoriteNumbers)
-   System.out.print(c + ", ");
+      System.out.print(c + ", ");
 
 A. It compiles and runs without issue but does not produce any output.
 B. 10, 14,
@@ -750,13 +750,13 @@ G. An exception is thrown.
 Which lambda can replace the MySecret class to return the same value? (Choose all that apply.)
 
 interface Secret {
-   String magic(double d);
+      String magic(double d);
 }
- 
+  
 class MySecret implements Secret {
-   public String magic(double d) {
-      return "Poof";
-   } }
+      public String magic(double d) {
+            return "Poof";
+      } }
 
 A. (e) -> "Poof"
 B. (e) -> {"Poof"}
@@ -788,19 +788,19 @@ E. 4
 ```text
 Which statements about the following class are true? (Choose all that apply.)
 
-1:  public class River {
-2:     int Depth = 1;
-3:     float temp = 50.0;
-4:     public void flow() {
-5:        for (int i = 0; i < 1; i++) {
-6:           int depth = 2;
-7:           depth++;
-8:           temp--;
-9:        }
-10:       System.out.println(depth);
-11:       System.out.println(temp); }
-12:    public static void main(String… s) {
-13:       new River().flow();
+1:    public class River {
+2:          int Depth = 1;
+3:          float temp = 50.0;
+4:          public void flow() {
+5:                for (int i = 0; i < 1; i++) {
+6:                      int depth = 2;
+7:                      depth++;
+8:                      temp--;
+9:                }
+10:              System.out.println(depth);
+11:              System.out.println(temp); }
+12:        public static void main(String… s) {
+13:              new River().flow();
 14: } }
 
 A. Line 3 generates a compiler error.
@@ -882,11 +882,11 @@ What is printed by the following code snippet?
 23: byte amphibian = 2;
 24: String name = "Salamander";
 25: String color = switch (amphibian) {
-26:    case 1 -> { yield "Red"; }
-27:    case 2 -> { if (name.equals("Frog")) yield "Green";
-28:                yield "Blue"; }
-29:    case 3 -> { yield "Purple"; }
-30:    default -> throw new RuntimeException();
+26:        case 1 -> { yield "Red"; }
+27:        case 2 -> { if (name.equals("Frog")) yield "Green";
+28:                                yield "Blue"; }
+29:        case 3 -> { yield "Purple"; }
+30:        default -> throw new RuntimeException();
 31: };
 32: System.out.print(color);
 
@@ -921,25 +921,25 @@ G. An exception is thrown.
 Which of the following are valid record declarations? (Choose all that apply.)
 
 public record Iguana(int age) {
-   private static final int age = 10; }
- 
+      private static final int age = 10; }
+  
 public final record Gecko() {}
- 
-public abstract record Chameleon()  {
-   private static String name; }
- 
+  
+public abstract record Chameleon()    {
+      private static String name; }
+  
 public record BeardedDragon(boolean fun) {
-   @Override public boolean fun() { return false; } }
- 
+      @Override public boolean fun() { return false; } }
+  
 public record Reptile(long size) {
-   public Reptile {
-      if(size == 1) throw new IllegalArgumentException();
-   } }
- 
+      public Reptile {
+            if(size == 1) throw new IllegalArgumentException();
+      } }
+  
 public record Newt(double age) extends Reptile {
-   public Newt(double age) {
-      age = this.age % 2 == 0 ? 5 : 10;
-   } }
+      public Newt(double age) {
+            age = this.age % 2 == 0 ? 5 : 10;
+      } }
 
 A. Iguana
 B. Gecko
@@ -967,16 +967,16 @@ E. Path.of(".")
 ```text
 Which of the following changes, when made independently, would make this code compile? (Choose all that apply.)
 
-1:  import java.io.*;
-2:  public class StuckTurkeyCage implements AutoCloseable {
-3:     public void close() throws IOException {
-4:        throw new FileNotFoundException("Cage not closed");
-5:     }
-6:     public static void main(String[] args) {
-7:        try (StuckTurkeyCage t = new StuckTurkeyCage()) {
-8:           System.out.println("put turkeys in");
-9:        }
-10:    } }
+1:    import java.io.*;
+2:    public class StuckTurkeyCage implements AutoCloseable {
+3:          public void close() throws IOException {
+4:                throw new FileNotFoundException("Cage not closed");
+5:          }
+6:          public static void main(String[] args) {
+7:                try (StuckTurkeyCage t = new StuckTurkeyCage()) {
+8:                      System.out.println("put turkeys in");
+9:                }
+10:        } }
 
 A. Remove throws IOException from the declaration on line 3.
 B. Add throws Exception to the declaration on line 6.
@@ -1005,14 +1005,14 @@ F. None of the above.
 Which of the following classes and interfaces do not compile? (Choose all that apply.)
 
 public abstract class Camel { void travel(); }
- 
+  
 public interface EatsGrass { private abstract int chew(); }
- 
+  
 public abstract class Elephant {
-   abstract private class SleepsAlot {
-      abstract int sleep();
-   } }
- 
+      abstract private class SleepsAlot {
+            abstract int sleep();
+      } }
+  
 public class Eagle { abstract soar(); }
 
 public interface Spider { default void crawl() {} }
@@ -1075,17 +1075,17 @@ F. The code compiles but does not terminate at runtime.
 ```text
 Which statement about the following class is correct?
 
-1:  class Problem extends Exception {
-2:     public Problem() {}
-3:  }
-4:  class YesProblem extends Problem {}
-5:  public class MyDatabase {
-6:     public static void connectToDatabase() throw Problem {
-7:        throws new YesProblem();
-8:     }
-9:     public static void main(String[] c) throw Exception {
-10:       connectToDatabase();
-11:    }
+1:    class Problem extends Exception {
+2:          public Problem() {}
+3:    }
+4:    class YesProblem extends Problem {}
+5:    public class MyDatabase {
+6:          public static void connectToDatabase() throw Problem {
+7:                throws new YesProblem();
+8:          }
+9:          public static void main(String[] c) throw Exception {
+10:              connectToDatabase();
+11:        }
 12: }
 
 A. The code compiles and prints a stack trace for YesProblem at runtime.

@@ -89,3 +89,9 @@ Respondeu no mínimo 10 questões do simulador do exame?
 Quais são as pegadinhas mais comuns no exame?
 
 ```
+
+## Revisões Simulado 01
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap04_02-2em1.jpeg" alt="Conceito: Array" title="Array" style="width:250px;"/>
+
+---

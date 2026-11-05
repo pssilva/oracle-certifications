@@ -84,7 +84,7 @@ var date = LocalDate.of(2025, Month.APRIL, 30);
 date.plusDays(2);
 date.plusYears(3);
 System.out.println(date.getYear() + " " + date.getMonth()
-   + " " + date.getDayOfMonth());
+      + " " + date.getDayOfMonth());
 
 A. 2025 APRIL 30
 B. 2025 MAY 2
@@ -101,9 +101,9 @@ G. A runtime exception is thrown.
 What is the output of the following code?
 
 LocalDate date = LocalDate.parse("2025-04-30",
-   DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+      DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 System.out.println(date.getYear() + " "
-   + date.getMonth() + " "+ date.getDayOfMonth());
+      + date.getMonth() + " "+ date.getDayOfMonth());
 
 A. 2025 APRIL 2
 B. 2025 APRIL 30
@@ -165,16 +165,16 @@ F. The code compiles but does not terminate at runtime.
 ```text
 Which of the following changes, when made independently, would make this code compile? (Choose all that apply.)
 
-1:  import java.io.*;
-2:  public class StuckTurkeyCage implements AutoCloseable {
-3:     public void close() throws IOException {
-4:        throw new FileNotFoundException("Cage not closed");
-5:     }
-6:     public static void main(String[] args) {
-7:        try (StuckTurkeyCage t = new StuckTurkeyCage()) {
-8:           System.out.println("put turkeys in");
-9:        }
-10:    } }
+1:    import java.io.*;
+2:    public class StuckTurkeyCage implements AutoCloseable {
+3:          public void close() throws IOException {
+4:                throw new FileNotFoundException("Cage not closed");
+5:          }
+6:          public static void main(String[] args) {
+7:                try (StuckTurkeyCage t = new StuckTurkeyCage()) {
+8:                      System.out.println("put turkeys in");
+9:                }
+10:        } }
 
 A. Remove throws IOException from the declaration on line 3.
 B. Add throws Exception to the declaration on line 6.
@@ -190,13 +190,13 @@ F. None of the above.
 Which statements about the following class are correct? (Choose all that apply.)
 
 1: public class ClownFish {
-2:    int gills = 0, double weight=2;
-3:    { int fins = gills; }
-4:    void print(int length = 3) {
-5:       System.out.println(gills);
-6:       System.out.println(weight);
-7:       System.out.println(fins);
-8:       System.out.println(length);
+2:        int gills = 0, double weight=2;
+3:        { int fins = gills; }
+4:        void print(int length = 3) {
+5:              System.out.println(gills);
+6:              System.out.println(weight);
+7:              System.out.println(fins);
+8:              System.out.println(length);
 9: } }
 
 A. Line 2 generates a compiler error.
@@ -214,14 +214,14 @@ H. The code prints 3.
 ```text
 What is the output of the following snippet, assuming a and b are both 0?
 
-3:  try {
-4:     System.out.print(a / b);
-5:  } catch (RuntimeException e) {
-6:     System.out.print(-1);
-7:  } catch (ArithmeticException e) {
-8:     System.out.print(0);
-9:  } finally {
-10:    System.out.print("done");
+3:    try {
+4:          System.out.print(a / b);
+5:    } catch (RuntimeException e) {
+6:          System.out.print(-1);
+7:    } catch (ArithmeticException e) {
+8:          System.out.print(0);
+9:    } finally {
+10:        System.out.print("done");
 11: }
 
 A. -1
@@ -255,12 +255,12 @@ F. None of the above.
 What is the output of calling getFish("goldie")?
 
 40: void getFish(Object fish) {
-41:    if (!(fish instanceof String guppy))
-42:       System.out.print("Eat!");
-43:    else if (!(fish instanceof String guppy)) {
-44:       throw new RuntimeException();
-45:    }
-46:    System.out.print("Swim!");
+41:        if (!(fish instanceof String guppy))
+42:              System.out.print("Eat!");
+43:        else if (!(fish instanceof String guppy)) {
+44:              throw new RuntimeException();
+45:        }
+46:        System.out.print("Swim!");
 47: }
 
 A. Eat!
@@ -351,11 +351,11 @@ G. A Reader offers multithreading support, making it more useful than an InputSt
 What is the output of the following?
 
 var result = LocalDate.of(2025, Month.OCTOBER, 31)
-   .plusYears(1)
-   .plusMonths(-5)
-   .plusMonths(1)
-   .withYear(2026)
-   .atTime(LocalTime.of(13, 4));
+      .plusYears(1)
+      .plusMonths(-5)
+      .plusMonths(1)
+      .withYear(2026)
+      .atTime(LocalTime.of(13, 4));
 System.out.println(result);
 
 A. 2025-06-30T13:04
@@ -408,13 +408,13 @@ F. " "
 A minimum of how many lines need to be corrected before the following method will compile?
 
 21: void findZookeeper(Integer id) {
-22:    System.out.print(switch (id) {
-23:       case 10 -> {"Jane";}
-24:       case 20 -> {yield "Lisa";};
-25:       case 30 -> "Kelly";
-26:       case 30 -> "Sarah";
-27:       default -> "Unassigned";
-28:    });
+22:        System.out.print(switch (id) {
+23:              case 10 -> {"Jane";}
+24:              case 20 -> {yield "Lisa";};
+25:              case 30 -> "Kelly";
+26:              case 30 -> "Sarah";
+27:              default -> "Unassigned";
+28:        });
 29: }
 
 A. Zero
@@ -431,7 +431,7 @@ F. Five
 What is the result of the following code? (Choose all that apply.)
 
 13: String s1 = """
-14:    purr""";
+14:        purr""";
 15: String s2 = "";
 16:
 17: s1.toUpperCase();
@@ -476,17 +476,17 @@ G. None of the above
 ```text
 Which statements, when inserted into the following blanks, allow the code to compile and run without entering an infinite loop? (Choose all that apply.)
 
-4:  int height = 1;
-5:  L1: while (height++ <10) {
-6:     long humidity = 12;
-7:     L2: do {
-8:        if (humidity-- % 12 == 0) ;
-9:        int temperature = 30;
-10:       L3: for ( ; ; ) {
-11:          temperature++;
-12:          if (temperature>50) ;
-13:       }
-14:    } while (humidity> 4);
+4:    int height = 1;
+5:    L1: while (height++ <10) {
+6:          long humidity = 12;
+7:          L2: do {
+8:                if (humidity-- % 12 == 0) ;
+9:                int temperature = 30;
+10:              L3: for ( ; ; ) {
+11:                    temperature++;
+12:                    if (temperature>50) ;
+13:              }
+14:        } while (humidity> 4);
 15: }
 
 A. break L2 on line 8; continue L2 on line 12
@@ -503,7 +503,7 @@ F. None of the above, as the code contains a compiler error
 Which of these statements is true about the following code?
 
 public void method() {
-   x((var x) -> {}, (var x, var y) -> false);
+      x((var x) -> {}, (var x, var y) -> false);
 }
 public void x(Consumer<String> x, BinaryOperator<Boolean> y) {}
 
@@ -555,18 +555,18 @@ Which lambda expression, when entered into the blank line in the following code,
 
 import java.util.function.Predicate;
 public class Hyena {
-   private int age = 1;
-   public static void main(String[] args) {
-      var p = new Hyena();
-      double height = 10;
-      int age = 1;
-      testLaugh(p,  ________________);
-      age = 2;
-   }
-   static void testLaugh(Hyena panda, Predicate<Hyena> joke) {
-      var r = joke.test(panda) ? "hahaha" : "silence";
-      System.out.print(r);
-   }
+      private int age = 1;
+      public static void main(String[] args) {
+            var p = new Hyena();
+            double height = 10;
+            int age = 1;
+            testLaugh(p,    ________________);
+            age = 2;
+      }
+      static void testLaugh(Hyena panda, Predicate<Hyena> joke) {
+            var r = joke.test(panda) ? "hahaha" : "silence";
+            System.out.print(r);
+      }
 }
 
 A. var -> p.age <= 10
@@ -584,22 +584,22 @@ G. None of the above, as the code does not compile
 What is the output of the following program?
 
 20: public enum Animals {
-21:    MAMMAL(List.of(2,4)),
-22:    INVERTEBRATE(List.of(2, 4, 6, 8, 100)),
-23:    BIRD(null) {
-24:       public int stand() {
-25:          return legs.get(0) + 4;
-26:       }
-27:    };
-28:    List<Integer> legs;
-29:    Animals(List<Integer> legs) {
-30:       this.legs = legs;
-31:    }
-32:    public int stand() { return legs.get(0); }
-33:    public static void main(String[] a) {
-34:       Animals.BIRD.legs = List.of(-1);
-35:       System.out.println(Animals.BIRD.stand());
-36:    } }
+21:        MAMMAL(List.of(2,4)),
+22:        INVERTEBRATE(List.of(2, 4, 6, 8, 100)),
+23:        BIRD(null) {
+24:              public int stand() {
+25:                    return legs.get(0) + 4;
+26:              }
+27:        };
+28:        List<Integer> legs;
+29:        Animals(List<Integer> legs) {
+30:              this.legs = legs;
+31:        }
+32:        public int stand() { return legs.get(0); }
+33:        public static void main(String[] a) {
+34:              Animals.BIRD.legs = List.of(-1);
+35:              System.out.println(Animals.BIRD.stand());
+36:        } }
 
 A. null
 B. -1
@@ -617,9 +617,9 @@ I. None of the above.
 ```text
 Which functional interfaces complete the following code? For line 7, assume m and n are instances of functional interfaces that exist and have the same type as y. (Choose three.)
 
-6:  _____________ x = String::new;
-7:  _____________ y = m.andThen(n);
-8:  _____________ z = a -> a + a;
+6:    _____________ x = String::new;
+7:    _____________ y = m.andThen(n);
+8:    _____________ z = a -> a + a;
 
 A. BinaryConsumer<String, String>
 B. BiConsumer<String, String>
@@ -685,15 +685,15 @@ G. None of the above
 What does the following method print?
 
 11: public void tryAgain(String s) {
-12:    try (FileReader r = null, p = new FileReader("")) {
-13:       System.out.print("X");
-14:       throw new IllegalArgumentException();
-15:    } catch (Exception s) {
-16:       System.out.print("A");
-17:       throw new FileNotFoundException();
-18:    } finally {
-19:       System.out.print("O");
-20:    }
+12:        try (FileReader r = null, p = new FileReader("")) {
+13:              System.out.print("X");
+14:              throw new IllegalArgumentException();
+15:        } catch (Exception s) {
+16:              System.out.print("A");
+17:              throw new FileNotFoundException();
+18:        } finally {
+19:              System.out.print("O");
+20:        }
 21: }
 
 A. XAO
@@ -766,7 +766,7 @@ E. None of the above
 Which of the following can be inserted on line 8 to make this code compile? (Choose all that apply.)
 
 7: public void whatHappensNext() throws IOException {
-8:    // INSERT CODE HERE
+8:        // INSERT CODE HERE
 9: }
 
 A. System.out.println("it’s ok");
@@ -817,11 +817,11 @@ G. It compiles but throws an exception at runtime.
 The following code appears in a file named Ostrich.java. What is the result of compiling the source file?
 
 1: public class Ostrich {
-2:    private int count;
-3:    static class OstrichWrangler {
-4:       public int stampede() {
-5:          return count;
-6:       } } }
+2:        private int count;
+3:        static class OstrichWrangler {
+4:              public int stampede() {
+5:                    return count;
+6:              } } }
 
 A. The code compiles successfully, and one bytecode file is generated: Ostrich.class.
 B. The code compiles successfully, and two bytecode files are generated: Ostrich.class and OstrichWrangler.class.
@@ -1011,9 +1011,9 @@ What is the output of the following code snippet?
 2: boolean keepGoing = true;
 3: int result = 15, meters = 10;
 4: do {
-5:    meters--;
-6:    if (meters==8) keepGoing = false;
-7:    result -= 2;
+5:        meters--;
+6:        if (meters==8) keepGoing = false;
+7:        result -= 2;
 8: } while keepGoing;
 9: System.out.println(result);
 
@@ -1055,18 +1055,18 @@ F. None of the above
 Which line allows the code to print Not scared at runtime?
 
 public class Ghost {
-   public static void boo() {
-      System.out.println("Not scared");
-   }
-   protected final class Spirit {
-      public void boo() {
-         System.out.println("Booo!!!");
-      }
-   }
-   public static void main(String… haunt) {
-      var g = new Ghost().new Spirit() {};
-      _______________________________;
-   } }
+      public static void boo() {
+            System.out.println("Not scared");
+      }
+      protected final class Spirit {
+            public void boo() {
+                  System.out.println("Booo!!!");
+            }
+      }
+      public static void main(String… haunt) {
+            var g = new Ghost().new Spirit() {};
+            _______________________________;
+      } }
 
 A. g.boo()
 B. g.super.boo()
@@ -1155,10 +1155,10 @@ G. None of the above
 Given the following record declaration, which line of code can fill in the blank and allow the code to compile?
 
 public record RabbitFood(int size, String brand, LocalDate expires) {
-   public static int MAX_STORAGE = 100;
-   public RabbitFood() {
-      __________________________;
-   }
+      public static int MAX_STORAGE = 100;
+      public RabbitFood() {
+            __________________________;
+      }
 }
 
 A. size = MAX_STORAGE

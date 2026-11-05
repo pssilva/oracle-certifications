@@ -52,24 +52,24 @@ What is the output of the following code?
 
 import java.io.*;
 public class FamilyCar {
-   static class Door implements AutoCloseable {
-      public void close() {
-         System.out.print("D");
-   } }
-   static class Window implements Closeable {
-      public void close() {
-         System.out.print("W");
-         throw new RuntimeException();
-   } }
-   public static void main(String[] args) {
-      var d = new Door();
-      try (d; var w = new Window()) {
-         System.out.print("T");
-      } catch (Exception e) {
-         System.out.print("E");
-      } finally {
-         System.out.print("F");
-      } } }
+      static class Door implements AutoCloseable {
+            public void close() {
+                  System.out.print("D");
+      } }
+      static class Window implements Closeable {
+            public void close() {
+                  System.out.print("W");
+                  throw new RuntimeException();
+      } }
+      public static void main(String[] args) {
+            var d = new Door();
+            try (d; var w = new Window()) {
+                  System.out.print("T");
+            } catch (Exception e) {
+                  System.out.print("E");
+            } finally {
+                  System.out.print("F");
+            } } }
 
 A.TWF
 B.TWDF
@@ -106,7 +106,7 @@ var date = LocalDate.of(2025, Month.APRIL, 30);
 date.plusDays(2);
 date.plusYears(3);
 System.out.println(date.getYear() + " " + date.getMonth()
-   + " " + date.getDayOfMonth());
+      + " " + date.getDayOfMonth());
 
 A. 2025 APRIL 30
 B. 2025 MAY 2
@@ -175,7 +175,7 @@ var date = LocalDate.of(2025, 4, 3);
 date.plusDays(2);
 date.plusHours(3);
 System.out.println(date.getYear() + " " + date.getMonth()
-    + " " + date.getDayOfMonth());
+        + " " + date.getDayOfMonth());
 
 A. 2025 MARCH 4
 B. 2025 MARCH 6
@@ -247,11 +247,11 @@ abstract class Snake {}
 class Cobra extends Snake {}
 class GardenSnake extends Cobra {}
 public class SnakeHandler {
-   private Snake snakey;
-   public void setSnake(Snake mySnake) { this.snakey = mySnake; }
-   public static void main(String[] args) {
-      new SnakeHandler().setSnake(_____________);
-   } }
+      private Snake snakey;
+      public void setSnake(Snake mySnake) { this.snakey = mySnake; }
+      public static void main(String[] args) {
+            new SnakeHandler().setSnake(_____________);
+      } }
 
 A. new Cobra()
 B. new Snake()
@@ -454,13 +454,13 @@ H. The code compiles but throws an exception at runtime.
 Which statements about the following class are correct? (Choose all that apply.)
 
 1: public class ClownFish {
-2:    int gills = 0, double weight=2;
-3:    { int fins = gills; }
-4:    void print(int length = 3) {
-5:       System.out.println(gills);
-6:       System.out.println(weight);
-7:       System.out.println(fins);
-8:       System.out.println(length);
+2:        int gills = 0, double weight=2;
+3:        { int fins = gills; }
+4:        void print(int length = 3) {
+5:              System.out.println(gills);
+6:              System.out.println(weight);
+7:              System.out.println(fins);
+8:              System.out.println(length);
 9: } }
 
 A. Line 2 generates a compiler error.
@@ -564,7 +564,7 @@ Given the following two class files, what is the maximum number of imports that 
 // Water.java
 package aquarium;
 public class Water { }
- 
+  
 // Tank.java
 package aquarium;
 import java.lang.*;
@@ -572,8 +572,8 @@ import java.lang.System;
 import aquarium.Water;
 import aquarium.*;
 public class Tank {
-   public void print(Water water) {
-      System.out.println(water); } }
+      public void print(Water water) {
+            System.out.println(water); } }
 
 A. 0
 B. 1
@@ -604,9 +604,9 @@ What is the output of the following code snippet?
 2: boolean keepGoing = true;
 3: int result = 15, meters = 10;
 4: do {
-5:    meters--;
-6:    if (meters==8) keepGoing = false;
-7:    result -= 2;
+5:        meters--;
+6:        if (meters==8) keepGoing = false;
+7:        result -= 2;
 8: } while keepGoing;
 9: System.out.println(result);
 
@@ -625,10 +625,10 @@ H. The code does not compile for a different reason.
 Given the following record declaration, which line of code can fill in the blank and allow the code to compile?
 
 public record RabbitFood(int size, String brand, LocalDate expires) {
-   public static int MAX_STORAGE = 100;
-   public RabbitFood() {
-      __________________________;
-   }
+      public static int MAX_STORAGE = 100;
+      public RabbitFood() {
+            __________________________;
+      }
 }
 
 A. size = MAX_STORAGE
@@ -697,10 +697,10 @@ What is printed by the following program?
 11:              System.out.print("3");
 12:        }
 13:        public static void main(String hopping[]) {
-14:          new Gazelle(0);
-15:    }
-16:    static { System.out.print("8"); }
-17:    { System.out.print("9"); }
+14:              new Gazelle(0);
+15:        }
+16:        static { System.out.print("8"); }
+17:        { System.out.print("9"); }
 18: }
 
 A. 182640
@@ -768,14 +768,14 @@ F. None of the above.
 Which change allows the following program to compile?
 
 1: public class AhChoo {
-2:    static class SneezeException extends Exception {}
-3:    static class SniffleException extends SneezeException {}
-4:    public static void main(String[] args) {
-5:       try {
-6:          throw new SneezeException();
-7:       } catch (SneezeException | SniffleException e) {
-8:       } finally {}
-9:    } }
+2:        static class SneezeException extends Exception {}
+3:        static class SniffleException extends SneezeException {}
+4:        public static void main(String[] args) {
+5:              try {
+6:                    throw new SneezeException();
+7:              } catch (SneezeException | SniffleException e) {
+8:              } finally {}
+9:        } }
 
 A. Add throws SneezeException to the declaration on line 4.
 B. Add throws Throwable to the declaration on line 4.
@@ -843,22 +843,22 @@ G. None of the above
 What is the output of the following program?
 
 20: public enum Animals {
-21:    MAMMAL(List.of(2,4)),
-22:    INVERTEBRATE(List.of(2, 4, 6, 8, 100)),
-23:    BIRD(null) {
-24:       public int stand() {
-25:          return legs.get(0) + 4;
-26:       }
-27:    };
-28:    List<Integer> legs;
-29:    Animals(List<Integer> legs) {
-30:       this.legs = legs;
-31:    }
-32:    public int stand() { return legs.get(0); }
-33:    public static void main(String[] a) {
-34:       Animals.BIRD.legs = List.of(-1);
-35:       System.out.println(Animals.BIRD.stand());
-36:    } }
+21:        MAMMAL(List.of(2,4)),
+22:        INVERTEBRATE(List.of(2, 4, 6, 8, 100)),
+23:        BIRD(null) {
+24:              public int stand() {
+25:                    return legs.get(0) + 4;
+26:              }
+27:        };
+28:        List<Integer> legs;
+29:        Animals(List<Integer> legs) {
+30:              this.legs = legs;
+31:        }
+32:        public int stand() { return legs.get(0); }
+33:        public static void main(String[] a) {
+34:              Animals.BIRD.legs = List.of(-1);
+35:              System.out.println(Animals.BIRD.stand());
+36:        } }
 
 A. null
 B. -1
@@ -945,9 +945,9 @@ F. The method compiles but throws an exception at runtime, regardless of what is
 ```text
 Which functional interfaces complete the following code? For line 7, assume m and n are instances of functional interfaces that exist and have the same type as y. (Choose three.)
 
-6:  _____________ x = String::new;
-7:  _____________ y = m.andThen(n);
-8:  _____________ z = a -> a + a;
+6:    _____________ x = String::new;
+7:    _____________ y = m.andThen(n);
+8:    _____________ z = a -> a + a;
 
 A. BinaryConsumer<String, String>
 B. BiConsumer<String, String>
@@ -964,16 +964,16 @@ H. UnaryOperator<String, String>
 ```text
 What lines are printed by the following program? (Choose all that apply.)
 
-1:  public class WaterBottle {
-2:     private String brand;
-3:     private boolean empty;
-4:     public static float code;
-5:     public static void main(String[] args) {
-6:        WaterBottle wb = new WaterBottle();
-7:        System.out.println("Empty = " + wb.empty);
-8:        System.out.println("Brand = " + wb.brand);
-9:        System.out.println("Code = " + code);
-10:    } }
+1:    public class WaterBottle {
+2:          private String brand;
+3:          private boolean empty;
+4:          public static float code;
+5:          public static void main(String[] args) {
+6:                WaterBottle wb = new WaterBottle();
+7:                System.out.println("Empty = " + wb.empty);
+8:                System.out.println("Brand = " + wb.brand);
+9:                System.out.println("Code = " + code);
+10:        } }
 
 A. Line 8 generates a compiler error.
 B. Line 9 generates a compiler error.
@@ -1057,12 +1057,12 @@ What is the output of the following code snippet?
 
 2: double iguana = 0;
 3: do {
-4:    int snake = 1;
-5:    System.out.print(snake++ + " ");
-6:    iguana--;
+4:        int snake = 1;
+5:        System.out.print(snake++ + " ");
+6:        iguana--;
 7: } while (snake <= 5);
 8: System.out.println(iguana);
- 
+  
 
 A. 1 2 3 4 -4.0
 B. 1 2 3 4 -5.0
@@ -1081,11 +1081,11 @@ What is the output of the following code snippet?
 2: var tailFeathers = 3;
 3: final var one = 1;
 4: switch (tailFeathers) {
-5:    case one: System.out.print(3 + " ");
-6:    default: case 3: System.out.print(5 + " ");
+5:        case one: System.out.print(3 + " ");
+6:        default: case 3: System.out.print(5 + " ");
 7: }
 8: while (tailFeathers> 1) {
-9:    System.out.print(--tailFeathers + " "); }
+9:        System.out.print(--tailFeathers + " "); }
 
 A. 3
 B. 5 1

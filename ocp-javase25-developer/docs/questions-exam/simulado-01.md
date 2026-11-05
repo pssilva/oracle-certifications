@@ -26,14 +26,14 @@ Suppose that we have the following three properties files and code. Which bundle
 Dolphins.properties
 name=The Dolphin
 age=0
- 
+  
 Dolphins_en.properties
 name=Dolly
 age=4
- 
+  
 Dolphins_fr.properties
 name=Dolly
- 
+  
 5: var fr = Locale.of("fr");
 6: Locale.setDefault(Locale.of("en", "US"));
 7: var b = ResourceBundle.getBundle("Dolphins", fr);
@@ -57,7 +57,7 @@ Given the following two class files, what is the maximum number of imports that 
 // Water.java
 package aquarium;
 public class Water { }
- 
+  
 // Tank.java
 package aquarium;
 import java.lang.*;
@@ -65,8 +65,8 @@ import java.lang.System;
 import aquarium.Water;
 import aquarium.*;
 public class Tank {
-   public void print(Water water) {
-      System.out.println(water); } }
+      public void print(Water water) {
+            System.out.println(water); } }
 
 A. 0
 B. 1
@@ -127,16 +127,16 @@ G. None of the above.
 Which of the following is printed by the Bear program?
 
 public class Bear {
-   enum FOOD {
-      BERRIES, INSECTS {
-         public boolean isHealthy() { return true; }},
-      FISH, ROOTS, COOKIES, HONEY;
-      public abstract boolean isHealthy();
-   }
-   public static void main(String[] args) {
-      System.out.print(FOOD.INSECTS);
-      System.out.print(FOOD.INSECTS.ordinal());
-      System.out.print(FOOD.INSECTS.isHealthy());
+      enum FOOD {
+            BERRIES, INSECTS {
+                  public boolean isHealthy() { return true; }},
+            FISH, ROOTS, COOKIES, HONEY;
+            public abstract boolean isHealthy();
+      }
+      public static void main(String[] args) {
+            System.out.print(FOOD.INSECTS);
+            System.out.print(FOOD.INSECTS.ordinal());
+       System.out.print(FOOD.INSECTS.isHealthy());
       System.out.print(FOOD.COOKIES.isHealthy());
    } }
 

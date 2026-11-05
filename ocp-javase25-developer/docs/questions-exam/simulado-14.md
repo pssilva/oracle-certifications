@@ -24,7 +24,7 @@
 What is the result of the following code? (Choose all that apply.)
 
 13: String s1 = """
-14:    purr""";
+14:        purr""";
 15: String s2 = "";
 16:
 17: s1.toUpperCase();
@@ -127,18 +127,18 @@ Which lambda expression, when entered into the blank line in the following code,
 
 import java.util.function.Predicate;
 public class Hyena {
-   private int age = 1;
-   public static void main(String[] args) {
-      var p = new Hyena();
-      double height = 10;
-      int age = 1;
-      testLaugh(p,  ________________);
-      age = 2;
-   }
-   static void testLaugh(Hyena panda, Predicate<Hyena> joke) {
-      var r = joke.test(panda) ? "hahaha" : "silence";
-      System.out.print(r);
-   }
+      private int age = 1;
+      public static void main(String[] args) {
+            var p = new Hyena();
+            double height = 10;
+            int age = 1;
+            testLaugh(p,    ________________);
+            age = 2;
+      }
+      static void testLaugh(Hyena panda, Predicate<Hyena> joke) {
+            var r = joke.test(panda) ? "hahaha" : "silence";
+            System.out.print(r);
+      }
 }
 
 A. var -> p.age <= 10
@@ -156,10 +156,10 @@ G. None of the above, as the code does not compile
 Given the following class, which of the following lines of code can independently replace INSERT CODE HERE to make the code compile? (Choose all that apply.)
 
 public class Price {
-   public void admission() {
-      INSERT CODE HERE
-      System.out.print(amount);
-      } }
+      public void admission() {
+            INSERT CODE HERE
+            System.out.print(amount);
+            } }
 
 A. int Amount = 0b11;
 B. int amount = 9L;
@@ -262,7 +262,7 @@ F. The code compiles but does not terminate at runtime.
 Which of the following can be inserted on line 8 to make this code compile? (Choose all that apply.)
 
 7: public void whatHappensNext() throws IOException {
-8:    // INSERT CODE HERE
+8:        // INSERT CODE HERE
 9: }
 
 A. System.out.println("it’s ok");
@@ -279,21 +279,21 @@ F. None of the above
 What is the output of this code?
 
 13: record Gorilla(int x, Double y) {
-14:    Gorilla {}
-15:    Gorilla() { this(1,2.0); }
+14:        Gorilla {}
+15:        Gorilla() { this(1,2.0); }
 16: }
 17: record Family(Gorilla parent1, Gorilla parent2) {}
 18:
 19: var family = new Family(
-20:    new Gorilla(1, null), new Gorilla(0, 1.2));
+20:        new Gorilla(1, null), new Gorilla(0, 1.2));
 21: System.out.print(switch (family) {
-22:    case Family(var a, var b) -> "1";
-23:    case Family(Gorilla c, Gorilla (int d, double e)) -> "2";
-24:    case Family(Gorilla (int f, Double g), var h) -> "3";
-25:    case Family(Gorilla i, Gorilla (int j, Double k)) -> "4";
-26:    case Family(Object m, Object n) -> "5";
-27:    case null -> "6";
-28:    default -> "7";
+22:        case Family(var a, var b) -> "1";
+23:        case Family(Gorilla c, Gorilla (int d, double e)) -> "2";
+24:        case Family(Gorilla (int f, Double g), var h) -> "3";
+25:        case Family(Gorilla i, Gorilla (int j, Double k)) -> "4";
+26:        case Family(Object m, Object n) -> "5";
+27:        case null -> "6";
+28:        default -> "7";
 29: });
 
 A. 1
@@ -324,16 +324,16 @@ F. An unnamed module exports no packages to named modules.
 ```text
 Which of the following changes, when made independently, would make this code compile? (Choose all that apply.)
 
-1:  import java.io.*;
-2:  public class StuckTurkeyCage implements AutoCloseable {
-3:     public void close() throws IOException {
-4:        throw new FileNotFoundException("Cage not closed");
-5:     }
-6:     public static void main(String[] args) {
-7:        try (StuckTurkeyCage t = new StuckTurkeyCage()) {
-8:           System.out.println("put turkeys in");
-9:        }
-10:    } }
+1:    import java.io.*;
+2:    public class StuckTurkeyCage implements AutoCloseable {
+3:          public void close() throws IOException {
+4:                throw new FileNotFoundException("Cage not closed");
+5:          }
+6:          public static void main(String[] args) {
+7:                try (StuckTurkeyCage t = new StuckTurkeyCage()) {
+8:                      System.out.println("put turkeys in");
+9:                }
+10:        } }
 
 A. Remove throws IOException from the declaration on line 3.
 B. Add throws Exception to the declaration on line 6.
@@ -381,7 +381,7 @@ var huey = (String)null;
 Integer dewey = null;
 Object louie = null;
 if(louie == huey.substring(dewey.intValue())) {
-   System.out.println("Quack!");
+      System.out.println("Quack!");
 }
 
 A. A NullPointerException that does not include any variable names in the stack trace
@@ -430,20 +430,20 @@ G. Remove lines 3 and 14.
 What is the output of the following program?
 
 public class SnowStorm {
-   static class WalkToSchool implements AutoCloseable {
-      public void close() {
-         throw new RuntimeException("flurry");
-      } }
-   public static void main(String[] args) {
-      WalkToSchool walk1 = new WalkToSchool();
-      try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
-         throw new RuntimeException("blizzard");
-      } catch(Exception e) {
-         System.out.println(e.getMessage()
-            + " " + e.getSuppressed().length);
-      }
-      walk1 = null;
-   } }
+      static class WalkToSchool implements AutoCloseable {
+            public void close() {
+                  throw new RuntimeException("flurry");
+            } }
+      public static void main(String[] args) {
+            WalkToSchool walk1 = new WalkToSchool();
+            try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
+                  throw new RuntimeException("blizzard");
+            } catch(Exception e) {
+                  System.out.println(e.getMessage()
+                        + " " + e.getSuppressed().length);
+            }
+            walk1 = null;
+      } }
 
 A. blizzard 0
 B. blizzard 1
@@ -577,13 +577,13 @@ F. None of the above
 A minimum of how many lines need to be corrected before the following method will compile?
 
 21: void findZookeeper(Integer id) {
-22:    System.out.print(switch (id) {
-23:       case 10 -> {"Jane";}
-24:       case 20 -> {yield "Lisa";};
-25:       case 30 -> "Kelly";
-26:       case 30 -> "Sarah";
-27:       default -> "Unassigned";
-28:    });
+22:        System.out.print(switch (id) {
+23:              case 10 -> {"Jane";}
+24:              case 20 -> {yield "Lisa";};
+25:              case 30 -> "Kelly";
+26:              case 30 -> "Sarah";
+27:              default -> "Unassigned";
+28:        });
 29: }
 
 A. Zero
@@ -600,13 +600,13 @@ F. Five
 Which lines of the following interface declarations do not compile? (Choose all that apply.)
 
 1: public interface Omnivore {
-2:    int amount = 10;
-3:    static boolean gather = true;
-4:    static void eatGrass() {}
-5:    int findMore() { return 2; }
-6:    default float rest() { return 2; }
-7:    protected int chew() { return 13; }
-8:    private static void eatLeaves() {}
+2:        int amount = 10;
+3:        static boolean gather = true;
+4:        static void eatGrass() {}
+5:        int findMore() { return 2; }
+6:        default float rest() { return 2; }
+7:        protected int chew() { return 13; }
+8:        private static void eatLeaves() {}
 9: }
 
 A. All of the lines compile without issue.
@@ -652,13 +652,13 @@ Which statements, when inserted independently into the following blank, will cau
 
 int count = 0;
 BUNNY: for (int row = 1; row <=3; row++)
-   RABBIT: for (int col = 0; col <3 ; col++) {
-      if ((col + row) % 2 == 0)
-         ;
-      count++;
-   }
+      RABBIT: for (int col = 0; col <3 ; col++) {
+            if ((col + row) % 2 == 0)
+                  ;
+            count++;
+      }
 System.out.println(count);
- 
+  
 A. break BUNNY
 B. break RABBIT
 C. continue BUNNY
@@ -687,10 +687,10 @@ F. public static main(String[] args)
 What is the output of the following code?
 
 try {
-   LocalDateTime book = LocalDateTime.of(2025, 4, 5, 12, 30, 20);
-   System.out.print(book.format(DateTimeFormatter.ofPattern("m")));
-   System.out.print(book.format(DateTimeFormatter.ofPattern("z")));
-   System.out.print(DateTimeFormatter.ofPattern("y").format(book));
+      LocalDateTime book = LocalDateTime.of(2025, 4, 5, 12, 30, 20);
+      System.out.print(book.format(DateTimeFormatter.ofPattern("m")));
+      System.out.print(book.format(DateTimeFormatter.ofPattern("z")));
+      System.out.print(DateTimeFormatter.ofPattern("y").format(book));
 } catch (Throwable e) {}
 
 A. 4
@@ -708,12 +708,12 @@ G. None of the above
 What is output by the following code?
 
 1: public class Fish {
-2:    public static void main(String[] args) {
-3:       int numFish = 4;
-4:       String fishType = "tuna";
-5:       String anotherFish = numFish + 1;
-6:       System.out.println(anotherFish + " " + fishType);
-7:       System.out.println(numFish + " " + 1);
+2:        public static void main(String[] args) {
+3:              int numFish = 4;
+4:              String fishType = "tuna";
+5:              String anotherFish = numFish + 1;
+6:              System.out.println(anotherFish + " " + fishType);
+7:              System.out.println(numFish + " " + 1);
 8: } }
 
 A. 4 1
@@ -956,20 +956,20 @@ H. The eat() method in Primate is correctly overloaded on line 12.
 ```text
 What is the result of the following class?
 
-1:  import java.util.function.*;
+1:    import java.util.function.*;
 2:
-3:  public class Panda {
-4:     int age;
-5:     public static void main(String[] args) {
-6:        Panda p1 = new Panda();
-7:        p1.age = 1;
-8:        check(p1, p -> p.age < 5);
-9:     }
-10:    private static void check(Panda panda,
-11:       Predicate<Panda> pred) {
-12:       String result =
-13:          pred.test(panda) ? "match" : "not match";
-14:       System.out.print(result);
+3:    public class Panda {
+4:          int age;
+5:          public static void main(String[] args) {
+6:                Panda p1 = new Panda();
+7:                p1.age = 1;
+8:                check(p1, p -> p.age < 5);
+9:          }
+10:        private static void check(Panda panda,
+11:              Predicate<Panda> pred) {
+12:              String result =
+13:                    pred.test(panda) ? "match" : "not match";
+14:              System.out.print(result);
 15: } }
 
 A.match
@@ -986,12 +986,12 @@ F.A runtime exception
 What is the output of calling getFish("goldie")?
 
 40: void getFish(Object fish) {
-41:    if (!(fish instanceof String guppy))
-42:       System.out.print("Eat!");
-43:    else if (!(fish instanceof String guppy)) {
-44:       throw new RuntimeException();
-45:    }
-46:    System.out.print("Swim!");
+41:        if (!(fish instanceof String guppy))
+42:              System.out.print("Eat!");
+43:        else if (!(fish instanceof String guppy)) {
+44:              throw new RuntimeException();
+45:        }
+46:        System.out.print("Swim!");
 47: }
 
 A. Eat!
@@ -1050,8 +1050,8 @@ For what value of pattern will the following print <005.21> <008.49> <1,234.0>?
 
 String pattern = "____________________";
 var message = DoubleStream.of(5.21, 8.49, 1234)
-   .mapToObj(v -> new DecimalFormat(pattern).format(v))
-   .collect(Collectors.joining("> <"));
+      .mapToObj(v -> new DecimalFormat(pattern).format(v))
+      .collect(Collectors.joining("> <"));
 System.out.println("<"+message+">");
 
 A. ##.#
@@ -1068,10 +1068,10 @@ F. None of the above.
 What is the result of the following code?
 
 1: public class PrintIntegers {
-2:    public static void main(String[] args) {
-3:       int y = -2;
-4:       do System.out.print(++y + " ");
-5:       while (y <= 5);
+2:        public static void main(String[] args) {
+3:              int y = -2;
+4:              do System.out.print(++y + " ");
+5:              while (y <= 5);
 6: } }
 
 A. -2 -1 0 1 2 3 4 5
@@ -1087,21 +1087,21 @@ F. The code contains an infinite loop and does not terminate.
 ```text
 What is the result of compiling and executing the following code?
 
-1:  public class Movie {
-2:     private int butter = 5;
-3:     private Movie() {}
-4:     protected class Popcorn {
-5:        private Popcorn() {}
-6:        public static int butter = 10;
-7:        public void startMovie() {
-8:           System.out.println(butter);
-9:        }
-10:    }
-11:    public static void main(String[] args) {
-12:       var movie = new Movie();
-13:       Movie.Popcorn in = new Movie().new Popcorn();
-14:       in.startMovie();
-15:    } }
+1:    public class Movie {
+2:          private int butter = 5;
+3:          private Movie() {}
+4:          protected class Popcorn {
+5:                private Popcorn() {}
+6:                public static int butter = 10;
+7:                public void startMovie() {
+8:                      System.out.println(butter);
+9:                }
+10:        }
+11:        public static void main(String[] args) {
+12:              var movie = new Movie();
+13:              Movie.Popcorn in = new Movie().new Popcorn();
+14:              in.startMovie();
+15:        } }
 
 A. The output is 5.
 B. The output is 10.

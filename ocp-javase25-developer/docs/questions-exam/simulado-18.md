@@ -99,21 +99,21 @@ F. A NumberFormatException is thrown.
 What is the output of this code?
 
 13: record Gorilla(int x, Double y) {
-14:    Gorilla {}
-15:    Gorilla() { this(1,2.0); }
+14:        Gorilla {}
+15:        Gorilla() { this(1,2.0); }
 16: }
 17: record Family(Gorilla parent1, Gorilla parent2) {}
 18:
 19: var family = new Family(
-20:    new Gorilla(1, null), new Gorilla(0, 1.2));
+20:        new Gorilla(1, null), new Gorilla(0, 1.2));
 21: System.out.print(switch (family) {
-22:    case Family(var a, var b) -> "1";
-23:    case Family(Gorilla c, Gorilla (int d, double e)) -> "2";
-24:    case Family(Gorilla (int f, Double g), var h) -> "3";
-25:    case Family(Gorilla i, Gorilla (int j, Double k)) -> "4";
-26:    case Family(Object m, Object n) -> "5";
-27:    case null -> "6";
-28:    default -> "7";
+22:        case Family(var a, var b) -> "1";
+23:        case Family(Gorilla c, Gorilla (int d, double e)) -> "2";
+24:        case Family(Gorilla (int f, Double g), var h) -> "3";
+25:        case Family(Gorilla i, Gorilla (int j, Double k)) -> "4";
+26:        case Family(Object m, Object n) -> "5";
+27:        case null -> "6";
+28:        default -> "7";
 29: });
 
 A. 1
@@ -132,13 +132,13 @@ H. None of the above
 Which statements about the following program are correct? (Choose all that apply.)
 
 1: public abstract interface Herbivore {
-2:    int amount = 10;
-3:    public void eatGrass();
-4:    public abstract int chew() { return 13; }
+2:        int amount = 10;
+3:        public void eatGrass();
+4:        public abstract int chew() { return 13; }
 5: }
 6:
 7: abstract class IsAPlant extends Herbivore {
-8:    Object eatGrass(int season) { return null; }
+8:        Object eatGrass(int season) { return null; }
 9: }
 
 A. It compiles and runs without issue.
@@ -156,10 +156,10 @@ What is the output of the following code snippet?
 
 22: String zooStatus = "Closed";
 23: int visitors = switch (zooStatus) {
-24:    case String s when s.equals("Open") -> 10;
-25:    case Object s when s != null && !s.equals("") -> 20;
-26:    case null -> {yield 30;}
-27:    default -> 40;
+24:        case String s when s.equals("Open") -> 10;
+25:        case Object s when s != null && !s.equals("") -> 20;
+26:        case null -> {yield 30;}
+27:        default -> 40;
 28: };
 29: System.out.print(visitors);
 
@@ -178,14 +178,14 @@ G. Three or more lines do not compile.
 Which change allows the following program to compile?
 
 1: public class AhChoo {
-2:    static class SneezeException extends Exception {}
-3:    static class SniffleException extends SneezeException {}
-4:    public static void main(String[] args) {
-5:       try {
-6:          throw new SneezeException();
-7:       } catch (SneezeException | SniffleException e) {
-8:       } finally {}
-9:    } }
+2:        static class SneezeException extends Exception {}
+3:        static class SniffleException extends SneezeException {}
+4:        public static void main(String[] args) {
+5:              try {
+6:                    throw new SneezeException();
+7:              } catch (SneezeException | SniffleException e) {
+8:              } finally {}
+9:        } }
 
 A. Add throws SneezeException to the declaration on line 4.
 B. Add throws Throwable to the declaration on line 4.
@@ -259,22 +259,22 @@ F. Map<String, ? extends Number> hm = new HashMap<String, Integer>();
 ```text
 Assuming the following class compiles, how many variables defined in the class or method are in scope on the line marked on line 14?
 
-1:  public class Camel {
-2:     { int hairs = 3_000_0; }
-3:     long water, air=2;
-4:     boolean twoHumps = true;
-5:     public void spit(float distance) {
-6:        var path = "";
-7:        { double teeth = 32 + distance++; }
-8:        while(water> 0) {
-9:           int age = twoHumps ? 1 : 2;
-10:          short i=-1;
-11:          for(i=0; i<10; i++) {
-12:             var Private = 2;
-13:          }
-14:          // SCOPE
-15:       }
-16:    }
+1:    public class Camel {
+2:          { int hairs = 3_000_0; }
+3:          long water, air=2;
+4:          boolean twoHumps = true;
+5:          public void spit(float distance) {
+6:                var path = "";
+7:                { double teeth = 32 + distance++; }
+8:                while(water> 0) {
+9:                      int age = twoHumps ? 1 : 2;
+10:                    short i=-1;
+11:                    for(i=0; i<10; i++) {
+12:                          var Private = 2;
+13:                    }
+14:                    // SCOPE
+15:              }
+16:        }
 17: }
 
 A. 2
@@ -311,9 +311,9 @@ F. The code does not compile.
 Which are true about this code? (Choose all that apply.)
 
 var blocky = """
-   squirrel \s
-   pigeon   \
-   termite""";
+      squirrel \s
+      pigeon      \
+      termite""";
 System.out.print(blocky);
 
 A. It outputs two lines.
@@ -376,13 +376,13 @@ F. None of these; line 6 throws an exception at runtime.
 Which lambda can replace the MySecret class to return the same value? (Choose all that apply.)
 
 interface Secret {
-   String magic(double d);
+      String magic(double d);
 }
- 
+  
 class MySecret implements Secret {
-   public String magic(double d) {
-      return "Poof";
-   } }
+      public String magic(double d) {
+            return "Poof";
+      } }
 
 A. (e) -> "Poof"
 B. (e) -> {"Poof"}
@@ -398,18 +398,18 @@ F. (e) -> { String f = ""; return "Poof"; }
 What is the result of the following program?
 
 public class Weather {
-   enum Seasons {
-      WINTER, SPRING, SUMMER, FALL
-   }
- 
-   public static void main(String[] args) {
-      Seasons v = null;
-      switch (v) {
-         case Seasons.SPRING -> System.out.print("s");
-         case Seasons.WINTER -> System.out.print("w");
-         case Seasons.SUMMER -> System.out.print("m");
-         default -> System.out.println("missing data"); }
-   } }
+      enum Seasons {
+            WINTER, SPRING, SUMMER, FALL
+      }
+  
+      public static void main(String[] args) {
+            Seasons v = null;
+            switch (v) {
+                  case Seasons.SPRING -> System.out.print("s");
+                  case Seasons.WINTER -> System.out.print("w");
+                  case Seasons.SUMMER -> System.out.print("m");
+                  default -> System.out.println("missing data"); }
+      } }
 
 A. s
 B. w
@@ -425,20 +425,20 @@ G. The code compiles but produces an exception at runtime.
 ```text
 What is the result of the following code?
 
-1:  interface Climb {
-2:     boolean isTooHigh(int height, int limit);
-3:  }
+1:    interface Climb {
+2:          boolean isTooHigh(int height, int limit);
+3:    }
 4:
-5:  public class Climber {
-6:     public static void main(String[] args) {
-7:        check((h, m) -> h.append(m).isEmpty(), 5);
-8:     }
-9:     private static void check(Climb climb, int height) {
-10:       if (climb.isTooHigh(height, 10))
-11:          System.out.println("too high");
-12:       else
-13:          System.out.println("ok");
-14:    }
+5:    public class Climber {
+6:          public static void main(String[] args) {
+7:                check((h, m) -> h.append(m).isEmpty(), 5);
+8:          }
+9:          private static void check(Climb climb, int height) {
+10:              if (climb.isTooHigh(height, 10))
+11:                    System.out.println("too high");
+12:              else
+13:                    System.out.println("ok");
+14:        }
 15: }
 
 A. ok
@@ -521,11 +521,11 @@ What is printed by the following code snippet?
 23: byte amphibian = 2;
 24: String name = "Salamander";
 25: String color = switch (amphibian) {
-26:    case 1 -> { yield "Red"; }
-27:    case 2 -> { if (name.equals("Frog")) yield "Green";
-28:                yield "Blue"; }
-29:    case 3 -> { yield "Purple"; }
-30:    default -> throw new RuntimeException();
+26:        case 1 -> { yield "Red"; }
+27:        case 2 -> { if (name.equals("Frog")) yield "Green";
+28:                                yield "Blue"; }
+29:        case 3 -> { yield "Purple"; }
+30:        default -> throw new RuntimeException();
 31: };
 32: System.out.print(color);
 
@@ -625,7 +625,7 @@ Which statement about the following program is correct?
 17:        public static void main(String… sing) {
 18:              Bird p = new Macaw(4);
 19:              System.out.print(((Parrot)p.fly()).feathers);
-20:      } }
+20:        } }
 
 A. One line contains a compiler error.
 B. Two lines contain compiler errors.
@@ -695,18 +695,18 @@ G. PrintReader
 What is the output of the following program?
 
 public sealed class ArmoredAnimal permits Armadillo {
-   public ArmoredAnimal(int size) {}
-   @Override public String toString() { return "Strong"; }
-   public static void main(String[] a) {
-      var c = new Armadillo(10, null);
-      System.out.println(c);
-   }
+      public ArmoredAnimal(int size) {}
+      @Override public String toString() { return "Strong"; }
+      public static void main(String[] a) {
+            var c = new Armadillo(10, null);
+            System.out.println(c);
+      }
 }
 class Armadillo extends ArmoredAnimal {
-   @Override public String toString() { return "Cute"; }
-   public Armadillo(int size, String name) {
-      super(size);
-   }   
+      @Override public String toString() { return "Cute"; }
+      public Armadillo(int size, String name) {
+            super(size);
+      }      
 }
 
 A. Strong
@@ -749,21 +749,21 @@ G. The code compiles and prints [16, 32, 4] without any changes.
 ```text
 Given the following method, how many lines contain compilation errors?
 
-8:  enum DayOfWeek {
-9:     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
-10:    private DayOfWeek getWeekDay(int day, final int thursday) {
-11:       int otherDay = day;
-12:       int Sunday = 0;
-13:       switch (otherDay) {
-14:          default:
-15:          case 1: continue;
-16:          case thursday: return DayOfWeek.THURSDAY;
-17:          case 2,10: break;
-18:          case Sunday: return DayOfWeek.SUNDAY;
-19:          case DayOfWeek.MONDAY: return DayOfWeek.MONDAY;
-20:       }
-21:       return DayOfWeek.FRIDAY;
-22:    } }
+8:    enum DayOfWeek {
+9:          SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+10:        private DayOfWeek getWeekDay(int day, final int thursday) {
+11:              int otherDay = day;
+12:              int Sunday = 0;
+13:              switch (otherDay) {
+14:                    default:
+15:                    case 1: continue;
+16:                    case thursday: return DayOfWeek.THURSDAY;
+17:                    case 2,10: break;
+18:                    case Sunday: return DayOfWeek.SUNDAY;
+19:                    case DayOfWeek.MONDAY: return DayOfWeek.MONDAY;
+20:              }
+21:              return DayOfWeek.FRIDAY;
+22:        } }
 
 A. None, the code compiles and runs without issue.
 B. 1.
@@ -781,12 +781,12 @@ H. The code compiles but may produce an error at runtime.
 Which lines can fill in the blank to make the following code compile? (Choose all that apply.)
 
 void rollOut() throws ClassCastException {}
- 
+  
 public void transform(String c) {
-   try {
-      rollOut();
-   } catch (IllegalArgumentException |________________________) {
-   }
+      try {
+            rollOut();
+      } catch (IllegalArgumentException |________________________) {
+      }
 }
 
 A. IOException a
@@ -817,15 +817,15 @@ F. You can access a private constructor with the main() method in the same class
 Which are true about this code? (Choose all that apply.)
 
 public class KitchenSink {
-    private int numForks;
- 
-    public static void main(String[] args) {
-       int numKnives;
-       System.out.print("""
-          "# forks = " + numForks +
-           " # knives = " + numKnives +
-          # cups = 0""");
-    }
+        private int numForks;
+  
+        public static void main(String[] args) {
+              int numKnives;
+              System.out.print("""
+                    "# forks = " + numForks +
+                      " # knives = " + numKnives +
+                    # cups = 0""");
+        }
 }
 
 A. The output includes # forks = 0.
@@ -878,20 +878,20 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Locale.Category;
 public record Wallet(double money) {
-   private String openWallet() {
-      Locale.setDefault(Category.DISPLAY,
-         new Locale.Builder().setRegion("us").build());
-      Locale.setDefault(Category.FORMAT,
-         new Locale.Builder().setLanguage("en").build());
-      return NumberFormat.getCurrencyInstance(Locale.GERMANY)
-         .format(money);
-   }
-   public void printBalance() {
-      System.out.println(openWallet());
-   }   
-   public static void main(String… unused) {
-      new Wallet(2.4).printBalance();
-   } }
+      private String openWallet() {
+            Locale.setDefault(Category.DISPLAY,
+                  new Locale.Builder().setRegion("us").build());
+            Locale.setDefault(Category.FORMAT,
+                  new Locale.Builder().setLanguage("en").build());
+            return NumberFormat.getCurrencyInstance(Locale.GERMANY)
+                  .format(money);
+      }
+      public void printBalance() {
+            System.out.println(openWallet());
+      }      
+      public static void main(String… unused) {
+            new Wallet(2.4).printBalance();
+      } }
 
 A. 2,40 €
 B. $2.40
@@ -907,13 +907,13 @@ Which statements, when inserted independently into the following blank, will cau
 
 int count = 0;
 BUNNY: for (int row = 1; row <=3; row++)
-   RABBIT: for (int col = 0; col <3 ; col++) {
-      if ((col + row) % 2 == 0)
-         ;
-      count++;
-   }
+      RABBIT: for (int col = 0; col <3 ; col++) {
+            if ((col + row) % 2 == 0)
+                  ;
+            count++;
+      }
 System.out.println(count);
- 
+  
 A. break BUNNY
 B. break RABBIT
 C. continue BUNNY
@@ -928,27 +928,27 @@ G. None of the above, as the code contains a compiler error
 ```text
 What is printed by the following program?
 
-1:  public class DriveBus {
-2:     public void go() {
-3:        System.out.print("A");
-4:        try {
-5:           stop();
-6:        } catch (ArithmeticException e) {
-7:           System.out.print("B");
-8:        } finally {
-9:           System.out.print("C");
-10:       }
-11:       System.out.print("D");
-12:    }
-13:    public void stop() {
-14:       System.out.print("E");
-15:       Object x = null;
-16:       x.toString();
-17:       System.out.print("F");
-18:    }
-19:    public static void main(String n[]) {
-20:       new DriveBus().go();
-21:    } }
+1:    public class DriveBus {
+2:          public void go() {
+3:                System.out.print("A");
+4:                try {
+5:                      stop();
+6:                } catch (ArithmeticException e) {
+7:                      System.out.print("B");
+8:                } finally {
+9:                      System.out.print("C");
+10:              }
+11:              System.out.print("D");
+12:        }
+13:        public void stop() {
+14:              System.out.print("E");
+15:              Object x = null;
+16:              x.toString();
+17:              System.out.print("F");
+18:        }
+19:        public static void main(String n[]) {
+20:              new DriveBus().go();
+21:        } }
 
 A. AE
 B. AEBCD

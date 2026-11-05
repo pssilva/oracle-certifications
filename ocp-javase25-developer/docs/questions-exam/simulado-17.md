@@ -78,10 +78,10 @@ What is printed by the following program?
 11:              System.out.print("3");
 12:        }
 13:        public static void main(String hopping[]) {
-14:          new Gazelle(0);
-15:    }
-16:    static { System.out.print("8"); }
-17:    { System.out.print("9"); }
+14:              new Gazelle(0);
+15:        }
+16:        static { System.out.print("8"); }
+17:        { System.out.print("9"); }
 18: }
 
 A. 182640
@@ -98,7 +98,7 @@ F. The output cannot be determined until runtime.
 Which of the following can be inserted on line 8 to make this code compile? (Choose all that apply.)
 
 7: public void whatHappensNext() throws IOException {
-8:    // INSERT CODE HERE
+8:        // INSERT CODE HERE
 9: }
 
 A. System.out.println("it’s ok");
@@ -191,9 +191,9 @@ F. None of the above
 What is the output of the following code?
 
 LocalDate date = LocalDate.parse("2025-04-30",
-   DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+      DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 System.out.println(date.getYear() + " "
-   + date.getMonth() + " "+ date.getDayOfMonth());
+      + date.getMonth() + " "+ date.getDayOfMonth());
 
 A. 2025 APRIL 2
 B. 2025 APRIL 30
@@ -208,16 +208,16 @@ E. A runtime exception is thrown.
 Which is true of the following code?
 
 int length = 3;
- 
+  
 for (int i = 0; i<3; i++) {
-   if (i%2 == 0) {
-      Supplier<Integer> supplier = () -> length; // A
-      System.out.println(supplier.get());        // B
-   } else {
-      int j = i;
-      Supplier<Integer> supplier = () -> j;      // C
-      System.out.println(supplier.get());        // D
-   }
+      if (i%2 == 0) {
+            Supplier<Integer> supplier = () -> length; // A
+            System.out.println(supplier.get());                // B
+      } else {
+            int j = i;
+            Supplier<Integer> supplier = () -> j;            // C
+            System.out.println(supplier.get());                // D
+      }
 }
 
 A. The first compiler error is on line A.
@@ -232,23 +232,23 @@ E. The code compiles successfully.
 ```text
 How many lines of the following program contain a compilation error?
 
-1:  class Primate {
-2:     protected int age = 2;
-3:     { age = 1; }
-4:     public Primate() {
-5:        this().age = 3;
-6:     }
-7:  }
-8:  public class Orangutan {
-9:     protected int age = 4;
-10:    { age = 5; }
-11:    public Orangutan() {
-12:       this().age = 6;
-13:    }
-14:    public static void main(String[] bananas) {
-15:       final Primate x = (Primate)new Orangutan();
-16:       System.out.println(x.age);
-17:    }
+1:    class Primate {
+2:          protected int age = 2;
+3:          { age = 1; }
+4:          public Primate() {
+5:                this().age = 3;
+6:          }
+7:    }
+8:    public class Orangutan {
+9:          protected int age = 4;
+10:        { age = 5; }
+11:        public Orangutan() {
+12:              this().age = 6;
+13:        }
+14:        public static void main(String[] bananas) {
+15:              final Primate x = (Primate)new Orangutan();
+16:              System.out.println(x.age);
+17:        }
 18: }
 
 A. None, and the program prints 1 at runtime.
@@ -316,26 +316,26 @@ char[] wolf = {'W', 'e', 'b', 'b', 'y'};
 
 A. int q = wolf.length;
 for ( ; ; ) {
-   System.out.print(wolf[--q]);
-   if (q==0) break;
+      System.out.print(wolf[--q]);
+      if (q==0) break;
 }
 
 B. for (int m=wolf.length-1; m>=0; --m)
-   System.out.print(wolf[m]);
+      System.out.print(wolf[m]);
 
 C. for (int z=0; z<wolf.length; z++)
-   System.out.print(wolf[wolf.length-z]);
+      System.out.print(wolf[wolf.length-z]);
 
 D. int x = wolf.length-1;
 for (int j=0; x>=0 && j==0; x--)
-   System.out.print(wolf[x]);
+      System.out.print(wolf[x]);
 
 E. final int r = wolf.length;
 for (int w = r-1; r>-1; w = r-1)
-   System.out.print(wolf[w]);
+      System.out.print(wolf[w]);
 
 F. for (int i=wolf.length; i>0; --i)
-   System.out.print(wolf[i]);
+      System.out.print(wolf[i]);
 
 G. None of the above
 ```
@@ -347,24 +347,24 @@ What is the output of the following code?
 
 import java.io.*;
 public class FamilyCar {
-   static class Door implements AutoCloseable {
-      public void close() {
-         System.out.print("D");
-   } }
-   static class Window implements Closeable {
-      public void close() {
-         System.out.print("W");
-         throw new RuntimeException();
-   } }
-   public static void main(String[] args) {
-      var d = new Door();
-      try (d; var w = new Window()) {
-         System.out.print("T");
-      } catch (Exception e) {
-         System.out.print("E");
-      } finally {
-         System.out.print("F");
-      } } }
+      static class Door implements AutoCloseable {
+            public void close() {
+                  System.out.print("D");
+      } }
+      static class Window implements Closeable {
+            public void close() {
+                  System.out.print("W");
+                  throw new RuntimeException();
+      } }
+      public static void main(String[] args) {
+            var d = new Door();
+            try (d; var w = new Window()) {
+                  System.out.print("T");
+            } catch (Exception e) {
+                  System.out.print("E");
+            } finally {
+                  System.out.print("F");
+            } } }
 
 A.TWF
 B.TWDF
@@ -382,8 +382,8 @@ For what value of pattern will the following print <005.21> <008.49> <1,234.0>?
 
 String pattern = "____________________";
 var message = DoubleStream.of(5.21, 8.49, 1234)
-   .mapToObj(v -> new DecimalFormat(pattern).format(v))
-   .collect(Collectors.joining("> <"));
+      .mapToObj(v -> new DecimalFormat(pattern).format(v))
+      .collect(Collectors.joining("> <"));
 System.out.println("<"+message+">");
 
 A. ##.#
@@ -481,9 +481,9 @@ Which of the following statements can be inserted in the blank line so that the 
 
 interface CanHop {}
 public class Frog implements CanHop {
-   public static void main(String[] args) {
-      ____________ frog = new TurtleFrog();
-   }
+      public static void main(String[] args) {
+            ____________ frog = new TurtleFrog();
+      }
 }
 
 class BrazilianHornedFrog extends Frog {}
@@ -535,27 +535,27 @@ G. emily.$.jar and emily..
 Which of the following are valid functional interfaces? (Choose all that apply.)
 
 public interface Transport {
-   public int go();
-   public boolean equals(Object o);
+      public int go();
+      public boolean equals(Object o);
 }
- 
+  
 public abstract class Car {
-   public abstract Object swim(double speed, int duration);
+      public abstract Object swim(double speed, int duration);
 }
- 
+  
 public interface Locomotive extends Train {
-   public int getSpeed();
+      public int getSpeed();
 }
- 
+  
 public interface Train extends Transport {}
- 
+  
 abstract interface Spaceship extends Transport {
-   default int blastOff();
+      default int blastOff();
 }
- 
+  
 public interface Boat {
-   int hashCode();
-   int hashCode(String input);
+      int hashCode();
+      int hashCode(String input);
 }
 
 A. Boat
@@ -573,8 +573,8 @@ G. None of these is a valid functional interface.
 Which of the following expressions, when inserted independently into the blank line, allow the code to compile? (Choose all that apply.)
 
 public void printMagicData() {
-   var magic = ;
-   System.out.println(magic);
+      var magic = ;
+      System.out.println(magic);
 }
 
 A. 3_1
@@ -592,19 +592,19 @@ G. _1_3_5_0
 Assuming the following classes are declared as top-level types in the same file, which classes contain compiler errors? (Choose all that apply.)
 
 sealed class Bird {
-   public final class Flamingo extends Bird {}   
+      public final class Flamingo extends Bird {}      
 }
- 
+  
 sealed class Monkey {}
- 
+  
 class EmperorTamarin extends Monkey {}
- 
+  
 non-sealed class Mandrill extends Monkey {}
- 
+  
 sealed class Friendly extends Mandrill permits Silly {}
- 
+  
 final class Silly {}
- 
+  
 
 A. Bird
 B. Monkey
@@ -666,11 +666,11 @@ F. TreeMap
 Which of the following can be inserted without causing a compilation error? (Choose all that apply.)
 
 public void remove(List<Character> chars) {
-   char end = 'z';
-   Predicate<Character> predicate = c -> {
-      char start = 'a'; return start <= c && c <= end; };
- 
-   // INSERT LINE HERE
+      char end = 'z';
+      Predicate<Character> predicate = c -> {
+            char start = 'a'; return start <= c && c <= end; };
+  
+      // INSERT LINE HERE
 }
 
 A. char start = ’a’;
@@ -685,14 +685,14 @@ E. None of the above
 ```text
 What is the output of the following snippet, assuming a and b are both 0?
 
-3:  try {
-4:     System.out.print(a / b);
-5:  } catch (RuntimeException e) {
-6:     System.out.print(-1);
-7:  } catch (ArithmeticException e) {
-8:     System.out.print(0);
-9:  } finally {
-10:    System.out.print("done");
+3:    try {
+4:          System.out.print(a / b);
+5:    } catch (RuntimeException e) {
+6:          System.out.print(-1);
+7:    } catch (ArithmeticException e) {
+8:          System.out.print(0);
+9:    } finally {
+10:        System.out.print("done");
 11: }
 
 A. -1
@@ -710,16 +710,16 @@ G. None of the above.
 Which variables or members are accessible from within the hiss() method? (Choose all that apply.)
 
 13: public class BoaConstrictor {
-14:    private Body body;
-15:    BoaConstrictor(Body b) { this.body = b; }
-16:    private long tail = 10;
-17:    record Body(int stripes) {
-18:       private static int counter = 0;
-19:       int counter() { return counter; }
-20:       Body {
-21:          stripes = stripes + counter++;
-22:       }
-23:       private void hiss() {} } }
+14:        private Body body;
+15:        BoaConstrictor(Body b) { this.body = b; }
+16:        private long tail = 10;
+17:        record Body(int stripes) {
+18:              private static int counter = 0;
+19:              int counter() { return counter; }
+20:              Body {
+21:                    stripes = stripes + counter++;
+22:              }
+23:              private void hiss() {} } }
 
 
 A. counter()
@@ -776,20 +776,20 @@ G. None of the above; the code compiles.
 What is the output of the following program?
 
 public class SnowStorm {
-   static class WalkToSchool implements AutoCloseable {
-      public void close() {
-         throw new RuntimeException("flurry");
-      } }
-   public static void main(String[] args) {
-      WalkToSchool walk1 = new WalkToSchool();
-      try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
-         throw new RuntimeException("blizzard");
-      } catch(Exception e) {
-         System.out.println(e.getMessage()
-            + " " + e.getSuppressed().length);
-      }
-      walk1 = null;
-   } }
+      static class WalkToSchool implements AutoCloseable {
+            public void close() {
+                  throw new RuntimeException("flurry");
+            } }
+      public static void main(String[] args) {
+            WalkToSchool walk1 = new WalkToSchool();
+            try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
+                  throw new RuntimeException("blizzard");
+            } catch(Exception e) {
+                  System.out.println(e.getMessage()
+                        + " " + e.getSuppressed().length);
+            }
+            walk1 = null;
+      } }
 
 A. blizzard 0
 B. blizzard 1
@@ -943,19 +943,19 @@ F. The Predicate interface has a method named test().
 ```text
 Which statements about the following class are true? (Choose all that apply.)
 
-1:  public class River {
-2:     int Depth = 1;
-3:     float temp = 50.0;
-4:     public void flow() {
-5:        for (int i = 0; i < 1; i++) {
-6:           int depth = 2;
-7:           depth++;
-8:           temp--;
-9:        }
-10:       System.out.println(depth);
-11:       System.out.println(temp); }
-12:    public static void main(String… s) {
-13:       new River().flow();
+1:    public class River {
+2:          int Depth = 1;
+3:          float temp = 50.0;
+4:          public void flow() {
+5:                for (int i = 0; i < 1; i++) {
+6:                      int depth = 2;
+7:                      depth++;
+8:                      temp--;
+9:                }
+10:              System.out.println(depth);
+11:              System.out.println(temp); }
+12:        public static void main(String… s) {
+13:              new River().flow();
 14: } }
 
 A. Line 3 generates a compiler error.
@@ -1037,12 +1037,12 @@ What is the result of the following code snippet?
 final char a = 'A', e = 'E';
 char grade = 'B';
 switch (grade) {
-   default:
-   case a:
-   case 'B': 'C': System.out.print("great ");
-   case 'D':      System.out.print("good "); break;
-   case e:
-   case 'F':      System.out.print("not good ");
+      default:
+      case a:
+      case 'B': 'C': System.out.print("great ");
+      case 'D':            System.out.print("good "); break;
+      case e:
+      case 'F':            System.out.print("not good ");
 }
 
 A. great
@@ -1059,13 +1059,13 @@ F. None of the above.
 A minimum of how many lines need to be corrected before the following method will compile?
 
 21: void findZookeeper(Integer id) {
-22:    System.out.print(switch (id) {
-23:       case 10 -> {"Jane";}
-24:       case 20 -> {yield "Lisa";};
-25:       case 30 -> "Kelly";
-26:       case 30 -> "Sarah";
-27:       default -> "Unassigned";
-28:    });
+22:        System.out.print(switch (id) {
+23:              case 10 -> {"Jane";}
+24:              case 20 -> {yield "Lisa";};
+25:              case 30 -> "Kelly";
+26:              case 30 -> "Sarah";
+27:              default -> "Unassigned";
+28:        });
 29: }
 
 A. Zero

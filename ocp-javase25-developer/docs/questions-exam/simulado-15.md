@@ -23,22 +23,22 @@
 ```text
 Assuming the following class compiles, how many variables defined in the class or method are in scope on the line marked on line 14?
 
-1:  public class Camel {
-2:     { int hairs = 3_000_0; }
-3:     long water, air=2;
-4:     boolean twoHumps = true;
-5:     public void spit(float distance) {
-6:        var path = "";
-7:        { double teeth = 32 + distance++; }
-8:        while(water> 0) {
-9:           int age = twoHumps ? 1 : 2;
-10:          short i=-1;
-11:          for(i=0; i<10; i++) {
-12:             var Private = 2;
-13:          }
-14:          // SCOPE
-15:       }
-16:    }
+1:    public class Camel {
+2:          { int hairs = 3_000_0; }
+3:          long water, air=2;
+4:          boolean twoHumps = true;
+5:          public void spit(float distance) {
+6:                var path = "";
+7:                { double teeth = 32 + distance++; }
+8:                while(water> 0) {
+9:                      int age = twoHumps ? 1 : 2;
+10:                    short i=-1;
+11:                    for(i=0; i<10; i++) {
+12:                          var Private = 2;
+13:                    }
+14:                    // SCOPE
+15:              }
+16:        }
 17: }
 
 A. 2
@@ -229,19 +229,19 @@ F. The first compiler error is on another line.
 Assuming the following classes are declared as top-level types in the same file, which classes contain compiler errors? (Choose all that apply.)
 
 sealed class Bird {
-   public final class Flamingo extends Bird {}   
+      public final class Flamingo extends Bird {}      
 }
- 
+  
 sealed class Monkey {}
- 
+  
 class EmperorTamarin extends Monkey {}
- 
+  
 non-sealed class Mandrill extends Monkey {}
- 
+  
 sealed class Friendly extends Mandrill permits Silly {}
- 
+  
 final class Silly {}
- 
+  
 
 A. Bird
 B. Monkey
@@ -284,20 +284,20 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Locale.Category;
 public record Wallet(double money) {
-   private String openWallet() {
-      Locale.setDefault(Category.DISPLAY,
-         new Locale.Builder().setRegion("us").build());
-      Locale.setDefault(Category.FORMAT,
-         new Locale.Builder().setLanguage("en").build());
-      return NumberFormat.getCurrencyInstance(Locale.GERMANY)
-         .format(money);
-   }
-   public void printBalance() {
-      System.out.println(openWallet());
-   }   
-   public static void main(String… unused) {
-      new Wallet(2.4).printBalance();
-   } }
+      private String openWallet() {
+            Locale.setDefault(Category.DISPLAY,
+                  new Locale.Builder().setRegion("us").build());
+            Locale.setDefault(Category.FORMAT,
+                  new Locale.Builder().setLanguage("en").build());
+            return NumberFormat.getCurrencyInstance(Locale.GERMANY)
+                  .format(money);
+      }
+      public void printBalance() {
+            System.out.println(openWallet());
+      }      
+      public static void main(String… unused) {
+            new Wallet(2.4).printBalance();
+      } }
 
 A. 2,40 €
 B. $2.40
@@ -390,19 +390,19 @@ Which lambda can replace the new Sloth() call in the main() method and produce t
 
 import java.util.List;
 interface Yawn {
-   String yawn(double d, List<Integer> time);
+      String yawn(double d, List<Integer> time);
 }
 class Sloth implements Yawn {
-   public String yawn(double zzz, List<Integer> time) {
-      return "Sleep: " + zzz;
-   } }
+      public String yawn(double zzz, List<Integer> time) {
+            return "Sleep: " + zzz;
+      } }
 public class Vet {
-   public static String takeNap(Yawn y) {
-      return y.yawn(10, null);
-   }
-   public static void main(String… unused) {
-      System.out.print(takeNap(new Sloth()));
-   } }
+      public static String takeNap(Yawn y) {
+            return y.yawn(10, null);
+      }
+      public static void main(String… unused) {
+            System.out.print(takeNap(new Sloth()));
+      } }
 
 A. (z,f) -> { String x = ""; return "Sleep: " + x }
 B. (t,s) -> { String t = ""; return "Sleep: " + t; }
@@ -420,7 +420,7 @@ Which of the following compiles and prints out the entire set?
 
 Set<?> set = Set.of("lion", "tiger", "bear");
 var s = Set.copyOf(set);
-Consumer<Object> consumer =  ________________;
+Consumer<Object> consumer =    ________________;
 s.forEach(consumer);
 
 A. () -> System.out.println(s)
@@ -437,13 +437,13 @@ F. System.out::println
 What is the minimum number of lines that would need to be changed or removed for the following code to compile and return a value when called with dance(10)?
 
 41: double dance(Object speed) {
-42:    return switch (speed) {
-43:       case 5 -> {yield 4};
-44:       case 10 -> 8;
-45:       case 15,20 -> 12;
-46:       default -> 20;
-47:       case null -> 16;
-48:    }
+42:        return switch (speed) {
+43:              case 5 -> {yield 4};
+44:              case 10 -> 8;
+45:              case 15,20 -> 12;
+46:              default -> 20;
+47:              case null -> 16;
+48:        }
 49: }
 
 A. Zero, the code compiles and runs without issue
@@ -483,9 +483,9 @@ What is the result of the following code snippet?
 
 3: int sing = 8, squawk = 2, notes = 0;
 4: while (sing> squawk) {
-5:    sing--;
-6:    squawk += 2;
-7:    notes += sing + squawk;
+5:        sing--;
+6:        squawk += 2;
+7:        notes += sing + squawk;
 8: }
 9: System.out.println(notes);
 
@@ -522,17 +522,17 @@ F. zonedDateTime.toInstant()
 ```text
 Which statement about the following class is correct?
 
-1:  class Problem extends Exception {
-2:     public Problem() {}
-3:  }
-4:  class YesProblem extends Problem {}
-5:  public class MyDatabase {
-6:     public static void connectToDatabase() throw Problem {
-7:        throws new YesProblem();
-8:     }
-9:     public static void main(String[] c) throw Exception {
-10:       connectToDatabase();
-11:    }
+1:    class Problem extends Exception {
+2:          public Problem() {}
+3:    }
+4:    class YesProblem extends Problem {}
+5:    public class MyDatabase {
+6:          public static void connectToDatabase() throw Problem {
+7:                throws new YesProblem();
+8:          }
+9:          public static void main(String[] c) throw Exception {
+10:              connectToDatabase();
+11:        }
 12: }
 
 A. The code compiles and prints a stack trace for YesProblem at runtime.
@@ -598,15 +598,15 @@ G. Marking a variable final means its associated object will never be garbage co
 Which statements about the following code snippet are correct? (Choose all that apply.)
 
 for (var penguin : new int[2])
-   System.out.println(penguin);
- 
+      System.out.println(penguin);
+  
 var ostrich = new Character[3];
 for (var emu : ostrich)
-   System.out.println(emu);
- 
+      System.out.println(emu);
+  
 List<Integer> parrots = new ArrayList<Integer>();
-for (var macaw  : parrots)
-   System.out.println(macaw);
+for (var macaw    : parrots)
+      System.out.println(macaw);
 
 A. The data type of penguin is Integer.
 B. The data type of penguin is int.
@@ -622,27 +622,27 @@ H. None of the above, as the code does not compile.
 ```text
 What is printed by the following program?
 
-1:  public class DriveBus {
-2:     public void go() {
-3:        System.out.print("A");
-4:        try {
-5:           stop();
-6:        } catch (ArithmeticException e) {
-7:           System.out.print("B");
-8:        } finally {
-9:           System.out.print("C");
-10:       }
-11:       System.out.print("D");
-12:    }
-13:    public void stop() {
-14:       System.out.print("E");
-15:       Object x = null;
-16:       x.toString();
-17:       System.out.print("F");
-18:    }
-19:    public static void main(String n[]) {
-20:       new DriveBus().go();
-21:    } }
+1:    public class DriveBus {
+2:          public void go() {
+3:                System.out.print("A");
+4:                try {
+5:                      stop();
+6:                } catch (ArithmeticException e) {
+7:                      System.out.print("B");
+8:                } finally {
+9:                      System.out.print("C");
+10:              }
+11:              System.out.print("D");
+12:        }
+13:        public void stop() {
+14:              System.out.print("E");
+15:              Object x = null;
+16:              x.toString();
+17:              System.out.print("F");
+18:        }
+19:        public static void main(String n[]) {
+20:              new DriveBus().go();
+21:        } }
 
 A. AE
 B. AEBCD
@@ -660,13 +660,13 @@ H. A stack trace with no other output
 Which statements about the following program are correct? (Choose all that apply.)
 
 1: public abstract interface Herbivore {
-2:    int amount = 10;
-3:    public void eatGrass();
-4:    public abstract int chew() { return 13; }
+2:        int amount = 10;
+3:        public void eatGrass();
+4:        public abstract int chew() { return 13; }
 5: }
 6:
 7: abstract class IsAPlant extends Herbivore {
-8:    Object eatGrass(int season) { return null; }
+8:        Object eatGrass(int season) { return null; }
 9: }
 
 A. It compiles and runs without issue.
@@ -716,12 +716,12 @@ G. The code does not compile.
 Which lines can fill in the blank to make the following code compile? (Choose all that apply.)
 
 void rollOut() throws ClassCastException {}
- 
+  
 public void transform(String c) {
-   try {
-      rollOut();
-   } catch (IllegalArgumentException |________________________) {
-   }
+      try {
+            rollOut();
+      } catch (IllegalArgumentException |________________________) {
+      }
 }
 
 A. IOException a
@@ -804,12 +804,12 @@ What is the result of the following code snippet?
 final char a = 'A', e = 'E';
 char grade = 'B';
 switch (grade) {
-   default:
-   case a:
-   case 'B': 'C': System.out.print("great ");
-   case 'D':      System.out.print("good "); break;
-   case e:
-   case 'F':      System.out.print("not good ");
+      default:
+      case a:
+      case 'B': 'C': System.out.print("great ");
+      case 'D':            System.out.print("good "); break;
+      case e:
+      case 'F':            System.out.print("not good ");
 }
 
 A. great
@@ -875,11 +875,11 @@ F. The method uses byte stream classes.
 What is the output of the following?
 
 var result = LocalDate.of(2025, Month.OCTOBER, 31)
-   .plusYears(1)
-   .plusMonths(-5)
-   .plusMonths(1)
-   .withYear(2026)
-   .atTime(LocalTime.of(13, 4));
+      .plusYears(1)
+      .plusMonths(-5)
+      .plusMonths(1)
+      .withYear(2026)
+      .atTime(LocalTime.of(13, 4));
 System.out.println(result);
 
 A. 2025-06-30T13:04
@@ -1064,23 +1064,23 @@ E. It is possible to make sure the package is not available to any other modules
 ```text
 Which statement about the following class is correct?
 
-1:  public class PoliceBox {
-2:     String color;
-3:     long age;
-4:     public void PoliceBox() {
-5:        color = "blue";
-6:        age = 1200;
-7:     }
-8:     public static void main(String []time) {
-9:        var p = new PoliceBox();
-10:       var q = new PoliceBox();
-11:       p.color = "green";
-12:       p.age = 1400;
-13:       p = q;
-14:       System.out.println("Q1="+q.color);
-15:       System.out.println("Q2="+q.age);
-16:       System.out.println("P1="+p.color);
-17:       System.out.println("P2="+p.age);
+1:    public class PoliceBox {
+2:          String color;
+3:          long age;
+4:          public void PoliceBox() {
+5:                color = "blue";
+6:                age = 1200;
+7:          }
+8:          public static void main(String []time) {
+9:                var p = new PoliceBox();
+10:              var q = new PoliceBox();
+11:              p.color = "green";
+12:              p.age = 1400;
+13:              p = q;
+14:              System.out.println("Q1="+q.color);
+15:              System.out.println("Q2="+q.age);
+16:              System.out.println("P1="+p.color);
+17:              System.out.println("P2="+p.age);
 18: } }
 
 A. It prints Q1=blue.

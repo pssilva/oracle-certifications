@@ -94,14 +94,14 @@ F. The code does not compile.
 ```text
 What is the output of the following snippet, assuming a and b are both 0?
 
-3:  try {
-4:     System.out.print(a / b);
-5:  } catch (RuntimeException e) {
-6:     System.out.print(-1);
-7:  } catch (ArithmeticException e) {
-8:     System.out.print(0);
-9:  } finally {
-10:    System.out.print("done");
+3:    try {
+4:          System.out.print(a / b);
+5:    } catch (RuntimeException e) {
+6:          System.out.print(-1);
+7:    } catch (ArithmeticException e) {
+8:          System.out.print(0);
+9:    } finally {
+10:        System.out.print("done");
 11: }
 
 A. -1
@@ -120,17 +120,17 @@ How many times is true printed out by this code?
 
 import java.util.function.Predicate;
 public class Fantasy {
-   public static void scary(String animal) {
-      var dino = s -> "dino".equals(animal);
-      var dragon = s -> "dragon".equals(animal);
-      var combined = dino.or(dragon);
-      System.out.println(combined.test(animal));
-   }
-   public static void main(String[] args) {
-      scary("dino");
-      scary("dragon");
-      scary("unicorn");
-   }
+      public static void scary(String animal) {
+            var dino = s -> "dino".equals(animal);
+            var dragon = s -> "dragon".equals(animal);
+            var combined = dino.or(dragon);
+            System.out.println(combined.test(animal));
+      }
+      public static void main(String[] args) {
+            scary("dino");
+            scary("dragon");
+            scary("unicorn");
+      }
 }
 
 A. One.
@@ -191,15 +191,15 @@ F. It is possible to use a resource bundle for a locale without specifying a def
 What does the following method print?
 
 11: public void tryAgain(String s) {
-12:    try (FileReader r = null, p = new FileReader("")) {
-13:       System.out.print("X");
-14:       throw new IllegalArgumentException();
-15:    } catch (Exception s) {
-16:       System.out.print("A");
-17:       throw new FileNotFoundException();
-18:    } finally {
-19:       System.out.print("O");
-20:    }
+12:        try (FileReader r = null, p = new FileReader("")) {
+13:              System.out.print("X");
+14:              throw new IllegalArgumentException();
+15:        } catch (Exception s) {
+16:              System.out.print("A");
+17:              throw new FileNotFoundException();
+18:        } finally {
+19:              System.out.print("O");
+20:        }
 21: }
 
 A. XAO
@@ -337,13 +337,13 @@ F. None of the above.
 Assuming the current locale uses dollars ($) and the following method is called with a double value of 100_102.2, which of the following values are printed? (Choose all that apply.)
 
 public void print(double t) {
-   System.out.print(NumberFormat.getCompactNumberInstance().format(t));
- 
-   System.out.print(
-      NumberFormat.getCompactNumberInstance(
-         Locale.getDefault(), Style.SHORT).format(t));
- 
-   System.out.print(NumberFormat.getCurrencyInstance().format(t));
+      System.out.print(NumberFormat.getCompactNumberInstance().format(t));
+  
+      System.out.print(
+            NumberFormat.getCompactNumberInstance(
+                  Locale.getDefault(), Style.SHORT).format(t));
+  
+      System.out.print(NumberFormat.getCurrencyInstance().format(t));
 }
 
 A. 100
@@ -432,13 +432,13 @@ F. int[][] java = new int[][];
 What is the output of the following program?
 
 1: interface Aquatic {
-2:    int getNumOfGills(int p);
+2:        int getNumOfGills(int p);
 3: }
 4: public class ClownFish implements Aquatic {
-5:    String getNumOfGills() { return "14"; }
-6:    int getNumOfGills(int input) { return 15; }
-7:    public static void main(String[] args) {
-8:       System.out.println(new ClownFish().getNumOfGills(-1));
+5:        String getNumOfGills() { return "14"; }
+6:        int getNumOfGills(int input) { return 15; }
+7:        public static void main(String[] args) {
+8:              System.out.println(new ClownFish().getNumOfGills(-1));
 9: } }
 
 A. 14
@@ -490,7 +490,7 @@ Given the following, select the statements that can be inserted into the blank l
 
 record Walrus(List<String> diet) {}
 record Exhibit(Walrus animal, String location) {}
- 
+  
 var e = new Exhibit(new Walrus(List.of("Wally")), "Artic");
 System.out.print(e instanceof _____________);
 
@@ -675,11 +675,11 @@ G. An exception is thrown.
 Which of the following can be inserted in the rest() method? (Choose all that apply.)
 
 public class Lion {
-   class Cub {}
-   static class Den {}
-   static void rest() {
-      ________________;
-   } }
+      class Cub {}
+      static class Den {}
+      static void rest() {
+            ________________;
+      } }
 
 A. Cub a = Lion.new Cub()
 B. Lion.Cub b = new Lion().Cub()
@@ -697,13 +697,13 @@ H. var h = new Cub()
 What is the output of calling printReptile(6)?
 
 void printReptile(int category) {
-   var type = switch (category) {
-      case 1,2 -> "Snake";
-      case 3,4 -> "Lizard";
-      case 5,6 -> "Turtle";
-      case 7,8 -> "Alligator";
-   };
-   System.out.print(type);
+      var type = switch (category) {
+            case 1,2 -> "Snake";
+            case 3,4 -> "Lizard";
+            case 5,6 -> "Turtle";
+            case 7,8 -> "Alligator";
+      };
+      System.out.print(type);
 }
 
 A. Snake
@@ -719,20 +719,20 @@ F. None of the above
 ```text
 What is the result of running the following class?
 
-1:  import java.util.function.*;
+1:    import java.util.function.*;
 2:
-3:  public class Panda {
-4:     int age;
-5:     public static void main(String[] args) {
-6:        Panda p1 = new Panda();
-7:        p1.age = 1;
-8:        check(p1, p -> {p.age < 5});
-9:     }
-10:    private static void check(Panda panda,
-11:       Predicate<Panda> pred) {
-12:       String result = pred.test(panda)
-13:          ? "match" : "not match";
-14:       System.out.print(result);
+3:    public class Panda {
+4:          int age;
+5:          public static void main(String[] args) {
+6:                Panda p1 = new Panda();
+7:                p1.age = 1;
+8:                check(p1, p -> {p.age < 5});
+9:          }
+10:        private static void check(Panda panda,
+11:              Predicate<Panda> pred) {
+12:              String result = pred.test(panda)
+13:                    ? "match" : "not match";
+14:              System.out.print(result);
 15: } }
 
 A. match
@@ -812,7 +812,7 @@ What does the following program print?
 12:              m.setName("Webby");
 13:              t.setName("Olivia");
 14:              System.out.println(m.name + " " + t.name);
-15:    } }
+15:        } }
 
 A. Elysia Sophia
 B. Webby Olivia
@@ -917,10 +917,10 @@ What is the output of the following code snippet?
 
 32: Object skips = 10;
 33: switch (skips) {
-34:     case a when a < 10  -> System.out.print(2);
-35:    case b when b>= 10 -> System.out.print(4);
-36:    case null -> System.out.print(6);
-37:    default   -> System.out.print(8);
+34:        case a when a < 10    -> System.out.print(2);
+35:        case b when b>= 10 -> System.out.print(4);
+36:        case null -> System.out.print(6);
+37:        default      -> System.out.print(8);
 38: }
 
 A. 2
@@ -1025,25 +1025,25 @@ E. Four
 Which of the following are valid record declarations? (Choose all that apply.)
 
 public record Iguana(int age) {
-   private static final int age = 10; }
- 
+      private static final int age = 10; }
+  
 public final record Gecko() {}
- 
-public abstract record Chameleon()  {
-   private static String name; }
- 
+  
+public abstract record Chameleon()    {
+      private static String name; }
+  
 public record BeardedDragon(boolean fun) {
-   @Override public boolean fun() { return false; } }
- 
+      @Override public boolean fun() { return false; } }
+  
 public record Reptile(long size) {
-   public Reptile {
-      if(size == 1) throw new IllegalArgumentException();
-   } }
- 
+      public Reptile {
+            if(size == 1) throw new IllegalArgumentException();
+      } }
+  
 public record Newt(double age) extends Reptile {
-   public Newt(double age) {
-      age = this.age % 2 == 0 ? 5 : 10;
-   } }
+      public Newt(double age) {
+            age = this.age % 2 == 0 ? 5 : 10;
+      } }
 
 A. Iguana
 B. Gecko
@@ -1060,14 +1060,14 @@ G. None of the above
 Which change allows the following program to compile?
 
 1: public class AhChoo {
-2:    static class SneezeException extends Exception {}
-3:    static class SniffleException extends SneezeException {}
-4:    public static void main(String[] args) {
-5:       try {
-6:          throw new SneezeException();
-7:       } catch (SneezeException | SniffleException e) {
-8:       } finally {}
-9:    } }
+2:        static class SneezeException extends Exception {}
+3:        static class SniffleException extends SneezeException {}
+4:        public static void main(String[] args) {
+5:              try {
+6:                    throw new SneezeException();
+7:              } catch (SneezeException | SniffleException e) {
+8:              } finally {}
+9:        } }
 
 A. Add throws SneezeException to the declaration on line 4.
 B. Add throws Throwable to the declaration on line 4.

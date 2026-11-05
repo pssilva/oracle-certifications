@@ -24,9 +24,9 @@
 Assuming weather is a well-formed nonempty array, which code snippet, when inserted independently into the blank in the following code, prints all of the elements of weather? (Choose all that apply.)
 
 private void print(int[] weather) {
-   for () {
-      System.out.println(weather[i]);
-   }
+      for () {
+            System.out.println(weather[i]);
+      }
 }
 
 A. int i=weather.length; i>0; i--
@@ -44,12 +44,12 @@ G. None of the above
 Which lines can fill in the blank to make the following code compile? (Choose all that apply.)
 
 void rollOut() throws ClassCastException {}
- 
+  
 public void transform(String c) {
-   try {
-      rollOut();
-   } catch (IllegalArgumentException |________________________) {
-   }
+      try {
+            rollOut();
+      } catch (IllegalArgumentException |________________________) {
+      }
 }
 
 A. IOException a
@@ -229,13 +229,13 @@ F. void public slush() {}
 Which is true of the following code?
 
 int length = 3;
- 
+  
 for (int i = 0; i<3; i++) {
-   if (i%2 == 0) {
-      Supplier<Integer> supplier = () -> length; // A
-      System.out.println(supplier.get());        // B
-   } else {
-      int j = i;
+      if (i%2 == 0) {
+            Supplier<Integer> supplier = () -> length; // A
+            System.out.println(supplier.get());                // B
+      } else {
+            int j = i;
       Supplier<Integer> supplier = () -> j;      // C
       System.out.println(supplier.get());        // D
    }

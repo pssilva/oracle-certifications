@@ -51,7 +51,7 @@ What does the following program print?
 12:              m.setName("Webby");
 13:              t.setName("Olivia");
 14:              System.out.println(m.name + " " + t.name);
-15:    } }
+15:        } }
 
 A. Elysia Sophia
 B. Webby Olivia
@@ -132,7 +132,7 @@ Given the following two class files, what is the maximum number of imports that 
 // Water.java
 package aquarium;
 public class Water { }
- 
+  
 // Tank.java
 package aquarium;
 import java.lang.*;
@@ -140,8 +140,8 @@ import java.lang.System;
 import aquarium.Water;
 import aquarium.*;
 public class Tank {
-   public void print(Water water) {
-      System.out.println(water); } }
+      public void print(Water water) {
+            System.out.println(water); } }
 
 A. 0
 B. 1
@@ -157,13 +157,13 @@ F. Does not compile
 What is the minimum number of lines that would need to be changed or removed for the following code to compile and return a value when called with dance(10)?
 
 41: double dance(Object speed) {
-42:    return switch (speed) {
-43:       case 5 -> {yield 4};
-44:       case 10 -> 8;
-45:       case 15,20 -> 12;
-46:       default -> 20;
-47:       case null -> 16;
-48:    }
+42:        return switch (speed) {
+43:              case 5 -> {yield 4};
+44:              case 10 -> 8;
+45:              case 15,20 -> 12;
+46:              default -> 20;
+47:              case null -> 16;
+48:        }
 49: }
 
 A. Zero, the code compiles and runs without issue
@@ -180,16 +180,16 @@ G. Six
 ```text
 Which of the following changes, when made independently, would make this code compile? (Choose all that apply.)
 
-1:  import java.io.*;
-2:  public class StuckTurkeyCage implements AutoCloseable {
-3:     public void close() throws IOException {
-4:        throw new FileNotFoundException("Cage not closed");
-5:     }
-6:     public static void main(String[] args) {
-7:        try (StuckTurkeyCage t = new StuckTurkeyCage()) {
-8:           System.out.println("put turkeys in");
-9:        }
-10:    } }
+1:    import java.io.*;
+2:    public class StuckTurkeyCage implements AutoCloseable {
+3:          public void close() throws IOException {
+4:                throw new FileNotFoundException("Cage not closed");
+5:          }
+6:          public static void main(String[] args) {
+7:                try (StuckTurkeyCage t = new StuckTurkeyCage()) {
+8:                      System.out.println("put turkeys in");
+9:                }
+10:        } }
 
 A. Remove throws IOException from the declaration on line 3.
 B. Add throws Exception to the declaration on line 6.
@@ -235,14 +235,14 @@ G. It compiles but throws an exception at runtime.
 ```text
 What is the output of the following snippet, assuming a and b are both 0?
 
-3:  try {
-4:     System.out.print(a / b);
-5:  } catch (RuntimeException e) {
-6:     System.out.print(-1);
-7:  } catch (ArithmeticException e) {
-8:     System.out.print(0);
-9:  } finally {
-10:    System.out.print("done");
+3:    try {
+4:          System.out.print(a / b);
+5:    } catch (RuntimeException e) {
+6:          System.out.print(-1);
+7:    } catch (ArithmeticException e) {
+8:          System.out.print(0);
+9:    } finally {
+10:        System.out.print("done");
 11: }
 
 A. -1
@@ -462,11 +462,11 @@ var time = LocalTime.of(1, 30);
 var zone = ZoneId.of("US/Eastern");
 var dateTime1 = ZonedDateTime.of(date, time, zone);
 var dateTime2 = dateTime1.plus(1, ChronoUnit.HOURS);
- 
+  
 long diff = ChronoUnit.HOURS.between(dateTime1, dateTime2);
 int hour = dateTime2.getHour();
 boolean offset = dateTime1.getOffset()
-   == dateTime2.getOffset();
+      == dateTime2.getOffset();
 System.out.println("diff = " + diff);
 System.out.println("hour = " + hour);
 System.out.println("offset = " + offset);
@@ -550,22 +550,22 @@ F. 5
 What is the output of the following program?
 
 20: public enum Animals {
-21:    MAMMAL(List.of(2,4)),
-22:    INVERTEBRATE(List.of(2, 4, 6, 8, 100)),
-23:    BIRD(null) {
-24:       public int stand() {
-25:          return legs.get(0) + 4;
-26:       }
-27:    };
-28:    List<Integer> legs;
-29:    Animals(List<Integer> legs) {
-30:       this.legs = legs;
-31:    }
-32:    public int stand() { return legs.get(0); }
-33:    public static void main(String[] a) {
-34:       Animals.BIRD.legs = List.of(-1);
-35:       System.out.println(Animals.BIRD.stand());
-36:    } }
+21:        MAMMAL(List.of(2,4)),
+22:        INVERTEBRATE(List.of(2, 4, 6, 8, 100)),
+23:        BIRD(null) {
+24:              public int stand() {
+25:                    return legs.get(0) + 4;
+26:              }
+27:        };
+28:        List<Integer> legs;
+29:        Animals(List<Integer> legs) {
+30:              this.legs = legs;
+31:        }
+32:        public int stand() { return legs.get(0); }
+33:        public static void main(String[] a) {
+34:              Animals.BIRD.legs = List.of(-1);
+35:              System.out.println(Animals.BIRD.stand());
+36:        } }
 
 A. null
 B. -1
@@ -671,16 +671,16 @@ G. None of the above
 Which is true of the following code?
 
 int length = 3;
- 
+  
 for (int i = 0; i<3; i++) {
-   if (i%2 == 0) {
-      Supplier<Integer> supplier = () -> length; // A
-      System.out.println(supplier.get());        // B
-   } else {
-      int j = i;
-      Supplier<Integer> supplier = () -> j;      // C
-      System.out.println(supplier.get());        // D
-   }
+      if (i%2 == 0) {
+            Supplier<Integer> supplier = () -> length; // A
+            System.out.println(supplier.get());                // B
+      } else {
+            int j = i;
+            Supplier<Integer> supplier = () -> j;            // C
+            System.out.println(supplier.get());                // D
+      }
 }
 
 A. The first compiler error is on line A.
@@ -721,13 +721,13 @@ G. The code does not compile.
 Which lines of the following interface declarations do not compile? (Choose all that apply.)
 
 1: public interface Omnivore {
-2:    int amount = 10;
-3:    static boolean gather = true;
-4:    static void eatGrass() {}
-5:    int findMore() { return 2; }
-6:    default float rest() { return 2; }
-7:    protected int chew() { return 13; }
-8:    private static void eatLeaves() {}
+2:        int amount = 10;
+3:        static boolean gather = true;
+4:        static void eatGrass() {}
+5:        int findMore() { return 2; }
+6:        default float rest() { return 2; }
+7:        protected int chew() { return 13; }
+8:        private static void eatLeaves() {}
 9: }
 
 A. All of the lines compile without issue.
@@ -767,10 +767,10 @@ G. It throws an exception because the same list is used as the source for multip
 What is the result of the following code?
 
 1: public class PrintIntegers {
-2:    public static void main(String[] args) {
-3:       int y = -2;
-4:       do System.out.print(++y + " ");
-5:       while (y <= 5);
+2:        public static void main(String[] args) {
+3:              int y = -2;
+4:              do System.out.print(++y + " ");
+5:              while (y <= 5);
 6: } }
 
 A. -2 -1 0 1 2 3 4 5
@@ -786,16 +786,16 @@ F. The code contains an infinite loop and does not terminate.
 ```text
 What lines are printed by the following program? (Choose all that apply.)
 
-1:  public class WaterBottle {
-2:     private String brand;
-3:     private boolean empty;
-4:     public static float code;
-5:     public static void main(String[] args) {
-6:        WaterBottle wb = new WaterBottle();
-7:        System.out.println("Empty = " + wb.empty);
-8:        System.out.println("Brand = " + wb.brand);
-9:        System.out.println("Code = " + code);
-10:    } }
+1:    public class WaterBottle {
+2:          private String brand;
+3:          private boolean empty;
+4:          public static float code;
+5:          public static void main(String[] args) {
+6:                WaterBottle wb = new WaterBottle();
+7:                System.out.println("Empty = " + wb.empty);
+8:                System.out.println("Brand = " + wb.brand);
+9:                System.out.println("Code = " + code);
+10:        } }
 
 A. Line 8 generates a compiler error.
 B. Line 9 generates a compiler error.
@@ -816,17 +816,17 @@ List<Integer> myFavoriteNumbers = new ArrayList<>();
 myFavoriteNumbers.add(10);
 myFavoriteNumbers.add(14);
 for (var a : myFavoriteNumbers) {
-   System.out.print(a + ", ");
-   break;
+      System.out.print(a + ", ");
+      break;
 }
- 
+  
 for (int b : myFavoriteNumbers) {
-   continue;
-   System.out.print(b + ", ");
+      continue;
+      System.out.print(b + ", ");
 }
- 
+  
 for (Object c : myFavoriteNumbers)
-   System.out.print(c + ", ");
+      System.out.print(c + ", ");
 
 A. It compiles and runs without issue but does not produce any output.
 B. 10, 14,
@@ -847,7 +847,7 @@ var huey = (String)null;
 Integer dewey = null;
 Object louie = null;
 if(louie == huey.substring(dewey.intValue())) {
-   System.out.println("Quack!");
+      System.out.println("Quack!");
 }
 
 A. A NullPointerException that does not include any variable names in the stack trace
@@ -939,20 +939,20 @@ F. zzz:
 What is the output of the following program?
 
 public class SnowStorm {
-   static class WalkToSchool implements AutoCloseable {
-      public void close() {
-         throw new RuntimeException("flurry");
-      } }
-   public static void main(String[] args) {
-      WalkToSchool walk1 = new WalkToSchool();
-      try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
-         throw new RuntimeException("blizzard");
-      } catch(Exception e) {
-         System.out.println(e.getMessage()
-            + " " + e.getSuppressed().length);
-      }
-      walk1 = null;
-   } }
+      static class WalkToSchool implements AutoCloseable {
+            public void close() {
+                  throw new RuntimeException("flurry");
+            } }
+      public static void main(String[] args) {
+            WalkToSchool walk1 = new WalkToSchool();
+            try (walk1; WalkToSchool walk2 = new WalkToSchool()) {
+                  throw new RuntimeException("blizzard");
+            } catch(Exception e) {
+                  System.out.println(e.getMessage()
+                        + " " + e.getSuppressed().length);
+            }
+            walk1 = null;
+      } }
 
 A. blizzard 0
 B. blizzard 1
@@ -1058,18 +1058,18 @@ Which lambda expression, when entered into the blank line in the following code,
 
 import java.util.function.Predicate;
 public class Hyena {
-   private int age = 1;
-   public static void main(String[] args) {
-      var p = new Hyena();
-      double height = 10;
-      int age = 1;
-      testLaugh(p,  ________________);
-      age = 2;
-   }
-   static void testLaugh(Hyena panda, Predicate<Hyena> joke) {
-      var r = joke.test(panda) ? "hahaha" : "silence";
-      System.out.print(r);
-   }
+      private int age = 1;
+      public static void main(String[] args) {
+            var p = new Hyena();
+            double height = 10;
+            int age = 1;
+            testLaugh(p,    ________________);
+            age = 2;
+      }
+      static void testLaugh(Hyena panda, Predicate<Hyena> joke) {
+            var r = joke.test(panda) ? "hahaha" : "silence";
+            System.out.print(r);
+      }
 }
 
 A. var -> p.age <= 10
@@ -1163,16 +1163,16 @@ E. One or more of the scenarios throws a runtime exception.
 ```text
 What is the output of the following code snippet?
 
-9:  int w = 0, r = 1;
+9:    int w = 0, r = 1;
 10: String name = "";
 11: while (w < 2) {
-12:    name += "A";
-13:    do {
-14:       name += "B";
-15:       if (name.length()>0) name += "C";
-16:       else break;
-17:    } while (r <=1);
-18:    r++; w++; }
+12:        name += "A";
+13:        do {
+14:              name += "B";
+15:              if (name.length()>0) name += "C";
+16:              else break;
+17:        } while (r <=1);
+18:        r++; w++; }
 19: System.out.println(name);
 
 A. ABC

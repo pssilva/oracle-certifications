@@ -38,10 +38,10 @@ G. None of the above
 What is the output of the following code?
 
 try {
-   LocalDateTime book = LocalDateTime.of(2025, 4, 5, 12, 30, 20);
-   System.out.print(book.format(DateTimeFormatter.ofPattern("m")));
-   System.out.print(book.format(DateTimeFormatter.ofPattern("z")));
-   System.out.print(DateTimeFormatter.ofPattern("y").format(book));
+      LocalDateTime book = LocalDateTime.of(2025, 4, 5, 12, 30, 20);
+      System.out.print(book.format(DateTimeFormatter.ofPattern("m")));
+      System.out.print(book.format(DateTimeFormatter.ofPattern("z")));
+      System.out.print(DateTimeFormatter.ofPattern("y").format(book));
 } catch (Throwable e) {}
 
 A. 4
@@ -59,25 +59,25 @@ G. None of the above
 Which of the following are valid record declarations? (Choose all that apply.)
 
 public record Iguana(int age) {
-   private static final int age = 10; }
- 
+      private static final int age = 10; }
+  
 public final record Gecko() {}
- 
-public abstract record Chameleon()  {
-   private static String name; }
- 
+  
+public abstract record Chameleon()    {
+      private static String name; }
+  
 public record BeardedDragon(boolean fun) {
-   @Override public boolean fun() { return false; } }
- 
+      @Override public boolean fun() { return false; } }
+  
 public record Reptile(long size) {
-   public Reptile {
-      if(size == 1) throw new IllegalArgumentException();
-   } }
- 
+      public Reptile {
+            if(size == 1) throw new IllegalArgumentException();
+      } }
+  
 public record Newt(double age) extends Reptile {
-   public Newt(double age) {
-      age = this.age % 2 == 0 ? 5 : 10;
-   } }
+      public Newt(double age) {
+            age = this.age % 2 == 0 ? 5 : 10;
+      } }
 
 A. Iguana
 B. Gecko
@@ -111,15 +111,15 @@ E. 4
 What does the following method print?
 
 11: public void tryAgain(String s) {
-12:    try (FileReader r = null, p = new FileReader("")) {
-13:       System.out.print("X");
-14:       throw new IllegalArgumentException();
-15:    } catch (Exception s) {
-16:       System.out.print("A");
-17:       throw new FileNotFoundException();
-18:    } finally {
-19:       System.out.print("O");
-20:    }
+12:        try (FileReader r = null, p = new FileReader("")) {
+13:              System.out.print("X");
+14:              throw new IllegalArgumentException();
+15:        } catch (Exception s) {
+16:              System.out.print("A");
+17:              throw new FileNotFoundException();
+18:        } finally {
+19:              System.out.print("O");
+20:        }
 21: }
 
 A. XAO
@@ -256,12 +256,12 @@ What is the output of the following code snippet?
 
 2: double iguana = 0;
 3: do {
-4:    int snake = 1;
-5:    System.out.print(snake++ + " ");
-6:    iguana--;
+4:        int snake = 1;
+5:        System.out.print(snake++ + " ");
+6:        iguana--;
 7: } while (snake <= 5);
 8: System.out.println(iguana);
- 
+  
 
 A. 1 2 3 4 -4.0
 B. 1 2 3 4 -5.0
@@ -277,21 +277,21 @@ G. None of the above.
 ```text
 What is the result of compiling and executing the following code?
 
-1:  public class Movie {
-2:     private int butter = 5;
-3:     private Movie() {}
-4:     protected class Popcorn {
-5:        private Popcorn() {}
-6:        public static int butter = 10;
-7:        public void startMovie() {
-8:           System.out.println(butter);
-9:        }
-10:    }
-11:    public static void main(String[] args) {
-12:       var movie = new Movie();
-13:       Movie.Popcorn in = new Movie().new Popcorn();
-14:       in.startMovie();
-15:    } }
+1:    public class Movie {
+2:          private int butter = 5;
+3:          private Movie() {}
+4:          protected class Popcorn {
+5:                private Popcorn() {}
+6:                public static int butter = 10;
+7:                public void startMovie() {
+8:                      System.out.println(butter);
+9:                }
+10:        }
+11:        public static void main(String[] args) {
+12:              var movie = new Movie();
+13:              Movie.Popcorn in = new Movie().new Popcorn();
+14:              in.startMovie();
+15:        } }
 
 A. The output is 5.
 B. The output is 10.
@@ -336,18 +336,18 @@ H. This method contains a resource leak.
 Which line allows the code to print Not scared at runtime?
 
 public class Ghost {
-   public static void boo() {
-      System.out.println("Not scared");
-   }
-   protected final class Spirit {
-      public void boo() {
-         System.out.println("Booo!!!");
-      }
-   }
-   public static void main(String… haunt) {
-      var g = new Ghost().new Spirit() {};
-      _______________________________;
-   } }
+      public static void boo() {
+            System.out.println("Not scared");
+      }
+      protected final class Spirit {
+            public void boo() {
+                  System.out.println("Booo!!!");
+            }
+      }
+      public static void main(String… haunt) {
+            var g = new Ghost().new Spirit() {};
+            _______________________________;
+      } }
 
 A. g.boo()
 B. g.super.boo()
@@ -393,11 +393,11 @@ F. None of the above.
 The following code appears in a file named Ostrich.java. What is the result of compiling the source file?
 
 1: public class Ostrich {
-2:    private int count;
-3:    static class OstrichWrangler {
-4:       public int stampede() {
-5:          return count;
-6:       } } }
+2:        private int count;
+3:        static class OstrichWrangler {
+4:              public int stampede() {
+5:                    return count;
+6:              } } }
 
 A. The code compiles successfully, and one bytecode file is generated: Ostrich.class.
 B. The code compiles successfully, and two bytecode files are generated: Ostrich.class and OstrichWrangler.class.
@@ -411,17 +411,17 @@ E. A compiler error occurs on line 5.
 ```text
 Which statement about the following class is correct?
 
-1:  class Problem extends Exception {
-2:     public Problem() {}
-3:  }
-4:  class YesProblem extends Problem {}
-5:  public class MyDatabase {
-6:     public static void connectToDatabase() throw Problem {
-7:        throws new YesProblem();
-8:     }
-9:     public static void main(String[] c) throw Exception {
-10:       connectToDatabase();
-11:    }
+1:    class Problem extends Exception {
+2:          public Problem() {}
+3:    }
+4:    class YesProblem extends Problem {}
+5:    public class MyDatabase {
+6:          public static void connectToDatabase() throw Problem {
+7:                throws new YesProblem();
+8:          }
+9:          public static void main(String[] c) throw Exception {
+10:              connectToDatabase();
+11:        }
 12: }
 
 A. The code compiles and prints a stack trace for YesProblem at runtime.
@@ -464,27 +464,27 @@ F. public static main(String[] args)
 ```text
 What is printed by the following program?
 
-1:  public class DriveBus {
-2:     public void go() {
-3:        System.out.print("A");
-4:        try {
-5:           stop();
-6:        } catch (ArithmeticException e) {
-7:           System.out.print("B");
-8:        } finally {
-9:           System.out.print("C");
-10:       }
-11:       System.out.print("D");
-12:    }
-13:    public void stop() {
-14:       System.out.print("E");
-15:       Object x = null;
-16:       x.toString();
-17:       System.out.print("F");
-18:    }
-19:    public static void main(String n[]) {
-20:       new DriveBus().go();
-21:    } }
+1:    public class DriveBus {
+2:          public void go() {
+3:                System.out.print("A");
+4:                try {
+5:                      stop();
+6:                } catch (ArithmeticException e) {
+7:                      System.out.print("B");
+8:                } finally {
+9:                      System.out.print("C");
+10:              }
+11:              System.out.print("D");
+12:        }
+13:        public void stop() {
+14:              System.out.print("E");
+15:              Object x = null;
+16:              x.toString();
+17:              System.out.print("F");
+18:        }
+19:        public static void main(String n[]) {
+20:              new DriveBus().go();
+21:        } }
 
 A. AE
 B. AEBCD
@@ -504,11 +504,11 @@ What is the output of the following code snippet?
 2: var tailFeathers = 3;
 3: final var one = 1;
 4: switch (tailFeathers) {
-5:    case one: System.out.print(3 + " ");
-6:    default: case 3: System.out.print(5 + " ");
+5:        case one: System.out.print(3 + " ");
+6:        default: case 3: System.out.print(5 + " ");
 7: }
 8: while (tailFeathers> 1) {
-9:    System.out.print(--tailFeathers + " "); }
+9:        System.out.print(--tailFeathers + " "); }
 
 A. 3
 B. 5 1
@@ -570,18 +570,18 @@ H. The eat() method in Primate is correctly overloaded on line 12.
 Which of the following is printed by the Bear program?
 
 public class Bear {
-   enum FOOD {
-      BERRIES, INSECTS {
-         public boolean isHealthy() { return true; }},
-      FISH, ROOTS, COOKIES, HONEY;
-      public abstract boolean isHealthy();
-   }
-   public static void main(String[] args) {
-      System.out.print(FOOD.INSECTS);
-      System.out.print(FOOD.INSECTS.ordinal());
-      System.out.print(FOOD.INSECTS.isHealthy());
-      System.out.print(FOOD.COOKIES.isHealthy());
-   } }
+      enum FOOD {
+            BERRIES, INSECTS {
+                  public boolean isHealthy() { return true; }},
+            FISH, ROOTS, COOKIES, HONEY;
+            public abstract boolean isHealthy();
+      }
+      public static void main(String[] args) {
+            System.out.print(FOOD.INSECTS);
+            System.out.print(FOOD.INSECTS.ordinal());
+            System.out.print(FOOD.INSECTS.isHealthy());
+            System.out.print(FOOD.COOKIES.isHealthy());
+      } }
 
 A. insects
 B. Insects
@@ -637,9 +637,9 @@ G. None of the above
 What is the output of the following code?
 
 LocalDate date = LocalDate.parse("2025-04-30",
-   DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+      DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 System.out.println(date.getYear() + " "
-   + date.getMonth() + " "+ date.getDayOfMonth());
+      + date.getMonth() + " "+ date.getDayOfMonth());
 
 A. 2025 APRIL 2
 B. 2025 APRIL 30
@@ -654,12 +654,12 @@ E. A runtime exception is thrown.
 Which lines can fill in the blank to make the following code compile? (Choose all that apply.)
 
 void rollOut() throws ClassCastException {}
- 
+  
 public void transform(String c) {
-   try {
-      rollOut();
-   } catch (IllegalArgumentException |________________________) {
-   }
+      try {
+            rollOut();
+      } catch (IllegalArgumentException |________________________) {
+      }
 }
 
 A. IOException a
@@ -678,10 +678,10 @@ What is the output of the following code snippet?
 
 32: Object skips = 10;
 33: switch (skips) {
-34:     case a when a < 10  -> System.out.print(2);
-35:    case b when b>= 10 -> System.out.print(4);
-36:    case null -> System.out.print(6);
-37:    default   -> System.out.print(8);
+34:        case a when a < 10    -> System.out.print(2);
+35:        case b when b>= 10 -> System.out.print(4);
+36:        case null -> System.out.print(6);
+37:        default      -> System.out.print(8);
 38: }
 
 A. 2
@@ -803,16 +803,16 @@ F. compare() takes two method parameters.
 What is the output of calling printLocation(Animal.MAMMAL)?
 
 10: class Zoo {
-11:    enum Animal {BIRD, FISH, MAMMAL}
-12:    void printLocation(Animal a) {
-13:       long type = switch (a) {
-14:          case BIRD -> 1;
-15:          case FISH -> 2;
-16:          case MAMMAL -> 3;
-17:          default -> 4;
-18:       };
-19:       System.out.print(type);
-20:    } }
+11:        enum Animal {BIRD, FISH, MAMMAL}
+12:        void printLocation(Animal a) {
+13:              long type = switch (a) {
+14:                    case BIRD -> 1;
+15:                    case FISH -> 2;
+16:                    case MAMMAL -> 3;
+17:                    default -> 4;
+18:              };
+19:              System.out.print(type);
+20:        } }
 
 A. 3
 B. 4
@@ -850,9 +850,9 @@ G. It compiles but waits forever at runtime.
 ```text
 Which functional interfaces complete the following code? For line 7, assume m and n are instances of functional interfaces that exist and have the same type as y. (Choose three.)
 
-6:  _____________ x = String::new;
-7:  _____________ y = m.andThen(n);
-8:  _____________ z = a -> a + a;
+6:    _____________ x = String::new;
+7:    _____________ y = m.andThen(n);
+8:    _____________ z = a -> a + a;
 
 A. BinaryConsumer<String, String>
 B. BiConsumer<String, String>
@@ -1050,15 +1050,15 @@ G. (Cat a, b) -> {}
 What is the result of the following code?
 
 public class Lion {
-   public void roar(String roar1, StringBuilder roar2) {
-      roar1.concat("!!!");
-      roar2.append("!!!");
-   }
-   public static void main(String[] args) {
-      var roar1 = "roar";
-      var roar2 = new StringBuilder("roar");
-      new Lion().roar(roar1, roar2);
-      System.out.println(roar1 + " " + roar2);
+      public void roar(String roar1, StringBuilder roar2) {
+            roar1.concat("!!!");
+            roar2.append("!!!");
+      }
+      public static void main(String[] args) {
+            var roar1 = "roar";
+            var roar2 = new StringBuilder("roar");
+            new Lion().roar(roar1, roar2);
+            System.out.println(roar1 + " " + roar2);
 } }
 
 A. roar roar

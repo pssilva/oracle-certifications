@@ -23,20 +23,20 @@
 ```text
 What is the result of the following code?
 
-1:  interface Climb {
-2:     boolean isTooHigh(int height, int limit);
-3:  }
+1:    interface Climb {
+2:          boolean isTooHigh(int height, int limit);
+3:    }
 4:
-5:  public class Climber {
-6:     public static void main(String[] args) {
-7:        check((h, m) -> h.append(m).isEmpty(), 5);
-8:     }
-9:     private static void check(Climb climb, int height) {
-10:       if (climb.isTooHigh(height, 10))
-11:          System.out.println("too high");
-12:       else
-13:          System.out.println("ok");
-14:    }
+5:    public class Climber {
+6:          public static void main(String[] args) {
+7:                check((h, m) -> h.append(m).isEmpty(), 5);
+8:          }
+9:          private static void check(Climb climb, int height) {
+10:              if (climb.isTooHigh(height, 10))
+11:                    System.out.println("too high");
+12:              else
+13:                    System.out.println("ok");
+14:        }
 15: }
 
 A. ok
@@ -54,7 +54,7 @@ Which of the following compiles and prints out the entire set?
 
 Set<?> set = Set.of("lion", "tiger", "bear");
 var s = Set.copyOf(set);
-Consumer<Object> consumer =  ________________;
+Consumer<Object> consumer =    ________________;
 s.forEach(consumer);
 
 A. () -> System.out.println(s)
@@ -124,11 +124,11 @@ E. None of the above
 Which of the following can be inserted in the rest() method? (Choose all that apply.)
 
 public class Lion {
-   class Cub {}
-   static class Den {}
-   static void rest() {
-      ________________;
-   } }
+      class Cub {}
+      static class Den {}
+      static void rest() {
+            ________________;
+      } }
 
 A. Cub a = Lion.new Cub()
 B. Lion.Cub b = new Lion().Cub()
@@ -277,15 +277,15 @@ G. None of the above
 What distinct numbers are printed when the following method is executed? (Choose all that apply.)
 
 private void countAttendees() {
-   int participants = 4, animals = 2, performers = -1;
- 
-   while ((participants = participants + 1) < 10) {}
-   do {} while (animals++ <= 1);
-   for ( ; performers < 2; performers += 2) {}
- 
-   System.out.println(participants);
-   System.out.println(animals);
-   System.out.println(performers);
+      int participants = 4, animals = 2, performers = -1;
+  
+      while ((participants = participants + 1) < 10) {}
+      do {} while (animals++ <= 1);
+      for ( ; performers < 2; performers += 2) {}
+  
+      System.out.println(participants);
+      System.out.println(animals);
+      System.out.println(performers);
 }
 
 A. 6
@@ -331,8 +331,8 @@ F. None of the above.
 Which of the following expressions, when inserted independently into the blank line, allow the code to compile? (Choose all that apply.)
 
 public void printMagicData() {
-   var magic = ;
-   System.out.println(magic);
+      var magic = ;
+      System.out.println(magic);
 }
 
 A. 3_1
@@ -414,19 +414,19 @@ H. None of the above.
 Given the following program, what can be inserted into the blank line that would allow it to print Swim! at runtime?
 
 interface Swim {
-   default void perform() { System.out.print("Swim!"); }
+      default void perform() { System.out.print("Swim!"); }
 }
 interface Dance {
-   default void perform() { System.out.print("Dance!"); }
+      default void perform() { System.out.print("Dance!"); }
 }
 public class Penguin implements Swim, Dance {
-   public void perform() { System.out.print("Smile!"); }
-   private void doShow() {
-      ____________________;
-   }
-   public static void main(String[] eggs) {
-      new Penguin().doShow();
-   } }
+      public void perform() { System.out.print("Smile!"); }
+      private void doShow() {
+            ____________________;
+      }
+      public static void main(String[] eggs) {
+            new Penguin().doShow();
+      } }
 
 A. super.perform()
 B. Swim.perform()
@@ -511,17 +511,17 @@ E. 4
 ```text
 Which statement about the following class is correct?
 
-1:  class Problem extends Exception {
-2:     public Problem() {}
-3:  }
-4:  class YesProblem extends Problem {}
-5:  public class MyDatabase {
-6:     public static void connectToDatabase() throw Problem {
-7:        throws new YesProblem();
-8:     }
-9:     public static void main(String[] c) throw Exception {
-10:       connectToDatabase();
-11:    }
+1:    class Problem extends Exception {
+2:          public Problem() {}
+3:    }
+4:    class YesProblem extends Problem {}
+5:    public class MyDatabase {
+6:          public static void connectToDatabase() throw Problem {
+7:                throws new YesProblem();
+8:          }
+9:          public static void main(String[] c) throw Exception {
+10:              connectToDatabase();
+11:        }
 12: }
 
 A. The code compiles and prints a stack trace for YesProblem at runtime.
@@ -537,14 +537,14 @@ F. None of the above.
 ```text
 What is the output of the following snippet, assuming a and b are both 0?
 
-3:  try {
-4:     System.out.print(a / b);
-5:  } catch (RuntimeException e) {
-6:     System.out.print(-1);
-7:  } catch (ArithmeticException e) {
-8:     System.out.print(0);
-9:  } finally {
-10:    System.out.print("done");
+3:    try {
+4:          System.out.print(a / b);
+5:    } catch (RuntimeException e) {
+6:          System.out.print(-1);
+7:    } catch (ArithmeticException e) {
+8:          System.out.print(0);
+9:    } finally {
+10:        System.out.print("done");
 11: }
 
 A. -1
@@ -632,27 +632,27 @@ H. requires transitive on line T
 Which of the following are valid functional interfaces? (Choose all that apply.)
 
 public interface Transport {
-   public int go();
-   public boolean equals(Object o);
+      public int go();
+      public boolean equals(Object o);
 }
- 
+  
 public abstract class Car {
-   public abstract Object swim(double speed, int duration);
+      public abstract Object swim(double speed, int duration);
 }
- 
+  
 public interface Locomotive extends Train {
-   public int getSpeed();
+      public int getSpeed();
 }
- 
+  
 public interface Train extends Transport {}
- 
+  
 abstract interface Spaceship extends Transport {
-   default int blastOff();
+      default int blastOff();
 }
- 
+  
 public interface Boat {
-   int hashCode();
-   int hashCode(String input);
+      int hashCode();
+      int hashCode(String input);
 }
 
 A. Boat
@@ -670,16 +670,16 @@ G. None of these is a valid functional interface.
 What is the output of calling printLocation(Animal.MAMMAL)?
 
 10: class Zoo {
-11:    enum Animal {BIRD, FISH, MAMMAL}
-12:    void printLocation(Animal a) {
-13:       long type = switch (a) {
-14:          case BIRD -> 1;
-15:          case FISH -> 2;
-16:          case MAMMAL -> 3;
-17:          default -> 4;
-18:       };
-19:       System.out.print(type);
-20:    } }
+11:        enum Animal {BIRD, FISH, MAMMAL}
+12:        void printLocation(Animal a) {
+13:              long type = switch (a) {
+14:                    case BIRD -> 1;
+15:                    case FISH -> 2;
+16:                    case MAMMAL -> 3;
+17:                    default -> 4;
+18:              };
+19:              System.out.print(type);
+20:        } }
 
 A. 3
 B. 4
@@ -781,11 +781,11 @@ var time = LocalTime.of(1, 30);
 var zone = ZoneId.of("US/Eastern");
 var dateTime1 = ZonedDateTime.of(date, time, zone);
 var dateTime2 = dateTime1.plus(1, ChronoUnit.HOURS);
- 
+  
 long diff = ChronoUnit.HOURS.between(dateTime1, dateTime2);
 int hour = dateTime2.getHour();
 boolean offset = dateTime1.getOffset()
-   == dateTime2.getOffset();
+      == dateTime2.getOffset();
 System.out.println("diff = " + diff);
 System.out.println("hour = " + hour);
 System.out.println("offset = " + offset);
@@ -829,9 +829,9 @@ Which of the following statements can be inserted in the blank line so that the 
 
 interface CanHop {}
 public class Frog implements CanHop {
-   public static void main(String[] args) {
-      ____________ frog = new TurtleFrog();
-   }
+      public static void main(String[] args) {
+            ____________ frog = new TurtleFrog();
+      }
 }
 
 class BrazilianHornedFrog extends Frog {}
@@ -949,21 +949,21 @@ F. None of these; line 6 throws an exception at runtime.
 What is the output of this code?
 
 13: record Gorilla(int x, Double y) {
-14:    Gorilla {}
-15:    Gorilla() { this(1,2.0); }
+14:        Gorilla {}
+15:        Gorilla() { this(1,2.0); }
 16: }
 17: record Family(Gorilla parent1, Gorilla parent2) {}
 18:
 19: var family = new Family(
-20:    new Gorilla(1, null), new Gorilla(0, 1.2));
+20:        new Gorilla(1, null), new Gorilla(0, 1.2));
 21: System.out.print(switch (family) {
-22:    case Family(var a, var b) -> "1";
-23:    case Family(Gorilla c, Gorilla (int d, double e)) -> "2";
-24:    case Family(Gorilla (int f, Double g), var h) -> "3";
-25:    case Family(Gorilla i, Gorilla (int j, Double k)) -> "4";
-26:    case Family(Object m, Object n) -> "5";
-27:    case null -> "6";
-28:    default -> "7";
+22:        case Family(var a, var b) -> "1";
+23:        case Family(Gorilla c, Gorilla (int d, double e)) -> "2";
+24:        case Family(Gorilla (int f, Double g), var h) -> "3";
+25:        case Family(Gorilla i, Gorilla (int j, Double k)) -> "4";
+26:        case Family(Object m, Object n) -> "5";
+27:        case null -> "6";
+28:        default -> "7";
 29: });
 
 A. 1
@@ -981,22 +981,22 @@ H. None of the above
 ```text
 Assuming the following class compiles, how many variables defined in the class or method are in scope on the line marked on line 14?
 
-1:  public class Camel {
-2:     { int hairs = 3_000_0; }
-3:     long water, air=2;
-4:     boolean twoHumps = true;
-5:     public void spit(float distance) {
-6:        var path = "";
-7:        { double teeth = 32 + distance++; }
-8:        while(water> 0) {
-9:           int age = twoHumps ? 1 : 2;
-10:          short i=-1;
-11:          for(i=0; i<10; i++) {
-12:             var Private = 2;
-13:          }
-14:          // SCOPE
-15:       }
-16:    }
+1:    public class Camel {
+2:          { int hairs = 3_000_0; }
+3:          long water, air=2;
+4:          boolean twoHumps = true;
+5:          public void spit(float distance) {
+6:                var path = "";
+7:                { double teeth = 32 + distance++; }
+8:                while(water> 0) {
+9:                      int age = twoHumps ? 1 : 2;
+10:                    short i=-1;
+11:                    for(i=0; i<10; i++) {
+12:                          var Private = 2;
+13:                    }
+14:                    // SCOPE
+15:              }
+16:        }
 17: }
 
 A. 2
@@ -1055,19 +1055,19 @@ Which of the following, when inserted independently in the blank, use locale par
 
 import java.util.Locale;
 public class ReadMap implements AutoCloseable {
-   private Locale locale;
-   private boolean closed = false;
-   @Override public void close() {
-      System.out.println("Folding map");
-      locale = null;
-      closed = true;
-   }
-   public void open() {
-      this.locale = ____________;
-   }
-   public void use() {
-      // Implementation omitted
-   }
+      private Locale locale;
+      private boolean closed = false;
+      @Override public void close() {
+            System.out.println("Folding map");
+            locale = null;
+            closed = true;
+      }
+      public void open() {
+            this.locale = ____________;
+      }
+      public void use() {
+            // Implementation omitted
+      }
 }
 
 A. Locale.of("xM")
@@ -1127,13 +1127,13 @@ F. (StringBuilder s) --> s.isEmpty()
 What is the output of calling printReptile(6)?
 
 void printReptile(int category) {
-   var type = switch (category) {
-      case 1,2 -> "Snake";
-      case 3,4 -> "Lizard";
-      case 5,6 -> "Turtle";
-      case 7,8 -> "Alligator";
-   };
-   System.out.print(type);
+      var type = switch (category) {
+            case 1,2 -> "Snake";
+            case 3,4 -> "Lizard";
+            case 5,6 -> "Turtle";
+            case 7,8 -> "Alligator";
+      };
+      System.out.print(type);
 }
 
 A. Snake

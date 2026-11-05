@@ -23,17 +23,17 @@
 ```text
 Which statements, when inserted into the following blanks, allow the code to compile and run without entering an infinite loop? (Choose all that apply.)
 
-4:  int height = 1;
-5:  L1: while (height++ <10) {
-6:     long humidity = 12;
-7:     L2: do {
-8:        if (humidity-- % 12 == 0) ;
-9:        int temperature = 30;
-10:       L3: for ( ; ; ) {
-11:          temperature++;
-12:          if (temperature>50) ;
-13:       }
-14:    } while (humidity> 4);
+4:    int height = 1;
+5:    L1: while (height++ <10) {
+6:          long humidity = 12;
+7:          L2: do {
+8:                if (humidity-- % 12 == 0) ;
+9:                int temperature = 30;
+10:              L3: for ( ; ; ) {
+11:                    temperature++;
+12:                    if (temperature>50) ;
+13:              }
+14:        } while (humidity> 4);
 15: }
 
 A. break L2 on line 8; continue L2 on line 12
@@ -50,14 +50,14 @@ F. None of the above, as the code contains a compiler error
 What is the result of the following program?
 
 11: public class Favorites {
-12:    enum Flavors {
-13:       VANILLA, CHOCOLATE, STRAWBERRY
-14:       public Flavors() {}
-15:    }
-16:    public static void main(String[] args) {
-17:       for(final var e : Flavors.values())
-18:          System.out.print((e.ordinal() % 2) + " ");
-19:    } }
+12:        enum Flavors {
+13:              VANILLA, CHOCOLATE, STRAWBERRY
+14:              public Flavors() {}
+15:        }
+16:        public static void main(String[] args) {
+17:              for(final var e : Flavors.values())
+18:                    System.out.print((e.ordinal() % 2) + " ");
+19:        } }
 
 A. 0 1 0
 B. 1 0 1
@@ -132,11 +132,11 @@ var time = LocalTime.of(1, 30);
 var zone = ZoneId.of("US/Eastern");
 var dateTime1 = ZonedDateTime.of(date, time, zone);
 var dateTime2 = dateTime1.plus(1, ChronoUnit.HOURS);
- 
+  
 long diff = ChronoUnit.HOURS.between(dateTime1, dateTime2);
 int hour = dateTime2.getHour();
 boolean offset = dateTime1.getOffset()
-   == dateTime2.getOffset();
+      == dateTime2.getOffset();
 System.out.println("diff = " + diff);
 System.out.println("hour = " + hour);
 System.out.println("offset = " + offset);
@@ -169,23 +169,23 @@ G. opt.get("");
 ```text
 How many lines of the following program contain a compilation error?
 
-1:  class Primate {
-2:     protected int age = 2;
-3:     { age = 1; }
-4:     public Primate() {
-5:        this().age = 3;
-6:     }
-7:  }
-8:  public class Orangutan {
-9:     protected int age = 4;
-10:    { age = 5; }
-11:    public Orangutan() {
-12:       this().age = 6;
-13:    }
-14:    public static void main(String[] bananas) {
-15:       final Primate x = (Primate)new Orangutan();
-16:       System.out.println(x.age);
-17:    }
+1:    class Primate {
+2:          protected int age = 2;
+3:          { age = 1; }
+4:          public Primate() {
+5:                this().age = 3;
+6:          }
+7:    }
+8:    public class Orangutan {
+9:          protected int age = 4;
+10:        { age = 5; }
+11:        public Orangutan() {
+12:              this().age = 6;
+13:        }
+14:        public static void main(String[] bananas) {
+15:              final Primate x = (Primate)new Orangutan();
+16:              System.out.println(x.age);
+17:        }
 18: }
 
 A. None, and the program prints 1 at runtime.
@@ -240,7 +240,7 @@ F. None of the above.
 Which of the following can be inserted on line 8 to make this code compile? (Choose all that apply.)
 
 7: public void whatHappensNext() throws IOException {
-8:    // INSERT CODE HERE
+8:        // INSERT CODE HERE
 9: }
 
 A. System.out.println("it’s ok");
@@ -315,24 +315,24 @@ What is the output of the following code?
 
 import java.io.*;
 public class FamilyCar {
-   static class Door implements AutoCloseable {
-      public void close() {
-         System.out.print("D");
-   } }
-   static class Window implements Closeable {
-      public void close() {
-         System.out.print("W");
-         throw new RuntimeException();
-   } }
-   public static void main(String[] args) {
-      var d = new Door();
-      try (d; var w = new Window()) {
-         System.out.print("T");
-      } catch (Exception e) {
-         System.out.print("E");
-      } finally {
-         System.out.print("F");
-      } } }
+      static class Door implements AutoCloseable {
+            public void close() {
+                  System.out.print("D");
+      } }
+      static class Window implements Closeable {
+            public void close() {
+                  System.out.print("W");
+                  throw new RuntimeException();
+      } }
+      public static void main(String[] args) {
+            var d = new Door();
+            try (d; var w = new Window()) {
+                  System.out.print("T");
+            } catch (Exception e) {
+                  System.out.print("E");
+            } finally {
+                  System.out.print("F");
+            } } }
 
 A.TWF
 B.TWDF
@@ -349,18 +349,18 @@ G. The code does not compile.
 Which of the following is printed by the Bear program?
 
 public class Bear {
-   enum FOOD {
-      BERRIES, INSECTS {
-         public boolean isHealthy() { return true; }},
-      FISH, ROOTS, COOKIES, HONEY;
-      public abstract boolean isHealthy();
-   }
-   public static void main(String[] args) {
-      System.out.print(FOOD.INSECTS);
-      System.out.print(FOOD.INSECTS.ordinal());
-      System.out.print(FOOD.INSECTS.isHealthy());
-      System.out.print(FOOD.COOKIES.isHealthy());
-   } }
+      enum FOOD {
+            BERRIES, INSECTS {
+                  public boolean isHealthy() { return true; }},
+            FISH, ROOTS, COOKIES, HONEY;
+            public abstract boolean isHealthy();
+      }
+      public static void main(String[] args) {
+            System.out.print(FOOD.INSECTS);
+            System.out.print(FOOD.INSECTS.ordinal());
+            System.out.print(FOOD.INSECTS.isHealthy());
+            System.out.print(FOOD.COOKIES.isHealthy());
+      } }
 
 A. insects
 B. Insects
@@ -427,15 +427,15 @@ E. You don’t know how to code a method.
 Which are true about this code? (Choose all that apply.)
 
 public class KitchenSink {
-    private int numForks;
- 
-    public static void main(String[] args) {
-       int numKnives;
-       System.out.print("""
-          "# forks = " + numForks +
-           " # knives = " + numKnives +
-          # cups = 0""");
-    }
+        private int numForks;
+  
+        public static void main(String[] args) {
+              int numKnives;
+              System.out.print("""
+                    "# forks = " + numForks +
+                      " # knives = " + numKnives +
+                    # cups = 0""");
+        }
 }
 
 A. The output includes # forks = 0.
@@ -470,19 +470,19 @@ G. The results of binarySearch() are undefined in this example.
 ```text
 Which statements about the following program are correct? (Choose all that apply.)
 
-2:  public class Bear {
-3:     private Bear pandaBear;
-4:     private void roar(Bear b) {
-5:        System.out.println("Roar!");
-6:        pandaBear = b;
-7:     }
-8:     public static void main(String[] args) {
-9:        Bear brownBear = new Bear();
-10:       Bear polarBear = new Bear();
-11:       brownBear.roar(polarBear);
-12:       polarBear = null;
-13:       brownBear = null;
-14:       System.gc(); } }
+2:    public class Bear {
+3:          private Bear pandaBear;
+4:          private void roar(Bear b) {
+5:                System.out.println("Roar!");
+6:                pandaBear = b;
+7:          }
+8:          public static void main(String[] args) {
+9:                Bear brownBear = new Bear();
+10:              Bear polarBear = new Bear();
+11:              brownBear.roar(polarBear);
+12:              polarBear = null;
+13:              brownBear = null;
+14:              System.gc(); } }
 
 A. The object created on line 9 is first eligible for garbage collection after line 13.
 B. The object created on line 9 is first eligible for garbage collection after line 14.
@@ -499,14 +499,14 @@ G. The code does not compile.
 Which of the following classes and interfaces do not compile? (Choose all that apply.)
 
 public abstract class Camel { void travel(); }
- 
+  
 public interface EatsGrass { private abstract int chew(); }
- 
+  
 public abstract class Elephant {
-   abstract private class SleepsAlot {
-      abstract int sleep();
-   } }
- 
+      abstract private class SleepsAlot {
+            abstract int sleep();
+      } }
+  
 public class Eagle { abstract soar(); }
 
 public interface Spider { default void crawl() {} }
@@ -523,18 +523,18 @@ E. Spider
 ```text
 What is the output of executing the following class?
 
-1:  public class Salmon {
-2:     int count;
-3:     { System.out.print(count+"-"); }
-4:     { count++; }
-5:     public Salmon() {
-6:        count = 4;
-7:        System.out.print(2+"-");
-8:     }
-9:     public static void main(String[] args) {
-10:       System.out.print(7+"-");
-11:       var s = new Salmon();
-12:       System.out.print(s.count+"-"); } }
+1:    public class Salmon {
+2:          int count;
+3:          { System.out.print(count+"-"); }
+4:          { count++; }
+5:          public Salmon() {
+6:                count = 4;
+7:                System.out.print(2+"-");
+8:          }
+9:          public static void main(String[] args) {
+10:              System.out.print(7+"-");
+11:              var s = new Salmon();
+12:              System.out.print(s.count+"-"); } }
 
 A. 7-0-2-1-
 B. 7-0-1-
@@ -611,10 +611,10 @@ G. It compiles but throws an exception at runtime.
 What is the output of the following code?
 
 try {
-   LocalDateTime book = LocalDateTime.of(2025, 4, 5, 12, 30, 20);
-   System.out.print(book.format(DateTimeFormatter.ofPattern("m")));
-   System.out.print(book.format(DateTimeFormatter.ofPattern("z")));
-   System.out.print(DateTimeFormatter.ofPattern("y").format(book));
+      LocalDateTime book = LocalDateTime.of(2025, 4, 5, 12, 30, 20);
+      System.out.print(book.format(DateTimeFormatter.ofPattern("m")));
+      System.out.print(book.format(DateTimeFormatter.ofPattern("z")));
+      System.out.print(DateTimeFormatter.ofPattern("y").format(book));
 } catch (Throwable e) {}
 
 A. 4
@@ -653,15 +653,15 @@ H. false-false-false
 What is the output of calling printType(11)?
 
 31: void printType(Object o) {
-32:    if (o instanceof Integer bat) {
-33:       System.out.print("int");
-34:    } else if (o instanceof Integer bat && bat < 10) {
-35:       System.out.print("small int");
-36:    } else if (o instanceof Long bat || bat <= 20) {
-37:       System.out.print("long");
-38:    } default {
-39:       System.out.print("unknown");
-40:    }
+32:        if (o instanceof Integer bat) {
+33:              System.out.print("int");
+34:        } else if (o instanceof Integer bat && bat < 10) {
+35:              System.out.print("small int");
+36:        } else if (o instanceof Long bat || bat <= 20) {
+37:              System.out.print("long");
+38:        } default {
+39:              System.out.print("unknown");
+40:        }
 41: }
 
 A. int
@@ -716,14 +716,14 @@ What types can be inserted in the blanks on the lines marked X and Z that allow 
 interface Walk { private static List move() { return null; } }
 interface Run extends Walk { public ArrayList move(); }
 class Leopard implements Walk {
-   public ___________ move() {  // X
-      return null;
-   }
+      public ___________ move() {    // X
+            return null;
+      }
 }
 class Panther implements Run {
-   public  move(___________) {  // Z
-      return null;
-   }
+      public    move(___________) {    // Z
+            return null;
+      }
 }
 
 A. Integer on the line marked X
@@ -741,15 +741,15 @@ G. Does not compile for a different reason.
 What does the following method print?
 
 11: public void tryAgain(String s) {
-12:    try (FileReader r = null, p = new FileReader("")) {
-13:       System.out.print("X");
-14:       throw new IllegalArgumentException();
-15:    } catch (Exception s) {
-16:       System.out.print("A");
-17:       throw new FileNotFoundException();
-18:    } finally {
-19:       System.out.print("O");
-20:    }
+12:        try (FileReader r = null, p = new FileReader("")) {
+13:              System.out.print("X");
+14:              throw new IllegalArgumentException();
+15:        } catch (Exception s) {
+16:              System.out.print("A");
+17:              throw new FileNotFoundException();
+18:        } finally {
+19:              System.out.print("O");
+20:        }
 21: }
 
 A. XAO
@@ -867,8 +867,8 @@ For what value of pattern will the following print <005.21> <008.49> <1,234.0>?
 
 String pattern = "____________________";
 var message = DoubleStream.of(5.21, 8.49, 1234)
-   .mapToObj(v -> new DecimalFormat(pattern).format(v))
-   .collect(Collectors.joining("> <"));
+      .mapToObj(v -> new DecimalFormat(pattern).format(v))
+      .collect(Collectors.joining("> <"));
 System.out.println("<"+message+">");
 
 A. ##.#
@@ -897,12 +897,12 @@ E. A functional interface must be marked with the @FunctionalInterface annotatio
 What is the result of calling getHatSize(9f) on the following code snippet?
 
 10: int getHatSize(Number measurement) {
-11:    return switch (measurement) {
-12:       case Double d -> 1 + d.intValue();
-13:       case null     -> 11;
-14:       case !(Number n) -> 3 + n.intValue();
-15:       case Float f when f < 10 -> 4 + f.intValue();
-16:    };
+11:        return switch (measurement) {
+12:              case Double d -> 1 + d.intValue();
+13:              case null          -> 11;
+14:              case !(Number n) -> 3 + n.intValue();
+15:              case Float f when f < 10 -> 4 + f.intValue();
+16:        };
 17: }
 
 A. 10
@@ -968,16 +968,16 @@ F. juggle(true, new boolean[2]);
 ```text
 What is the output of the following code snippet?
 
-9:  int w = 0, r = 1;
+9:    int w = 0, r = 1;
 10: String name = "";
 11: while (w < 2) {
-12:    name += "A";
-13:    do {
-14:       name += "B";
-15:       if (name.length()>0) name += "C";
-16:       else break;
-17:    } while (r <=1);
-18:    r++; w++; }
+12:        name += "A";
+13:        do {
+14:              name += "B";
+15:              if (name.length()>0) name += "C";
+16:              else break;
+17:        } while (r <=1);
+18:        r++; w++; }
 19: System.out.println(name);
 
 A. ABC
@@ -1014,9 +1014,9 @@ E.The provided code does not compile.
 ```text
 Which functional interfaces complete the following code? For line 7, assume m and n are instances of functional interfaces that exist and have the same type as y. (Choose three.)
 
-6:  _____________ x = String::new;
-7:  _____________ y = m.andThen(n);
-8:  _____________ z = a -> a + a;
+6:    _____________ x = String::new;
+7:    _____________ y = m.andThen(n);
+8:    _____________ z = a -> a + a;
 
 A. BinaryConsumer<String, String>
 B. BiConsumer<String, String>

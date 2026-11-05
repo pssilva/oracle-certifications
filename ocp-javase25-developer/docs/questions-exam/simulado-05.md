@@ -24,14 +24,14 @@
 Which change allows the following program to compile?
 
 1: public class AhChoo {
-2:    static class SneezeException extends Exception {}
-3:    static class SniffleException extends SneezeException {}
-4:    public static void main(String[] args) {
-5:       try {
-6:          throw new SneezeException();
-7:       } catch (SneezeException | SniffleException e) {
-8:       } finally {}
-9:    } }
+2:        static class SneezeException extends Exception {}
+3:        static class SniffleException extends SneezeException {}
+4:        public static void main(String[] args) {
+5:              try {
+6:                    throw new SneezeException();
+7:              } catch (SneezeException | SniffleException e) {
+8:              } finally {}
+9:        } }
 
 A. Add throws SneezeException to the declaration on line 4.
 B. Add throws Throwable to the declaration on line 4.
@@ -122,7 +122,7 @@ var huey = (String)null;
 Integer dewey = null;
 Object louie = null;
 if(louie == huey.substring(dewey.intValue())) {
-   System.out.println("Quack!");
+      System.out.println("Quack!");
 }
 
 A. A NullPointerException that does not include any variable names in the stack trace
@@ -143,26 +143,26 @@ char[] wolf = {'W', 'e', 'b', 'b', 'y'};
 
 A. int q = wolf.length;
 for ( ; ; ) {
-   System.out.print(wolf[--q]);
-   if (q==0) break;
+      System.out.print(wolf[--q]);
+      if (q==0) break;
 }
 
 B. for (int m=wolf.length-1; m>=0; --m)
-   System.out.print(wolf[m]);
+      System.out.print(wolf[m]);
 
 C. for (int z=0; z<wolf.length; z++)
-   System.out.print(wolf[wolf.length-z]);
+      System.out.print(wolf[wolf.length-z]);
 
 D. int x = wolf.length-1;
 for (int j=0; x>=0 && j==0; x--)
-   System.out.print(wolf[x]);
+      System.out.print(wolf[x]);
 
 E. final int r = wolf.length;
 for (int w = r-1; r>-1; w = r-1)
-   System.out.print(wolf[w]);
+      System.out.print(wolf[w]);
 
 F. for (int i=wolf.length; i>0; --i)
-   System.out.print(wolf[i]);
+      System.out.print(wolf[i]);
 
 G. None of the above
 ```
@@ -227,19 +227,19 @@ F. None of the above. The code does not compile.
 Assuming the following classes are declared as top-level types in the same file, which classes contain compiler errors? (Choose all that apply.)
 
 sealed class Bird {
-   public final class Flamingo extends Bird {}   
+      public final class Flamingo extends Bird {}      
 }
- 
+  
 sealed class Monkey {}
- 
+  
 class EmperorTamarin extends Monkey {}
- 
+  
 non-sealed class Mandrill extends Monkey {}
- 
+  
 sealed class Friendly extends Mandrill permits Silly {}
- 
+  
 final class Silly {}
- 
+  
 
 A. Bird
 B. Monkey
@@ -361,11 +361,11 @@ abstract class Snake {}
 class Cobra extends Snake {}
 class GardenSnake extends Cobra {}
 public class SnakeHandler {
-   private Snake snakey;
-   public void setSnake(Snake mySnake) { this.snakey = mySnake; }
-   public static void main(String[] args) {
-      new SnakeHandler().setSnake(_____________);
-   } }
+      private Snake snakey;
+      public void setSnake(Snake mySnake) { this.snakey = mySnake; }
+      public static void main(String[] args) {
+            new SnakeHandler().setSnake(_____________);
+      } }
 
 A. new Cobra()
 B. new Snake()
@@ -402,15 +402,15 @@ E. The code does not compile.
 What is the result of the following code?
 
 public class Lion {
-   public void roar(String roar1, StringBuilder roar2) {
-      roar1.concat("!!!");
-      roar2.append("!!!");
-   }
-   public static void main(String[] args) {
-      var roar1 = "roar";
-      var roar2 = new StringBuilder("roar");
-      new Lion().roar(roar1, roar2);
-      System.out.println(roar1 + " " + roar2);
+      public void roar(String roar1, StringBuilder roar2) {
+            roar1.concat("!!!");
+            roar2.append("!!!");
+      }
+      public static void main(String[] args) {
+            var roar1 = "roar";
+            var roar2 = new StringBuilder("roar");
+            new Lion().roar(roar1, roar2);
+            System.out.println(roar1 + " " + roar2);
 } }
 
 A. roar roar
@@ -497,20 +497,20 @@ F. 5
 ```text
 What is the result of running the following class?
 
-1:  import java.util.function.*;
+1:    import java.util.function.*;
 2:
-3:  public class Panda {
-4:     int age;
-5:     public static void main(String[] args) {
-6:        Panda p1 = new Panda();
-7:        p1.age = 1;
-8:        check(p1, p -> {p.age < 5});
-9:     }
-10:    private static void check(Panda panda,
-11:       Predicate<Panda> pred) {
-12:       String result = pred.test(panda)
-13:          ? "match" : "not match";
-14:       System.out.print(result);
+3:    public class Panda {
+4:          int age;
+5:          public static void main(String[] args) {
+6:                Panda p1 = new Panda();
+7:                p1.age = 1;
+8:                check(p1, p -> {p.age < 5});
+9:          }
+10:        private static void check(Panda panda,
+11:              Predicate<Panda> pred) {
+12:              String result = pred.test(panda)
+13:                    ? "match" : "not match";
+14:              System.out.print(result);
 15: } }
 
 A. match
@@ -608,12 +608,12 @@ E. An unnamed module can be involved in a cyclic dependency with an automatic mo
 Which of the following can be inserted without causing a compilation error?
 
 public void remove(List<Character> chars) {
-   char end = 'z';
- 
-   // INSERT LINE HERE
- 
-   Predicate<Character> predicate =  c -> {
-      char start = 'a'; return start <= c && c <= end; };
+      char end = 'z';
+  
+      // INSERT LINE HERE
+  
+      Predicate<Character> predicate =    c -> {
+            char start = 'a'; return start <= c && c <= end; };
 }
 
 A. char start = ’a’;
@@ -629,15 +629,15 @@ E. None of the above
 Which statements about the following code snippet are correct? (Choose all that apply.)
 
 for (var penguin : new int[2])
-   System.out.println(penguin);
- 
+      System.out.println(penguin);
+  
 var ostrich = new Character[3];
 for (var emu : ostrich)
-   System.out.println(emu);
- 
+      System.out.println(emu);
+  
 List<Integer> parrots = new ArrayList<Integer>();
-for (var macaw  : parrots)
-   System.out.println(macaw);
+for (var macaw    : parrots)
+      System.out.println(macaw);
 
 A. The data type of penguin is Integer.
 B. The data type of penguin is int.
@@ -786,21 +786,21 @@ E. You can use access modifiers to restrict access to all classes that begin wit
 ```text
 Given the following method, how many lines contain compilation errors?
 
-8:  enum DayOfWeek {
-9:     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
-10:    private DayOfWeek getWeekDay(int day, final int thursday) {
-11:       int otherDay = day;
-12:       int Sunday = 0;
-13:       switch (otherDay) {
-14:          default:
-15:          case 1: continue;
-16:          case thursday: return DayOfWeek.THURSDAY;
-17:          case 2,10: break;
-18:          case Sunday: return DayOfWeek.SUNDAY;
-19:          case DayOfWeek.MONDAY: return DayOfWeek.MONDAY;
-20:       }
-21:       return DayOfWeek.FRIDAY;
-22:    } }
+8:    enum DayOfWeek {
+9:          SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+10:        private DayOfWeek getWeekDay(int day, final int thursday) {
+11:              int otherDay = day;
+12:              int Sunday = 0;
+13:              switch (otherDay) {
+14:                    default:
+15:                    case 1: continue;
+16:                    case thursday: return DayOfWeek.THURSDAY;
+17:                    case 2,10: break;
+18:                    case Sunday: return DayOfWeek.SUNDAY;
+19:                    case DayOfWeek.MONDAY: return DayOfWeek.MONDAY;
+20:              }
+21:              return DayOfWeek.FRIDAY;
+22:        } }
 
 A. None, the code compiles and runs without issue.
 B. 1.
@@ -818,7 +818,7 @@ H. The code compiles but may produce an error at runtime.
 Which of the following can be inserted on line 8 to make this code compile? (Choose all that apply.)
 
 7: public void whatHappensNext() throws IOException {
-8:    // INSERT CODE HERE
+8:        // INSERT CODE HERE
 9: }
 
 A. System.out.println("it’s ok");
@@ -837,14 +837,14 @@ What types can be inserted in the blanks on the lines marked X and Z that allow 
 interface Walk { private static List move() { return null; } }
 interface Run extends Walk { public ArrayList move(); }
 class Leopard implements Walk {
-   public ___________ move() {  // X
-      return null;
-   }
+      public ___________ move() {    // X
+            return null;
+      }
 }
 class Panther implements Run {
-   public  move(___________) {  // Z
-      return null;
-   }
+      public    move(___________) {    // Z
+            return null;
+      }
 }
 
 A. Integer on the line marked X
@@ -862,18 +862,18 @@ G. Does not compile for a different reason.
 What is the result of the following program?
 
 public class Weather {
-   enum Seasons {
-      WINTER, SPRING, SUMMER, FALL
-   }
- 
-   public static void main(String[] args) {
-      Seasons v = null;
-      switch (v) {
-         case Seasons.SPRING -> System.out.print("s");
-         case Seasons.WINTER -> System.out.print("w");
-         case Seasons.SUMMER -> System.out.print("m");
-         default -> System.out.println("missing data"); }
-   } }
+      enum Seasons {
+            WINTER, SPRING, SUMMER, FALL
+      }
+  
+      public static void main(String[] args) {
+            Seasons v = null;
+            switch (v) {
+                  case Seasons.SPRING -> System.out.print("s");
+                  case Seasons.WINTER -> System.out.print("w");
+                  case Seasons.SUMMER -> System.out.print("m");
+                  default -> System.out.println("missing data"); }
+      } }
 
 A. s
 B. w
@@ -890,13 +890,13 @@ G. The code compiles but produces an exception at runtime.
 Assuming the current locale uses dollars ($) and the following method is called with a double value of 100_102.2, which of the following values are printed? (Choose all that apply.)
 
 public void print(double t) {
-   System.out.print(NumberFormat.getCompactNumberInstance().format(t));
- 
-   System.out.print(
-      NumberFormat.getCompactNumberInstance(
-         Locale.getDefault(), Style.SHORT).format(t));
- 
-   System.out.print(NumberFormat.getCurrencyInstance().format(t));
+      System.out.print(NumberFormat.getCompactNumberInstance().format(t));
+  
+      System.out.print(
+            NumberFormat.getCompactNumberInstance(
+                  Locale.getDefault(), Style.SHORT).format(t));
+  
+      System.out.print(NumberFormat.getCurrencyInstance().format(t));
 }
 
 A. 100
