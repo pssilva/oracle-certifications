@@ -55,8 +55,17 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `01-building-blocks/docs/feynman/inferencia-var-e-variaveis-sem-nome/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-inferencia-var-e-variaveis-sem-nome-4em1.jpeg" alt="Conceito: Inferência var e Variáveis sem Nome" title="Inferência var e Variáveis sem Nome" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-tipo-var-p1.jpeg" alt="Conceito: Inferência var e Variáveis sem Nome" title="Inferência var e Variáveis sem Nome" style="width:250px;"/>
 
+---
+
+<img src="evidencias/imgs/evidencia-tipo-var-escopo-text-block-4em1.jpeg" alt="Conceito: Inferência var e Variáveis sem Nome" title="Inferência var e Variáveis sem Nome" style="width:250px;"/>
+
+---
+
+<img src="evidencias/imgs/evidencia-tipo-var-p2.jpeg" alt="Conceito: Inferência var e Variáveis sem Nome" title="Inferência var e Variáveis sem Nome" style="width:250px;"/>
+
+---
 
 ## Explique em voz alta (25-40 min)
 
@@ -101,3 +110,9 @@ Respondeu no mínimo 10 questões do simulador do exame?
 Quais são as pegadinhas mais comuns no exame?
 
 ```
+
+## Revisões Simulado 01
+
+<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap01_19-2em1.jpeg" alt="Conceito: Inferência var e Variáveis sem Nome" title="Inferência var e Variáveis sem Nome" style="width:250px;"/> 
+
+---
