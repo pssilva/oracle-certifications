@@ -10,8 +10,12 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "13-api-concorrencia" "Visão Geral" "ocp-javaee7-app-developer"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "13-api-concorrencia" "Problemas em Concorrências" "ocp-javaee7-app-developer"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "02-making-decisions" "Revisões Simulados" "ocp-javase25-developer"
+
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Revisões Simulados" "ocp-javase25-developer"
+
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "13-api-concorrencia" "Visão Geral" "ocp-javaee7-app-developer"
+# OracleCertificationsScriptsUteis.CriarStructureByConceito "13-api-concorrencia" "Problemas em Concorrências" "ocp-javaee7-app-developer"
 
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "13-api-concorrencia" "Principais Componentes" "ocp-javaee7-app-developer"
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "07-app-web-jsp" "Backing Beans" "ocp-javaee7-app-developer"

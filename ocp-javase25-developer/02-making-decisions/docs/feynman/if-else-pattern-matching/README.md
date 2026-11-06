@@ -40,7 +40,13 @@ Qual pegadinha?
 
 E tire uma foto de evidência e coloque na pasta: `02-making-decisions/docs/feynman/if-else-e-pattern-matching/evidencias/imgs`
 
-<!-- <img src="evidencias/imgs/evidencia-if-else-e-pattern-matching-4em1.jpeg" alt="Conceito: If-Else e Pattern Matching" title="If-Else e Pattern Matching" style="width:250px;"/> -->
+<img src="evidencias/imgs/evidencia-flow-scope.jpeg" alt="Conceito: If-Else e Pattern Matching" title="If-Else e Pattern Matching" style="width:250px;"/> 
+
+---
+<img src="evidencias/imgs/evidencia-pattern-matching.jpeg" alt="Conceito: If-Else e Pattern Matching" title="If-Else e Pattern Matching" style="width:250px;"/> 
+
+---
+<img src="evidencias/imgs/evidencia-pattern-match-flow-scope-2em1_cortado.jpeg" alt="Conceito: If-Else e Pattern Matching" title="If-Else e Pattern Matching" style="width:250px;"/>
 
 
 ## Explique em voz alta (25-40 min)
