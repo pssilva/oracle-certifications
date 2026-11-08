@@ -46,6 +46,10 @@ E tire uma foto de evidência e coloque na pasta: `07-streams/docs/feynman/revis
 <img src="evidencias/imgs/evidencia-erros-simulado01-qcap10_20-2em1.jpeg" alt="Conceito: Revisões Simulados" title="Revisões Simulados" style="width:250px;"/> 
 
 ---
+<img src="evidencias/imgs/evidencia-simulado01-qcap10_05-2em1.jpeg" alt="Conceito: Revisões Simulados" title="Revisões Simulados" style="width:250px;"/> 
+
+---
+<img src="evidencias/imgs/evidencia-simulado01-qcap10_14-2em1.jpeg" alt="Conceito: Revisões Simulados" title="Revisões Simulados" style="width:250px;"/>
 
 ## Explique em voz alta (25-40 min)
 

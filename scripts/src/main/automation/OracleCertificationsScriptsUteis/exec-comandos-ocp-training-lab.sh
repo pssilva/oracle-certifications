@@ -10,7 +10,9 @@ export TOOL_PATH="${AUTOMATION_PATH}/${TOOL_NAME}"
 
 
 source "${TOOL_PATH}/ocp-training-lab.sh"
-OracleCertificationsScriptsUteis.CriarStructureByConceito "07-streams" "Revisões Simulados" "ocp-javase25-developer"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "05-collections-generics" "Revisões Simulados" "ocp-javase25-developer"
+OracleCertificationsScriptsUteis.CriarStructureByConceito "06-lambdas-functional-interfaces" "Revisões Simulados" "ocp-javase25-developer"
+
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "02-making-decisions" "Revisões Simulados" "ocp-javase25-developer"
 
 # OracleCertificationsScriptsUteis.CriarStructureByConceito "01-beyond-classes" "Revisões Simulados" "ocp-javase25-developer"
