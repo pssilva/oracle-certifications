@@ -113,6 +113,6 @@ Quais são as pegadinhas mais comuns no exame?
 
 ## Revisões Simulado 01
 
-<img src="evidencias/imgs/evidencia-revisao-simulado01-qcap01_19-2em1.jpeg" alt="Conceito: Inferência var e Variáveis sem Nome" title="Inferência var e Variáveis sem Nome" style="width:250px;"/> 
+<img src="../revisoes-simulados/evidencias/imgs/evidencia-revisao-simulado01-qcap01_19-2em1.jpeg" alt="Conceito: Inferência var e Variáveis sem Nome" title="Inferência var e Variáveis sem Nome" style="width:250px;"/> 
 
 ---
