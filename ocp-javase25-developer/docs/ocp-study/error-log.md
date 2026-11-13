@@ -151,7 +151,7 @@
 ## T7 — Empacotamento e implantação (2/4) 🟡
 
 | Q | Fonte | Marquei | Gabarito | Armadilha | Regra para fixar |
-|--:|---|---|---|---|---|
+|--:|---|---|---|---|---|   
 | 11 | `11-modules/QCAP12_23` | A | **E** | Não viu a duplicata | `requires skin;` + `requires transitive skin;` = o mesmo módulo duas vezes → erro na **linha 5**. `exports ... to bird` é legal mesmo que `bird` não exista (só gera *warning*). |
 | 18 | `11-modules/QCAP12_10` | A, C, E | **C, D**¹ | Exportação × execução | `module x {}` **não exporta nada**, mas o `main` **pode** rodar (`java -p mods -m x/pkg.Main`). `exports` controla o acesso de **outros** módulos, não a execução. |
 
