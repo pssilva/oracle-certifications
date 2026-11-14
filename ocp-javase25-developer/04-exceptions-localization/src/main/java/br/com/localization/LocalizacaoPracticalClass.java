@@ -2,6 +2,11 @@ package br.com.localization;
 
 import java.io.IOException;
 import java.text.NumberFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 /**
@@ -117,6 +122,63 @@ public class LocalizacaoPracticalClass {
         System.out.println(myLocale.format(price));
         System.out.println("===================================================");
 
+
+        System.out.println("###################################################");
+    }
+
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 11 ■ Exceções e Localização
+     * <p> » » Formatando Valores
+     * <p> » » » Formatando Datas e Horas
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void formatandoDatasHoras() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: formatandoDatasHoras()");
+        System.out.println("###################################################");
+        LocalDate date = LocalDate.of(2025, Month.OCTOBER, 20);
+        System.out.println(date.getDayOfWeek());  // MONDAY
+        System.out.println(date.getMonth());      // OCTOBER
+        System.out.println(date.getYear());       // 2025
+        System.out.println(date.getDayOfYear());  // 293
+
+        System.out.println("===================================================");
+        System.out.println("DateTimeFormatter ");
+        System.out.println("===================================================");
+        LocalTime time = LocalTime.of(11, 12, 34);
+        LocalDateTime dt = LocalDateTime.of(date, time);
+
+        System.out.println(date.format(DateTimeFormatter.ISO_LOCAL_DATE));
+        System.out.println(time.format(DateTimeFormatter.ISO_LOCAL_TIME));
+        System.out.println(dt.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        System.out.println("###################################################");
+    }
+    /**
+     * <p>Código presente no Ebook: <a href="https://a.co/d/0alQOByp" >OCP Oracle® Certified Professional Java® SE 21 Developer</a>
+     * <p> » Capítulo 11 ■ Exceções e Localização
+     * <p> » » > Apêndice ■ Respostas às Questões de Revisão
+     * <p> » » » Capítulo 11 ■ Exceções e Localização (Respostas)
+     * <p> » » » » QCAP11_22
+     * </ br>
+     *
+     * <p>Escute o áudio explicativo do propósito da questão na Evidência de Estudo: [TRABALHO EM PROGRESSO]
+     */
+    private static void qCAP11_22() {
+
+        System.out.println("###################################################");
+        System.out.println("Método: qCAP11_22()");
+        System.out.println("###################################################");
+        try {
+            LocalDateTime book = LocalDateTime.of(2025, 4, 5, 12, 30, 20);
+            System.out.print(book.format(DateTimeFormatter.ofPattern("m")));
+            System.out.print(book.format(DateTimeFormatter.ofPattern("z")));
+            System.out.print(DateTimeFormatter.ofPattern("y").format(book));
+        } catch (Throwable e) {}
 
         System.out.println("###################################################");
     }

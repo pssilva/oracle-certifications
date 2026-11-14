@@ -50,6 +50,9 @@ E tire uma foto de evidência e coloque na pasta: `01-building-blocks/docs/feynm
 ---
 <img src="evidencias/imgs/evidencia-simulado01-qcap01_21-2em1.jpeg" alt="Conceito: Revisões Simulados" title="Revisões Simulados" style="width:250px;"/>
 
+---
+<img src="evidencias/imgs/evidencia-simulado01-qcap01_18-2em1.jpeg" alt="Conceito: Revisões Simulados" title="Revisões Simulados" style="width:250px;"/>
+
 ## Explique em voz alta (25-40 min)
 
 Explique sem consultas como se estivesse ensinando para um desenvolvedor Jr.
